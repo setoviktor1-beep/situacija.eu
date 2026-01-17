@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situacija.eu - Profesionalus Klijavimas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Situacija.eu</div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Paslaugos</a></li>
+                    <li><a href="#gallery">Darbų Galerija</a></li>
+                    <li><a href="#contact">Kontaktai</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-btn">Gauti Pasiūlymą</a>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Profesionalus Plytelių Klijavimas</h1>
+            <p>Aukščiausia kokybė, kruopštus darbas ir dėmesys detalėms jūsų namams.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Susisiekti</a>
+                <a href="#gallery" class="btn btn-outline">Žiūrėti Darbus</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Mūsų Paslaugos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">🚿</div>
+                    <h3>Vonios Kambariai</h3>
+                    <p>Pilnas vonios kambario plytelių klijavimas, hidroizoliacija ir paruošimas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🍳</div>
+                    <h3>Virtuvės</h3>
+                    <p>Virtuvės sienelių ir grindų klijavimas, tikslus pjovimas ir derinimas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🏠</div>
+                    <h3>Grindys ir Terasos</h3>
+                    <p>Didelių formatų plytelių klijavimas svetainėse, holuose ir lauko terasose.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🧱</div>
+                    <h3>Fasadų Apdaila Klinkeriu</h3>
+                    <p>Kokybiškas fasadų klijavimas klinkerio plytelėmis, užtikrinantis ilgaamžiškumą ir estetiką.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Atlikti Darbai</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/img1.jpg" alt="Plytelių klijavimo pavyzdys 1" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/img2.jpg" alt="Plytelių klijavimo pavyzdys 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/img3.jpg" alt="Plytelių klijavimo pavyzdys 3" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/img4.jpg" alt="Plytelių klijavimo pavyzdys 4" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/img5.jpg" alt="Plytelių klijavimo pavyzdys 5" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/img6.jpg" alt="Plytelių klijavimo pavyzdys 6" loading="lazy">
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="gallery.html" class="btn btn-primary">Žiūrėti Visus Darbus</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Susisiekite su mumis</h2>
+                <p>Turite klausimų ar norite gauti sąmatą? Skambinkite arba rašykite.</p>
+                <ul>
+                    <li><strong>Telefonas:</strong> <a href="tel:+37060030288">+370 600 30288</a></li>
+                    <li><strong>El. paštas:</strong> <a href="mailto:v.finazonok@gmail.com">v.finazonok@gmail.com</a>
+                    </li>
+                    <li><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1D7EM2oc7U/"
+                            target="_blank">Vladislav Finažonok</a></li>
+                </ul>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Žinutė išsiųsta (demo)!');">
+                    <div class="form-group">
+                        <label for="name">Vardas</label>
+                        <input type="text" id="name" placeholder="Jūsų vardas" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefonas</label>
+                        <input type="tel" id="phone" placeholder="+370..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Žinutė</label>
+                        <textarea id="message" rows="4" placeholder="Kokie darbai jus domina?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Siųsti Užklausą</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 Situacija.eu. Visos teisės saugomos.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
