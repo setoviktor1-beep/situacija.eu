@@ -31,5 +31,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Contact Form Logic
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            const emailTo = 'v.finazonok@gmail.com';
+            const subject = 'Užklausa iš Situacija.eu';
+            const body = `Vardas: ${name}%0D%0ATelefonas: ${phone}%0D%0AŽinutė: ${message}`;
+            
+            window.location.href = `mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${body}`;
+        });
+    }
+
     console.log('Plytelių Meistras puslapis užkrautas.');
 });
