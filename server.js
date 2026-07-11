@@ -229,6 +229,51 @@ app.delete('/api/images/:id', authenticate, (req, res) => {
   });
 });
 
+// Public: Get site content
+app.get('/api/content', (req, res) => {
+  db.all('SELECT * FROM site_content', (err, rows) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: 'Nepavyko užkrauti svetainės turinio.' });
+    }
+    const content = {};
+    rows.forEach(row => {
+      content[row.key] = row.value;
+    });
+    res.json(content);
+  });
+});
+
+// Protected: Update site content
+app.post('/api/content', authenticate, (req, res) => {
+  const content = req.body;
+  if (!content || typeof content !== 'object') {
+    return res.status(400).json({ error: 'Neteisingas duomenų formatas.' });
+  }
+
+  db.serialize(() => {
+    const stmt = db.prepare('INSERT OR REPLACE INTO site_content (key, value) VALUES (?, ?)');
+    let hasError = false;
+
+    for (const [key, val] of Object.entries(content)) {
+      const stringVal = typeof val === 'object' ? JSON.stringify(val) : String(val);
+      stmt.run(key, stringVal, (err) => {
+        if (err) {
+          console.error(`Error saving content for key ${key}:`, err);
+          hasError = true;
+        }
+      });
+    }
+
+    stmt.finalize((err) => {
+      if (err || hasError) {
+        return res.status(500).json({ error: 'Nepavyko išsaugoti kai kurių nustatymų.' });
+      }
+      res.json({ success: true });
+    });
+  });
+});
+
 // Handle 404 for API, serve index.html for others (supporting HTML5 routing if needed)
 app.use((req, res, next) => {
   if (req.path.startsWith('/api')) {

@@ -626,6 +626,7 @@
         <div class="tabs-nav">
             <button class="tab-btn active" data-tab="requests">Klientų Užklausos</button>
             <button class="tab-btn" data-tab="gallery">Galerijos Valdymas</button>
+            <button class="tab-btn" data-tab="content">Turinio Redagavimas</button>
         </div>
 
         <!-- Tab 1: Requests -->
@@ -687,6 +688,58 @@
                         <!-- Dynamic list of photos -->
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Tab 3: Content Editor -->
+        <div class="tab-pane" id="tab-content">
+            <div class="content-manager-wrapper" style="max-width: 900px; margin: 0 auto;">
+                <form id="content-form" style="background: var(--bg-card); border: 1px solid var(--border); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow);">
+                    <h3 style="margin-bottom: 1.5rem; font-weight: 600; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">Svetainės tekstų redagavimas</h3>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label for="input-hero-title">Hero skiltis: Pagrindinis pavadinimas</label>
+                            <input type="text" id="input-hero-title" class="input-control" required>
+                        </div>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label for="input-hero-subtitle">Hero skiltis: Paantraštė</label>
+                            <textarea id="input-hero-subtitle" class="input-control" rows="2" style="resize: vertical; font-family: inherit;" required></textarea>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-bottom: 1.5rem; font-weight: 600; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-top: 2rem;">Mūsų paslaugos</h3>
+                    <div id="services-editor-container" style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem;">
+                        <!-- Services dynamically generated -->
+                    </div>
+                    <button type="button" class="btn" id="btn-add-service" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border); box-shadow: none; color: var(--text-light); margin-bottom: 2rem; width: auto; padding: 0.6rem 1.2rem;">+ Pridėti paslaugą</button>
+
+                    <h3 style="margin-bottom: 1.5rem; font-weight: 600; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-top: 1rem;">Kontaktinė informacija</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <div class="form-group">
+                            <label for="input-phone-href">Telefonas (nuoroda tel:...)</label>
+                            <input type="text" id="input-phone-href" class="input-control" placeholder="Pvz. +37060030288" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-phone-text">Telefonas (rodomas tekstas)</label>
+                            <input type="text" id="input-phone-text" class="input-control" placeholder="Pvz. +370 600 30288" required>
+                        </div>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label for="input-email">El. pašto adresas</label>
+                            <input type="email" id="input-email" class="input-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-fb-url">Facebook nuoroda (URL)</label>
+                            <input type="url" id="input-fb-url" class="input-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-fb-text">Facebook vardas (rodomas tekstas)</label>
+                            <input type="text" id="input-fb-text" class="input-control" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn" id="save-content-btn" style="margin-top: 1rem;">Išsaugoti pakeitimus</button>
+                </form>
             </div>
         </div>
     </div>
@@ -759,6 +812,7 @@
                 }, 50);
                 loadRequests();
                 loadPhotos();
+                loadContent();
             }, 500);
         }
 
@@ -1014,6 +1068,141 @@
                 showToast('Tinklo klaida', 'error');
             });
         }
+
+        // Site Content Manager Logic
+        const contentForm = document.getElementById('content-form');
+        const servicesContainer = document.getElementById('services-editor-container');
+        const btnAddService = document.getElementById('btn-add-service');
+        
+        let servicesData = [];
+
+        function renderServicesEditor() {
+            servicesContainer.innerHTML = '';
+            servicesData.forEach((service, index) => {
+                const serviceCard = document.createElement('div');
+                serviceCard.className = 'service-editor-card';
+                serviceCard.style.cssText = 'background: rgba(0, 0, 0, 0.2); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; position: relative;';
+                
+                serviceCard.innerHTML = `
+                    <button type="button" class="btn-delete-service" data-index="${index}" style="position: absolute; top: 1rem; right: 1rem; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; width: auto; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: var(--radius-md); cursor: pointer;">Pašalinti</button>
+                    <div style="display: grid; grid-template-columns: 80px 1fr; gap: 1rem;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label>Ikona</label>
+                            <input type="text" class="input-control service-icon" value="${escapeHTML(service.icon || '🛠️')}" style="text-align: center; font-size: 1.5rem; padding: 0.6rem;" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label>Pavadinimas</label>
+                            <input type="text" class="input-control service-title" value="${escapeHTML(service.title || '')}" required>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 1rem; margin-bottom: 0;">
+                        <label>Aprašymas</label>
+                        <textarea class="input-control service-desc" rows="2" style="resize: vertical; font-family: inherit;" required>${escapeHTML(service.desc || '')}</textarea>
+                    </div>
+                `;
+                servicesContainer.appendChild(serviceCard);
+            });
+
+            // Attach remove listener
+            document.querySelectorAll('.btn-delete-service').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const idx = parseInt(e.target.dataset.index);
+                    servicesData.splice(idx, 1);
+                    renderServicesEditor();
+                });
+            });
+        }
+
+        btnAddService.addEventListener('click', () => {
+            servicesData.push({ icon: '🛠️', title: '', desc: '' });
+            renderServicesEditor();
+        });
+
+        function loadContent() {
+            fetch(`${API_BASE}/api/content`)
+            .then(res => res.json())
+            .then(content => {
+                if (content) {
+                    document.getElementById('input-hero-title').value = content.hero_title || '';
+                    document.getElementById('input-hero-subtitle').value = content.hero_subtitle || '';
+                    document.getElementById('input-phone-href').value = content.contact_phone_href || '';
+                    document.getElementById('input-phone-text').value = content.contact_phone_text || '';
+                    document.getElementById('input-email').value = content.contact_email || '';
+                    document.getElementById('input-fb-url').value = content.contact_fb_url || '';
+                    document.getElementById('input-fb-text').value = content.contact_fb_text || '';
+
+                    if (content.services) {
+                        try {
+                            servicesData = JSON.parse(content.services);
+                        } catch (e) {
+                            servicesData = [];
+                        }
+                    } else {
+                        servicesData = [];
+                    }
+                    renderServicesEditor();
+                }
+            })
+            .catch(() => {
+                showToast('Nepavyko užkrauti svetainės turinio', 'error');
+            });
+        }
+
+        contentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Build services array from current inputs to preserve typed values
+            const icons = document.querySelectorAll('.service-icon');
+            const titles = document.querySelectorAll('.service-title');
+            const descs = document.querySelectorAll('.service-desc');
+            
+            const updatedServices = [];
+            for (let i = 0; i < icons.length; i++) {
+                updatedServices.push({
+                    icon: icons[i].value,
+                    title: titles[i].value,
+                    desc: descs[i].value
+                });
+            }
+
+            const payload = {
+                hero_title: document.getElementById('input-hero-title').value,
+                hero_subtitle: document.getElementById('input-hero-subtitle').value,
+                contact_phone_href: document.getElementById('input-phone-href').value,
+                contact_phone_text: document.getElementById('input-phone-text').value,
+                contact_email: document.getElementById('input-email').value,
+                contact_fb_url: document.getElementById('input-fb-url').value,
+                contact_fb_text: document.getElementById('input-fb-text').value,
+                services: updatedServices
+            };
+
+            const saveBtn = document.getElementById('save-content-btn');
+            saveBtn.disabled = true;
+            saveBtn.textContent = 'Išsaugoma...';
+
+            fetch(`${API_BASE}/api/content`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${sessionToken}`
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(res => {
+                if (res.ok) {
+                    showToast('Turinys sėkmingai atnaujintas!', 'success');
+                } else {
+                    throw new Error('Nepavyko išsaugoti pakeitimų');
+                }
+            })
+            .catch(err => {
+                showToast(err.message, 'error');
+            })
+            .finally(() => {
+                saveBtn.disabled = false;
+                saveBtn.textContent = 'Išsaugoti pakeitimus';
+            });
+        });
 
         // Upload/Files logic
         dropArea.addEventListener('click', () => fileInput.click());

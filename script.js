@@ -80,9 +80,77 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Nepavyko užkrauti nuotraukų iš serverio, rodomos statinės nuotraukos:', err);
                 enableLightboxForImages();
             });
-    } else {
         enableLightboxForImages();
     }
+
+    // Dynamic Site Content Loading
+    fetch(`${API_BASE}/api/content`)
+        .then(res => res.json())
+        .then(content => {
+            if (content) {
+                // Hero elements
+                const heroTitle = document.getElementById('hero-title');
+                const heroSubtitle = document.getElementById('hero-subtitle');
+                if (heroTitle && content.hero_title) heroTitle.textContent = content.hero_title;
+                if (heroSubtitle && content.hero_subtitle) heroSubtitle.textContent = content.hero_subtitle;
+
+                // Contact info
+                const contactPhone = document.getElementById('contact-phone');
+                const contactEmail = document.getElementById('contact-email');
+                const contactFb = document.getElementById('contact-fb');
+
+                if (contactPhone) {
+                    if (content.contact_phone_href) contactPhone.href = `tel:${content.contact_phone_href}`;
+                    if (content.contact_phone_text) contactPhone.textContent = content.contact_phone_text;
+                }
+                if (contactEmail) {
+                    if (content.contact_email) {
+                        contactEmail.href = `mailto:${content.contact_email}`;
+                        contactEmail.textContent = content.contact_email;
+                    }
+                }
+                if (contactFb) {
+                    if (content.contact_fb_url) contactFb.href = content.contact_fb_url;
+                    if (content.contact_fb_text) contactFb.textContent = content.contact_fb_text;
+                }
+
+                // Services grid
+                const servicesList = document.getElementById('services-list');
+                if (servicesList && content.services) {
+                    try {
+                        const services = JSON.parse(content.services);
+                        if (services && services.length > 0) {
+                            servicesList.innerHTML = ''; // Clear fallback services
+                            services.forEach(service => {
+                                const card = document.createElement('div');
+                                card.className = 'service-card';
+                                
+                                const iconDiv = document.createElement('div');
+                                iconDiv.className = 'icon';
+                                iconDiv.textContent = service.icon || '🛠️';
+                                
+                                const h3 = document.createElement('h3');
+                                h3.textContent = service.title || '';
+                                
+                                const p = document.createElement('p');
+                                p.textContent = service.desc || '';
+                                
+                                card.appendChild(iconDiv);
+                                card.appendChild(h3);
+                                card.appendChild(p);
+                                
+                                servicesList.appendChild(card);
+                            });
+                        }
+                    } catch (e) {
+                        console.error('Klaida parsintant paslaugų JSON:', e);
+                    }
+                }
+            }
+        })
+        .catch(err => {
+            console.error('Nepavyko užkrauti dinaminio svetainės turinio:', err);
+        });
 
     // Contact Form submission
     const contactForm = document.getElementById('contactForm');

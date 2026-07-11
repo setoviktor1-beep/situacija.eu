@@ -35,6 +35,35 @@ db.serialize(() => {
     )
   `);
 
+  db.run(`
+    CREATE TABLE IF NOT EXISTS site_content (
+      key TEXT PRIMARY KEY,
+      value TEXT
+    )
+  `);
+
+  const defaultContent = {
+    hero_title: 'Profesionalus Plytelių Klijavimas',
+    hero_subtitle: 'Aukščiausia kokybė, kruopštus darbas ir dėmesys detalėms jūsų namams.',
+    contact_phone_href: '+37060030288',
+    contact_phone_text: '+370 600 30288',
+    contact_email: 'v.finazonok@gmail.com',
+    contact_fb_url: 'https://www.facebook.com/share/1D7EM2oc7U/',
+    contact_fb_text: 'Vladislav Finažonok',
+    services: JSON.stringify([
+      {icon: '🚿', title: 'Vonios Kambariai', desc: 'Pilnas vonios kambario plytelių klijavimas, hidroizoliacija ir paruošimas.'},
+      {icon: '🍳', title: 'Virtuvės', desc: 'Virtuvės sienelių ir grindų klijavimas, tikslus pjovimas ir derinimas.'},
+      {icon: '🏠', title: 'Grindys ir Terasos', desc: 'Didelių formatų plytelių klijavimas svetainėse, holuose ir lauko terasose.'},
+      {icon: '🧱', title: 'Fasadų Apdaila Klinkeriu', desc: 'Kokybiškas fasadų klijavimas klinkerio plytelėmis, užtikrinantis ilgaamžiškumą ir estetiką.'}
+    ])
+  };
+
+  const stmtContent = db.prepare('INSERT OR IGNORE INTO site_content (key, value) VALUES (?, ?)');
+  for (const [key, val] of Object.entries(defaultContent)) {
+    stmtContent.run(key, val);
+  }
+  stmtContent.finalize();
+
   console.log('Database tables verified/created.');
 
   // Import existing images from the images directory
