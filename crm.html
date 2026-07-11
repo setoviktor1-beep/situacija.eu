@@ -695,6 +695,12 @@
     <div class="toast-container" id="toast-container"></div>
 
     <script>
+        const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+            ? ''
+            : (window.location.hostname === '82.25.58.106')
+                ? 'http://82.25.58.106'
+                : 'https://api.situacija.eu';
+
         let sessionToken = localStorage.getItem('crm_token') || '';
 
         // UI Selectors
@@ -725,7 +731,7 @@
         // Authentication functions
         function verifySession() {
             // Test connection using session token by fetching requests
-            fetch('/api/requests', {
+            fetch(`${API_BASE}/api/requests`, {
                 headers: { 'Authorization': `Bearer ${sessionToken}` }
             })
             .then(res => {
@@ -767,7 +773,7 @@
         loginForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const password = passwordInput.value;
-            fetch('/api/login', {
+            fetch(`${API_BASE}/api/login`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ password })
@@ -833,7 +839,7 @@
 
         // Requests logic
         function loadRequests() {
-            fetch('/api/requests', {
+            fetch(`${API_BASE}/api/requests`, {
                 headers: { 'Authorization': `Bearer ${sessionToken}` }
             })
             .then(res => res.json())
@@ -909,7 +915,7 @@
         }
 
         function updateRequest(id, payload) {
-            fetch(`/api/requests/${id}`, {
+            fetch(`${API_BASE}/api/requests/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -931,7 +937,7 @@
         }
 
         function deleteRequest(id) {
-            fetch(`/api/requests/${id}`, {
+            fetch(`${API_BASE}/api/requests/${id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${sessionToken}` }
             })
@@ -950,7 +956,7 @@
 
         // Gallery/Photos Manager Logic
         function loadPhotos() {
-            fetch('/api/images')
+            fetch(`${API_BASE}/api/images`)
             .then(res => res.json())
             .then(photos => {
                 if (photos.length === 0) {
@@ -967,7 +973,7 @@
                     const card = document.createElement('div');
                     card.className = 'photo-card';
                     card.innerHTML = `
-                        <img src="images/${photo.filename}" class="photo-img">
+                        <img src="${API_BASE}/images/${photo.filename}" class="photo-img">
                         <button class="btn-delete-photo" data-id="${photo.id}">&times;</button>
                         <div class="photo-info">
                             <div class="photo-title">${escapeHTML(photo.title || 'Be pavadinimo')}</div>
@@ -992,7 +998,7 @@
         }
 
         function deletePhoto(id) {
-            fetch(`/api/images/${id}`, {
+            fetch(`${API_BASE}/api/images/${id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${sessionToken}` }
             })
@@ -1082,7 +1088,7 @@
             uploadBtn.disabled = true;
             uploadBtn.textContent = 'Kraunama...';
 
-            fetch('/api/images', {
+            fetch(`${API_BASE}/api/images`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${sessionToken}`

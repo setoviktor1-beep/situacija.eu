@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // API Configuration
+    const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+        ? ''
+        : (window.location.hostname === '82.25.58.106')
+            ? 'http://82.25.58.106'
+            : 'https://api.situacija.eu';
+
     // Lightbox Setup
     const lightbox = document.createElement('div');
     lightbox.className = 'lightbox';
@@ -40,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isGalleryPage = document.querySelector('.gallery-page') !== null;
 
     if (galleryGrid) {
-        fetch('/api/images')
+        fetch(`${API_BASE}/api/images`)
             .then(res => res.json())
             .then(images => {
                 if (images && images.length > 0) {
@@ -55,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         item.className = 'gallery-item';
                         
                         const imageEl = document.createElement('img');
-                        imageEl.src = `images/${img.filename}`;
+                        imageEl.src = `${API_BASE}/images/${img.filename}`;
                         imageEl.alt = img.title || 'Plytelių klijavimo pavyzdys';
                         imageEl.loading = 'lazy';
                         
@@ -93,13 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.textContent = 'Siunčiama...';
             }
 
-            fetch('/api/requests', {
+            fetch(`${API_BASE}/api/requests`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ name, phone, message })
             })
+
             .then(res => res.json())
             .then(data => {
                 if (data.success) {
