@@ -31,7 +31,7 @@ body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     color: var(--text-main);
     background-color: var(--light-bg);
-    line-height: 1.7;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -53,10 +53,10 @@ ul {
 
 /* Glassmorphic Header */
 header {
-    background: rgba(11, 19, 41, 0.88);
+    background: rgba(11, 19, 41, 0.92);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -195,7 +195,7 @@ nav.desktop-nav a:hover::after {
     color: #2dd4bf;
 }
 
-/* Buttons */
+/* Buttons & Badges */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -236,7 +236,20 @@ nav.desktop-nav a:hover::after {
     transform: translateY(-2px);
 }
 
-/* Hero Section + Animated Canva */
+.badge {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: rgba(13, 148, 136, 0.12);
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     min-height: 88vh;
@@ -307,7 +320,6 @@ nav.desktop-nav a:hover::after {
     flex-wrap: wrap;
 }
 
-/* Stats Counter Grid */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -336,21 +348,7 @@ nav.desktop-nav a:hover::after {
     font-weight: 500;
 }
 
-/* Badges */
-.badge {
-    display: inline-block;
-    padding: 0.35rem 1rem;
-    border-radius: 50px;
-    font-size: 0.82rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    background: rgba(13, 148, 136, 0.12);
-    color: var(--primary-dark);
-    margin-bottom: 1rem;
-}
-
-/* Services & Sections */
+/* Sections */
 section {
     padding: 6rem 0;
 }
@@ -433,7 +431,7 @@ section {
     font-size: 0.98rem;
 }
 
-/* Rich Text Blocks */
+/* Rich Text & Workflow */
 .rich-text-block {
     background: var(--light-bg);
     border-radius: var(--radius-lg);
@@ -480,7 +478,6 @@ section {
     font-weight: bold;
 }
 
-/* Workflow Steps */
 .workflow-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -554,57 +551,105 @@ section {
     pointer-events: none;
 }
 
-/* FAQ Accordion Section */
+/* STUNNING PREMIUM FAQ ACCORDION SECTION */
 .faq-section {
     background: var(--white);
+    padding: 6rem 0;
 }
 
 .faq-grid {
     display: grid;
     gap: 1.25rem;
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
 .faq-item {
-    background: var(--light-bg);
+    background: #ffffff;
     border-radius: var(--radius-md);
     border: 1px solid #e2e8f0;
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item:hover {
+    box-shadow: 0 8px 25px rgba(13, 148, 136, 0.12);
+    border-color: rgba(13, 148, 136, 0.4);
+    border-left-color: var(--primary-light);
 }
 
 .faq-question {
     padding: 1.5rem 1.75rem;
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-weight: 800;
+    font-size: 1.12rem;
     color: var(--dark-bg);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    user-select: none;
 }
 
-.faq-question::after {
-    content: '+';
-    font-size: 1.5rem;
+.faq-question .q-title {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.faq-question .q-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(13, 148, 136, 0.12);
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+    font-weight: 900;
+    flex-shrink: 0;
+}
+
+.faq-question .q-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--primary);
+    font-size: 1.25rem;
     font-weight: bold;
-    transition: transform 0.3s ease;
+    transition: transform 0.35s ease, background 0.35s ease, color 0.35s ease;
+    flex-shrink: 0;
 }
 
-.faq-item.active .faq-question::after {
+.faq-item.active .faq-question .q-icon {
     transform: rotate(45deg);
+    background: var(--primary-dark);
+    color: #ffffff;
 }
 
 .faq-answer {
-    padding: 0 1.75rem 1.5rem 1.75rem;
-    color: var(--text-muted);
-    font-size: 0.98rem;
-    line-height: 1.7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+    padding: 0 1.75rem;
+    color: #475569;
+    font-size: 1.02rem;
+    line-height: 1.8;
 }
 
-/* Contact & Facebook Icon */
+.faq-item.active .faq-answer {
+    max-height: 450px;
+    padding: 0 1.75rem 1.75rem 1.75rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+/* Contact & Facebook */
 .contact {
     padding: 6rem 0;
     background: var(--dark-bg);
@@ -759,7 +804,7 @@ footer a:hover {
     line-height: 1;
 }
 
-/* Responsive Breakpoints */
+/* Responsive */
 @media (max-width: 992px) {
     .contact-container {
         grid-template-columns: 1fr;

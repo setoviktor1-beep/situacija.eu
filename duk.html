@@ -7,7 +7,7 @@
     <meta name="description" content="Atsakymai į dažniausius klausimus apie plytelių klojimo kainas, hidroizoliacijos įrengimą, terminus Pabradėje, Švenčionyse ir Vilniuje. Meistras Vladislav Finažonok.">
     <link rel="canonical" href="https://situacija.eu/duk.html" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Schema.org FAQPage -->
     <script type="application/ld+json">
@@ -41,10 +41,10 @@
         },
         {
           "@type": "Question",
-          "name": "Ar klojate didelio formato akmens masės plyteles?",
+          "name": "Ar klojate didelio formato plyteles (60x120 cm, 80x80 cm ir didesnes)?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Taip, turime specialią įrangą ir ilgametę patirtį klojant didelio formato akmens masės, mozaikos bei klinkerio plyteles."
+            "text": "Taip, specializuojamės visų matmenų plytelių klojime – nuo smulkių mozaikų iki didelio formato akmens masės plytelių (60x120 cm, 80x80 cm, 120x120 cm). Naudojame specialias vakuumines pritraukimo rankenas, šlapio pjovimo stakles bei TLS plytelių lyginimo sistemas, užtikrinančias nepriekaištingą paviršių."
           }
         }
       ]
@@ -54,55 +54,165 @@
 <body>
     <header>
         <div class="container header-content">
-            <a href="index.html" class="logo">Situacija.eu</a>
-            <nav>
+            <a href="index.html" class="logo">Situacija<span class="logo-accent">.eu</span></a>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="index.html#services">Paslaugos</a></li>
                     <li><a href="gallery.html">Darbų Galerija</a></li>
-                    <li><a href="duk.html" className="active">D.U.K.</a></li>
+                    <li><a href="blogas.html">Blogas</a></li>
+                    <li><a href="duk.html" class="active">D.U.K.</a></li>
                     <li><a href="index.html#contact">Kontaktai</a></li>
                 </ul>
             </nav>
-            <a href="tel:+37060030288" class="btn btn-primary nav-btn">Skambinti: +370 600 30288</a>
+            <a href="tel:+37060030288" class="btn btn-primary nav-btn">📞 +370 600 30288</a>
+            <button class="burger-btn" id="burgerBtn" aria-label="Atidaryti meniu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-nav-panel" id="mobileNavPanel">
+            <ul>
+                <li><a href="index.html#services">Paslaugos</a></li>
+                <li><a href="gallery.html">Darbų Galerija</a></li>
+                <li><a href="blogas.html">Blogas ir Patarimai</a></li>
+                <li><a href="duk.html">D.U.K.</a></li>
+                <li><a href="index.html#contact">Kontaktai</a></li>
+            </ul>
         </div>
     </header>
 
-    <section class="hero" style="min-height: 40vh; padding: 4rem 0;">
+    <section class="hero" style="min-height: 45vh; padding: 5rem 0;">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
+            <span class="badge" style="background: rgba(45, 212, 191, 0.2); color: #2dd4bf;">Skaidrumas ir Informacija</span>
             <h1>Dažniausiai Užduodami Klausimai (D.U.K.)</h1>
-            <p>Viskas, ką reikia žinoti apie plytelių klojimo paslaugas, kainodarą ir paslaugų teikimo teritoriją.</p>
+            <p>Viskas, ką reikia žinoti apie plytelių klojimo paslaugas, kainodarą, terminus bei technologijas Pabradėje, Švenčionyse ir Vilniuje.</p>
         </div>
     </section>
 
-    <section class="services" style="padding: 4rem 0;">
-        <div class="container" style="max-width: 900px;">
-            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2rem;">
-                <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 0.5rem;">1. Kiek kainuoja plytelių klojimas Pabradėje, Švenčionyse ar Vilniuje?</h3>
-                <p style="color: #4b5563; leading-height: 1.6;">Darbų kaina skaičiuojama individualiai pagal plotą (m²), plytelių matmenis (didelio formato plytelės reikalauja papildomo pasiruošimo) bei paruošiamųjų darbų apimtį. Susisiekite telefonu <a href="tel:+37060030288" style="color: var(--primary); font-weight: bold;">+370 600 30288</a> ir pateiksime geriausią pasiūlymą.</p>
-            </div>
+    <section class="faq-section" style="background: var(--light-bg); padding: 5rem 0;">
+        <div class="container">
+            <div class="faq-grid">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <div class="q-title">
+                            <span class="q-badge">1</span>
+                            <span>Kiek kainuoja plytelių klojimas Pabradėje, Švenčionyse ar Vilniuje?</span>
+                        </div>
+                        <div class="q-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Plytelių klojimo kaina skaičiuojama už kvadratinį metrą (m²) arba už visą objektą. Kaina priklauso nuo plytelių formato (didelio formato plytelės reikalauja papildomų lyginimo sistemų), paviršiaus būklės (ar reikia lyginti sienas/grindis), 45° kampų pjovimo kiekio bei pasirinkto glaisto (cementinis ar epoksidinis). Tikslią sąmatą pateikiame po pirminio įvertinimo. Skambinkite tel. <strong>+370 600 30288</strong>.
+                    </div>
+                </div>
 
-            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2rem;">
-                <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 0.5rem;">2. Kokiose vietovėse teikiamos paslaugos?</h3>
-                <p style="color: #4b5563; leading-height: 1.6;">Pagrindinė veiklos teritorija yra <strong>Pabradė, Švenčionys, Švenčionėliai ir visas Švenčionių rajonas</strong>. Esant galimybei ir laisvesniam grafikui, darbus atliekame ir <strong>Vilniuje bei Vilniaus rajone</strong>.</p>
-            </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="q-title">
+                            <span class="q-badge">2</span>
+                            <span>Kokiose vietovėse ir rajonuose teikiate paslaugas?</span>
+                        </div>
+                        <div class="q-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Pagrindinė meistro veiklos teritorija yra <strong>Pabradė, Švenčionys, Švenčionėliai ir visas Švenčionių rajonas</strong>. Taip pat pagal susitarimą ir laisvą grafiką atliekame darbus <strong>Vilniuje bei Vilniaus rajone</strong>.
+                    </div>
+                </div>
 
-            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2rem;">
-                <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 0.5rem;">3. Kaip paruošiamas vonios kambarys prieš klijavimą?</h3>
-                <p style="color: #4b5563; leading-height: 1.6;">Norint užtikrinti ilgaamžiškumą, atliekama paviršių patikra, išlyginimas, kampų paruošimas, teptinė hidroizoliacija bei kampinių sandarinimo juostų klijavimas dušo ir vonios zonose.</p>
-            </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="q-title">
+                            <span class="q-badge">3</span>
+                            <span>Ar atliekate vonios kambario hidroizoliacijos darbus?</span>
+                        </div>
+                        <div class="q-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Taip, hidroizoliacija yra būtina kiekvienam vonios kambariui ar dušo zonai. Naudojame sertifikuotas teptines hidroizoliacijos mastikas bei elastingas sandarinimo juostas kampams ir vamzdžių įvadams, kas užkerta kelią bet kokiam drėgmės pratekėjimui.
+                    </div>
+                </div>
 
-            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2rem;">
-                <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 0.5rem;">4. Kaip susisiekti su meistru?</h3>
-                <p style="color: #4b5563; leading-height: 1.6;">Galite skambinti tiesiogiai meistrui Vladislavui Finažonok telefonu <strong>+370 600 30288</strong>, rašyti el. paštu <strong>v.finazonok@gmail.com</strong> arba užpildyti užklausos formą <a href="index.html#contact" style="color: var(--primary); font-weight: bold;">pagrindiniame puslapyje</a>.</p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="q-title">
+                            <span class="q-badge">4</span>
+                            <span>Kaip formuojami išoriniai plytelių kampai?</span>
+                        </div>
+                        <div class="q-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Išorinius plytelių kampus pjauname ir šlifuojame 45 laipsnių kampu (angl. <em>miter cut</em>). Tai leidžia išvengti pigiai atrodančių plastikinių ar metalinių kampukų naudojimo – kampai atrodo estetiškai, lygiai ir moderniai.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="q-title">
+                            <span class="q-badge">5</span>
+                            <span>Ar klojate didelio formato plyteles (60x120 cm, 80x80 cm ir didesnes)?</span>
+                        </div>
+                        <div class="q-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Taip, specializuojamės visų matmenų plytelių klojime – nuo smulkių mozaikų iki didelio formato akmens masės plytelių (60x120 cm, 80x80 cm, 120x120 cm). Naudojame specialias vakuumines pritraukimo rankenas, šlapio pjovimo stakles bei TLS plytelių lyginimo sistemas, užtikrinančias nepriekaištingą paviršių.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="q-title">
+                            <span class="q-badge">6</span>
+                            <span>Koks skirtumas tarp cementinio ir epoksidinio glaisto?</span>
+                        </div>
+                        <div class="q-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Cementinis glaistymas yra standartinis sprendimas, o epoksidinis glaistas yra 100% neįgeriantis vandens, purvo bei riebalų. Epoksidinis glaistas rekomenduojamas dušo zonoms ir virtuvės grindims, nes laikui bėgant nekinta jo spalva ir nesiveisia pelėsis.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="q-title">
+                            <span class="q-badge">7</span>
+                            <span>Kiek laiko trunka vonios kambario plytelių klojimas?</span>
+                        </div>
+                        <div class="q-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Vidutinio dydžio vonios kambario (5–8 m²) pilna apdaila su paruošimu, hidroizoliacija, klijavimu ir glaistymu paprastai trunka nuo 5 iki 9 darbo dienų.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="q-title">
+                            <span class="q-badge">8</span>
+                            <span>Ar padedate išsirinkti ir pristatyti statybines medžiagas?</span>
+                        </div>
+                        <div class="q-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Taip, padedame tiksliai apskaičiuoti reikalingų klijų, hidroizoliacijos, grunto bei glaisto kiekius. Esant poreikiui, rekomenduojame patikrintų gamintojų medžiagas (Mapei, Ceresit, Knauf) ir padedame organizuoti atvežimą.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2024-2026 Situacija.eu. Visos teisės saugomos.</p>
+            <p>&copy; 2024-2026 Situacija.eu. Visos teisės saugomos. | <a href="index.html">Grįžti į Pradžią</a> | <a href="blogas.html">Blogas</a></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+    <script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+    </script>
 </body>
 </html>
