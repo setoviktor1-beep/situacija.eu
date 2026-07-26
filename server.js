@@ -38,6 +38,12 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static frontend files
 app.use(express.static(__dirname));
+app.get('/sitemap.xml', (req, res) => res.sendFile(path.join(__dirname, 'sitemap.xml')));
+app.get('/robots.txt', (req, res) => res.sendFile(path.join(__dirname, 'robots.txt')));
+app.get('/duk', (req, res) => res.sendFile(path.join(__dirname, 'duk.html')));
+app.get('/plyteliu-klojimas-pabrade', (req, res) => res.sendFile(path.join(__dirname, 'plyteliu-klojimas-pabrade.html')));
+app.get('/plyteliu-klojimas-svencionys', (req, res) => res.sendFile(path.join(__dirname, 'plyteliu-klojimas-svencionys.html')));
+app.get('/plyteliu-klojimas-vilnius', (req, res) => res.sendFile(path.join(__dirname, 'plyteliu-klojimas-vilnius.html')));
 
 // Multer storage configuration
 const storage = multer.diskStorage({
