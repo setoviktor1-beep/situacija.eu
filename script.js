@@ -209,5 +209,99 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    console.log('Plytelių Meistras puslapis sėkmingai paruoštas su dinaminiu palaikymu.');
+    
+    // Canvas Animation & Burger Menu
+    initHeroCanvas();
+    initMobileMenu();
+
+    function initHeroCanvas() {
+        const canvas = document.getElementById('heroCanvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+
+        function resize() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        let laserY = 50;
+        let laserDir = 1;
+        let laserX = 100;
+        let laserXDir = 1.2;
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw precision tile grid
+            const tileSize = 70;
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+            ctx.lineWidth = 1;
+
+            for (let x = 0; x < canvas.width; x += tileSize) {
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, canvas.height);
+                ctx.stroke();
+            }
+            for (let y = 0; y < canvas.height; y += tileSize) {
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(canvas.width, y);
+                ctx.stroke();
+            }
+
+            // Laser Level Horizontal Line (Teal Laser)
+            laserY += laserDir * 0.8;
+            if (laserY > canvas.height || laserY < 0) laserDir *= -1;
+
+            ctx.strokeStyle = 'rgba(45, 212, 191, 0.45)';
+            ctx.lineWidth = 2;
+            ctx.shadowBlur = 12;
+            ctx.shadowColor = '#2dd4bf';
+            ctx.beginPath();
+            ctx.moveTo(0, laserY);
+            ctx.lineTo(canvas.width, laserY);
+            ctx.stroke();
+
+            // Laser Level Vertical Line (Red Laser)
+            laserX += laserXDir * 0.7;
+            if (laserX > canvas.width || laserX < 0) laserXDir *= -1;
+
+            ctx.strokeStyle = 'rgba(239, 68, 68, 0.35)';
+            ctx.lineWidth = 2;
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = '#ef4444';
+            ctx.beginPath();
+            ctx.moveTo(laserX, 0);
+            ctx.lineTo(laserX, canvas.height);
+            ctx.stroke();
+
+            ctx.shadowBlur = 0;
+
+            requestAnimationFrame(animate);
+        }
+        animate();
+    }
+
+    function initMobileMenu() {
+        const burgerBtn = document.getElementById('burgerBtn');
+        const mobilePanel = document.getElementById('mobileNavPanel');
+        if (!burgerBtn || !mobilePanel) return;
+
+        burgerBtn.addEventListener('click', () => {
+            burgerBtn.classList.toggle('active');
+            mobilePanel.classList.toggle('open');
+        });
+
+        mobilePanel.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                burgerBtn.classList.remove('active');
+                mobilePanel.classList.remove('open');
+            });
+        });
+    }
+
+    console.log('Plytelių Meistras puslapis sėkmingai paruoštas.');
 });
