@@ -7,6 +7,36 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://situacija.eu/blogas.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://situacija.eu/blogas/kaip-pasirinkti-plyteles-voniai.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://situacija.eu/blogas/vonios-hidroizoliacija-kodel-butina.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://situacija.eu/blogas/didelio-formato-plyteliu-klojimo-ypatumai.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://situacija.eu/blogas/plyteliu-klojimo-kaina-pabrade-svencionys-vilnius.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://situacija.eu/gallery.html</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
