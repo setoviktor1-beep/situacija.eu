@@ -1,0 +1,27 @@
+# Situacija.eu
+
+> Meistro Vladislav Finažonok plytelių klojimo ir apdailos paslaugos Pabradėje, Švenčionyse, Švenčionėliuose ir Vilniuje. 10+ metų patirtis, 300+ atliktų projektų.
+
+Situacija.eu yra individualaus meistro Vladislav Finažonok verslo svetainė, teikianti profesionalias plytelių klijavimo, hidroizoliacijos ir apdailos paslaugas Lietuvoje, daugiausia Švenčionių rajone (Pabradė, Švenčionys, Švenčionėliai) ir Vilniuje bei jo apylinkėse pagal susitarimą.
+
+Pagrindinės paslaugos:
+- Vonios kambarių įrengimas: plytelių klijavimas, teptinė hidroizoliacija, dušo nuolydžių formavimas, 45° kampų suleidimas
+- Virtuvės prijuostės ir grindys: sienelių/grindų klijavimas, tikslus rozečių išpjovimas vandens pjovimo technika
+- Didelio formato akmens masės plytelių klojimas (60x120, 80x80, 120x120 cm) su TLS lyginimo sistema
+- Fasadų, cokolio, tvorų ir židinių apdaila klinkerio plytelėmis
+
+Kontaktai: tel. +370 600 30288, el. paštas v.finazonok@gmail.com
+
+## Puslapiai
+
+- [Pagrindinis puslapis](https://situacija.eu/): paslaugų apžvalga, patirtis, darbų eiga, geografija
+- [D.U.K.](https://situacija.eu/duk.html): dažniausiai užduodami klausimai apie kainas, terminus, technologijas
+- [Darbų galerija](https://situacija.eu/gallery.html): 40+ atliktų darbų nuotraukų
+- [Blogas](https://situacija.eu/blogas.html): straipsniai apie plytelių pasirinkimą, hidroizoliaciją, apdailos technologijas ir kainas
+- [Plytelių klojimas Pabradėje](https://situacija.eu/plyteliu-klojimas-pabrade.html)
+- [Plytelių klojimas Švenčionyse](https://situacija.eu/plyteliu-klojimas-svencionys.html)
+- [Plytelių klojimas Vilniuje](https://situacija.eu/plyteliu-klojimas-vilnius.html)
+
+## Optional
+
+- [llms-full.txt](https://situacija.eu/llms-full.txt): pilnas, detalus svetainės turinio aprašymas
