@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // API Configuration
-    const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-        ? ''
-        : (window.location.hostname === '82.25.58.106')
-            ? 'http://82.25.58.106'
-            : 'https://api.situacija.eu';
+    const API_BASE = '';
 
     // Lightbox Setup
     const lightbox = document.createElement('div');
