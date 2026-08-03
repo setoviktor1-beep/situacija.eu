@@ -313,6 +313,7 @@ function slugify(value) {
 
 app.get('/sitemap.xml', (req, res) => {
   res.setHeader('Cache-Control', 'public, max-age=3600');
+  res.setHeader('Content-Type', 'application/xml; charset=utf-8');
   res.sendFile(path.join(__dirname, 'sitemap.xml'));
 });
 app.get('/robots.txt', (req, res) => {
