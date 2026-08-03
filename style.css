@@ -788,6 +788,10 @@ footer a:hover {
     transition: opacity 0.3s ease;
 }
 
+.lightbox[hidden] {
+    display: none;
+}
+
 .lightbox.active {
     opacity: 1;
     pointer-events: all;
