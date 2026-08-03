@@ -120,6 +120,40 @@ nav.desktop-nav a:hover::after {
     width: 100%;
 }
 
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.18rem;
+    flex-shrink: 0;
+    padding: 0.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.language-switcher a {
+    min-width: 2rem;
+    padding: 0.35rem 0.42rem;
+    border-radius: 999px;
+    color: #cbd5e1;
+    font-size: 0.78rem;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.language-switcher a:hover,
+.language-switcher a:focus-visible {
+    color: #ffffff;
+    background: rgba(45, 212, 191, 0.18);
+}
+
+.language-switcher a.active {
+    color: #07111f;
+    background: #2dd4bf;
+}
+
 /* Mobile Burger Menu Button */
 .burger-btn {
     display: none;
@@ -839,6 +873,16 @@ footer a:hover {
 }
 
 /* Responsive */
+@media (max-width: 1180px) {
+    nav.desktop-nav ul {
+        gap: 1rem;
+    }
+
+    .header-content > .nav-btn {
+        display: none;
+    }
+}
+
 @media (max-width: 992px) {
     .contact-container {
         grid-template-columns: 1fr;
@@ -857,6 +901,11 @@ footer a:hover {
     }
     .header-content {
         height: 72px;
+        justify-content: flex-start;
+        gap: 0.75rem;
+    }
+    .language-switcher {
+        margin-left: auto;
     }
     .hero h1 {
         font-size: 2.1rem;
@@ -867,7 +916,16 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
-    .header-content > .nav-btn {
-        display: none;
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .logo {
+        font-size: 1.28rem;
+    }
+    .language-switcher a {
+        min-width: 1.75rem;
+        padding: 0.34rem 0.32rem;
+        font-size: 0.72rem;
     }
 }

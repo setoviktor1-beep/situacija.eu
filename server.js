@@ -2,12 +2,18 @@ const express = require('express');
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
+const {
+  LOCALES,
+  resolveRoute,
+  localizeHtml,
+  translateGalleryTitle,
+} = require('./i18n');
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 const SITE_URL = 'https://situacija.eu';
-const ASSET_VERSION = '20260803d';
+const ASSET_VERSION = '20260803e';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/img1.jpg`;
 const DIRECTUS_URL = (process.env.DIRECTUS_URL || 'http://situacija-directus-app:8055').replace(/\/$/, '');
 const DIRECTUS_ADMIN_URL = process.env.DIRECTUS_ADMIN_URL || 'https://situacija.sitestudio.lt/admin';
@@ -98,9 +104,11 @@ function pageMetadata(html, pathname) {
   return { title, description, canonical, image, headline };
 }
 
-function breadcrumbSchema(pathname, metadata) {
-  if (pathname === '/') return null;
-  const items = [{ '@type': 'ListItem', position: 1, name: 'Pradžia', item: `${SITE_URL}/` }];
+function breadcrumbSchema(pathname, metadata, locale = 'lt', pageKey = null) {
+  if (pageKey === 'home' || pathname === '/') return null;
+  const homeName = locale === 'pl' ? 'Strona główna' : locale === 'ru' ? 'Главная' : 'Pradžia';
+  const homeUrl = locale === 'lt' ? `${SITE_URL}/` : `${SITE_URL}/${locale}/`;
+  const items = [{ '@type': 'ListItem', position: 1, name: homeName, item: homeUrl }];
   if (pathname.startsWith('/blogas/')) {
     items.push({ '@type': 'ListItem', position: 2, name: 'Blogas', item: `${SITE_URL}/blogas.html` });
   }
@@ -130,10 +138,10 @@ function articleSchema(pathname, metadata) {
   };
 }
 
-function locationServiceSchema(pathname, metadata) {
-  if (!pathname.startsWith('/plyteliu-klojimas-')) return null;
-  const location = pathname.includes('pabrade') ? 'Pabradė'
-    : pathname.includes('svencionys') ? 'Švenčionys ir Švenčionėliai'
+function locationServiceSchema(pathname, metadata, locale = 'lt', pageKey = null) {
+  if (!['pabrade', 'svencionys', 'vilnius'].includes(pageKey) && !pathname.startsWith('/plyteliu-klojimas-')) return null;
+  const location = pageKey === 'pabrade' || pathname.includes('pabrade') ? 'Pabradė'
+    : pageKey === 'svencionys' || pathname.includes('svencionys') ? 'Švenčionys ir Švenčionėliai'
       : 'Vilnius ir Vilniaus rajonas';
   return {
     '@context': 'https://schema.org',
@@ -143,11 +151,49 @@ function locationServiceSchema(pathname, metadata) {
     url: metadata.canonical,
     areaServed: { '@type': 'AdministrativeArea', name: location },
     provider: { '@id': `${SITE_URL}/#business` },
-    serviceType: 'Plytelių klojimas ir apdaila',
+    serviceType: locale === 'pl' ? 'Układanie płytek i wykończenia'
+      : locale === 'ru' ? 'Укладка плитки и отделочные работы'
+        : 'Plytelių klojimas ir apdaila',
+    inLanguage: LOCALES[locale].schemaLang,
   };
 }
 
-function homeSchemas() {
+function homeSchemas(locale = 'lt') {
+  if (locale !== 'lt') {
+    const content = locale === 'pl' ? {
+      services: [
+        ['Kompleksowe łazienki', 'Układanie płytek, hydroizolacja i narożniki 45°.'],
+        ['Płytki w kuchni', 'Układanie płytek na ścianach i podłogach kuchennych.'],
+        ['Płytki wielkoformatowe', 'Montaż gresu 60x120, 80x80 i 120x120 cm.'],
+        ['Elewacje z klinkieru', 'Wykończenie elewacji, cokołów, ogrodzeń i kominków.'],
+      ],
+      howTo: ['Etapy układania płytek', 'Przebieg prac od oględzin do uszczelnienia.', [['Oględziny', 'Pomiary i wycena.'], ['Przygotowanie', 'Wyrównanie i hydroizolacja.'], ['Cięcie i klejenie', 'Precyzyjne cięcie i montaż.'], ['Fugowanie', 'Fugowanie i uszczelnienie narożników.']]],
+      faq: [['Ile kosztuje układanie płytek?', 'Cena zależy od formatu, podłoża i zakresu prac.'], ['Gdzie świadczone są usługi?', 'Pabradė, Święciany, Nowe Święciany oraz po uzgodnieniu Wilno.'], ['Czy wykonujecie hydroizolację?', 'Tak, wykonujemy pełne przygotowanie stref mokrych.'], ['Czy układacie duże płytki?', 'Tak, układamy płytki 60x120, 80x80 i 120x120 cm.']],
+    } : {
+      services: [
+        ['Комплексная отделка ванных', 'Укладка плитки, гидроизоляция и углы 45°.'],
+        ['Плитка на кухне', 'Укладка плитки на кухонных стенах и полах.'],
+        ['Крупноформатная плитка', 'Монтаж керамогранита 60x120, 80x80 и 120x120 см.'],
+        ['Отделка клинкером', 'Отделка фасадов, цоколей, заборов и каминов.'],
+      ],
+      howTo: ['Этапы укладки плитки', 'Процесс работ от осмотра до герметизации.', [['Осмотр', 'Замеры и смета.'], ['Подготовка', 'Выравнивание и гидроизоляция.'], ['Резка и укладка', 'Точная резка и монтаж.'], ['Затирка', 'Заполнение швов и герметизация углов.']]],
+      faq: [['Сколько стоит укладка плитки?', 'Цена зависит от формата, основания и объёма работ.'], ['Где вы работаете?', 'Пабраде, Швенчёнис, Швенчёнеляй и по договорённости Вильнюс.'], ['Выполняете ли вы гидроизоляцию?', 'Да, выполняем полную подготовку мокрых зон.'], ['Укладываете ли вы крупную плитку?', 'Да, укладываем плитку 60x120, 80x80 и 120x120 см.']],
+    };
+    return [{
+      '@context': 'https://schema.org',
+      '@graph': content.services.map(([name, description]) => ({
+        '@type': 'Service', name, description, provider: { '@id': `${SITE_URL}/#business` },
+        areaServed: ['Pabradė', 'Švenčionys', 'Švenčionėliai', 'Vilnius'],
+      })),
+    }, {
+      '@context': 'https://schema.org', '@type': 'HowTo', name: content.howTo[0], description: content.howTo[1],
+      inLanguage: LOCALES[locale].schemaLang,
+      step: content.howTo[2].map(([name, text], index) => ({ '@type': 'HowToStep', position: index + 1, name, text })),
+    }, {
+      '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: LOCALES[locale].schemaLang,
+      mainEntity: content.faq.map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })),
+    }];
+  }
   return [{
     '@context': 'https://schema.org',
     '@graph': [
@@ -186,10 +232,14 @@ function homeSchemas() {
   }];
 }
 
-function transformHtml(rawHtml, pathname, { noindex = false } = {}) {
-  let html = rawHtml
-    .replace(/href="((?:\.\.\/)?style\.css)(?:\?[^"#]*)?"/g, `href="$1?v=${ASSET_VERSION}"`)
-    .replace(/src="((?:\.\.\/)?script\.js)(?:\?[^"#]*)?"/g, `src="$1?v=${ASSET_VERSION}"`)
+function transformHtml(rawHtml, pathname, { noindex = false, route: suppliedRoute = null } = {}) {
+  const route = suppliedRoute || resolveRoute(pathname);
+  const locale = route?.locale || 'lt';
+  const pageKey = route?.pageKey || null;
+  let html = route ? localizeHtml(rawHtml, route).html : rawHtml;
+  html = html
+    .replace(/href="((?:\.\.\/|\/)?style\.css)(?:\?[^"#]*)?"/g, `href="$1?v=${ASSET_VERSION}"`)
+    .replace(/src="((?:\.\.\/|\/)?script\.js)(?:\?[^"#]*)?"/g, `src="$1?v=${ASSET_VERSION}"`)
     .replace(/id="burgerBtn"(?![^>]*aria-expanded)/g, 'id="burgerBtn" aria-controls="mobileNavPanel" aria-expanded="false"');
   const metadata = pageMetadata(html, pathname);
   const isArticle = pathname.startsWith('/blogas/');
@@ -201,7 +251,7 @@ function transformHtml(rawHtml, pathname, { noindex = false } = {}) {
     ...(html.includes('name="description"') ? [] : [`<meta name="description" content="${htmlEscape(metadata.description)}">`]),
     ...(html.includes('rel="canonical"') ? [] : [`<link rel="canonical" href="${htmlEscape(metadata.canonical)}">`]),
     ...(noindex ? ['<meta name="robots" content="noindex,follow">'] : []),
-    `<meta property="og:locale" content="lt_LT">`,
+    `<meta property="og:locale" content="${LOCALES[locale].ogLocale}">`,
     `<meta property="og:type" content="${isArticle ? 'article' : 'website'}">`,
     `<meta property="og:site_name" content="Situacija.eu">`,
     `<meta property="og:title" content="${htmlEscape(metadata.title)}">`,
@@ -214,8 +264,29 @@ function transformHtml(rawHtml, pathname, { noindex = false } = {}) {
     `<meta name="twitter:description" content="${htmlEscape(metadata.description)}">`,
     `<meta name="twitter:image" content="${htmlEscape(metadata.image)}">`,
   ];
-  const schemas = [breadcrumbSchema(pathname, metadata), articleSchema(pathname, metadata), locationServiceSchema(pathname, metadata)];
-  if (pathname === '/') schemas.push(...homeSchemas());
+  const schemas = [
+    breadcrumbSchema(pathname, metadata, locale, pageKey),
+    articleSchema(pathname, metadata),
+    locationServiceSchema(pathname, metadata, locale, pageKey),
+  ];
+  if (pageKey === 'home' || pathname === '/') {
+    if (locale !== 'lt') {
+      schemas.push({
+        '@context': 'https://schema.org',
+        '@type': 'HomeAndConstructionBusiness',
+        '@id': `${SITE_URL}/#business`,
+        name: locale === 'pl' ? 'Situacija.eu – układanie płytek' : 'Situacija.eu — укладка плитки',
+        url: metadata.canonical,
+        telephone: '+37060030288',
+        email: 'v.finazonok@gmail.com',
+        image: DEFAULT_OG_IMAGE,
+        areaServed: ['Pabradė', 'Švenčionys', 'Švenčionėliai', 'Vilnius'],
+        inLanguage: LOCALES[locale].schemaLang,
+      });
+    }
+    schemas.push(...homeSchemas(locale));
+  }
+  if (pageKey === 'faq' && locale !== 'lt') schemas.push(homeSchemas(locale)[2]);
   for (const schema of schemas.filter(Boolean)) {
     tags.push(`<script type="application/ld+json">${jsonLd(schema)}</script>`);
   }
@@ -265,14 +336,26 @@ const canonicalRedirects = new Map([
   ['/kontaktai.html', '/#contact'],
   ['/apie-mus', '/#about'],
   ['/apie-mus.html', '/#about'],
+  ['/pl', '/pl/'],
+  ['/ru', '/ru/'],
+  ['/pl/index.html', '/pl/'],
+  ['/ru/index.html', '/ru/'],
 ]);
-for (const [from, to] of canonicalRedirects) app.get(from, (req, res) => res.redirect(301, to));
+for (const [from, to] of canonicalRedirects) {
+  app.get(from, (req, res, next) => (req.path === from ? res.redirect(301, to) : next()));
+}
 
 app.get(['/crm', '/crm.html'], (req, res) => res.redirect(301, DIRECTUS_ADMIN_URL));
 
 app.post('/api/requests', async (req, res) => {
-  const { name, phone, message = '' } = req.body;
-  if (!name || !phone) return res.status(400).json({ error: 'Vardas ir telefonas yra privalomi!' });
+  const { name, phone, message = '', lang = 'lt' } = req.body;
+  const locale = ['pl', 'ru'].includes(lang) ? lang : 'lt';
+  const errors = locale === 'pl'
+    ? { required: 'Imię i telefon są wymagane.', save: 'Nie udało się zapisać zapytania.' }
+    : locale === 'ru'
+      ? { required: 'Имя и телефон обязательны.', save: 'Не удалось сохранить заявку.' }
+      : { required: 'Vardas ir telefonas yra privalomi!', save: 'Nepavyko išsaugoti užklausos.' };
+  if (!name || !phone) return res.status(400).json({ error: errors.required });
   try {
     const result = await directus('/items/requests', {
       method: 'POST',
@@ -282,12 +365,13 @@ app.post('/api/requests', async (req, res) => {
     res.status(201).json({ success: true, id: result.data.id });
   } catch (error) {
     console.error('Directus request create failed:', error.message);
-    res.status(502).json({ error: 'Nepavyko išsaugoti užklausos.' });
+    res.status(502).json({ error: errors.save });
   }
 });
 
 app.get('/api/images', async (req, res) => {
   try {
+    const locale = ['pl', 'ru'].includes(req.query.lang) ? req.query.lang : 'lt';
     const query = new URLSearchParams({
       fields: 'id,image,category,title,description,date_created',
       sort: '-date_created',
@@ -297,7 +381,8 @@ app.get('/api/images', async (req, res) => {
     const result = await directus(`/items/gallery?${query}`);
     const images = result.data.map((item, index) => {
       const file = typeof item.image === 'object' ? item.image : { id: item.image };
-      const title = item.title || `Plytelių klojimo darbai Pabradėje – ${String(index + 1).padStart(2, '0')}`;
+      const sourceTitle = item.title || `Plytelių klojimo darbai Pabradėje – ${String(index + 1).padStart(2, '0')}`;
+      const title = translateGalleryTitle(sourceTitle, locale);
       const slug = slugify(title);
       return {
         id: item.id,
@@ -356,6 +441,10 @@ const extensionlessPages = new Map([
   ['/', 'index.html'],
 ]);
 app.get('*', (req, res, next) => {
+  const localizedRoute = resolveRoute(req.path);
+  if (localizedRoute) {
+    return sendHtml(res, localizedRoute.source, localizedRoute.pathname, 200, { route: localizedRoute });
+  }
   const relative = decodeURIComponent(req.path).replace(/^\/+/, '');
   const target = extensionlessPages.get(req.path) || relative;
   if (!target || !target.endsWith('.html')) return next();

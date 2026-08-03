@@ -1,6 +1,49 @@
 document.addEventListener('DOMContentLoaded', () => {
     // API Configuration
     const API_BASE = '';
+    const detectedLanguage = document.documentElement.lang?.toLowerCase().split('-')[0];
+    const language = ['pl', 'ru'].includes(detectedLanguage) ? detectedLanguage : 'lt';
+    const ui = {
+        lt: {
+            closePhoto: 'Uždaryti nuotrauką',
+            enlargedPhoto: 'Padidinta darbų galerijos nuotrauka',
+            enlargePhoto: 'Padidinti nuotrauką:',
+            imageFallback: 'Plytelių klijavimo pavyzdys',
+            sending: 'Siunčiama...',
+            successTitle: 'Užklausa gauta!',
+            success: (name, phone) => `Ačiū, ${name}. Jūsų pranešimą gavome. Susisieksime su jumis telefonu <strong>${phone}</strong> kaip įmanoma greičiau.`,
+            errorPrefix: 'Klaida:',
+            errorFallback: 'Nepavyko išsiųsti užklausos.',
+            submit: 'Siųsti Užklausą',
+            networkError: 'Tinklo klaida. Nepavyko pasiekti serverio.'
+        },
+        pl: {
+            closePhoto: 'Zamknij zdjęcie',
+            enlargedPhoto: 'Powiększone zdjęcie realizacji',
+            enlargePhoto: 'Powiększ zdjęcie:',
+            imageFallback: 'Przykład układania płytek',
+            sending: 'Wysyłanie...',
+            successTitle: 'Zapytanie wysłane!',
+            success: (name, phone) => `Dziękujemy, ${name}. Otrzymaliśmy wiadomość. Skontaktujemy się z Tobą pod numerem <strong>${phone}</strong> tak szybko, jak to możliwe.`,
+            errorPrefix: 'Błąd:',
+            errorFallback: 'Nie udało się wysłać zapytania.',
+            submit: 'Wyślij zapytanie',
+            networkError: 'Błąd sieci. Nie można połączyć się z serwerem.'
+        },
+        ru: {
+            closePhoto: 'Закрыть фотографию',
+            enlargedPhoto: 'Увеличенная фотография выполненной работы',
+            enlargePhoto: 'Увеличить фотографию:',
+            imageFallback: 'Пример укладки плитки',
+            sending: 'Отправка...',
+            successTitle: 'Заявка отправлена!',
+            success: (name, phone) => `Спасибо, ${name}. Мы получили ваше сообщение и свяжемся с вами по телефону <strong>${phone}</strong> как можно скорее.`,
+            errorPrefix: 'Ошибка:',
+            errorFallback: 'Не удалось отправить заявку.',
+            submit: 'Отправить заявку',
+            networkError: 'Ошибка сети. Не удалось связаться с сервером.'
+        }
+    }[language];
 
     // Lightbox Setup
     const lightbox = document.createElement('div');
@@ -14,10 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxClose.className = 'lightbox-close';
     lightboxClose.innerHTML = '&times;';
     lightboxClose.type = 'button';
-    lightboxClose.setAttribute('aria-label', 'Uždaryti nuotrauką');
+    lightboxClose.setAttribute('aria-label', ui.closePhoto);
     lightbox.setAttribute('role', 'dialog');
     lightbox.setAttribute('aria-modal', 'true');
-    lightbox.setAttribute('aria-label', 'Padidinta darbų galerijos nuotrauka');
+    lightbox.setAttribute('aria-label', ui.enlargedPhoto);
 
     lightbox.appendChild(lightboxImg);
     lightbox.appendChild(lightboxClose);
@@ -47,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             newImg.tabIndex = 0;
             newImg.setAttribute('role', 'button');
-            newImg.setAttribute('aria-label', `Padidinti nuotrauką: ${newImg.alt}`);
+            newImg.setAttribute('aria-label', `${ui.enlargePhoto} ${newImg.alt}`);
             newImg.addEventListener('keydown', (event) => {
                 if (event.key === 'Enter' || event.key === ' ') {
                     event.preventDefault();
@@ -74,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isGalleryPage = document.querySelector('.gallery-page') !== null;
 
     if (galleryGrid) {
-        fetch(`${API_BASE}/api/images`)
+        fetch(`${API_BASE}/api/images?lang=${language}`)
             .then(res => res.json())
             .then(images => {
                 if (images && images.length > 0) {
@@ -90,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         
                         const imageEl = document.createElement('img');
                         imageEl.src = img.url || `${API_BASE}/api/assets/${encodeURIComponent(img.file_id || img.filename)}`;
-                        imageEl.alt = img.title || 'Plytelių klijavimo pavyzdys';
+                        imageEl.alt = img.title || ui.imageFallback;
                         imageEl.loading = 'lazy';
                         imageEl.decoding = 'async';
                         if (img.width && img.height) {
@@ -116,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Dynamic Site Content Loading
-    fetch(`${API_BASE}/api/content`)
+    if (language === 'lt') fetch(`${API_BASE}/api/content`)
         .then(res => res.json())
         .then(content => {
             if (content) {
@@ -197,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (submitBtn) {
                 submitBtn.disabled = true;
-                submitBtn.textContent = 'Siunčiama...';
+                submitBtn.textContent = ui.sending;
             }
 
             fetch(`${API_BASE}/api/requests`, {
@@ -205,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ name, phone, message })
+                body: JSON.stringify({ name, phone, message, lang: language })
             })
 
             .then(res => res.json())
@@ -217,25 +260,25 @@ document.addEventListener('DOMContentLoaded', () => {
                         formWrapper.innerHTML = `
                             <div class="success-message-card">
                                 <div class="success-icon">✓</div>
-                                <h3>Užklausa gauta!</h3>
-                                <p>Ačiū, ${name}. Jūsų pranešimą gavome. Susisieksime su jumis telefonu <strong>${phone}</strong> kaip įmanoma greičiau.</p>
+                                <h3>${ui.successTitle}</h3>
+                                <p>${ui.success(name, phone)}</p>
                             </div>
                         `;
                     }
                 } else {
-                    alert('Klaida: ' + (data.error || 'Nepavyko išsiųsti užklausos.'));
+                    alert(`${ui.errorPrefix} ${data.error || ui.errorFallback}`);
                     if (submitBtn) {
                         submitBtn.disabled = false;
-                        submitBtn.textContent = 'Siųsti Užklausą';
+                        submitBtn.textContent = ui.submit;
                     }
                 }
             })
             .catch(err => {
                 console.error(err);
-                alert('Tinklo klaida. Nepavyko pasiekti serverio.');
+                alert(ui.networkError);
                 if (submitBtn) {
                     submitBtn.disabled = false;
-                    submitBtn.textContent = 'Siųsti Užklausą';
+                    submitBtn.textContent = ui.submit;
                 }
             });
         });
