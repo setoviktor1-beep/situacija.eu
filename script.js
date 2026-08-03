@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         item.className = 'gallery-item';
                         
                         const imageEl = document.createElement('img');
-                        imageEl.src = `${API_BASE}/images/${img.filename}`;
+                        imageEl.src = `${API_BASE}/api/assets/${encodeURIComponent(img.file_id || img.filename)}`;
                         imageEl.alt = img.title || 'Plytelių klijavimo pavyzdys';
                         imageEl.loading = 'lazy';
                         
