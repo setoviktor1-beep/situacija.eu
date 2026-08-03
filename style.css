@@ -532,6 +532,7 @@ section {
     object-fit: cover;
     transition: transform 0.5s ease;
     cursor: pointer;
+    aspect-ratio: 4 / 3;
 }
 
 .gallery-item:hover img {
@@ -750,10 +751,15 @@ section {
 /* Footer */
 footer {
     background: #060b19;
-    color: #64748b;
+    color: #94a3b8;
     padding: 3rem 0;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.gallery-page .btn-outline {
+    color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
 }
 
 footer a {
@@ -802,6 +808,30 @@ footer a:hover {
     color: white;
     cursor: pointer;
     line-height: 1;
+    background: transparent;
+    border: 0;
+    padding: 0.25rem 0.6rem;
+}
+
+.lightbox-close:focus-visible,
+.burger-btn:focus-visible,
+.gallery-item img:focus-visible {
+    outline: 3px solid #2dd4bf;
+    outline-offset: 4px;
+}
+
+.error-page {
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 5rem 1.5rem;
+}
+
+.error-page h1 {
+    font-size: clamp(4rem, 12vw, 8rem);
+    line-height: 1;
+    color: var(--primary-dark);
 }
 
 /* Responsive */
@@ -829,5 +859,11 @@ footer a:hover {
     }
     .hero p {
         font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content > .nav-btn {
+        display: none;
     }
 }

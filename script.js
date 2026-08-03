@@ -5,12 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lightbox Setup
     const lightbox = document.createElement('div');
     lightbox.className = 'lightbox';
+    lightbox.hidden = true;
 
     const lightboxImg = document.createElement('img');
+    lightboxImg.alt = '';
 
-    const lightboxClose = document.createElement('div');
+    const lightboxClose = document.createElement('button');
     lightboxClose.className = 'lightbox-close';
     lightboxClose.innerHTML = '&times;';
+    lightboxClose.type = 'button';
+    lightboxClose.setAttribute('aria-label', 'Uždaryti nuotrauką');
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-modal', 'true');
+    lightbox.setAttribute('aria-label', 'Padidinta darbų galerijos nuotrauka');
 
     lightbox.appendChild(lightboxImg);
     lightbox.appendChild(lightboxClose);
@@ -19,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close Lightbox
     lightbox.addEventListener('click', (e) => {
         if (e.target !== lightboxImg) {
-            lightbox.classList.remove('active');
+            closeLightbox();
         }
     });
 
@@ -33,10 +40,34 @@ document.addEventListener('DOMContentLoaded', () => {
             
             newImg.addEventListener('click', () => {
                 lightboxImg.src = newImg.src;
+                lightboxImg.alt = newImg.alt;
+                lightbox.hidden = false;
                 lightbox.classList.add('active');
+                lightboxClose.focus();
+            });
+            newImg.tabIndex = 0;
+            newImg.setAttribute('role', 'button');
+            newImg.setAttribute('aria-label', `Padidinti nuotrauką: ${newImg.alt}`);
+            newImg.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    newImg.click();
+                }
             });
         });
     }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        lightbox.hidden = true;
+        lightboxImg.src = '';
+        lightboxImg.alt = '';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+    });
 
     // Dynamic Image Loading
     const galleryGrid = document.querySelector('.gallery-grid');
@@ -58,9 +89,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         item.className = 'gallery-item';
                         
                         const imageEl = document.createElement('img');
-                        imageEl.src = `${API_BASE}/api/assets/${encodeURIComponent(img.file_id || img.filename)}`;
+                        imageEl.src = img.url || `${API_BASE}/api/assets/${encodeURIComponent(img.file_id || img.filename)}`;
                         imageEl.alt = img.title || 'Plytelių klijavimo pavyzdys';
                         imageEl.loading = 'lazy';
+                        imageEl.decoding = 'async';
+                        if (img.width && img.height) {
+                            imageEl.width = img.width;
+                            imageEl.height = img.height;
+                        }
                         
                         item.appendChild(imageEl);
                         galleryGrid.appendChild(item);
@@ -209,6 +245,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // Canvas Animation & Burger Menu
     initHeroCanvas();
     initMobileMenu();
+    initFaqAccordions();
+
+    function initFaqAccordions() {
+        document.querySelectorAll('.faq-question').forEach((question, index) => {
+            const answer = question.nextElementSibling;
+            const answerId = answer?.id || `faq-answer-${index + 1}`;
+            if (answer) answer.id = answerId;
+            question.setAttribute('role', 'button');
+            question.setAttribute('tabindex', '0');
+            question.setAttribute('aria-controls', answerId);
+            question.setAttribute('aria-expanded', String(question.parentElement.classList.contains('active')));
+
+            const toggle = () => {
+                const isOpen = question.parentElement.classList.toggle('active');
+                question.setAttribute('aria-expanded', String(isOpen));
+            };
+            question.addEventListener('click', toggle);
+            question.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    toggle();
+                }
+            });
+        });
+    }
 
     function initHeroCanvas() {
         const canvas = document.getElementById('heroCanvas');
@@ -289,12 +350,14 @@ document.addEventListener('DOMContentLoaded', () => {
         burgerBtn.addEventListener('click', () => {
             burgerBtn.classList.toggle('active');
             mobilePanel.classList.toggle('open');
+            burgerBtn.setAttribute('aria-expanded', String(mobilePanel.classList.contains('open')));
         });
 
         mobilePanel.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 burgerBtn.classList.remove('active');
                 mobilePanel.classList.remove('open');
+                burgerBtn.setAttribute('aria-expanded', 'false');
             });
         });
     }
