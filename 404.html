@@ -8,14 +8,36 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">Situacija<span class="logo-accent">.eu</span></a>
+            <nav class="desktop-nav" aria-label="Pagrindinė navigacija"><ul>
+                <li><a href="/#services">Paslaugos</a></li>
+                <li><a href="/gallery.html">Darbų galerija</a></li>
+                <li><a href="/blogas.html">Blogas</a></li>
+                <li><a href="/duk.html">D.U.K.</a></li>
+                <li><a href="/#contact">Kontaktai</a></li>
+            </ul></nav>
+            <a href="tel:+37060030288" class="btn btn-primary nav-btn">📞 +370 600 30288</a>
+            <button class="burger-btn" id="burgerBtn" aria-label="Atidaryti meniu"><span></span><span></span><span></span></button>
+        </div>
+        <div class="mobile-nav-panel" id="mobileNavPanel"><ul>
+            <li><a href="/#services">Paslaugos</a></li>
+            <li><a href="/gallery.html">Darbų galerija</a></li>
+            <li><a href="/duk.html">D.U.K.</a></li>
+            <li><a href="/#contact">Kontaktai</a></li>
+        </ul></div>
+    </header>
     <main class="error-page">
         <div>
             <p class="badge">Klaida</p>
             <h1>404</h1>
             <h2>Puslapis nerastas</h2>
             <p>Nuoroda galėjo pasikeisti arba puslapis buvo pašalintas.</p>
-            <p style="margin-top: 2rem;"><a class="btn btn-primary" href="/">Grįžti į pagrindinį puslapį</a></p>
+            <p style="margin-top: 2rem;"><a class="btn btn-primary" href="/">Grįžti į pagrindinį puslapį</a> <a class="btn btn-outline" href="tel:+37060030288">Skambinti meistrui</a></p>
         </div>
     </main>
+    <footer><div class="container footer-content"><p>&copy; 2024–2026 Situacija.eu. Visos teisės saugomos.</p></div></footer>
+    <script src="/script.js"></script>
 </body>
 </html>

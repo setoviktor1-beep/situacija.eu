@@ -27,6 +27,12 @@ const PAGE_GROUPS = {
     pl: '/pl/faq.html',
     ru: '/ru/faq.html',
   },
+  privacy: {
+    source: 'privatumo-politika.html',
+    lt: '/privatumo-politika.html',
+    pl: '/pl/polityka-prywatnosci.html',
+    ru: '/ru/politika-konfidencialnosti.html',
+  },
   pabrade: {
     source: 'plyteliu-klojimas-pabrade.html',
     lt: '/plyteliu-klojimas-pabrade.html',
@@ -58,7 +64,7 @@ const META = {
   pl: {
     home: {
       title: 'Układanie płytek w Pabradė, Święcianach i Wilnie | Vladislav',
-      description: 'Profesjonalne układanie płytek w Pabradė (Podbrodziu), Święcianach, Nowych Święcianach i Wilnie. Łazienki, hydroizolacja, płytki wielkoformatowe. Tel. +370 600 30288.',
+      description: 'Układanie płytek w Pabradė, Święcianach i Wilnie. Łazienki, hydroizolacja oraz płytki wielkoformatowe. Tel. +370 600 30288.',
     },
     gallery: {
       title: 'Galeria prac glazurniczych | Situacija.eu',
@@ -67,6 +73,10 @@ const META = {
     faq: {
       title: 'Najczęstsze pytania o układanie płytek | Situacija.eu',
       description: 'Odpowiedzi dotyczące cen, terminów, hydroizolacji i układania płytek w Pabradė, Święcianach oraz Wilnie.',
+    },
+    privacy: {
+      title: 'Polityka prywatności | Situacija.eu',
+      description: 'Informacje o przetwarzaniu danych kontaktowych, plikach cookies i Google Analytics w serwisie Situacija.eu.',
     },
     pabrade: {
       title: 'Układanie płytek w Pabradė (Podbrodziu) | Vladislav',
@@ -93,6 +103,10 @@ const META = {
     faq: {
       title: 'Частые вопросы об укладке плитки | Situacija.eu',
       description: 'Ответы о стоимости, сроках, гидроизоляции и укладке плитки в Пабраде, Швенчёнисе и Вильнюсе.',
+    },
+    privacy: {
+      title: 'Политика конфиденциальности | Situacija.eu',
+      description: 'Информация об обработке контактных данных, файлах cookie и Google Analytics на сайте Situacija.eu.',
     },
     pabrade: {
       title: 'Укладка плитки в Пабраде и окрестностях | Владислав',
@@ -184,6 +198,13 @@ const PL = {
   'Vilnius ir Vilniaus Rajonas': 'Wilno i rejon wileński',
   'Pagal išankstinį susitarimą ir užimtumą priimame užsakymus Vilniaus mieste bei aplinkinėse gyvenvietėse.': 'Po wcześniejszym uzgodnieniu przyjmujemy zlecenia w Wilnie i okolicznych miejscowościach.',
   'Skaityti apie paslaugas Vilniuje →': 'Usługi w Wilnie →',
+  'Plačiau apie paslaugą →': 'Więcej o usłudze →',
+  'Plačiau apie paslaugą': 'Więcej o usłudze',
+  'Plačiau →': 'Więcej →',
+  'Vonios plytelių klijavimas →': 'Układanie płytek w łazience →',
+  'Virtuvės plytelių klijavimas →': 'Układanie płytek w kuchni →',
+  'Didelio formato plytelės →': 'Płytki wielkoformatowe →',
+  'Klinkerio klijavimas →': 'Układanie klinkieru →',
   'Realiai Atlikti Darbai': 'Prawdziwe realizacje',
   'Peržiūrėkite mūsų atliktų vonios kambarių, virtuvių bei klinkerio fasadų nuotraukas. Paspauskite ant nuotraukos norėdami padidinti.': 'Zobacz wykonane łazienki, kuchnie i elewacje klinkierowe. Kliknij zdjęcie, aby je powiększyć.',
   'Žiūrėti Visas 40+ Darbų Nuotraukas →': 'Zobacz ponad 40 zdjęć realizacji →',
@@ -325,6 +346,13 @@ const RU = {
   'Vilnius ir Vilniaus Rajonas': 'Вильнюс и Вильнюсский район',
   'Pagal išankstinį susitarimą ir užimtumą priimame užsakymus Vilniaus mieste bei aplinkinėse gyvenvietėse.': 'По предварительной договорённости принимаем заказы в Вильнюсе и ближайших населённых пунктах.',
   'Skaityti apie paslaugas Vilniuje →': 'Услуги в Вильнюсе →',
+  'Plačiau apie paslaugą →': 'Подробнее об услуге →',
+  'Plačiau apie paslaugą': 'Подробнее об услуге',
+  'Plačiau →': 'Подробнее →',
+  'Vonios plytelių klijavimas →': 'Укладка плитки в ванной →',
+  'Virtuvės plytelių klijavimas →': 'Укладка плитки на кухне →',
+  'Didelio formato plytelės →': 'Крупноформатная плитка →',
+  'Klinkerio klijavimas →': 'Укладка клинкера →',
   'Realiai Atlikti Darbai': 'Реальные работы',
   'Peržiūrėkite mūsų atliktų vonios kambarių, virtuvių bei klinkerio fasadų nuotraukas. Paspauskite ant nuotraukos norėdami padidinti.': 'Посмотрите фотографии ванных, кухонь и клинкерных фасадов. Нажмите на фото для увеличения.',
   'Žiūrėti Visas 40+ Darbų Nuotraukas →': 'Смотреть более 40 фотографий →',
@@ -414,6 +442,35 @@ const ATTRIBUTE_TRANSLATIONS = {
   },
 };
 
+const PRIVACY_CONTENT = {
+  pl: `
+    <section class="legal-page"><div class="container legal-content">
+      <p class="badge">Ochrona danych</p><h1>Polityka prywatności</h1>
+      <p class="legal-updated">Ostatnia aktualizacja: 14 sierpnia 2026 r.</p>
+      <h2>1. Administrator danych</h2><p>Administratorem danych przekazywanych przez stronę Situacija.eu jest wykonawca usług wykończeniowych Vladislav Finažonok. Kontakt: <a href="mailto:v.finazonok@gmail.com">v.finazonok@gmail.com</a>, tel. <a href="tel:+37060030288">+370 600 30288</a>.</p>
+      <h2>2. Jakie dane zbieramy</h2><p>Formularz kontaktowy może zbierać imię, numer telefonu, miejscowość i opis planowanych prac. Dane podajesz dobrowolnie, ale bez imienia i telefonu nie możemy odpowiedzieć na zapytanie.</p>
+      <h2>3. Cel i podstawa przetwarzania</h2><p>Dane wykorzystujemy wyłącznie do odpowiedzi na zapytanie, przygotowania wyceny i uzgodnienia usług. Podstawą jest podjęcie działań na Twoje żądanie przed zawarciem umowy oraz prawnie uzasadniony interes polegający na obsłudze zapytań.</p>
+      <h2>4. Czas przechowywania</h2><p>Zapytania przechowujemy tylko tak długo, jak jest to potrzebne do kontaktu, realizacji usługi oraz spełnienia obowiązków prawnych. Niepotrzebne zapytania są usuwane.</p>
+      <h2>5. Google Analytics i pliki cookies</h2><p>Google Analytics uruchamia się dopiero po wybraniu opcji „Zezwól na analitykę”. Pomaga nam zrozumieć ogólne korzystanie ze strony. Możesz odmówić bez utraty dostępu do serwisu. Zgodę można zmienić przez usunięcie danych witryny lub cookies w ustawieniach przeglądarki.</p>
+      <h2>6. Odbiorcy i przekazywanie danych</h2><p>Dane mogą być przetwarzane przez dostawcę hostingu oraz, po wyrażeniu zgody na analitykę, przez Google. Nie sprzedajemy danych i nie wykorzystujemy ich do niezamówionego marketingu.</p>
+      <h2>7. Twoje prawa</h2><p>Możesz poprosić o dostęp, poprawienie, usunięcie lub ograniczenie przetwarzania danych, a także wnieść sprzeciw. Napisz na podany adres e-mail. Masz również prawo złożyć skargę do właściwego organu ochrony danych.</p>
+      <h2>8. Bezpieczeństwo i zmiany</h2><p>Stosujemy HTTPS, ograniczony dostęp do panelu administracyjnego i techniczne zabezpieczenia serwera. Polityka może być aktualizowana po zmianie funkcji strony lub przepisów; aktualna wersja zawsze znajduje się pod tym adresem.</p>
+    </div></section>`,
+  ru: `
+    <section class="legal-page"><div class="container legal-content">
+      <p class="badge">Защита данных</p><h1>Политика конфиденциальности</h1>
+      <p class="legal-updated">Последнее обновление: 14 августа 2026 г.</p>
+      <h2>1. Оператор данных</h2><p>Оператором данных, передаваемых через сайт Situacija.eu, является мастер отделочных работ Vladislav Finažonok. Контакты: <a href="mailto:v.finazonok@gmail.com">v.finazonok@gmail.com</a>, тел. <a href="tel:+37060030288">+370 600 30288</a>.</p>
+      <h2>2. Какие данные мы собираем</h2><p>Контактная форма может собирать имя, номер телефона, город и описание планируемых работ. Данные предоставляются добровольно, однако без имени и телефона мы не сможем ответить на запрос.</p>
+      <h2>3. Цель и основание обработки</h2><p>Данные используются только для ответа, подготовки сметы и согласования услуг. Основанием является выполнение действий по вашему запросу до заключения договора и законный интерес по обработке обращений.</p>
+      <h2>4. Срок хранения</h2><p>Обращения хранятся только столько, сколько необходимо для связи, выполнения услуги и соблюдения юридических обязанностей. Ненужные обращения удаляются.</p>
+      <h2>5. Google Analytics и cookies</h2><p>Google Analytics включается только после выбора «Разрешить аналитику». Сервис помогает понять общее использование сайта. Отказ не ограничивает доступ к сайту. Согласие можно изменить, удалив данные сайта или cookies в настройках браузера.</p>
+      <h2>6. Получатели данных</h2><p>Данные могут обрабатываться поставщиком хостинга и, при согласии на аналитику, компанией Google. Мы не продаём данные и не используем их для нежелательной рекламы.</p>
+      <h2>7. Ваши права</h2><p>Вы можете запросить доступ, исправление, удаление или ограничение обработки данных, а также возразить против обработки. Напишите на указанный e-mail. Вы также можете обратиться с жалобой в компетентный орган по защите данных.</p>
+      <h2>8. Безопасность и изменения</h2><p>Мы используем HTTPS, ограниченный доступ к панели и технические меры защиты сервера. Политика может обновляться при изменении функций сайта или законодательства; актуальная версия всегда доступна по этому адресу.</p>
+    </div></section>`,
+};
+
 function routeFor(pageKey, locale) {
   return PAGE_GROUPS[pageKey][locale];
 }
@@ -465,6 +522,15 @@ function localizeLinks($, locale) {
     'plyteliu-klojimas-pabrade.html': routeFor('pabrade', locale),
     'plyteliu-klojimas-svencionys.html': routeFor('svencionys', locale),
     'plyteliu-klojimas-vilnius.html': routeFor('vilnius', locale),
+    'privatumo-politika.html': routeFor('privacy', locale),
+    '/privatumo-politika.html': routeFor('privacy', locale),
+    'sitemap.xml': '/sitemap.xml',
+    '/sitemap.xml': '/sitemap.xml',
+    'vonios-kambario-plyteliu-klijavimas.html': '/vonios-kambario-plyteliu-klijavimas.html',
+    'virtuves-plyteliu-klijavimas.html': '/virtuves-plyteliu-klijavimas.html',
+    'didelio-formato-plyteliu-klojimas.html': '/didelio-formato-plyteliu-klojimas.html',
+    'klinkerio-klijavimas-fasadai.html': '/klinkerio-klijavimas-fasadai.html',
+    'kriaukles-is-plyteliu.html': '/kriaukles-is-plyteliu.html',
   };
 
   $('a[href]').each((_, element) => {
@@ -537,6 +603,7 @@ function localizeHtml(rawHtml, route) {
 
   $('html').attr('lang', config.htmlLang);
   ensureNavigation($, route);
+  if (route.pageKey === 'privacy' && locale !== 'lt') $('main').html(PRIVACY_CONTENT[locale]);
   if (locale !== 'lt') {
     translateTextNodes($, locale);
     localizeLinks($, locale);

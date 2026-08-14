@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
             networkError: 'Tinklo klaida. Nepavyko pasiekti serverio.',
             cookieText: 'Naudojame Google Analytics, kad suprastume, kaip lankytojai naudojasi svetaine. Analitikos slapukai įjungiami tik gavus jūsų sutikimą.',
             cookieAccept: 'Leisti analitiką',
-            cookieDecline: 'Atmesti'
+            cookieDecline: 'Atmesti',
+            privacyLabel: 'Privatumo politika',
+            privacyUrl: '/privatumo-politika.html'
         },
         pl: {
             closePhoto: 'Zamknij zdjęcie',
@@ -34,7 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
             networkError: 'Błąd sieci. Nie można połączyć się z serwerem.',
             cookieText: 'Używamy Google Analytics, aby zrozumieć, jak odwiedzający korzystają ze strony. Analityczne pliki cookie są włączane wyłącznie za zgodą.',
             cookieAccept: 'Zezwól na analitykę',
-            cookieDecline: 'Odrzuć'
+            cookieDecline: 'Odrzuć',
+            privacyLabel: 'Polityka prywatności',
+            privacyUrl: '/pl/polityka-prywatnosci.html'
         },
         ru: {
             closePhoto: 'Закрыть фотографию',
@@ -50,7 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
             networkError: 'Ошибка сети. Не удалось связаться с сервером.',
             cookieText: 'Мы используем Google Analytics, чтобы понимать, как посетители пользуются сайтом. Аналитические файлы cookie включаются только с вашего согласия.',
             cookieAccept: 'Разрешить аналитику',
-            cookieDecline: 'Отклонить'
+            cookieDecline: 'Отклонить',
+            privacyLabel: 'Политика конфиденциальности',
+            privacyUrl: '/ru/politika-konfidencialnosti.html'
         }
     }[language];
 
@@ -68,10 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
         consentBanner.setAttribute('role', 'dialog');
         consentBanner.setAttribute('aria-label', 'Google Analytics');
         consentBanner.innerHTML = `
-            <p>${ui.cookieText}</p>
+            <p>${ui.cookieText} <a href="${ui.privacyUrl}">${ui.privacyLabel}</a>.</p>
             <div class="cookie-consent-actions">
                 <button type="button" class="btn btn-primary" data-consent="granted">${ui.cookieAccept}</button>
-                <button type="button" class="cookie-decline" data-consent="denied">${ui.cookieDecline}</button>
+                <button type="button" class="btn cookie-decline" data-consent="denied">${ui.cookieDecline}</button>
             </div>
         `;
         consentBanner.addEventListener('click', (event) => {

@@ -1,10 +1,13 @@
 const express = require('express');
+const compression = require('compression');
+const cheerio = require('cheerio');
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const {
   LOCALES,
   resolveRoute,
+  routeFor,
   localizeHtml,
   translateGalleryTitle,
 } = require('./i18n');
@@ -13,7 +16,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const SITE_URL = 'https://situacija.eu';
-const ASSET_VERSION = '20260814d';
+const ASSET_VERSION = '20260814f';
 const GOOGLE_TAG_ID = 'G-MNR63Y36VB';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/img1.jpg`;
 const DIRECTUS_URL = (process.env.DIRECTUS_URL || 'http://situacija-directus-app:8055').replace(/\/$/, '');
@@ -27,7 +30,7 @@ const requestAttempts = new Map();
 
 const PAGE_OVERRIDES = {
   '/': {
-    title: 'Plytelių klojimas Pabradėje, Švenčionyse, Vilniuje | Meistras Vladislav',
+    title: 'Plytelių klojimas Pabradėje ir Švenčionyse | Vladislav',
     canonical: `${SITE_URL}/`,
   },
   '/gallery.html': {
@@ -42,12 +45,28 @@ const PAGE_OVERRIDES = {
 
 app.disable('x-powered-by');
 app.set('trust proxy', true);
+app.use(compression({ threshold: 1024 }));
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => {
   res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
   res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
   res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+  res.setHeader('Content-Security-Policy', [
+    "default-src 'self'",
+    "base-uri 'self'",
+    "object-src 'none'",
+    "frame-ancestors 'none'",
+    "form-action 'self'",
+    "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "font-src 'self' https://fonts.gstatic.com",
+    "img-src 'self' data: https://www.google-analytics.com",
+    "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com",
+    'upgrade-insecure-requests',
+  ].join('; '));
 
   if (req.hostname === 'www.situacija.eu') {
     return res.redirect(301, `${SITE_URL}${req.originalUrl}`);
@@ -85,6 +104,151 @@ function htmlEscape(value) {
 
 function jsonLd(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
+}
+
+function regionalDetailsHtml(locale, pageKey) {
+  const place = {
+    lt: { pabrade: 'Pabradėje ir aplinkinėse gyvenvietėse', svencionys: 'Švenčionyse, Švenčionėliuose ir rajone', vilnius: 'Vilniuje ir Vilniaus rajone' },
+    pl: { pabrade: 'w Pabradė (Podbrodziu) i okolicy', svencionys: 'w Święcianach, Nowych Święcianach i rejonie', vilnius: 'w Wilnie i rejonie wileńskim' },
+    ru: { pabrade: 'в Пабраде и окрестностях', svencionys: 'в Швенчёнисе, Швенчёнеляе и районе', vilnius: 'в Вильнюсе и Вильнюсском районе' },
+  }[locale][pageKey];
+  const copy = locale === 'pl' ? {
+    title: `Jak przebiegają prace glazurnicze ${place}`,
+    intro: `Każde zlecenie zaczyna się od rozmowy o pomieszczeniu, wybranych płytkach i oczekiwanym efekcie. Zakres może obejmować łazienkę, ścianę kuchenną, podłogę, taras, schody albo okładzinę klinkierową. Przed ustaleniem ceny sprawdzany jest format płytek, stan podłoża, liczba narożników i otworów oraz potrzeba hydroizolacji. Dzięki temu wycena odpowiada rzeczywistemu zakresowi, a nie tylko liczbie metrów kwadratowych.`,
+    inspectTitle: 'Oględziny i jasna wycena',
+    inspect: 'Podczas oględzin mierzone są powierzchnie, sprawdzane piony i poziomy oraz ustalany układ płytek. Omawiane są miejsca docinek, szerokość spoin, wykończenie narożników pod kątem 45° i kolejność prac. Klient otrzymuje informację, jakie materiały będą potrzebne i które prace przygotowawcze należy uwzględnić. Termin jest uzgadniany indywidualnie, z uwzględnieniem zakresu i aktualnego harmonogramu.',
+    prepTitle: 'Przygotowanie podłoża i hydroizolacja',
+    prep: 'Trwałość okładziny zależy od podłoża. Przed klejeniem oceniana jest jego nośność, równość i czystość; w razie potrzeby powierzchnia jest wyrównywana i gruntowana. W łazienkach oraz strefach prysznica wykonywana jest hydroizolacja, a narożniki i przejścia instalacyjne są uszczelniane odpowiednimi taśmami i elementami. Przy dużych płytkach szczególnie ważna jest płaszczyzna podłoża i równomierne podparcie płytki klejem.',
+    materialsTitle: 'Materiały dopasowane do miejsca zastosowania',
+    materials: 'Klej, grunt, fuga i uszczelnienie dobierane są do rodzaju płytki, podłoża i warunków użytkowania. Inne wymagania ma sucha ściana w kuchni, inne stale mokra strefa prysznica, ogrzewana podłoga lub taras narażony na mróz. Uwzględnienie tych różnic ogranicza ryzyko pękania, odspajania i przebarwień. Przed zakupem warto uzgodnić format, kalibrację, zapas materiału i kolor fugi, aby podczas prac nie zabrakło jednej serii produktu. Omawiana jest również późniejsza pielęgnacja powierzchni, szczególnie w przypadku fug epoksydowych, kamienia lub klinkieru. Dzięki temu klient wie, jakich środków używać i czego unikać po zakończeniu prac.',
+    finishTitle: 'Dokładne wykończenie i odbiór',
+    finish: 'Układ płytek planowany jest przed rozpoczęciem klejenia, aby uniknąć przypadkowych wąskich docinek w widocznych miejscach. Po związaniu kleju spoiny są czyszczone i fugowane, a narożniki wewnętrzne uszczelniane elastycznie. Na końcu powierzchnie są oczyszczane, a wykonane prace wspólnie oglądane. Aby otrzymać wstępną ocenę, wystarczy przesłać miejscowość, wymiary, kilka zdjęć i krótki opis planowanych prac.',
+    cta: 'Zapytaj o wycenę',
+  } : locale === 'ru' ? {
+    title: `Как проходят плиточные работы ${place}`,
+    intro: `Каждый заказ начинается с обсуждения помещения, выбранной плитки и желаемого результата. Работы могут включать ванную, кухонный фартук, пол, террасу, лестницу или облицовку клинкером. До расчёта цены оцениваются формат плитки, состояние основания, количество углов и отверстий, а также необходимость гидроизоляции. Поэтому смета учитывает реальный объём работ, а не только площадь в квадратных метрах.`,
+    inspectTitle: 'Осмотр и понятная смета',
+    inspect: 'Во время осмотра измеряются поверхности, проверяются вертикали и уровни, согласовывается раскладка плитки. Обсуждаются места подрезки, ширина швов, отделка внешних углов под 45° и последовательность этапов. Клиент получает список необходимых материалов и подготовительных работ. Срок выполнения согласовывается индивидуально с учётом объёма и текущего графика.',
+    prepTitle: 'Подготовка основания и гидроизоляция',
+    prep: 'Долговечность облицовки зависит от основания. Перед укладкой проверяются его прочность, ровность и чистота; при необходимости поверхность выравнивается и грунтуется. В ванных и душевых выполняется гидроизоляция, а углы и проходы труб герметизируются специальными лентами и элементами. Для крупноформатной плитки особенно важны ровная плоскость и равномерное заполнение клеем.',
+    materialsTitle: 'Материалы с учётом условий эксплуатации',
+    materials: 'Клей, грунтовка, затирка и герметик подбираются под вид плитки, основание и условия использования. Для сухой кухонной стены, постоянно мокрой душевой, тёплого пола и открытой террасы требования различаются. Правильный подбор уменьшает риск трещин, отслоения и изменения цвета. До покупки стоит согласовать формат, калибр, запас плитки и цвет затирки, чтобы во время работ не пришлось искать материал другой производственной партии. Отдельно обсуждается последующий уход за поверхностью, особенно при эпоксидной затирке, натуральном камне или клинкере. Клиент заранее знает, какие чистящие средства подходят и чего следует избегать.',
+    finishTitle: 'Точная отделка и приёмка',
+    finish: 'Раскладка планируется до начала укладки, чтобы избежать случайных узких подрезок на заметных местах. После схватывания клея швы очищаются и заполняются затиркой, а внутренние углы герметизируются эластичным материалом. В конце поверхности очищаются, и готовая работа осматривается вместе с клиентом. Для предварительной оценки достаточно указать населённый пункт, размеры, приложить несколько фотографий и кратко описать задачу.',
+    cta: 'Запросить смету',
+  } : {
+    title: `Kaip vyksta plytelių klojimo darbai ${place}`,
+    intro: `Kiekvienas užsakymas pradedamas pokalbiu apie patalpą, pasirinktas plyteles ir norimą rezultatą. Darbai gali apimti vonios kambarį, virtuvės sienelę, grindis, terasą, laiptus ar klinkerio apdailą. Prieš nustatant kainą įvertinamas plytelių formatas, pagrindo būklė, kampų ir angų kiekis bei hidroizoliacijos poreikis. Todėl sąmata priklauso nuo tikros darbų apimties, o ne vien kvadratinių metrų skaičiaus.`,
+    inspectTitle: 'Objekto apžiūra ir aiški sąmata',
+    inspect: 'Apžiūros metu išmatuojami paviršiai, patikrinami lygiai ir vertikalės, suderinamas plytelių išdėstymas. Aptariamos pjovimo vietos, siūlių plotis, išorinių kampų suleidimas 45° kampu ir darbų eiliškumas. Klientui paaiškinama, kokių medžiagų reikės ir kokius paruošimo darbus verta įtraukti. Atlikimo laikas suderinamas individualiai pagal apimtį ir esamą darbų grafiką.',
+    prepTitle: 'Pagrindo paruošimas ir hidroizoliacija',
+    prep: 'Apdailos ilgaamžiškumas priklauso nuo pagrindo. Prieš klijuojant įvertinamas jo tvirtumas, lygumas ir švara; prireikus paviršius lyginamas ir gruntuojamas. Vonios bei dušo zonose įrengiama hidroizoliacija, o kampai ir vamzdžių įvadai sandarinami tam skirtomis juostomis bei elementais. Didelio formato plytelėms ypač svarbi lygi plokštuma ir tolygus plytelės padengimas klijais.',
+    materialsTitle: 'Pagal naudojimo vietą parinktos medžiagos',
+    materials: 'Klijai, gruntas, glaistas ir sandarinimo medžiagos parenkami pagal plytelių rūšį, pagrindą ir naudojimo sąlygas. Sausai virtuvės sienelei, nuolat drėgnai dušo zonai, šildomoms grindims ar šalčio veikiamai terasai keliami skirtingi reikalavimai. Tinkamas suderinimas mažina skilimo, atšokimo ir spalvos pokyčių riziką. Prieš perkant verta suderinti formatą, kalibrą, plytelių atsargą ir siūlių spalvą, kad vykstant darbams nepritrūktų tos pačios gamybos partijos medžiagų. Atskirai aptariama vėlesnė paviršių priežiūra, ypač pasirinkus epoksidinį glaistą, natūralų akmenį ar klinkerį. Klientas iš anksto žino, kokias valymo priemones naudoti ir ko reikėtų vengti.',
+    finishTitle: 'Tikslus užbaigimas ir darbų priėmimas',
+    finish: 'Plytelių išdėstymas suplanuojamas prieš klijavimą, kad matomose vietose neliktų atsitiktinių siaurų atraižų. Klijams sukietėjus siūlės išvalomos ir glaistomos, o vidiniai kampai sandarinami elastingai. Pabaigoje paviršiai nuvalomi ir darbai apžiūrimi kartu su klientu. Pirminiam įvertinimui pakanka nurodyti miestą, matmenis, pridėti kelias nuotraukas ir trumpai aprašyti planuojamus darbus.',
+    cta: 'Gauti darbų sąmatą',
+  };
+  return `<section class="regional-details"><div class="container legal-content"><h2>${copy.title}</h2><p>${copy.intro}</p><h3>${copy.inspectTitle}</h3><p>${copy.inspect}</p><h3>${copy.prepTitle}</h3><p>${copy.prep}</p><h3>${copy.materialsTitle}</h3><p>${copy.materials}</p><h3>${copy.finishTitle}</h3><p>${copy.finish}</p><p><a class="btn btn-primary" href="${routeFor('home', locale)}#contact">${copy.cta}</a></p></div></section>`;
+}
+
+function enrichSiteHtml(rawHtml, locale = 'lt', pageKey = null) {
+  const $ = cheerio.load(rawHtml, { decodeEntities: false });
+  const legal = locale === 'pl'
+    ? { rights: 'Wszelkie prawa zastrzeżone.', faq: 'FAQ', privacy: 'Polityka prywatności', skip: 'Przejdź do treści', blog: 'Poradniki' }
+    : locale === 'ru'
+      ? { rights: 'Все права защищены.', faq: 'Вопросы', privacy: 'Политика конфиденциальности', skip: 'Перейти к содержанию', blog: 'Советы' }
+      : { rights: 'Visos teisės saugomos.', faq: 'D.U.K.', privacy: 'Privatumo politika', skip: 'Pereiti prie turinio', blog: 'Blogas' };
+  const navigationLabels = locale === 'pl'
+    ? ['Usługi', 'O fachowcu', 'Obsługiwany obszar', 'Galeria prac', 'FAQ', 'Kontakt']
+    : locale === 'ru'
+      ? ['Услуги', 'О мастере', 'Районы работы', 'Галерея работ', 'Вопросы', 'Контакты']
+      : ['Paslaugos', 'Apie meistrą', 'Veiklos regionai', 'Darbų galerija', 'D.U.K.', 'Kontaktai'];
+  const home = routeFor('home', locale);
+  const navigationLinks = [
+    [`${home}#services`, navigationLabels[0]],
+    [`${home}#about`, navigationLabels[1]],
+    [`${home}#regions`, navigationLabels[2]],
+    [routeFor('gallery', locale), navigationLabels[3]],
+    [routeFor('faq', locale), navigationLabels[4]],
+    [`${home}#contact`, navigationLabels[5]],
+  ];
+
+  const headerContent = $('header .header-content').first();
+  if (headerContent.length) {
+    const navigationList = navigationLinks.map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join('');
+    let desktopNavigation = headerContent.find('.desktop-nav').first();
+    if (!desktopNavigation.length) {
+      headerContent.find('.logo').after('<nav class="desktop-nav"></nav>');
+      desktopNavigation = headerContent.find('.desktop-nav').first();
+    }
+    desktopNavigation.attr('aria-label', navigationLabels[5]).html(`<ul>${navigationList}</ul>`);
+    if (!$('#burgerBtn').length) headerContent.append('<button class="burger-btn" id="burgerBtn" aria-label="Atidaryti meniu"><span></span><span></span><span></span></button>');
+    if (!$('#mobileNavPanel').length) $('header').append('<div class="mobile-nav-panel" id="mobileNavPanel"></div>');
+    $('#mobileNavPanel').html(`<ul>${navigationList}</ul>`);
+    if (!$('.language-switcher').length) {
+      const languageLabel = locale === 'pl' ? 'Wybór języka' : locale === 'ru' ? 'Выбор языка' : 'Kalbos pasirinkimas';
+      const switcher = ['lt', 'pl', 'ru'].map((language) => {
+        const current = language === locale ? ' class="active" aria-current="page"' : '';
+        return `<a href="${routeFor('home', language)}" hreflang="${language}" lang="${language}"${current}>${language.toUpperCase()}</a>`;
+      }).join('');
+      headerContent.find('.nav-btn').before(`<nav class="language-switcher" aria-label="${languageLabel}">${switcher}</nav>`);
+    }
+  }
+
+  if ($('link[href*="fonts.googleapis.com"]').length) {
+    if (!$('link[rel="preconnect"][href="https://fonts.googleapis.com"]').length) {
+      $('head').prepend('<link rel="preconnect" href="https://fonts.googleapis.com">');
+    }
+    if (!$('link[rel="preconnect"][href="https://fonts.gstatic.com"]').length) {
+      $('head').prepend('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>');
+    }
+  }
+
+  $('img[src]').each((_, element) => {
+    const src = $(element).attr('src');
+    if (!src) return;
+    if (/(?:^|\/)images\/img[1-6]\.jpg$/i.test(src)) {
+      $(element).attr('src', src.replace(/\.jpg$/i, '.avif'));
+      if (!$(element).attr('width')) $(element).attr('width', '900');
+      if (!$(element).attr('height')) $(element).attr('height', '1200');
+    }
+  });
+
+  $('.faq-question').each((_, element) => {
+    element.tagName = 'button';
+    $(element).attr('type', 'button');
+  });
+
+  const contentTarget = $('main').first().length ? $('main').first() : $('header').nextAll('section').first();
+  if (contentTarget.length) {
+    contentTarget.attr('id', contentTarget.attr('id') || 'main-content');
+    if (!$('.skip-link').length) $('body').prepend(`<a class="skip-link" href="#${contentTarget.attr('id')}">${legal.skip}</a>`);
+  }
+
+  const privacyUrl = routeFor('privacy', locale);
+  const faqUrl = routeFor('faq', locale);
+  const homeUrl = routeFor('home', locale);
+  const footer = $('footer .footer-content').first();
+  if (footer.length) {
+    footer.html(`<p>&copy; 2024–2026 Situacija.eu. ${legal.rights} | <a href="${homeUrl}">Situacija.eu</a> | <a href="/blogas.html">${legal.blog}</a> | <a href="${faqUrl}">${legal.faq}</a> | <a href="/sitemap.xml">Sitemap</a> | <a href="${privacyUrl}">${legal.privacy}</a></p>`);
+  }
+
+  const contactForm = $('#contactForm');
+  if (contactForm.length && !contactForm.find('.form-privacy-note').length) {
+    const message = locale === 'pl'
+      ? `Wysyłając formularz, zgadzasz się na użycie danych wyłącznie w celu odpowiedzi na zapytanie. <a href="${privacyUrl}">Polityka prywatności</a>.`
+      : locale === 'ru'
+        ? `Отправляя форму, вы соглашаетесь на использование данных только для ответа на запрос. <a href="${privacyUrl}">Политика конфиденциальности</a>.`
+        : `Siųsdami formą sutinkate, kad duomenys būtų naudojami tik atsakyti į jūsų užklausą. <a href="${privacyUrl}">Privatumo politika</a>.`;
+    contactForm.find('button[type="submit"]').after(`<p class="form-privacy-note">${message}</p>`);
+  }
+
+  if (['pabrade', 'svencionys', 'vilnius'].includes(pageKey) && !$('.regional-details').length) {
+    $('footer').before(regionalDetailsHtml(locale, pageKey));
+  }
+
+  return $.html();
 }
 
 function requestLimitExceeded(ip) {
@@ -132,7 +296,9 @@ function pageMetadata(html, pathname) {
   const existingCanonical = html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']*)["']/i)?.[1];
   const canonical = override.canonical || existingCanonical || `${SITE_URL}${pathname}`;
   const firstImage = html.match(/<img[^>]+src=["']([^"']+)["']/i)?.[1];
-  const image = firstImage ? absoluteUrl(firstImage, pathname) : DEFAULT_OG_IMAGE;
+  // Social crawlers do not all support AVIF reliably yet, so keep the
+  // optimized AVIF for the page while publishing its JPEG source in OG tags.
+  const image = firstImage ? absoluteUrl(firstImage, pathname).replace(/\.avif$/i, '.jpg') : DEFAULT_OG_IMAGE;
   const headline = stripTags(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]) || title;
   return { title, description, canonical, image, headline };
 }
@@ -273,6 +439,7 @@ function transformHtml(rawHtml, pathname, { noindex = false, route: suppliedRout
   const locale = route?.locale || 'lt';
   const pageKey = route?.pageKey || null;
   let html = route ? localizeHtml(rawHtml, route).html : rawHtml;
+  html = enrichSiteHtml(html, locale, pageKey);
   html = html
     .replace(/href="((?:\.\.\/|\/)?style\.css)(?:\?[^"#]*)?"/g, `href="$1?v=${ASSET_VERSION}"`)
     .replace(/src="((?:\.\.\/|\/)?script\.js)(?:\?[^"#]*)?"/g, `src="$1?v=${ASSET_VERSION}"`)
@@ -352,7 +519,7 @@ function sendHtml(res, relativePath, pathname, status = 200, options = {}) {
   const absolutePath = path.join(__dirname, relativePath);
   const raw = fs.readFileSync(absolutePath, 'utf8');
   res.status(status);
-  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+  res.setHeader('Cache-Control', 'no-cache, must-revalidate');
   res.type('html').send(transformHtml(raw, pathname, options));
 }
 
@@ -371,6 +538,7 @@ app.get('/sitemap.xml', (req, res) => {
   res.setHeader('Content-Type', 'application/xml; charset=utf-8');
   res.sendFile(path.join(__dirname, 'sitemap.xml'));
 });
+app.get('/favicon.ico', (req, res) => res.redirect(301, '/favicon.svg'));
 app.get('/robots.txt', (req, res) => {
   res.setHeader('Cache-Control', 'public, max-age=86400');
   res.sendFile(path.join(__dirname, 'robots.txt'));
@@ -381,6 +549,7 @@ app.get(['/llms.txt', '/llms-full.txt'], (req, res) => {
 });
 
 const canonicalRedirects = new Map([
+  ['/index.html', '/'],
   ['/blogas', '/blogas.html'],
   ['/duk', '/duk.html'],
   ['/galerija', '/gallery.html'],
@@ -389,6 +558,7 @@ const canonicalRedirects = new Map([
   ['/plyteliu-klojimas-svencionys', '/plyteliu-klojimas-svencionys.html'],
   ['/plyteliu-klojimas-vilnius', '/plyteliu-klojimas-vilnius.html'],
   ['/kriaukles-is-plyteliu', '/kriaukles-is-plyteliu.html'],
+  ['/privatumo-politika', '/privatumo-politika.html'],
   ['/vonios-kambario-plyteliu-klijavimas', '/vonios-kambario-plyteliu-klijavimas.html'],
   ['/virtuves-plyteliu-klijavimas', '/virtuves-plyteliu-klijavimas.html'],
   ['/didelio-formato-plyteliu-klojimas', '/didelio-formato-plyteliu-klojimas.html'],
@@ -401,6 +571,10 @@ const canonicalRedirects = new Map([
   ['/ru', '/ru/'],
   ['/pl/index.html', '/pl/'],
   ['/ru/index.html', '/ru/'],
+  ['/pl/sitemap.xml', '/sitemap.xml'],
+  ['/ru/sitemap.xml', '/sitemap.xml'],
+  ['/pl/crm.html', '/pl/'],
+  ['/ru/crm.html', '/ru/'],
 ]);
 for (const [from, to] of canonicalRedirects) {
   app.get(from, (req, res, next) => (req.path === from ? res.redirect(301, to) : next()));
