@@ -195,6 +195,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     try {
                         const services = JSON.parse(content.services);
                         if (services && services.length > 0) {
+                            if (!services.some(service => service.href === 'kriaukles-is-plyteliu.html' || /kriaukl/i.test(service.title || ''))) {
+                                services.push({
+                                    icon: '🚰',
+                                    title: 'Kriauklės iš Plytelių',
+                                    desc: 'Individualios plytelėmis formuojamos kriauklės: konstrukcija, hidroizoliacija, nuolydžiai, išleidimo mazgas ir tikslios 45° briaunos.',
+                                    href: 'kriaukles-is-plyteliu.html'
+                                });
+                            }
                             servicesList.innerHTML = ''; // Clear fallback services
                             services.forEach(service => {
                                 const card = document.createElement('div');
@@ -213,6 +221,14 @@ document.addEventListener('DOMContentLoaded', () => {
                                 card.appendChild(iconDiv);
                                 card.appendChild(h3);
                                 card.appendChild(p);
+
+                                if (service.href) {
+                                    const link = document.createElement('a');
+                                    link.className = 'service-card-link';
+                                    link.href = service.href;
+                                    link.textContent = 'Plačiau apie paslaugą →';
+                                    card.appendChild(link);
+                                }
                                 
                                 servicesList.appendChild(card);
                             });

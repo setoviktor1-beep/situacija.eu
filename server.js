@@ -13,7 +13,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const SITE_URL = 'https://situacija.eu';
-const ASSET_VERSION = '20260803e';
+const ASSET_VERSION = '20260814a';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/img1.jpg`;
 const DIRECTUS_URL = (process.env.DIRECTUS_URL || 'http://situacija-directus-app:8055').replace(/\/$/, '');
 const DIRECTUS_ADMIN_URL = process.env.DIRECTUS_ADMIN_URL || 'https://situacija.sitestudio.lt/admin';
@@ -29,6 +29,10 @@ const PAGE_OVERRIDES = {
   '/gallery.html': {
     title: 'Plytelių klojimo darbų galerija | Situacija.eu',
     description: 'Meistro Vladislav atlikti plytelių klojimo, vonios apdailos, hidroizoliacijos ir klinkerio darbai Pabradėje, Švenčionyse ir Vilniuje.',
+  },
+  '/kriaukles-is-plyteliu.html': {
+    title: 'Kriauklės iš plytelių pagal individualų projektą | Situacija.eu',
+    description: 'Individualių kriauklių iš plytelių įrengimas: konstrukcija, hidroizoliacija, nuolydžiai, išleidimo mazgas ir tikslios 45° briaunos.',
   },
 };
 
@@ -200,6 +204,7 @@ function homeSchemas(locale = 'lt') {
       ['Vonios kambarių įrengimas', 'Plytelių klojimas, hidroizoliacija ir 45° kampų suleidimas.'],
       ['Virtuvės plytelių klojimas', 'Virtuvės sienelių, prijuosčių ir grindų plytelių klojimas.'],
       ['Didelio formato plytelių klojimas', '60x120, 80x80 ir 120x120 cm akmens masės plytelių montavimas.'],
+      ['Kriauklės iš plytelių', 'Individualios plytelėmis formuojamos kriauklės su hidroizoliacija, nuolydžiais ir tiksliomis 45° briaunomis.'],
       ['Fasadų apdaila klinkeriu', 'Fasadų, cokolių, tvorų ir židinių apdaila klinkerio plytelėmis.'],
     ].map(([name, description]) => ({
       '@type': 'Service',
@@ -228,6 +233,7 @@ function homeSchemas(locale = 'lt') {
       ['Kur teikiamos paslaugos?', 'Pagrindinės vietovės yra Pabradė, Švenčionys, Švenčionėliai ir Švenčionių rajonas; pagal susitarimą – Vilnius.'],
       ['Ar atliekama hidroizoliacija?', 'Taip, atliekamas pilnas drėgnų zonų paruošimas ir dviejų sluoksnių hidroizoliacija.'],
       ['Ar klojamos didelio formato plytelės?', 'Taip, klojamos 60x120, 80x80, 120x120 cm ir kitų formatų plytelės.'],
+      ['Ar įrengiamos kriauklės iš plytelių?', 'Taip, įrengiamos individualios plytelių kriauklės su suderinta konstrukcija, hidroizoliacija, nuolydžiais ir išleidimo mazgu.'],
     ].map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })),
   }];
 }
@@ -333,6 +339,7 @@ const canonicalRedirects = new Map([
   ['/plyteliu-klojimas-pabrade', '/plyteliu-klojimas-pabrade.html'],
   ['/plyteliu-klojimas-svencionys', '/plyteliu-klojimas-svencionys.html'],
   ['/plyteliu-klojimas-vilnius', '/plyteliu-klojimas-vilnius.html'],
+  ['/kriaukles-is-plyteliu', '/kriaukles-is-plyteliu.html'],
   ['/kontaktai', '/#contact'],
   ['/kontaktai.html', '/#contact'],
   ['/apie-mus', '/#about'],

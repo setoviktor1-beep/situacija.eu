@@ -54,6 +54,7 @@ db.serialize(() => {
       {icon: '🚿', title: 'Vonios Kambariai', desc: 'Pilnas vonios kambario plytelių klijavimas, hidroizoliacija ir paruošimas.'},
       {icon: '🍳', title: 'Virtuvės', desc: 'Virtuvės sienelių ir grindų klijavimas, tikslus pjovimas ir derinimas.'},
       {icon: '🏠', title: 'Grindys ir Terasos', desc: 'Didelių formatų plytelių klijavimas svetainėse, holuose ir lauko terasose.'},
+      {icon: '🚰', title: 'Kriauklės iš Plytelių', desc: 'Individualios plytelėmis formuojamos kriauklės: konstrukcija, hidroizoliacija, nuolydžiai ir 45° briaunos.', href: 'kriaukles-is-plyteliu.html'},
       {icon: '🧱', title: 'Fasadų Apdaila Klinkeriu', desc: 'Kokybiškas fasadų klijavimas klinkerio plytelėmis, užtikrinantis ilgaamžiškumą ir estetiką.'}
     ])
   };
