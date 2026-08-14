@@ -15,7 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
             errorPrefix: 'Klaida:',
             errorFallback: 'Nepavyko išsiųsti užklausos.',
             submit: 'Siųsti Užklausą',
-            networkError: 'Tinklo klaida. Nepavyko pasiekti serverio.'
+            networkError: 'Tinklo klaida. Nepavyko pasiekti serverio.',
+            cookieText: 'Naudojame Google Analytics, kad suprastume, kaip lankytojai naudojasi svetaine. Analitikos slapukai įjungiami tik gavus jūsų sutikimą.',
+            cookieAccept: 'Leisti analitiką',
+            cookieDecline: 'Atmesti'
         },
         pl: {
             closePhoto: 'Zamknij zdjęcie',
@@ -28,7 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
             errorPrefix: 'Błąd:',
             errorFallback: 'Nie udało się wysłać zapytania.',
             submit: 'Wyślij zapytanie',
-            networkError: 'Błąd sieci. Nie można połączyć się z serwerem.'
+            networkError: 'Błąd sieci. Nie można połączyć się z serwerem.',
+            cookieText: 'Używamy Google Analytics, aby zrozumieć, jak odwiedzający korzystają ze strony. Analityczne pliki cookie są włączane wyłącznie za zgodą.',
+            cookieAccept: 'Zezwól na analitykę',
+            cookieDecline: 'Odrzuć'
         },
         ru: {
             closePhoto: 'Закрыть фотографию',
@@ -41,9 +47,54 @@ document.addEventListener('DOMContentLoaded', () => {
             errorPrefix: 'Ошибка:',
             errorFallback: 'Не удалось отправить заявку.',
             submit: 'Отправить заявку',
-            networkError: 'Ошибка сети. Не удалось связаться с сервером.'
+            networkError: 'Ошибка сети. Не удалось связаться с сервером.',
+            cookieText: 'Мы используем Google Analytics, чтобы понимать, как посетители пользуются сайтом. Аналитические файлы cookie включаются только с вашего согласия.',
+            cookieAccept: 'Разрешить аналитику',
+            cookieDecline: 'Отклонить'
         }
     }[language];
+
+    const consentKey = 'situacija_analytics_consent';
+    const updateAnalyticsConsent = (value) => {
+        localStorage.setItem(consentKey, value);
+        if (typeof window.gtag === 'function') {
+            window.gtag('consent', 'update', { analytics_storage: value });
+        }
+    };
+
+    if (!localStorage.getItem(consentKey)) {
+        const consentBanner = document.createElement('aside');
+        consentBanner.className = 'cookie-consent';
+        consentBanner.setAttribute('role', 'dialog');
+        consentBanner.setAttribute('aria-label', 'Google Analytics');
+        consentBanner.innerHTML = `
+            <p>${ui.cookieText}</p>
+            <div class="cookie-consent-actions">
+                <button type="button" class="btn btn-primary" data-consent="granted">${ui.cookieAccept}</button>
+                <button type="button" class="cookie-decline" data-consent="denied">${ui.cookieDecline}</button>
+            </div>
+        `;
+        consentBanner.addEventListener('click', (event) => {
+            const button = event.target.closest('[data-consent]');
+            if (!button) return;
+            updateAnalyticsConsent(button.dataset.consent);
+            consentBanner.remove();
+        });
+        document.body.appendChild(consentBanner);
+    }
+
+    document.addEventListener('click', (event) => {
+        const link = event.target.closest('a');
+        if (!link || typeof window.gtag !== 'function') return;
+        if (link.href.startsWith('tel:')) {
+            window.gtag('event', 'phone_click', { link_url: link.href });
+        } else if (link.classList.contains('service-card-link')) {
+            window.gtag('event', 'service_link_click', {
+                link_url: link.href,
+                link_text: link.textContent.trim()
+            });
+        }
+    });
 
     const serviceImages = [
         { match: /voni|łazien|ванн/i, src: '/images/services/vonios-kambariai.webp', alt: 'Modernus plytelėmis įrengtas vonios kambarys su dušo zona', href: 'vonios-kambario-plyteliu-klijavimas.html' },
@@ -287,6 +338,9 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(res => res.json())
             .then(data => {
                 if (data.success) {
+                    if (typeof window.gtag === 'function') {
+                        window.gtag('event', 'generate_lead', { method: 'contact_form' });
+                    }
                     // Display premium success message
                     const formWrapper = document.querySelector('.contact-form-wrapper');
                     if (formWrapper) {

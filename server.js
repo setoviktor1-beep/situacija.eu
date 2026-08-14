@@ -13,7 +13,8 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const SITE_URL = 'https://situacija.eu';
-const ASSET_VERSION = '20260814c';
+const ASSET_VERSION = '20260814d';
+const GOOGLE_TAG_ID = 'G-MNR63Y36VB';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/img1.jpg`;
 const DIRECTUS_URL = (process.env.DIRECTUS_URL || 'http://situacija-directus-app:8055').replace(/\/$/, '');
 const DIRECTUS_ADMIN_URL = process.env.DIRECTUS_ADMIN_URL || 'https://situacija.sitestudio.lt/admin';
@@ -325,7 +326,26 @@ function transformHtml(rawHtml, pathname, { noindex = false, route: suppliedRout
   for (const schema of schemas.filter(Boolean)) {
     tags.push(`<script type="application/ld+json">${jsonLd(schema)}</script>`);
   }
-  return html.replace('</head>', `    ${tags.join('\n    ')}\n</head>`);
+  const googleTag = `
+    <!-- Google tag (gtag.js) with Consent Mode -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
+      gtag('consent', 'default', {
+        analytics_storage: localStorage.getItem('situacija_analytics_consent') === 'granted' ? 'granted' : 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        functionality_storage: 'granted',
+        security_storage: 'granted'
+      });
+      gtag('js', new Date());
+      gtag('config', '${GOOGLE_TAG_ID}');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}"></script>`;
+  return html
+    .replace('<head>', `<head>${googleTag}`)
+    .replace('</head>', `    ${tags.join('\n    ')}\n</head>`);
 }
 
 function sendHtml(res, relativePath, pathname, status = 200, options = {}) {
