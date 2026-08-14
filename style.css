@@ -408,6 +408,10 @@ section {
     background: var(--white);
 }
 
+section[id] {
+    scroll-margin-top: 110px;
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
