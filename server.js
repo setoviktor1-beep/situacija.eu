@@ -27,6 +27,8 @@ const DIRECTUS_TOKEN = process.env.DIRECTUS_STATIC_TOKEN
 const REQUEST_WINDOW_MS = 15 * 60 * 1000;
 const REQUEST_LIMIT = 5;
 const requestAttempts = new Map();
+const pageBuilderCache = new Map();
+const PAGE_BUILDER_CACHE_MS = 30 * 1000;
 
 const PAGE_OVERRIDES = {
   '/': {
@@ -104,6 +106,123 @@ function htmlEscape(value) {
 
 function jsonLd(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
+}
+
+function directusAssetId(value) {
+  return typeof value === 'object' && value ? value.id : value;
+}
+
+function builderImageUrl(value, fallback = '') {
+  const id = directusAssetId(value);
+  return id ? `/api/assets/${encodeURIComponent(id)}` : fallback;
+}
+
+async function loadBuilderPage(slug = 'home') {
+  const cached = pageBuilderCache.get(slug);
+  if (cached && Date.now() - cached.time < PAGE_BUILDER_CACHE_MS) return cached.value;
+
+  const pageQuery = new URLSearchParams({
+    limit: '1',
+    fields: 'id,title,slug,status,seo,blocks.*',
+    'filter[slug][_eq]': slug,
+    'filter[status][_eq]': 'published',
+  });
+  const pageResult = await directus(`/items/pages?${pageQuery}`);
+  const page = pageResult.data?.[0];
+  if (!page) return null;
+
+  const blocks = await Promise.all((page.blocks || [])
+    .sort((left, right) => (left.sort || 0) - (right.sort || 0))
+    .map(async (link) => {
+      const fields = link.collection === 'block_cards' ? '*,cards.*'
+        : link.collection === 'block_faq' ? '*,items.*'
+          : link.collection === 'block_hero' ? '*,background_image.*'
+            : '*';
+      const result = await directus(`/items/${encodeURIComponent(link.collection)}/${encodeURIComponent(link.item)}?fields=${encodeURIComponent(fields)}`);
+      const block = { type: link.collection, sort: link.sort, ...result.data };
+      if (link.collection === 'block_services') {
+        const services = await directus('/items/services?fields=*,image.*&filter[status][_eq]=published&sort=sort&limit=-1');
+        block.items = services.data || [];
+      }
+      if (link.collection === 'block_gallery') {
+        const images = await directus(`/items/gallery?fields=id,image,title,description&filter[status][_eq]=published&sort=-date_created&limit=${Number(block.limit) || 6}`);
+        block.items = images.data || [];
+      }
+      return block;
+    }));
+  const value = { ...page, blocks };
+  pageBuilderCache.set(slug, { time: Date.now(), value });
+  return value;
+}
+
+function renderBuilderBlock(block) {
+  const badge = block.badge ? `<span class="badge">${htmlEscape(block.badge)}</span>` : '';
+  const intro = block.intro ? `<p class="section-subtitle">${htmlEscape(block.intro)}</p>` : '';
+
+  if (block.type === 'block_hero') {
+    const background = builderImageUrl(block.background_image);
+    const backgroundStyle = background ? ` style="background-image:linear-gradient(rgba(6,15,35,.82),rgba(6,15,35,.88)),url('${htmlEscape(background)}')"` : '';
+    return `<section class="hero" id="home" data-cms-block="block_hero:${block.id}"${backgroundStyle}>
+      <div class="hero-overlay"></div><canvas id="heroCanvas"></canvas>
+      <div class="container hero-content">${badge}<h1 id="hero-title">${htmlEscape(block.title || '')}</h1><p id="hero-subtitle">${htmlEscape(block.subtitle || '')}</p>
+        <div class="hero-buttons">${block.primary_label && block.primary_url ? `<a href="${htmlEscape(block.primary_url)}" class="btn btn-primary">${htmlEscape(block.primary_label)}</a>` : ''}${block.secondary_label && block.secondary_url ? `<a href="${htmlEscape(block.secondary_url)}" class="btn btn-outline">${htmlEscape(block.secondary_label)}</a>` : ''}</div>
+        <div class="stats-grid"><div class="stat-card"><div class="stat-number">10+</div><div class="stat-label">Metų patirtis</div></div><div class="stat-card"><div class="stat-number">100%</div><div class="stat-label">Preciziškos 45° siūlės</div></div><div class="stat-card"><div class="stat-number">300+</div><div class="stat-label">Atliktų projektų</div></div><div class="stat-card"><div class="stat-number">Garancija</div><div class="stat-label">Atliktiems darbams</div></div></div>
+      </div></section>`;
+  }
+
+  if (block.type === 'block_services') {
+    const fallbacks = ['/images/services/vonios-kambariai.webp', '/images/services/virtuves.webp', '/images/services/grindys-ir-terasos.webp', '/images/services/fasadu-apdaila-klinkeriu.webp', '/images/services/kriaukles-is-plyteliu.webp'];
+    const cards = (block.items || []).map((item, index) => {
+      const image = builderImageUrl(item.image, fallbacks[index] || '');
+      return `<article class="service-card${image ? ' service-card-with-image' : ''}">${image ? `<img class="service-card-image" src="${htmlEscape(image)}" width="960" height="720" loading="lazy" alt="${htmlEscape(item.title || '')}">` : ''}<h3>${htmlEscape(item.title || '')}</h3><p>${htmlEscape(item.description || '')}</p>${item.link_url ? `<a class="service-card-link" href="${htmlEscape(item.link_url)}">${htmlEscape(item.link_label || 'Plačiau →')}</a>` : ''}</article>`;
+    }).join('');
+    return `<section class="services" id="services" data-cms-block="block_services:${block.id}"><div class="container">${badge}<h2 class="section-title">${htmlEscape(block.title || '')}</h2>${intro}<div class="services-grid" id="services-list">${cards}</div></div></section>`;
+  }
+
+  if (block.type === 'block_text') {
+    const style = ['white', 'light', 'dark'].includes(block.style) ? block.style : 'light';
+    return `<section id="about" class="builder-text builder-${style}" data-cms-block="block_text:${block.id}"><div class="container">${badge}<h2 class="section-title">${htmlEscape(block.title || '')}</h2><div class="rich-text-block">${block.content || ''}</div></div></section>`;
+  }
+
+  if (block.type === 'block_cards') {
+    const cards = (block.cards || []).sort((a, b) => (a.sort || 0) - (b.sort || 0)).map((item) => {
+      const fallback = item.link_url?.includes('kaip-pasirinkti') ? '/images/img1.avif' : item.link_url?.includes('hidroizoliacija') ? '/images/img3.avif' : item.link_url?.includes('didelio-formato') ? '/images/img2.avif' : '';
+      const image = builderImageUrl(item.image, fallback);
+      return `<article class="service-card${image ? ' service-card-with-image' : ''}">${image ? `<img class="service-card-image" src="${htmlEscape(image)}" width="960" height="720" loading="lazy" alt="${htmlEscape(item.title || '')}">` : item.icon ? `<div class="icon">${htmlEscape(item.icon)}</div>` : ''}<h3>${htmlEscape(item.title || '')}</h3><p>${htmlEscape(item.text || '')}</p>${item.link_url ? `<a class="service-card-link" href="${htmlEscape(item.link_url)}">${htmlEscape(item.link_label || 'Plačiau →')}</a>` : ''}</article>`;
+    }).join('');
+    const id = /region/i.test(block.title || '') ? 'regions' : /patarim|straipsn/i.test(block.title || '') ? 'blog' : `cards-${block.id}`;
+    return `<section class="services" id="${id}" data-cms-block="block_cards:${block.id}"><div class="container">${badge}<h2 class="section-title">${htmlEscape(block.title || '')}</h2>${intro}<div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">${cards}</div></div></section>`;
+  }
+
+  if (block.type === 'block_gallery') {
+    const images = (block.items || []).map((item) => {
+      const id = directusAssetId(item.image);
+      const title = item.title || 'Plytelių klojimo darbai';
+      return id ? `<div class="gallery-item"><img src="/darbai/${slugify(title)}/${encodeURIComponent(id)}.webp" alt="${htmlEscape(title)}" loading="lazy"><div class="gallery-caption">${htmlEscape(item.description || title)}</div></div>` : '';
+    }).join('');
+    return `<section class="gallery" id="gallery" data-cms-block="block_gallery:${block.id}"><div class="container">${badge}<h2 class="section-title">${htmlEscape(block.title || '')}</h2>${intro}<div class="gallery-grid">${images}</div>${block.button_url ? `<div style="text-align:center;margin-top:3rem"><a href="${htmlEscape(block.button_url)}" class="btn btn-primary">${htmlEscape(block.button_label || 'Žiūrėti galeriją')}</a></div>` : ''}</div></section>`;
+  }
+
+  if (block.type === 'block_faq') {
+    const items = (block.items || []).sort((a, b) => (a.sort || 0) - (b.sort || 0)).map((item, index) => `<div class="faq-item"><button class="faq-question" type="button">${index + 1}. ${htmlEscape(item.question || '')}</button><div class="faq-answer">${item.answer || ''}</div></div>`).join('');
+    return `<section class="faq-section" id="faq" data-cms-block="block_faq:${block.id}"><div class="container">${badge}<h2 class="section-title">${htmlEscape(block.title || '')}</h2>${intro}<div class="faq-grid">${items}</div><div style="text-align:center;margin-top:2.5rem"><a href="/duk.html" class="btn btn-outline" style="color:var(--primary-dark);border-color:var(--primary-dark)">Skaityti pilną D.U.K. puslapį →</a></div></div></section>`;
+  }
+
+  if (block.type === 'block_contact') {
+    return `<section class="contact" id="contact" data-cms-block="block_contact:${block.id}"><div class="container contact-container"><div class="contact-info">${badge}<h2>${htmlEscape(block.title || '')}</h2><p>${htmlEscape(block.intro || '')}</p><ul>${block.phone_text ? `<li>📞 <strong>Telefonas:</strong> <a id="contact-phone" href="${htmlEscape(block.phone_url || '')}" style="color:#2dd4bf;font-weight:700">${htmlEscape(block.phone_text)}</a></li>` : ''}${block.email ? `<li>✉️ <strong>El. paštas:</strong> <a id="contact-email" href="mailto:${htmlEscape(block.email)}" style="color:var(--white)">${htmlEscape(block.email)}</a></li>` : ''}${block.facebook_url ? `<li><a id="contact-fb" href="${htmlEscape(block.facebook_url)}" target="_blank" rel="noopener" class="fb-btn">Facebook</a></li>` : ''}</ul></div><div class="contact-form-wrapper"><form class="contact-form" id="contactForm"><h3 style="font-size:1.4rem;font-weight:800;margin-bottom:1.25rem">${htmlEscape(block.form_title || 'Gauti nemokamą sąmatą')}</h3><div class="form-group"><label for="name">Jūsų vardas *</label><input type="text" id="name" placeholder="Vardas" required></div><div class="form-group"><label for="phone">Telefonas *</label><input type="tel" id="phone" placeholder="+370 600 00000" required></div><div class="form-group"><label for="message">Miestas ir darbų aprašymas</label><textarea id="message" rows="4" placeholder="Trumpai aprašykite planuojamus darbus"></textarea></div><button type="submit" class="btn btn-primary full-width">Siųsti užklausą</button></form></div></div></section>`;
+  }
+
+  return '';
+}
+
+function applyBuilderPage(rawHtml, page) {
+  const $ = cheerio.load(rawHtml, { decodeEntities: false });
+  const sections = (page.blocks || []).map(renderBuilderBlock).join('\n');
+  $('#home, #services, #about, #regions, #gallery, #blog, #faq, #contact').remove();
+  $('footer').before(sections);
+  if (page.seo?.title) $('title').text(page.seo.title);
+  if (page.seo?.meta_description) $('meta[name="description"]').attr('content', page.seo.meta_description);
+  return $.html();
 }
 
 function regionalDetailsHtml(locale, pageKey) {
@@ -515,9 +634,18 @@ function transformHtml(rawHtml, pathname, { noindex = false, route: suppliedRout
     .replace('</head>', `    ${tags.join('\n    ')}\n</head>`);
 }
 
-function sendHtml(res, relativePath, pathname, status = 200, options = {}) {
+async function sendHtml(res, relativePath, pathname, status = 200, options = {}) {
   const absolutePath = path.join(__dirname, relativePath);
-  const raw = fs.readFileSync(absolutePath, 'utf8');
+  let raw = fs.readFileSync(absolutePath, 'utf8');
+  const route = options.route || resolveRoute(pathname);
+  if ((pathname === '/' || pathname === '/index.html') && (!route || route.locale === 'lt')) {
+    try {
+      const builderPage = await loadBuilderPage('home');
+      if (builderPage) raw = applyBuilderPage(raw, builderPage);
+    } catch (error) {
+      console.error('Directus page builder read failed; using static fallback:', error.message);
+    }
+  }
   res.status(status);
   res.setHeader('Cache-Control', 'no-cache, must-revalidate');
   res.type('html').send(transformHtml(raw, pathname, options));
@@ -689,10 +817,14 @@ app.use('/api', (req, res) => res.status(404).json({ error: 'API endpoint not fo
 const extensionlessPages = new Map([
   ['/', 'index.html'],
 ]);
-app.get('*', (req, res, next) => {
+app.get('*', async (req, res, next) => {
   const localizedRoute = resolveRoute(req.path);
   if (localizedRoute) {
-    return sendHtml(res, localizedRoute.source, localizedRoute.pathname, 200, { route: localizedRoute });
+    try {
+      return await sendHtml(res, localizedRoute.source, localizedRoute.pathname, 200, { route: localizedRoute });
+    } catch (error) {
+      return next(error);
+    }
   }
   const relative = decodeURIComponent(req.path).replace(/^\/+/, '');
   const target = extensionlessPages.get(req.path) || relative;
@@ -701,7 +833,11 @@ app.get('*', (req, res, next) => {
   if (normalized.startsWith('../')) return next();
   const absolute = path.join(__dirname, normalized);
   if (!fs.existsSync(absolute) || !fs.statSync(absolute).isFile()) return next();
-  sendHtml(res, normalized, req.path === '/index.html' ? '/' : req.path);
+  try {
+    await sendHtml(res, normalized, req.path === '/index.html' ? '/' : req.path);
+  } catch (error) {
+    next(error);
+  }
 });
 
 app.use(express.static(__dirname, {
@@ -715,9 +851,9 @@ app.use(express.static(__dirname, {
   },
 }));
 
-app.use((req, res) => {
+app.use(async (req, res) => {
   if (req.method === 'GET' || req.method === 'HEAD') {
-    return sendHtml(res, '404.html', req.path, 404, { noindex: true });
+    return await sendHtml(res, '404.html', req.path, 404, { noindex: true });
   }
   res.status(404).json({ error: 'Not found' });
 });

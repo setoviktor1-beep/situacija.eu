@@ -224,7 +224,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Dynamic Site Content Loading
-    if (language === 'lt') fetch(`${API_BASE}/api/content`)
+    // New pages are rendered from the Directus block builder on the server.
+    // Keep the legacy key/value loader only as a fallback for older pages.
+    if (language === 'lt' && !document.querySelector('[data-cms-block]')) fetch(`${API_BASE}/api/content`)
         .then(res => res.json())
         .then(content => {
             if (content) {
