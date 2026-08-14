@@ -20,6 +20,9 @@ const DIRECTUS_ADMIN_URL = process.env.DIRECTUS_ADMIN_URL || 'https://situacija.
 const DIRECTUS_TOKEN = process.env.DIRECTUS_STATIC_TOKEN
   ? crypto.createHash('sha256').update(process.env.DIRECTUS_STATIC_TOKEN).digest('hex')
   : null;
+const REQUEST_WINDOW_MS = 15 * 60 * 1000;
+const REQUEST_LIMIT = 5;
+const requestAttempts = new Map();
 
 const PAGE_OVERRIDES = {
   '/': {
@@ -81,6 +84,31 @@ function htmlEscape(value) {
 
 function jsonLd(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
+}
+
+function requestLimitExceeded(ip) {
+  const now = Date.now();
+  const recent = (requestAttempts.get(ip) || []).filter((time) => now - time < REQUEST_WINDOW_MS);
+  recent.push(now);
+  requestAttempts.set(ip, recent);
+  return recent.length > REQUEST_LIMIT;
+}
+
+async function notifyAdminAboutRequest(requestId) {
+  const currentUser = await directus('/users/me?fields=id');
+  const recipient = currentUser?.data?.id;
+  if (!recipient) throw new Error('Directus administratoriaus gavėjas nerastas');
+
+  await directus('/notifications', {
+    method: 'POST',
+    body: JSON.stringify({
+      recipient,
+      subject: 'Nauja Situacija.eu užklausa',
+      message: `Gauta nauja užklausa iš situacija.eu kontaktinės formos. [Atidaryti užklausą](${DIRECTUS_ADMIN_URL}/content/requests/${requestId}).`,
+      collection: 'requests',
+      item: String(requestId),
+    }),
+  });
 }
 
 function stripTags(value = '') {
@@ -356,19 +384,33 @@ for (const [from, to] of canonicalRedirects) {
 app.get(['/crm', '/crm.html'], (req, res) => res.redirect(301, DIRECTUS_ADMIN_URL));
 
 app.post('/api/requests', async (req, res) => {
-  const { name, phone, message = '', lang = 'lt' } = req.body;
+  const { lang = 'lt' } = req.body;
   const locale = ['pl', 'ru'].includes(lang) ? lang : 'lt';
   const errors = locale === 'pl'
-    ? { required: 'Imię i telefon są wymagane.', save: 'Nie udało się zapisać zapytania.' }
+    ? { required: 'Imię i telefon są wymagane.', invalid: 'Sprawdź długość podanych danych.', limited: 'Zbyt wiele prób. Spróbuj ponownie za 15 minut.', save: 'Nie udało się zapisać zapytania.' }
     : locale === 'ru'
-      ? { required: 'Имя и телефон обязательны.', save: 'Не удалось сохранить заявку.' }
-      : { required: 'Vardas ir telefonas yra privalomi!', save: 'Nepavyko išsaugoti užklausos.' };
+      ? { required: 'Имя и телефон обязательны.', invalid: 'Проверьте длину введённых данных.', limited: 'Слишком много попыток. Повторите через 15 минут.', save: 'Не удалось сохранить заявку.' }
+      : { required: 'Vardas ir telefonas yra privalomi!', invalid: 'Patikrinkite įvestų duomenų ilgį.', limited: 'Per daug bandymų. Pamėginkite po 15 minučių.', save: 'Nepavyko išsaugoti užklausos.' };
+  const name = typeof req.body.name === 'string' ? req.body.name.trim() : '';
+  const phone = typeof req.body.phone === 'string' ? req.body.phone.trim() : '';
+  const message = typeof req.body.message === 'string' ? req.body.message.trim() : '';
   if (!name || !phone) return res.status(400).json({ error: errors.required });
+  if (name.length > 100 || phone.length > 40 || message.length > 3000) {
+    return res.status(400).json({ error: errors.invalid });
+  }
+  if (requestLimitExceeded(req.ip || req.socket.remoteAddress || 'unknown')) {
+    return res.status(429).json({ error: errors.limited });
+  }
   try {
     const result = await directus('/items/requests', {
       method: 'POST',
       body: JSON.stringify({ name, phone, message, status: 'new' }),
     });
+    try {
+      await notifyAdminAboutRequest(result.data.id);
+    } catch (notificationError) {
+      console.error('Directus request notification failed:', notificationError.message);
+    }
     res.setHeader('Cache-Control', 'no-store');
     res.status(201).json({ success: true, id: result.data.id });
   } catch (error) {
