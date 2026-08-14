@@ -711,6 +711,7 @@ app.use(express.static(__dirname, {
   immutable: true,
   setHeaders: (res, filePath) => {
     if (filePath.endsWith('.html')) res.setHeader('Cache-Control', 'no-cache');
+    if (filePath.endsWith('.avif')) res.setHeader('Content-Type', 'image/avif');
   },
 }));
 
