@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }[language];
 
     const serviceImages = [
-        { match: /voni|łazien|ванн/i, src: '/images/services/vonios-kambariai.webp', alt: 'Modernus plytelėmis įrengtas vonios kambarys su dušo zona' },
-        { match: /virtuv|kuchni|кухн/i, src: '/images/services/virtuves.webp', alt: 'Tiksliai išklijuota šiuolaikinės virtuvės sienelė ir grindys' },
-        { match: /grind|teras|format|podłog|taras|формат|пол/i, src: '/images/services/grindys-ir-terasos.webp', alt: 'Didelio formato plytelių grindys svetainėje ir lauko terasoje' },
-        { match: /fasad|klink|elewac|фасад|клинкер/i, src: '/images/services/fasadu-apdaila-klinkeriu.webp', alt: 'Tvarkingai klinkerio plytelėmis apdailintas gyvenamojo namo fasadas' },
-        { match: /kriaukl|umywalk|раковин/i, src: '/images/services/kriaukles-is-plyteliu.webp', alt: 'Individuali kriauklė iš didelio formato šviesių plytelių' }
+        { match: /voni|łazien|ванн/i, src: '/images/services/vonios-kambariai.webp', alt: 'Modernus plytelėmis įrengtas vonios kambarys su dušo zona', href: 'vonios-kambario-plyteliu-klijavimas.html' },
+        { match: /virtuv|kuchni|кухн/i, src: '/images/services/virtuves.webp', alt: 'Tiksliai išklijuota šiuolaikinės virtuvės sienelė ir grindys', href: 'virtuves-plyteliu-klijavimas.html' },
+        { match: /grind|teras|format|podłog|taras|формат|пол/i, src: '/images/services/grindys-ir-terasos.webp', alt: 'Didelio formato plytelių grindys svetainėje ir lauko terasoje', href: 'didelio-formato-plyteliu-klojimas.html' },
+        { match: /fasad|klink|elewac|фасад|клинкер/i, src: '/images/services/fasadu-apdaila-klinkeriu.webp', alt: 'Tvarkingai klinkerio plytelėmis apdailintas gyvenamojo namo fasadas', href: 'klinkerio-klijavimas-fasadai.html' },
+        { match: /kriaukl|umywalk|раковин/i, src: '/images/services/kriaukles-is-plyteliu.webp', alt: 'Individuali kriauklė iš didelio formato šviesių plytelių', href: 'kriaukles-is-plyteliu.html' }
     ];
 
     // Lightbox Setup
@@ -238,10 +238,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                 card.appendChild(h3);
                                 card.appendChild(p);
 
-                                if (service.href) {
+                                const serviceHref = service.href || imageConfig?.href;
+                                if (serviceHref) {
                                     const link = document.createElement('a');
                                     link.className = 'service-card-link';
-                                    link.href = service.href;
+                                    link.href = serviceHref;
                                     link.textContent = 'Plačiau apie paslaugą →';
                                     card.appendChild(link);
                                 }

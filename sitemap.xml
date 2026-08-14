@@ -93,20 +93,48 @@
     </image:image>
   </url>
   <url>
+    <loc>https://situacija.eu/vonios-kambario-plyteliu-klijavimas.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://situacija.eu/images/services/vonios-kambariai.webp</image:loc><image:title>Vonios kambario plytelių klijavimas ir hidroizoliacija</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://situacija.eu/virtuves-plyteliu-klijavimas.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://situacija.eu/images/services/virtuves.webp</image:loc><image:title>Virtuvės sienelės ir grindų plytelių klijavimas</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://situacija.eu/didelio-formato-plyteliu-klojimas.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://situacija.eu/images/services/grindys-ir-terasos.webp</image:loc><image:title>Didelio formato akmens masės plytelių klojimas</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://situacija.eu/klinkerio-klijavimas-fasadai.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://situacija.eu/images/services/fasadu-apdaila-klinkeriu.webp</image:loc><image:title>Klinkerio plytelių klijavimas fasadams ir cokoliui</image:title></image:image>
+  </url>
+  <url>
     <loc>https://situacija.eu/plyteliu-klojimas-pabrade.html</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://situacija.eu/plyteliu-klojimas-svencionys.html</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://situacija.eu/plyteliu-klojimas-vilnius.html</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

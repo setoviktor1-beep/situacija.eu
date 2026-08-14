@@ -13,7 +13,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const SITE_URL = 'https://situacija.eu';
-const ASSET_VERSION = '20260814b';
+const ASSET_VERSION = '20260814c';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/img1.jpg`;
 const DIRECTUS_URL = (process.env.DIRECTUS_URL || 'http://situacija-directus-app:8055').replace(/\/$/, '');
 const DIRECTUS_ADMIN_URL = process.env.DIRECTUS_ADMIN_URL || 'https://situacija.sitestudio.lt/admin';
@@ -229,15 +229,16 @@ function homeSchemas(locale = 'lt') {
   return [{
     '@context': 'https://schema.org',
     '@graph': [
-      ['Vonios kambarių įrengimas', 'Plytelių klojimas, hidroizoliacija ir 45° kampų suleidimas.'],
-      ['Virtuvės plytelių klojimas', 'Virtuvės sienelių, prijuosčių ir grindų plytelių klojimas.'],
-      ['Didelio formato plytelių klojimas', '60x120, 80x80 ir 120x120 cm akmens masės plytelių montavimas.'],
-      ['Kriauklės iš plytelių', 'Individualios plytelėmis formuojamos kriauklės su hidroizoliacija, nuolydžiais ir tiksliomis 45° briaunomis.'],
-      ['Fasadų apdaila klinkeriu', 'Fasadų, cokolių, tvorų ir židinių apdaila klinkerio plytelėmis.'],
-    ].map(([name, description]) => ({
+      ['Vonios kambarių įrengimas', 'Plytelių klojimas, hidroizoliacija ir 45° kampų suleidimas.', '/vonios-kambario-plyteliu-klijavimas.html'],
+      ['Virtuvės plytelių klojimas', 'Virtuvės sienelių, prijuosčių ir grindų plytelių klojimas.', '/virtuves-plyteliu-klijavimas.html'],
+      ['Didelio formato plytelių klojimas', '60x120, 80x80 ir 120x120 cm akmens masės plytelių montavimas.', '/didelio-formato-plyteliu-klojimas.html'],
+      ['Kriauklės iš plytelių', 'Individualios plytelėmis formuojamos kriauklės su hidroizoliacija, nuolydžiais ir tiksliomis 45° briaunomis.', '/kriaukles-is-plyteliu.html'],
+      ['Fasadų apdaila klinkeriu', 'Fasadų, cokolių, tvorų ir židinių apdaila klinkerio plytelėmis.', '/klinkerio-klijavimas-fasadai.html'],
+    ].map(([name, description, url]) => ({
       '@type': 'Service',
       name,
       description,
+      url: `${SITE_URL}${url}`,
       provider: { '@id': `${SITE_URL}/#business` },
       areaServed: ['Pabradė', 'Švenčionys', 'Švenčionėliai', 'Vilnius'],
     })),
@@ -368,6 +369,10 @@ const canonicalRedirects = new Map([
   ['/plyteliu-klojimas-svencionys', '/plyteliu-klojimas-svencionys.html'],
   ['/plyteliu-klojimas-vilnius', '/plyteliu-klojimas-vilnius.html'],
   ['/kriaukles-is-plyteliu', '/kriaukles-is-plyteliu.html'],
+  ['/vonios-kambario-plyteliu-klijavimas', '/vonios-kambario-plyteliu-klijavimas.html'],
+  ['/virtuves-plyteliu-klijavimas', '/virtuves-plyteliu-klijavimas.html'],
+  ['/didelio-formato-plyteliu-klojimas', '/didelio-formato-plyteliu-klojimas.html'],
+  ['/klinkerio-klijavimas-fasadai', '/klinkerio-klijavimas-fasadai.html'],
   ['/kontaktai', '/#contact'],
   ['/kontaktai.html', '/#contact'],
   ['/apie-mus', '/#about'],
