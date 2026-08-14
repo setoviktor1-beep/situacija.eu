@@ -45,6 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }[language];
 
+    const serviceImages = [
+        { match: /voni|łazien|ванн/i, src: '/images/services/vonios-kambariai.webp', alt: 'Modernus plytelėmis įrengtas vonios kambarys su dušo zona' },
+        { match: /virtuv|kuchni|кухн/i, src: '/images/services/virtuves.webp', alt: 'Tiksliai išklijuota šiuolaikinės virtuvės sienelė ir grindys' },
+        { match: /grind|teras|format|podłog|taras|формат|пол/i, src: '/images/services/grindys-ir-terasos.webp', alt: 'Didelio formato plytelių grindys svetainėje ir lauko terasoje' },
+        { match: /fasad|klink|elewac|фасад|клинкер/i, src: '/images/services/fasadu-apdaila-klinkeriu.webp', alt: 'Tvarkingai klinkerio plytelėmis apdailintas gyvenamojo namo fasadas' },
+        { match: /kriaukl|umywalk|раковин/i, src: '/images/services/kriaukles-is-plyteliu.webp', alt: 'Individuali kriauklė iš didelio formato šviesių plytelių' }
+    ];
+
     // Lightbox Setup
     const lightbox = document.createElement('div');
     lightbox.className = 'lightbox';
@@ -207,10 +215,19 @@ document.addEventListener('DOMContentLoaded', () => {
                             services.forEach(service => {
                                 const card = document.createElement('div');
                                 card.className = 'service-card';
-                                
-                                const iconDiv = document.createElement('div');
-                                iconDiv.className = 'icon';
-                                iconDiv.textContent = service.icon || '🛠️';
+
+                                const imageConfig = serviceImages.find(item => item.match.test(service.title || ''));
+                                if (imageConfig) {
+                                    card.classList.add('service-card-with-image');
+                                    const image = document.createElement('img');
+                                    image.className = 'service-card-image';
+                                    image.src = service.image || imageConfig.src;
+                                    image.alt = service.imageAlt || imageConfig.alt;
+                                    image.width = 960;
+                                    image.height = 720;
+                                    image.loading = 'lazy';
+                                    card.appendChild(image);
+                                }
                                 
                                 const h3 = document.createElement('h3');
                                 h3.textContent = service.title || '';
@@ -218,7 +235,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                 const p = document.createElement('p');
                                 p.textContent = service.desc || '';
                                 
-                                card.appendChild(iconDiv);
                                 card.appendChild(h3);
                                 card.appendChild(p);
 

@@ -453,6 +453,25 @@ section {
     display: inline-block;
 }
 
+.service-card-with-image {
+    padding-top: 0;
+}
+
+.service-card-image {
+    display: block;
+    width: calc(100% + 4rem);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin: 0 -2rem 1.75rem;
+    object-fit: cover;
+    border-bottom: 1px solid #e2e8f0;
+    transition: transform 0.45s ease;
+}
+
+.service-card-with-image:hover .service-card-image {
+    transform: scale(1.025);
+}
+
 .service-card h3 {
     margin-bottom: 1rem;
     font-size: 1.4rem;
