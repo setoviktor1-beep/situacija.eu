@@ -1,0 +1,1390 @@
+{
+ "1. <strong>Gruntavimas:</strong> Paviršius nuvalomas ir padengiamas gilaus skverbimosi gruntu.<br>\n                    2. <strong>Sandarinimo juostos:</strong> Visi vidiniai sienų-grindų ir sienų-sienų kampai užklijuojami elastinga hidroizoliacine juosta.<br>\n                    3. <strong>2 Sluoksnių Mastika:</strong> Teptinė hidroizoliacija tepama mažiausiai dviem sluoksniais sukryžiuojant potėpius.": {
+  "pl": "1. <strong>Gruntowanie:</strong> Powierzchnia jest czyszczona i pokrywana gruntem głęboko penetrującym.<br>\n                    2. <strong>Taśmy uszczelniające:</strong> Wszystkie wewnętrzne narożniki ściana-podłoga i ściana-ściana zaklejane są elastyczną taśmą hydroizolacyjną.<br>\n                    3. <strong>Dwie warstwy masy:</strong> Hydroizolację powłokową nakłada się co najmniej w dwóch warstwach, krzyżując kierunek nakładania.",
+  "ru": "1. <strong>Грунтование:</strong> Поверхность очищается и покрывается грунтом глубокого проникновения.<br>\n                    2. <strong>Герметизирующие ленты:</strong> Все внутренние углы стена-пол и стена-стена проклеиваются эластичной гидроизоляционной лентой.<br>\n                    3. <strong>Два слоя мастики:</strong> Обмазочная гидроизоляция наносится минимум в два слоя с перекрёстным направлением нанесения."
+ },
+ "1. Kas tvarko jūsų duomenis": {
+  "pl": "1. Kto przetwarza Twoje dane",
+  "ru": "1. Кто обрабатывает ваши данные"
+ },
+ "1. Keraminės ar Akmens Masės Plytelės?": {
+  "pl": "1. Płytki ceramiczne czy gres?",
+  "ru": "1. Керамическая плитка или керамогранит?"
+ },
+ "1. Paviršių Tikrinimas ir Išlyginimas": {
+  "pl": "1. Sprawdzenie i wyrównanie podłoża",
+  "ru": "1. Проверка и выравнивание поверхностей"
+ },
+ "1. Plytelių Dydis ir Sudėtingumas": {
+  "pl": "1. Rozmiar płytek i stopień trudności",
+  "ru": "1. Размер плитки и сложность работ"
+ },
+ "1Ar galima naudoti tokias pačias plyteles kaip vonios sienoms?": {
+  "pl": "1Czy można użyć takich samych płytek jak na ściany łazienki?",
+  "ru": "1Можно ли использовать такую же плитку, как на стенах ванной?"
+ },
+ "2. Kampų Pjovimas 45° Kampu": {
+  "pl": "2. Cięcie narożników pod kątem 45°",
+  "ru": "2. Запил углов под 45°"
+ },
+ "2. Kokius duomenis renkame": {
+  "pl": "2. Jakie dane zbieramy",
+  "ru": "2. Какие данные мы собираем"
+ },
+ "2. Plytelių Dydis ir Formatas": {
+  "pl": "2. Rozmiar i format płytek",
+  "ru": "2. Размер и формат плитки"
+ },
+ "2. Teptinė Hidroizoliacija su Sandarinimo Juostomis": {
+  "pl": "2. Hydroizolacja powłokowa z taśmami uszczelniającymi",
+  "ru": "2. Обмазочная гидроизоляция с герметизирующими лентами"
+ },
+ "2Kaip užtikrinamas kriauklės sandarumas?": {
+  "pl": "2Jak zapewniana jest szczelność umywalki?",
+  "ru": "2Как обеспечивается герметичность раковины?"
+ },
+ "3. Grindų Saugumas (Neslidumas)": {
+  "pl": "3. Bezpieczeństwo podłogi (antypoślizgowość)",
+  "ru": "3. Безопасность пола (противоскольжение)"
+ },
+ "3. Kodėl ir kokiu pagrindu duomenys naudojami": {
+  "pl": "3. Cel i podstawa przetwarzania danych",
+  "ru": "3. Цель и основание обработки данных"
+ },
+ "3. Plytelių Išdėstymo Planavimas ir Pjovimas": {
+  "pl": "3. Planowanie układu płytek i cięcie",
+  "ru": "3. Планирование раскладки плитки и резка"
+ },
+ "3Ar galima įrengti potinkinį maišytuvą?": {
+  "pl": "3Czy można zamontować baterię podtynkową?",
+  "ru": "3Можно ли установить встроенный смеситель?"
+ },
+ "4. Kiek laiko duomenys saugomi": {
+  "pl": "4. Jak długo przechowujemy dane",
+  "ru": "4. Сколько времени хранятся данные"
+ },
+ "4. Klijų Tepimas ir Klijavimas su TLS Systemomis": {
+  "pl": "4. Nakładanie kleju i układanie z systemami TLS",
+  "ru": "4. Нанесение клея и укладка с системами TLS"
+ },
+ "45° Kampų Miter Pjovimas: Skaičiuojama bėginiais metrais (m).": {
+  "pl": "Podcinanie narożników 45° (miter cut): rozliczane w metrach bieżących (mb).",
+  "ru": "Запил углов 45°: считается в погонных метрах (пог. м)."
+ },
+ "4Ar tokia kriauklė lengvai prižiūrima?": {
+  "pl": "4Czy taka umywalka jest łatwa w utrzymaniu?",
+  "ru": "4Легко ли ухаживать за такой раковиной?"
+ },
+ "5. Glaistymas: Cementinis vs Epoksidinis": {
+  "pl": "5. Fugowanie: fuga cementowa czy epoksydowa",
+  "ru": "5. Затирка: цементная или эпоксидная"
+ },
+ "5. Google Analytics ir slapukai": {
+  "pl": "5. Google Analytics i pliki cookies",
+  "ru": "5. Google Analytics и файлы cookie"
+ },
+ "6. Kam duomenys gali būti perduodami": {
+  "pl": "6. Komu dane mogą być przekazywane",
+  "ru": "6. Кому могут передаваться данные"
+ },
+ "60x120, 80x80, 120x120 cm bei kitų matmenų plytelių klojimas.": {
+  "pl": "Układanie płytek 60x120, 80x80, 120x120 cm oraz innych formatów.",
+  "ru": "Укладка плитки 60x120, 80x80, 120x120 см и других форматов."
+ },
+ "7. Jūsų teisės": {
+  "pl": "7. Twoje prawa",
+  "ru": "7. Ваши права"
+ },
+ "8. Duomenų saugumas ir politikos pakeitimai": {
+  "pl": "8. Bezpieczeństwo danych i zmiany polityki",
+  "ru": "8. Безопасность данных и изменения политики"
+ },
+ "<strong>45° Kampų Pjovimas (Miter Cut):</strong> Išoriniai plytelių kampai pjaunami ir šlifuojami 45 laipsnių kampu naudojant šlapio pjovimo stakles su deimantiniu disku. Tai suteikia vientisą, prabangų vaizdą nenaudojant pigiai atrodančių plastikinių kampukų.": {
+  "pl": "<strong>Narożniki 45° (miter cut):</strong> Zewnętrzne narożniki płytek są cięte i szlifowane pod kątem 45° przecinarką na mokro z tarczą diamentową. Daje to jednolity, elegancki efekt bez tanio wyglądających plastikowych listew.",
+  "ru": "<strong>Запил углов 45° (miter cut):</strong> Внешние углы плитки режутся и шлифуются под углом 45° мокрым плиткорезом с алмазным диском. Это даёт цельный, дорогой вид без дешёвых пластиковых уголков."
+ },
+ "<strong>Akmens masės plytelės:</strong> Universaliausias ir tvirčiausias pasirinkimas tiek sienoms, tiek grindims. Jos pasižymi itin mažu vandens įgeriamumu (mažiau nei 0.5%), yra labai atsparios dilimui, įbrėžimams ir svoriui.": {
+  "pl": "<strong>Gres:</strong> Najbardziej uniwersalny i najtrwalszy wybór zarówno na ściany, jak i na podłogi. Ma bardzo niską nasiąkliwość (poniżej 0.5%) oraz wysoką odporność na ścieranie, zarysowania i obciążenia.",
+  "ru": "<strong>Керамогранит:</strong> Самый универсальный и прочный вариант как для стен, так и для пола. Отличается очень низким водопоглощением (менее 0.5%), высокой стойкостью к истиранию, царапинам и нагрузкам."
+ },
+ "<strong>Keraminės plytelės:</strong> Puikiai tinka sienų apdailai. Jos yra lengvesnės, minkštesnės, lengviau pjaustomos ir gręžiamos. Tačiau grindims keraminės plytelės nėra pats geriausias pasirinkimas dėl mažesnio atsparumo smūgiams.": {
+  "pl": "<strong>Płytki ceramiczne:</strong> Świetnie sprawdzają się na ścianach. Są lżejsze, miększe, łatwiej się je tnie i wierci. Na podłogę nie są jednak najlepszym wyborem ze względu na mniejszą odporność na uderzenia.",
+  "ru": "<strong>Керамическая плитка:</strong> Отлично подходит для отделки стен. Она легче, мягче, проще режется и сверлится. Для пола керамическая плитка подходит хуже из-за меньшей стойкости к ударам."
+ },
+ "Akmens masės plytelių klijavimas vonioje Pabradėje": {
+  "pl": "Układanie gresu w łazience w Pabradė",
+  "ru": "Укладка керамогранита в ванной в Пабраде"
+ },
+ "Angos išpjaunamos tiksliai, kad mechanizmai bei apdailos rėmeliai tvarkingai priglustų.": {
+  "pl": "Otwory wycinane są precyzyjnie, aby mechanizmy i ramki wykończeniowe dokładnie przylegały.",
+  "ru": "Отверстия вырезаются точно, чтобы механизмы и декоративные рамки прилегали аккуратно."
+ },
+ "Apie technologiją": {
+  "pl": "O technologii",
+  "ru": "О технологии"
+ },
+ "Aptarkime jūsų kriauklės projektą": {
+  "pl": "Omówmy projekt Twojej umywalki",
+  "ru": "Обсудим проект вашей раковины"
+ },
+ "Ar būtina hidroizoliacija?": {
+  "pl": "Czy hydroizolacja jest konieczna?",
+  "ru": "Обязательна ли гидроизоляция?"
+ },
+ "Ar klijuojate grindis?": {
+  "pl": "Czy układacie płytki na podłodze?",
+  "ru": "Укладываете ли вы плитку на пол?"
+ },
+ "Ar tinka terasai?": {
+  "pl": "Czy nadaje się na taras?",
+  "ru": "Подходит ли для террасы?"
+ },
+ "Atliekama fasadų, cokolio, tvorų ir židinių apdaila klinkerio plytelėmis. Įvertinamas pagrindas, suplanuojamas raštas, kampai ir drėgmei atsparios siūlės.": {
+  "pl": "Wykonujemy okładziny elewacji, cokołów, ogrodzeń i kominków płytkami klinkierowymi. Oceniamy podłoże, planujemy wzór, narożniki i odporne na wilgoć fugi.",
+  "ru": "Выполняем облицовку фасадов, цоколей, заборов и каминов клинкерной плиткой. Оцениваем основание, планируем рисунок, углы и влагостойкие швы."
+ },
+ "Atliekamas visas plytelių meistro darbas – nuo pagrindo patikros ir drėgnų zonų hidroizoliacijos iki tikslių pjūvių, dušo nuolydžių, siūlių ir 45° kampų.": {
+  "pl": "Wykonujemy pełny zakres prac glazurniczych – od sprawdzenia podłoża i hydroizolacji stref mokrych po precyzyjne cięcia, spadki prysznica, fugi i narożniki 45°.",
+  "ru": "Выполняем весь объём плиточных работ — от проверки основания и гидроизоляции влажных зон до точных резов, уклонов душа, швов и углов 45°."
+ },
+ "Atsakymai apie plytelių klojimo kainas, hidroizoliaciją, terminus ir individualias kriaukles iš plytelių Pabradėje, Švenčionyse bei Vilniuje.": {
+  "pl": "Odpowiedzi o cenach układania płytek, hydroizolacji, terminach oraz umywalkach z płytek w Pabradė, Święcianach i Wilnie.",
+  "ru": "Ответы о ценах на укладку плитки, гидроизоляции, сроках и раковинах из плитки в Пабраде, Швенчёнисе и Вильнюсе."
+ },
+ "Atsiranda pelėsis ir juodos dėmės siūlėse.": {
+  "pl": "W fugach pojawia się pleśń i czarne plamy.",
+  "ru": "В швах появляются плесень и чёрные пятна."
+ },
+ "Atsiųskite formatą, gaminio nuorodą, plotą ir pagrindo nuotraukas.": {
+  "pl": "Prześlij format, link do produktu, powierzchnię i zdjęcia podłoża.",
+  "ru": "Пришлите формат, ссылку на изделие, площадь и фото основания."
+ },
+ "Atsiųskite objekto nuotraukas, plotą ir pasirinkto klinkerio nuorodą.": {
+  "pl": "Prześlij zdjęcia obiektu, powierzchnię i link do wybranego klinkieru.",
+  "ru": "Пришлите фото объекта, площадь и ссылку на выбранный клинкер."
+ },
+ "Atsiųskite patalpos nuotraukas, matmenis ir plytelių formatą – parengsime pirminį įvertinimą.": {
+  "pl": "Prześlij zdjęcia pomieszczenia, wymiary i format płytek – przygotujemy wstępną wycenę.",
+  "ru": "Пришлите фото помещения, размеры и формат плитки — подготовим предварительную оценку."
+ },
+ "Atsiųskite sienelės matmenis, baldų projektą ir plytelių pavyzdį.": {
+  "pl": "Prześlij wymiary ściany, projekt mebli i przykład płytek.",
+  "ru": "Пришлите размеры стены, проект мебели и образец плитки."
+ },
+ "Atsiųskite vietos nuotraukas, matmenis ir pasirinktų plytelių pavyzdį — tai padės greičiau įvertinti sprendimą.": {
+  "pl": "Prześlij zdjęcia miejsca, wymiary i przykład wybranych płytek — pozwoli to szybciej ocenić rozwiązanie.",
+  "ru": "Пришлите фото места, размеры и образец выбранной плитки — так решение можно оценить быстрее."
+ },
+ "Autorius: <strong>Vladislav Finažonok (Meistras)</strong> | Data: 2026-07-26 | Veiklos zona: Pabradė, Švenčionys, Vilnius": {
+  "pl": "Autor: <strong>Vladislav Finažonok (fachowiec)</strong> | Data: 2026-07-26 | Obszar działania: Pabradė, Święciany, Wilno",
+  "ru": "Автор: <strong>Владислав Финажонок (мастер)</strong> | Дата: 2026-07-26 | Район работы: Пабраде, Швенчёнис, Вильнюс"
+ },
+ "Autorius: <strong>Vladislav Finažonok (Plytelių Meistras)</strong> | Skaitoma: ~5 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius": {
+  "pl": "Autor: <strong>Vladislav Finažonok (fachowiec od płytek)</strong> | Czas czytania: ~5 min | Obszar działania: Pabradė, Święciany, Wilno",
+  "ru": "Автор: <strong>Владислав Финажонок (мастер по плитке)</strong> | Чтение: ~5 мин. | Район работы: Пабраде, Швенчёнис, Вильнюс"
+ },
+ "Autorius: <strong>Vladislav Finažonok (Plytelių Meistras)</strong> | Skaitoma: ~6 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius": {
+  "pl": "Autor: <strong>Vladislav Finažonok (fachowiec od płytek)</strong> | Czas czytania: ~6 min | Obszar działania: Pabradė, Święciany, Wilno",
+  "ru": "Автор: <strong>Владислав Финажонок (мастер по плитке)</strong> | Чтение: ~6 мин. | Район работы: Пабраде, Швенчёнис, Вильнюс"
+ },
+ "Autorius: <strong>Vladislav Finažonok (Plytelių Meistras)</strong> | Skaitoma: ~8 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius": {
+  "pl": "Autor: <strong>Vladislav Finažonok (fachowiec od płytek)</strong> | Czas czytania: ~8 min | Obszar działania: Pabradė, Święciany, Wilno",
+  "ru": "Автор: <strong>Владислав Финажонок (мастер по плитке)</strong> | Чтение: ~8 мин. | Район работы: Пабраде, Швенчёнис, Вильнюс"
+ },
+ "D.U.K. apie plytelių klojimą": {
+  "pl": "FAQ o układaniu płytek",
+  "ru": "Вопросы об укладке плитки"
+ },
+ "Darbai atliekami <a href=\"plyteliu-klojimas-pabrade.html\">Pabradėje</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Švenčionių rajone</a> ir pagal grafiką <a href=\"plyteliu-klojimas-vilnius.html\">Vilniuje</a>.": {
+  "pl": "Prace wykonujemy w <a href=\"plyteliu-klojimas-pabrade.html\">Pabradė</a>, <a href=\"plyteliu-klojimas-svencionys.html\">rejonie święciańskim</a> oraz, zależnie od terminów, w <a href=\"plyteliu-klojimas-vilnius.html\">Wilnie</a>.",
+  "ru": "Работы выполняются в <a href=\"plyteliu-klojimas-pabrade.html\">Пабраде</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Швенчёнском районе</a> и по графику в <a href=\"plyteliu-klojimas-vilnius.html\">Вильнюсе</a>."
+ },
+ "Darbų eiga nuo pagrindo patikros ir hidroizoliacijos iki 45° kampų, klijavimo ir glaistymo.": {
+  "pl": "Przebieg prac od sprawdzenia podłoża i hydroizolacji po narożniki 45°, klejenie i fugowanie.",
+  "ru": "Ход работ от проверки основания и гидроизоляции до углов 45°, укладки и затирки швов."
+ },
+ "Daugeliui žmonių atrodo, kad plytelės ir siūlių glaistas yra visiškai nepralaidūs vandeniui. Tai – pavojingas mitas. Cementinis glaistas ir mikroskopiniai plytelių įtrūkimai laikui bėgant praleidžia drėgmę į sienas ir grindis.": {
+  "pl": "Wiele osób sądzi, że płytki i fuga są całkowicie nieprzepuszczalne dla wody. To niebezpieczny mit. Fuga cementowa i mikroskopijne pęknięcia płytek z czasem przepuszczają wilgoć do ścian i podłogi.",
+  "ru": "Многие считают, что плитка и затирка полностью не пропускают воду. Это опасное заблуждение. Цементная затирка и микроскопические трещины плитки со временем пропускают влагу в стены и пол."
+ },
+ "Dažniausi formatai – 60x120, 80x80 ir 120x120 cm, tačiau galimybės vertinamos pagal konkretų gaminį ir objektą.": {
+  "pl": "Najczęstsze formaty to 60x120, 80x80 i 120x120 cm, ale możliwości oceniamy przy konkretnym produkcie i obiekcie.",
+  "ru": "Самые распространённые форматы — 60x120, 80x80 и 120x120 см, но возможности оцениваются по конкретному изделию и объекту."
+ },
+ "Dažniausi klausimai apie vonios plyteles": {
+  "pl": "Najczęstsze pytania o płytki łazienkowe",
+  "ru": "Частые вопросы о плитке для ванной"
+ },
+ "Dažniausiai taip. Plytelės vertinamos pagal vandens įgeriamumą, formatą, storį ir galimybę tiksliai suformuoti pjūvius bei briaunas.": {
+  "pl": "Najczęściej tak. Płytki oceniamy pod kątem nasiąkliwości, formatu, grubości oraz możliwości wykonania precyzyjnych cięć i krawędzi.",
+  "ru": "Чаще всего да. Плитку оцениваем по водопоглощению, формату, толщине и возможности точно выполнить резы и кромки."
+ },
+ "Dažniausios Didelio Formato Plytelių Klojimo Klaidos": {
+  "pl": "Najczęstsze błędy przy układaniu płytek wielkoformatowych",
+  "ru": "Частые ошибки при укладке крупноформатной плитки"
+ },
+ "Didelio Formato (60x120 cm) Plytelių Klojimo Ypatumai ir TLS Sistemos": {
+  "pl": "Układanie płytek wielkoformatowych (60x120 cm) i systemy TLS",
+  "ru": "Особенности укладки крупноформатной плитки (60x120 см) и системы TLS"
+ },
+ "Didelio Formato (60x120 cm) Plytelių Montavimas: Dažniausios Klaidos ir TLS Sistemų Naudojimas": {
+  "pl": "Montaż płytek wielkoformatowych (60x120 cm): najczęstsze błędy i systemy TLS",
+  "ru": "Монтаж крупноформатной плитки (60x120 см): частые ошибки и применение систем TLS"
+ },
+ "Didelio Formato Plytelių Montavimas: Dažniausios Klaidos": {
+  "pl": "Montaż płytek wielkoformatowych: najczęstsze błędy",
+  "ru": "Монтаж крупноформатной плитки: частые ошибки"
+ },
+ "Didelio formato akmens masės plytelių grindys vidaus patalpoje ir terasoje": {
+  "pl": "Podłoga z wielkoformatowego gresu w pomieszczeniu i na tarasie",
+  "ru": "Пол из крупноформатного керамогранита в помещении и на террасе"
+ },
+ "Didelio formato akmens masės plytelių klijavimas Pabradėje, Švenčionyse ir Vilniuje. TLS lyginimo sistemos ir šlapio pjovimo staklės.": {
+  "pl": "Układanie wielkoformatowego gresu w Pabradė, Święcianach i Wilnie. Systemy poziomowania TLS i przecinarki na mokro.",
+  "ru": "Укладка крупноформатного керамогранита в Пабраде, Швенчёнисе и Вильнюсе. Системы выравнивания TLS и мокрые плиткорезы."
+ },
+ "Didelio formato akmens masės plytelių klojimas Pabradėje, Švenčionyse ir Vilniuje: 60x120, 80x80, 120x120 cm grindims, sienoms ir terasoms.": {
+  "pl": "Układanie wielkoformatowego gresu w Pabradė, Święcianach i Wilnie: 60x120, 80x80, 120x120 cm na podłogi, ściany i tarasy.",
+  "ru": "Укладка крупноформатного керамогранита в Пабраде, Швенчёнисе и Вильнюсе: 60x120, 80x80, 120x120 см для пола, стен и террас."
+ },
+ "Didelio formato akmens masės plytelėms naudojami elastiniai C2TE/S1 klasės klijai. Taikomas <em>double-buttering</em> metodas – klijai dantytąja mentele tepami ir ant sienos, ir ant pačios plytelės nugarėlės.": {
+  "pl": "Do wielkoformatowego gresu stosujemy elastyczny klej klasy C2TE/S1. Pracujemy metodą <em>double-buttering</em> – klej nakładamy pacą zębatą zarówno na ścianę, jak i na spód samej płytki.",
+  "ru": "Для крупноформатного керамогранита используется эластичный клей класса C2TE/S1. Применяется метод <em>double-buttering</em> — клей наносится зубчатым шпателем и на стену, и на тыльную сторону самой плитки."
+ },
+ "Didelio formato akmens masės plytelės (60x120 cm, 80x80 cm, 120x120 cm) sukuria vientisą, prabangų vaizdą su minimaliu siūlių skaičiumi. Tačiau jų montavimas reikalauja specifinės patirties ir specialios įrangos.": {
+  "pl": "Wielkoformatowy gres (60x120 cm, 80x80 cm, 120x120 cm) daje jednolity, elegancki efekt przy minimalnej liczbie fug. Jego montaż wymaga jednak konkretnego doświadczenia i specjalistycznego sprzętu.",
+  "ru": "Крупноформатный керамогранит (60x120 см, 80x80 см, 120x120 см) создаёт цельный, дорогой вид с минимальным количеством швов. Но его монтаж требует особого опыта и специального оборудования."
+ },
+ "Didelio formato akmens masės plytelės (60x120 cm, 80x80 cm, 120x120 cm) šiuo metu yra populiariausias pasirinkimas ieškantiems prabangos ir vientisumo. Tačiau jų klojimas reikalauja ypatingo meistriškumo ir profesionalios įrangos.": {
+  "pl": "Wielkoformatowy gres (60x120 cm, 80x80 cm, 120x120 cm) jest dziś najczęstszym wyborem osób szukających eleganckiej i jednolitej powierzchni. Jego układanie wymaga jednak dużych umiejętności i profesjonalnego sprzętu.",
+  "ru": "Крупноформатный керамогранит (60x120 см, 80x80 см, 120x120 см) сегодня самый популярный выбор для тех, кто ищет цельную и дорогую поверхность. Но его укладка требует особого мастерства и профессионального оборудования."
+ },
+ "Didelio formato plytelių klojimas": {
+  "pl": "Układanie płytek wielkoformatowych",
+  "ru": "Укладка крупноформатной плитки"
+ },
+ "Didelio formato plytelių klojimas su TLS sistema Švenčionyse": {
+  "pl": "Układanie płytek wielkoformatowych z systemem TLS w Święcianach",
+  "ru": "Укладка крупноформатной плитки с системой TLS в Швенчёнисе"
+ },
+ "Didelio formato plytelių klojimas Švenčionyse": {
+  "pl": "Układanie płytek wielkoformatowych w Święcianach",
+  "ru": "Укладка крупноформатной плитки в Швенчёнисе"
+ },
+ "Didelio formato plytelių klojimo darbai": {
+  "pl": "Prace przy układaniu płytek wielkoformatowych",
+  "ru": "Работы по укладке крупноформатной плитки"
+ },
+ "Didelio formato plytelių klojimo ypatumai": {
+  "pl": "Specyfika układania płytek wielkoformatowych",
+  "ru": "Особенности укладки крупноформатной плитки"
+ },
+ "Didelio formato plytelių montavimo klaidos": {
+  "pl": "Błędy przy montażu płytek wielkoformatowych",
+  "ru": "Ошибки при монтаже крупноформатной плитки"
+ },
+ "Didelio formato plytelės": {
+  "pl": "Płytki wielkoformatowe",
+  "ru": "Крупноформатная плитка"
+ },
+ "Didelio formato plytelės sukuria prabangų vientisumo pojūtį. Apžvelgiame jų pjovimo, transportavimo ir lyginimo technologijas.": {
+  "pl": "Płytki wielkoformatowe dają wrażenie jednolitej, eleganckiej powierzchni. Omawiamy technologie ich cięcia, transportu i poziomowania.",
+  "ru": "Крупноформатная плитка создаёт ощущение цельной, дорогой поверхности. Разбираем технологии её резки, транспортировки и выравнивания."
+ },
+ "Didelių plytelių montavimo klaidos": {
+  "pl": "Błędy przy montażu dużych płytek",
+  "ru": "Ошибки при монтаже больших плиток"
+ },
+ "Didelė plytelė neatleidžia jokių sienos ar grindų nelygumų. Prieš klojant būtina idealiai išlyginti pagrindą mišiniais arba gipso kartonu.": {
+  "pl": "Duża płytka nie wybacza żadnych nierówności ściany ani podłogi. Przed układaniem podłoże trzeba dokładnie wyrównać masami wyrównującymi lub płytą gipsowo-kartonową.",
+  "ru": "Большая плитка не прощает неровностей стены или пола. Перед укладкой основание необходимо идеально выровнять смесями или гипсокартоном."
+ },
+ "Dirbame Pabradėje, Švenčionyse ir Vilniuje. Skambinkite tel. <strong>+370 600 30288</strong>.": {
+  "pl": "Pracujemy w Pabradė, Święcianach i Wilnie. Zadzwoń: <strong>+370 600 30288</strong>.",
+  "ru": "Работаем в Пабраде, Швенчёнисе и Вильнюсе. Звоните: <strong>+370 600 30288</strong>."
+ },
+ "Dirbame Pabradėje, Švenčionyse ir Vilniuje. Turime visą reikiamą įrangą didelio formato plytelių klojimui. Skambinkite tel. <strong>+370 600 30288</strong>.": {
+  "pl": "Pracujemy w Pabradė, Święcianach i Wilnie. Mamy pełen sprzęt do układania płytek wielkoformatowych. Zadzwoń: <strong>+370 600 30288</strong>.",
+  "ru": "Работаем в Пабраде, Швенчёнисе и Вильнюсе. У нас есть всё необходимое оборудование для укладки крупноформатной плитки. Звоните: <strong>+370 600 30288</strong>."
+ },
+ "Drėgnose zonose (dušo kabinoje, aplink vonią ir praustuvą) hidroizoliacija yra privaloma. Naudojama elastinga teptinė mastika (pvz., Knauf Flachendicht arba Mapei Mapelastic), tepama dvielemis statmenomis kryptimis.": {
+  "pl": "W strefach mokrych (kabina prysznicowa, okolice wanny i umywalki) hydroizolacja jest obowiązkowa. Stosujemy elastyczną masę powłokową (np. Knauf Flachendicht lub Mapei Mapelastic), nakładaną w dwóch warstwach w prostopadłych kierunkach.",
+  "ru": "Во влажных зонах (душевая кабина, вокруг ванны и умывальника) гидроизоляция обязательна. Используется эластичная обмазочная мастика (например, Knauf Flachendicht или Mapei Mapelastic), наносимая в два слоя во взаимно перпендикулярных направлениях."
+ },
+ "Drėgnose zonose įrengiami hidroizoliacijos sluoksniai, kampų juostos ir vamzdžių manžetės.": {
+  "pl": "W strefach mokrych wykonujemy warstwy hydroizolacji, taśmy narożne i manszety pod rury.",
+  "ru": "Во влажных зонах выполняются слои гидроизоляции, угловые ленты и манжеты для труб."
+ },
+ "Duomenis naudojame tik tam, kad atsakytume į jūsų užklausą, parengtume preliminarią sąmatą, susitartume dėl objekto apžiūros arba paslaugų atlikimo. Teisinis pagrindas – veiksmai, atliekami jūsų prašymu prieš sudarant sutartį, ir teisėtas interesas tinkamai administruoti klientų užklausas.": {
+  "pl": "Dane wykorzystujemy wyłącznie po to, aby odpowiedzieć na zapytanie, przygotować wstępną wycenę oraz umówić oględziny obiektu lub wykonanie usługi. Podstawą prawną są działania podejmowane na Twoje żądanie przed zawarciem umowy oraz prawnie uzasadniony interes polegający na obsłudze zapytań klientów.",
+  "ru": "Данные используются только для того, чтобы ответить на ваш запрос, подготовить предварительную смету и договориться об осмотре объекта или выполнении услуги. Правовое основание — действия по вашему запросу до заключения договора и законный интерес в надлежащей обработке обращений клиентов."
+ },
+ "Duomenų apsauga": {
+  "pl": "Ochrona danych",
+  "ru": "Защита данных"
+ },
+ "Duomenų, kuriuos pateikiate per Situacija.eu svetainę, valdytojas yra apdailos meistras Vladislav Finažonok. Susisiekti galima el. paštu <a href=\"mailto:v.finazonok@gmail.com\">v.finazonok@gmail.com</a> arba telefonu <a href=\"tel:+37060030288\">+370 600 30288</a>.": {
+  "pl": "Administratorem danych przekazywanych przez stronę Situacija.eu jest wykonawca prac wykończeniowych Vladislav Finažonok. Kontakt: e-mail <a href=\"mailto:v.finazonok@gmail.com\">v.finazonok@gmail.com</a> lub telefon <a href=\"tel:+37060030288\">+370 600 30288</a>.",
+  "ru": "Оператором данных, передаваемых через сайт Situacija.eu, является мастер отделочных работ Vladislav Finažonok. Связаться можно по эл. почте <a href=\"mailto:v.finazonok@gmail.com\">v.finazonok@gmail.com</a> или по телефону <a href=\"tel:+37060030288\">+370 600 30288</a>."
+ },
+ "Dušo ir kitose šlapiose zonose ji būtina, kad vanduo nepatektų į konstrukcijas.": {
+  "pl": "W strefie prysznica i innych mokrych strefach jest konieczna, aby woda nie przedostawała się do konstrukcji.",
+  "ru": "В душевой и других влажных зонах она необходима, чтобы вода не попадала в конструкции."
+ },
+ "Dušo zona": {
+  "pl": "Strefa prysznica",
+  "ru": "Душевая зона"
+ },
+ "Dušo zonos hidroizoliacija ir plytelių apdaila": {
+  "pl": "Hydroizolacja i wykończenie płytkami strefy prysznica",
+  "ru": "Гидроизоляция и плиточная отделка душевой зоны"
+ },
+ "Dušo zonos hidroizoliacija ir plytelių klijavimas": {
+  "pl": "Hydroizolacja i układanie płytek w strefie prysznica",
+  "ru": "Гидроизоляция и укладка плитки в душевой зоне"
+ },
+ "Džiūvus klijams (po 24-48 val.), siūlės išvalomos. Dušo zonoje rekomenduojama naudoti <strong>epoksidinį glaistą</strong>, kuris visiškai neįgeria vandens, riebalų ir nesudaro sąlygų pelėsiui atsirasti.": {
+  "pl": "Po wyschnięciu kleju (po 24–48 godz.) fugi są oczyszczane. W strefie prysznica zalecana jest <strong>fuga epoksydowa</strong>, która całkowicie nie wchłania wody i tłuszczu oraz nie sprzyja powstawaniu pleśni.",
+  "ru": "После высыхания клея (через 24–48 ч) швы очищаются. В душевой зоне рекомендуется <strong>эпоксидная затирка</strong>, которая полностью не впитывает воду и жир и не создаёт условий для появления плесени."
+ },
+ "Eksperto gidas apie didelio formato akmens masės plytelių montavimą: vakuuminiai pritraukėjai, TLS sistemos, dvigubas klijų tepimas ir dažniausios klaidos.": {
+  "pl": "Przewodnik eksperta po montażu wielkoformatowego gresu: przyssawki próżniowe, systemy TLS, podwójne nakładanie kleju i najczęstsze błędy.",
+  "ru": "Экспертное руководство по монтажу крупноформатного керамогранита: вакуумные присоски, системы TLS, двойное нанесение клея и частые ошибки."
+ },
+ "Fasadams, cokoliams, tvoroms, kolonoms ir daliai interjero akcentų, kai parinktas tinkamas pagrindas.": {
+  "pl": "Na elewacje, cokoły, ogrodzenia, kolumny oraz część akcentów we wnętrzu, gdy dobrane jest odpowiednie podłoże.",
+  "ru": "Для фасадов, цоколей, заборов, колонн и части интерьерных акцентов при правильно подобранном основании."
+ },
+ "Fasado ir Cokolio Apdaila Klinkerio Plytelėmis": {
+  "pl": "Wykończenie elewacji i cokołu płytkami klinkierowymi",
+  "ru": "Отделка фасада и цоколя клинкерной плиткой"
+ },
+ "Fasado ir cokolio apdaila klinkeriu": {
+  "pl": "Wykończenie elewacji i cokołu klinkierem",
+  "ru": "Отделка фасада и цоколя клинкером"
+ },
+ "Fasado ir cokolio klijavimas klinkeriu Švenčionių rajone": {
+  "pl": "Okładzina elewacji i cokołu klinkierem w rejonie święciańskim",
+  "ru": "Облицовка фасада и цоколя клинкером в Швенчёнском районе"
+ },
+ "Fasadų ir Cokolio Apdaila Klinkerio Plytelėmis: Ilgaamžiškumas ir Technologija": {
+  "pl": "Wykończenie elewacji i cokołu płytkami klinkierowymi: trwałość i technologia",
+  "ru": "Отделка фасада и цоколя клинкерной плиткой: долговечность и технология"
+ },
+ "Formuojami nuolydžiai, derinamas trapas ar latakas, tiksliai suplanuojamas plytelių išdėstymas.": {
+  "pl": "Formowane są spadki, dopasowywany odpływ liniowy lub punktowy, dokładnie planowany jest układ płytek.",
+  "ru": "Формируются уклоны, подбирается трап или лоток, точно планируется раскладка плитки."
+ },
+ "Galite paprašyti susipažinti su savo duomenimis, juos ištaisyti, ištrinti, apriboti jų tvarkymą arba nesutikti su tvarkymu. Prašymą atsiųskite nurodytu el. paštu. Taip pat turite teisę pateikti skundą Valstybinei duomenų apsaugos inspekcijai.": {
+  "pl": "Możesz poprosić o dostęp do swoich danych, ich sprostowanie, usunięcie, ograniczenie przetwarzania lub wnieść sprzeciw wobec przetwarzania. Wniosek prześlij na podany adres e-mail. Masz również prawo złożyć skargę do Państwowej Inspekcji Ochrony Danych.",
+  "ru": "Вы можете запросить доступ к своим данным, их исправление, удаление, ограничение обработки или возразить против обработки. Запрос отправьте на указанный адрес эл. почты. Вы также вправе подать жалобу в Государственную инспекцию по защите данных."
+ },
+ "Gaukite Nemokamą Sąmatą Jūsų Objektui": {
+  "pl": "Otrzymaj bezpłatną wycenę swojego obiektu",
+  "ru": "Получите бесплатную смету для вашего объекта"
+ },
+ "Geriausia turėti baldų projektą, stalviršio aukštį ir pasirinktų plytelių formatą. Tai leidžia iš anksto suplanuoti siūles bei pjūvius.": {
+  "pl": "Najlepiej mieć projekt mebli, wysokość blatu i format wybranych płytek. Pozwala to wcześniej zaplanować fugi oraz cięcia.",
+  "ru": "Лучше всего иметь проект мебели, высоту столешницы и формат выбранной плитки. Это позволяет заранее спланировать швы и резы."
+ },
+ "Glaisto tipas: Cementinis glaistymas vs Epoksidinis 2-komponentis glaistas.": {
+  "pl": "Rodzaj fugi: fugowanie cementowe a fuga epoksydowa dwuskładnikowa.",
+  "ru": "Тип затирки: цементная затирка или двухкомпонентная эпоксидная затирка."
+ },
+ "Google Analytics įjungiamas tik tada, kai slapukų juostoje pasirenkate „Leisti analitiką“. Analitika padeda suprasti bendrus lankytojų srautus ir svetainės naudojimą. Galite pasirinkti „Atmesti“ – svetainė ir kontaktų forma veiks toliau. Sutikimą galite pakeisti pašalinę Situacija.eu svetainės duomenis arba slapukus savo naršyklės nustatymuose.": {
+  "pl": "Google Analytics uruchamia się dopiero wtedy, gdy w banerze cookies wybierzesz „Zezwól na analitykę”. Analityka pomaga zrozumieć ogólny ruch odwiedzających i sposób korzystania ze strony. Możesz wybrać „Odrzuć” – strona i formularz kontaktowy będą działać dalej. Zgodę możesz zmienić, usuwając dane strony Situacija.eu lub pliki cookies w ustawieniach przeglądarki.",
+  "ru": "Google Analytics включается только тогда, когда в баннере cookies вы выбираете «Разрешить аналитику». Аналитика помогает понять общий поток посетителей и использование сайта. Вы можете выбрать «Отклонить» — сайт и контактная форма продолжат работать. Согласие можно изменить, удалив данные сайта Situacija.eu или файлы cookies в настройках браузера."
+ },
+ "Griežtas Paviršiaus Lygumas": {
+  "pl": "Rygorystyczna równość powierzchni",
+  "ru": "Строгая ровность поверхности"
+ },
+ "Grindims visada rekomenduojama rinktis matines arba tekstūruotas plyteles su atitinkama neslidumo klase (R10 arba R11). Blizgios plytelės ant grindų gavusios drėgmės tampa labai slidžios.": {
+  "pl": "Na podłogę zawsze zaleca się wybierać płytki matowe lub teksturowane o odpowiedniej klasie antypoślizgowości (R10 lub R11). Błyszczące płytki na podłodze po zawilgoceniu stają się bardzo śliskie.",
+  "ru": "Для пола всегда рекомендуется выбирать матовую или текстурированную плитку с соответствующим классом противоскольжения (R10 или R11). Глянцевая плитка на полу при попадании влаги становится очень скользкой."
+ },
+ "Grindų nuolydis duše: Formuojamas 1.5–2% nuolydis trapo link.": {
+  "pl": "Spadek podłogi w prysznicu: formowany spadek 1,5–2% w stronę odpływu.",
+  "ru": "Уклон пола в душевой: формируется уклон 1,5–2% в сторону трапа."
+ },
+ "Gruntavimas: Paviršius dengiamas gilaus skverbimosi gruntu, kad sumažėtų įgeriamumas ir pagerėtų klijų sukibimas.": {
+  "pl": "Gruntowanie: powierzchnia pokrywana jest gruntem głęboko penetrującym, aby zmniejszyć nasiąkliwość i poprawić przyczepność kleju.",
+  "ru": "Грунтование: поверхность покрывается грунтовкой глубокого проникновения, чтобы снизить впитываемость и улучшить сцепление клея."
+ },
+ "Gyvenamojo namo fasadas tvarkingai apklijuotas klinkerio plytelėmis": {
+  "pl": "Elewacja domu jednorodzinnego starannie obłożona płytkami klinkierowymi",
+  "ru": "Фасад жилого дома аккуратно облицован клинкерной плиткой"
+ },
+ "Hidroizoliacija": {
+  "pl": "Hydroizolacja",
+  "ru": "Гидроизоляция"
+ },
+ "Ieškote Didelio Formato Plytelių Meistro?": {
+  "pl": "Szukasz fachowca od płytek wielkoformatowych?",
+  "ru": "Ищете мастера по крупноформатной плитке?"
+ },
+ "Individuali kriauklė iš didelio formato šviesių plytelių moderniame vonios kambaryje": {
+  "pl": "Indywidualna umywalka z wielkoformatowych jasnych płytek w nowoczesnej łazience",
+  "ru": "Индивидуальная раковина из крупноформатной светлой плитки в современной ванной"
+ },
+ "Individualių kriauklių iš plytelių įrengimas Pabradėje, Švenčionyse ir Vilniuje: konstrukcija, hidroizoliacija, nuolydžiai, išleidimas ir 45° briaunos.": {
+  "pl": "Wykonanie indywidualnych umywalek z płytek w Pabradė, Święcianach i Wilnie: konstrukcja, hydroizolacja, spadki, odpływ i krawędzie 45°.",
+  "ru": "Изготовление индивидуальных раковин из плитки в Пабраде, Швенчёнисе и Вильнюсе: конструкция, гидроизоляция, уклоны, слив и кромки 45°."
+ },
+ "Informacija apie Situacija.eu kontaktų formoje pateikiamų duomenų, slapukų ir Google Analytics naudojimą bei jūsų teises.": {
+  "pl": "Informacje o wykorzystaniu danych z formularza kontaktowego Situacija.eu, plikach cookies i Google Analytics oraz o Twoich prawach.",
+  "ru": "Информация об использовании данных из контактной формы Situacija.eu, файлах cookies и Google Analytics, а также о ваших правах."
+ },
+ "Išdėstymo planas": {
+  "pl": "Plan układu",
+  "ru": "План раскладки"
+ },
+ "Išsamiau apie pagrindo paruošimą, siūles ir dažnas klaidas skaitykite straipsnyje <a href=\"blogas/klinkerio-fasado-ir-cokolio-apdaila.html\">„Klinkerio fasado ir cokolio apdaila“</a>.": {
+  "pl": "Więcej o przygotowaniu podłoża, fugach i częstych błędach przeczytasz w artykule <a href=\"blogas/klinkerio-fasado-ir-cokolio-apdaila.html\">„Wykończenie elewacji i cokołu klinkierem”</a>.",
+  "ru": "Подробнее о подготовке основания, швах и частых ошибках читайте в статье <a href=\"blogas/klinkerio-fasado-ir-cokolio-apdaila.html\">«Отделка фасада и цоколя клинкером»</a>."
+ },
+ "Išsamus gidas apie teptinės hidroizoliacijos svarbą, kampinių sandarinimo juostų klijavimą bei apsaugą nuo pelėsio ir kaimynų užpylimo.": {
+  "pl": "Szczegółowy przewodnik o znaczeniu hydroizolacji natryskowej, klejeniu narożnych taśm uszczelniających oraz ochronie przed pleśnią i zalaniem przez sąsiadów.",
+  "ru": "Подробное руководство о важности обмазочной гидроизоляции, наклейке угловых уплотнительных лент и защите от плесени и залива соседями."
+ },
+ "Išsamus gidas apie vonios kambario hidroizoliaciją Pabradėje, Švenčionyse ir Vilniuje: mastikos, sandarinimo juostos ir apsauga nuo drėgmės.": {
+  "pl": "Szczegółowy przewodnik po hydroizolacji łazienki w Pabradė, Święcianach i Wilnie: masy, taśmy uszczelniające i ochrona przed wilgocią.",
+  "ru": "Подробное руководство по гидроизоляции ванной в Пабраде, Швенчёнисе и Вильнюсе: мастики, уплотнительные ленты и защита от влаги."
+ },
+ "Jeigu vonios kambaryje nenaudojami plastikiniai kampukai, išoriniai kampai šlifuojami 45 laipsnių kampu. Tai skaičiuojama bėginiais metrais (m).": {
+  "pl": "Jeżeli w łazience nie są stosowane plastikowe narożniki, krawędzie zewnętrzne szlifowane są pod kątem 45 stopni. Liczy się to w metrach bieżących (mb).",
+  "ru": "Если в ванной не используются пластиковые уголки, наружные углы шлифуются под 45 градусов. Это считается в погонных метрах (пог. м)."
+ },
+ "Kad tarp plytelių nebūtų jokio „dantuko“ (aukščių skirtumo), naudojama TLS sistema – plastikinės klinčios ir gnybtai, kurie užfiksuoja gretimas plyteles viename lygyje iki visiško klijų išdžiūvimo.": {
+  "pl": "Aby między płytkami nie powstał żaden „ząbek” (różnica wysokości), stosuje się system TLS – plastikowe kliny i zaciski, które unieruchamiają sąsiednie płytki w jednej płaszczyźnie do całkowitego wyschnięcia kleju.",
+  "ru": "Чтобы между плитками не возникло «зуба» (перепада высот), применяется система TLS — пластиковые клинья и зажимы, фиксирующие соседние плитки в одной плоскости до полного высыхания клея."
+ },
+ "Kada klijuoti sienelę?": {
+  "pl": "Kiedy układać ścianę kuchenną?",
+  "ru": "Когда укладывать кухонный фартук?"
+ },
+ "Kada kreiptis?": {
+  "pl": "Kiedy się zgłosić?",
+  "ru": "Когда обращаться?"
+ },
+ "Kai žinomi baldų ir stalviršio matmenys, plytelių ribas bei rozečių vietas galima suplanuoti tiksliausiai.": {
+  "pl": "Gdy znane są wymiary mebli i blatu, granice płytek oraz miejsca gniazdek można zaplanować najdokładniej.",
+  "ru": "Когда известны размеры мебели и столешницы, границы плитки и места розеток можно спланировать максимально точно."
+ },
+ "Kainą lemia kriauklės dydis bei forma, pagrindo būklė, plytelių formatas, pjūvių ir 45° briaunų kiekis, hidroizoliacija, išleidimo tipas ir montavimo vietos sudėtingumas.": {
+  "pl": "O cenie decydują wielkość i kształt umywalki, stan podłoża, format płytek, liczba cięć i krawędzi 45°, hydroizolacja, rodzaj odpływu oraz złożoność miejsca montażu.",
+  "ru": "Цену определяют размер и форма раковины, состояние основания, формат плитки, количество резов и кромок 45°, гидроизоляция, тип слива и сложность места монтажа."
+ },
+ "Kaip Paruošiama Tiksli Plytelių Darbų Sąmata?": {
+  "pl": "Jak przygotowywana jest dokładna wycena prac glazurniczych?",
+  "ru": "Как составляется точная смета плиточных работ?"
+ },
+ "Kaip Pasirinkti Plyteles Vonios Kambariui: Dydžiai, Tekstūra ir Akmens Masė": {
+  "pl": "Jak wybrać płytki do łazienki: rozmiary, tekstura i gres",
+  "ru": "Как выбрать плитку для ванной: размеры, текстура и керамогранит"
+ },
+ "Kaip pasirinkti plyteles voniai": {
+  "pl": "Jak wybrać płytki do łazienki",
+  "ru": "Как выбрать плитку для ванной"
+ },
+ "Kaip pasirinkti plyteles vonios kambariui": {
+  "pl": "Jak wybrać płytki do łazienki",
+  "ru": "Как выбрать плитку для ванной комнаты"
+ },
+ "Kaip pasirinkti vonios plyteles: akmens masė, keramika, tinkamas formatas ir saugus, neslidus paviršius. Praktiniai meistro patarimai.": {
+  "pl": "Jak wybrać płytki do łazienki: gres, ceramika, właściwy format oraz bezpieczna, antypoślizgowa powierzchnia. Praktyczne porady fachowca.",
+  "ru": "Как выбрать плитку для ванной: керамогранит, керамика, подходящий формат и безопасная, нескользкая поверхность. Практические советы мастера."
+ },
+ "Kaip sudaroma plytelių darbų sąmata: objekto matavimai, pagrindo paruošimas, hidroizoliacija, pjovimas, glaistymas ir papildomi darbai.": {
+  "pl": "Jak powstaje wycena prac glazurniczych: pomiary obiektu, przygotowanie podłoża, hydroizolacja, cięcie, fugowanie i prace dodatkowe.",
+  "ru": "Как составляется смета плиточных работ: замеры объекта, подготовка основания, гидроизоляция, резка, затирка швов и дополнительные работы."
+ },
+ "Kaip įrengiama kriauklė iš plytelių?": {
+  "pl": "Jak powstaje umywalka z płytek?",
+  "ru": "Как изготавливается раковина из плитки?"
+ },
+ "Kas Nutinka Be Hidroizoliacijos?": {
+  "pl": "Co się dzieje bez hydroizolacji?",
+  "ru": "Что происходит без гидроизоляции?"
+ },
+ "Kas atliekama virtuvėje?": {
+  "pl": "Co wykonujemy w kuchni?",
+  "ru": "Что выполняется на кухне?"
+ },
+ "Kas lemia kainą?": {
+  "pl": "Co decyduje o cenie?",
+  "ru": "Что определяет цену?"
+ },
+ "Kas svarbu klojant dideles plyteles?": {
+  "pl": "Co jest ważne przy układaniu dużych płytek?",
+  "ru": "Что важно при укладке крупной плитки?"
+ },
+ "Kas įeina į paslaugą?": {
+  "pl": "Co obejmuje usługa?",
+  "ru": "Что входит в услугу?"
+ },
+ "Kiek trunka darbai?": {
+  "pl": "Ile trwają prace?",
+  "ru": "Сколько длятся работы?"
+ },
+ "Klausimai apie didelio formato plyteles": {
+  "pl": "Pytania o płytki wielkoformatowe",
+  "ru": "Вопросы о крупноформатной плитке"
+ },
+ "Klausimai apie klinkerio klijavimą": {
+  "pl": "Pytania o układanie klinkieru",
+  "ru": "Вопросы об укладке клинкера"
+ },
+ "Klausimai apie kriaukles iš plytelių": {
+  "pl": "Pytania o umywalki z płytek",
+  "ru": "Вопросы о раковинах из плитки"
+ },
+ "Klausimai apie virtuvės plyteles": {
+  "pl": "Pytania o płytki w kuchni",
+  "ru": "Вопросы о плитке на кухне"
+ },
+ "Klijavimas ir patikra. Plytelės tiksliai suklijuojamos, užbaigiamos siūlės ir patikrinamas vandens nubėgimas.": {
+  "pl": "Układanie i kontrola. Płytki są dokładnie klejone, wykańczane są fugi i sprawdzany jest odpływ wody.",
+  "ru": "Укладка и проверка. Плитка точно приклеивается, оформляются швы и проверяется сток воды."
+ },
+ "Klijavimas ir siūlės": {
+  "pl": "Układanie i fugi",
+  "ru": "Укладка и швы"
+ },
+ "Klijuojamos sienų bei grindų plytelės, suleidžiami 45° kampai, glaistomos ir hermetizuojamos siūlės.": {
+  "pl": "Klejone są płytki ścienne i podłogowe, wykonywane narożniki 45°, fugowane i uszczelniane są spoiny.",
+  "ru": "Приклеивается настенная и напольная плитка, выполняются углы 45°, затираются и герметизируются швы."
+ },
+ "Klijuojamos virtuvės sienelės, prijuostės ir grindys. Plytelių išdėstymas derinamas su baldais, stalviršiu, rozetėmis ir matomomis briaunomis.": {
+  "pl": "Układane są ściany kuchenne, fartuchy i podłogi. Układ płytek dopasowywany jest do mebli, blatu, gniazdek i widocznych krawędzi.",
+  "ru": "Укладываются кухонные стены, фартуки и полы. Раскладка плитки согласуется с мебелью, столешницей, розетками и видимыми кромками."
+ },
+ "Klijų padengimas": {
+  "pl": "Nakładanie kleju",
+  "ru": "Нанесение клея"
+ },
+ "Klinkerio Klijavimo Ypatumai Lauke": {
+  "pl": "Specyfika układania klinkieru na zewnątrz",
+  "ru": "Особенности укладки клинкера снаружи"
+ },
+ "Klinkerio apdailos darbai": {
+  "pl": "Prace wykończeniowe z klinkieru",
+  "ru": "Отделочные работы клинкером"
+ },
+ "Klinkerio fasado ir cokolio apdaila": {
+  "pl": "Wykończenie elewacji i cokołu klinkierem",
+  "ru": "Отделка фасада и цоколя клинкером"
+ },
+ "Klinkerio ir plytelių apdailos darbai": {
+  "pl": "Wykończenie klinkierem i płytkami",
+  "ru": "Отделка клинкером и плиткой"
+ },
+ "Klinkerio klijai, siūlės, impregnavimas ir svarbiausi ilgaamžės lauko apdailos reikalavimai.": {
+  "pl": "Kleje do klinkieru, fugi, impregnacja i najważniejsze wymagania trwałego wykończenia zewnętrznego.",
+  "ru": "Клеи для клинкера, швы, пропитка и главные требования к долговечной наружной отделке."
+ },
+ "Klinkerio klijavimas": {
+  "pl": "Układanie klinkieru",
+  "ru": "Укладка клинкера"
+ },
+ "Klinkerio klijavimas fasadams": {
+  "pl": "Układanie klinkieru na elewacje",
+  "ru": "Укладка клинкера на фасады"
+ },
+ "Klinkerio plytelių klijavimas": {
+  "pl": "Układanie płytek klinkierowych",
+  "ru": "Укладка клинкерной плитки"
+ },
+ "Klinkerio plytelių klijavimas Pabradėje ir Švenčionių rajone: fasadų, cokolio, tvorų bei židinių apdaila, siūlių rievėjimas ir impregnavimas.": {
+  "pl": "Układanie płytek klinkierowych w Pabradė i rejonie święciańskim: wykończenie elewacji, cokołu, ogrodzeń i kominków, profilowanie fug i impregnacja.",
+  "ru": "Укладка клинкерной плитки в Пабраде и Швенчёнском районе: отделка фасадов, цоколя, заборов и каминов, расшивка швов и пропитка."
+ },
+ "Klinkerio plytelių klijavimas ant fasadų, cokolio ir tvorų Pabradėje, Švenčionyse ir Vilniuje. Ilgaamžė apdaila, rievėjimas ir impregnavimas.": {
+  "pl": "Układanie płytek klinkierowych na elewacjach, cokole i ogrodzeniach w Pabradė, Święcianach i Wilnie. Trwałe wykończenie, profilowanie fug i impregnacja.",
+  "ru": "Укладка клинкерной плитки на фасадах, цоколе и заборах в Пабраде, Швенчёнисе и Вильнюсе. Долговечная отделка, расшивка швов и пропитка."
+ },
+ "Klinkerio plytelės – tai vienas patvariausių ir estetiškiausių sprendimų namo cokolio, fasado, židinio ar tvoros stulpų apdailai. Klinkeris yra itin atsparus drėgmei, atšalimui bei UV spinduliams.": {
+  "pl": "Płytki klinkierowe to jedno z najtrwalszych i najbardziej estetycznych rozwiązań do wykończenia cokołu, elewacji, kominka lub słupków ogrodzenia. Klinkier jest wyjątkowo odporny na wilgoć, mróz oraz promieniowanie UV.",
+  "ru": "Клинкерная плитка — одно из самых прочных и эстетичных решений для отделки цоколя, фасада, камина или столбов забора. Клинкер исключительно устойчив к влаге, морозу и УФ-излучению."
+ },
+ "Klojamos didelio formato keraminės ir akmens masės plytelės ant grindų, sienų bei terasose. Darbai planuojami pagal plytelių geometriją, pagrindą ir patalpos ašis.": {
+  "pl": "Układane są wielkoformatowe płytki ceramiczne i gres na podłogach, ścianach oraz tarasach. Prace planowane są według geometrii płytek, podłoża i osi pomieszczenia.",
+  "ru": "Укладывается крупноформатная керамическая плитка и керамогранит на полы, стены и террасы. Работы планируются по геометрии плитки, основанию и осям помещения."
+ },
+ "Klojant didelio formato plyteles naudojamos specialios klinčių ir gnybtų sistemos (TLS), kurios neleidžia plytelėms nusėsti klijams džiūstant ir užtikrina vientisą lygumą.": {
+  "pl": "Przy układaniu płytek wielkoformatowych stosuje się specjalne systemy klinów i zacisków (TLS), które nie pozwalają płytkom osiadać podczas schnięcia kleju i zapewniają jednolitą równość.",
+  "ru": "При укладке крупноформатной плитки применяются специальные системы клиньев и зажимов (TLS), которые не дают плитке просесть при высыхании клея и обеспечивают единую ровность."
+ },
+ "Kodėl Vonios Kambario Hidroizoliacija Yra Būtina ir Kaip Ji Įrengiama?": {
+  "pl": "Dlaczego hydroizolacja łazienki jest konieczna i jak się ją wykonuje?",
+  "ru": "Почему гидроизоляция ванной необходима и как она выполняется?"
+ },
+ "Kodėl svarbus lygus pagrindas, dvigubas klijų tepimas, tinkami klijai ir TLS sistema.": {
+  "pl": "Dlaczego ważne są równe podłoże, podwójne nakładanie kleju, właściwy klej i system TLS.",
+  "ru": "Почему важны ровное основание, двойное нанесение клея, правильный клей и система TLS."
+ },
+ "Kodėl vonios hidroizoliacija yra būtina": {
+  "pl": "Dlaczego hydroizolacja łazienki jest konieczna",
+  "ru": "Почему гидроизоляция ванной необходима"
+ },
+ "Kokie formatai klojami?": {
+  "pl": "Jakie formaty są układane?",
+  "ru": "Какие форматы укладываются?"
+ },
+ "Kokie matavimai ir papildomi darbai įtraukiami, kad galutinė kaina nebūtų netikėta.": {
+  "pl": "Jakie pomiary i prace dodatkowe są uwzględniane, aby końcowa cena nie była zaskoczeniem.",
+  "ru": "Какие замеры и дополнительные работы учитываются, чтобы итоговая цена не стала неожиданностью."
+ },
+ "Konstrukcija bei hidroizoliacija. Paruošiamas stabilus pagrindas ir įrengiama vientisa sandarinimo sistema.": {
+  "pl": "Konstrukcja i hydroizolacja. Przygotowywane jest stabilne podłoże i wykonywany jest szczelny, jednolity system uszczelnienia.",
+  "ru": "Конструкция и гидроизоляция. Подготавливается устойчивое основание и выполняется сплошная герметизирующая система."
+ },
+ "Kontaktinėje formoje gali būti renkami jūsų vardas, telefono numeris, miestas ir laisva forma pateiktas planuojamų darbų aprašymas. Duomenis pateikiate savanoriškai, tačiau be vardo ir telefono numerio negalėsime atsakyti į užklausą.": {
+  "pl": "W formularzu kontaktowym mogą być zbierane Twoje imię, numer telefonu, miejscowość oraz podany w dowolnej formie opis planowanych prac. Dane podajesz dobrowolnie, jednak bez imienia i numeru telefonu nie będziemy mogli odpowiedzieć na zapytanie.",
+  "ru": "В контактной форме могут собираться ваше имя, номер телефона, город и описание планируемых работ в свободной форме. Данные вы предоставляете добровольно, однако без имени и номера телефона мы не сможем ответить на запрос."
+ },
+ "Kriauklės iš plytelių": {
+  "pl": "Umywalki z płytek",
+  "ru": "Раковины из плитки"
+ },
+ "Kriauklės iš plytelių pagal individualų projektą": {
+  "pl": "Umywalki z płytek na indywidualne zamówienie",
+  "ru": "Раковины из плитки по индивидуальному проекту"
+ },
+ "Kur atliekami darbai?": {
+  "pl": "Gdzie wykonywane są prace?",
+  "ru": "Где выполняются работы?"
+ },
+ "Kur dirbama?": {
+  "pl": "Gdzie pracujemy?",
+  "ru": "Где ведутся работы?"
+ },
+ "Kur klojamos?": {
+  "pl": "Gdzie są układane?",
+  "ru": "Где укладываются?"
+ },
+ "Kur tinka klinkerio plytelės?": {
+  "pl": "Gdzie sprawdzają się płytki klinkierowe?",
+  "ru": "Где подходит клинкерная плитка?"
+ },
+ "Kyla rizika užpilti kaimynus gyvenamuosiuose namuose.": {
+  "pl": "W budynkach mieszkalnych pojawia się ryzyko zalania sąsiadów.",
+  "ru": "В жилых домах возникает риск залить соседей."
+ },
+ "Lauko sąlygomis privalu naudoti šalčiui ir drėgmei atsparius elastingus C2TE/S1 klijus bei atitinkamus klinkerio rievėjimo glaistus. Po klijavimo paviršius impregnuojamas apsaugine priemone nuo druskų išsikristalizavimo.": {
+  "pl": "Na zewnątrz obowiązkowo stosuje się mrozo- i wodoodporne elastyczne kleje C2TE/S1 oraz odpowiednie fugi do spoinowania klinkieru. Po ułożeniu powierzchnia jest impregnowana środkiem chroniącym przed wykwitami solnymi.",
+  "ru": "В наружных условиях обязательно применяются морозо- и влагостойкие эластичные клеи C2TE/S1 и соответствующие затирки для расшивки клинкера. После укладки поверхность пропитывается защитным средством от высолов."
+ },
+ "Lazeriu patikrinamas lygumas, įvertinami aukščiai, durų angos ir gretimų dangų sujungimai.": {
+  "pl": "Laserem sprawdzana jest równość, oceniane są wysokości, otwory drzwiowe i połączenia z sąsiednimi posadzkami.",
+  "ru": "Лазером проверяется ровность, оцениваются высоты, дверные проёмы и стыки с соседними покрытиями."
+ },
+ "Lyginimas ir siūlės": {
+  "pl": "Poziomowanie i fugi",
+  "ru": "Выравнивание и швы"
+ },
+ "Mažoms vonioms neretai klystama renkantis tik smulkias plyteles. Šiuolaikinės tendencijos rodo, kad didelio formato plytelės (60x60, 60x120 cm) mažame vonios kambaryje sukuria erdvumo pojūtį, nes yra mažiau siūlių linijų.": {
+  "pl": "W małych łazienkach częstym błędem jest wybieranie wyłącznie drobnych płytek. Współczesne trendy pokazują, że płytki wielkoformatowe (60x60, 60x120 cm) w małej łazience tworzą wrażenie przestrzeni, ponieważ jest mniej linii fug.",
+  "ru": "В маленьких ванных часто ошибочно выбирают только мелкую плитку. Современные тенденции показывают, что крупноформатная плитка (60x60, 60x120 см) в небольшой ванной создаёт ощущение простора, поскольку линий швов меньше."
+ },
+ "Medžiagų ir mazgų suderinimas. Patikrinamas plytelių formatas, suplanuojami pjūviai, briaunos ir nuolydžiai.": {
+  "pl": "Dopasowanie materiałów i detali. Sprawdzany jest format płytek, planowane są cięcia, krawędzie i spadki.",
+  "ru": "Согласование материалов и узлов. Проверяется формат плитки, планируются резы, кромки и уклоны."
+ },
+ "Meistro Patarimai ir Apdailos Blogas": {
+  "pl": "Porady fachowca i blog o wykończeniach",
+  "ru": "Советы мастера и блог об отделке"
+ },
+ "Meistro Vladislav atlikti plytelių klojimo, vonios apdailos, hidroizoliacijos ir klinkerio darbai Pabradėje, Švenčionyse ir Vilniuje.": {
+  "pl": "Wykonane przez fachowca Vladislava prace glazurnicze, wykończenia łazienek, hydroizolacji i klinkieru w Pabradė, Święcianach i Wilnie.",
+  "ru": "Выполненные мастером Владиславом работы по укладке плитки, отделке ванных, гидроизоляции и клинкеру в Пабраде, Швенчёнисе и Вильнюсе."
+ },
+ "Meistro patarimai apie plytelių klojimą, vonios hidroizoliaciją, didelio formato plyteles ir apdailos kainas Pabradėje bei Švenčionyse.": {
+  "pl": "Porady fachowca o układaniu płytek, hydroizolacji łazienki, płytkach wielkoformatowych i cenach wykończenia w Pabradė oraz Święcianach.",
+  "ru": "Советы мастера об укладке плитки, гидроизоляции ванной, крупноформатной плитке и ценах на отделку в Пабраде и Швенчёнисе."
+ },
+ "Naudojama plytelių lyginimo sistema, kontroliuojami aukščiai ir suplanuojamos deformacinės siūlės.": {
+  "pl": "Stosowany jest system poziomujący do płytek, kontrolowane są wysokości i planowane szczeliny dylatacyjne.",
+  "ru": "Применяется система выравнивания плитки, контролируются высоты и планируются деформационные швы."
+ },
+ "Naudojame HTTPS ryšį, ribojamą administravimo prieigą ir technines serverio apsaugos priemones. Ši politika gali būti atnaujinta pasikeitus svetainės funkcijoms arba teisės aktams; naujausia jos versija visada skelbiama šiame puslapyje.": {
+  "pl": "Stosujemy połączenie HTTPS, ograniczony dostęp administracyjny oraz techniczne zabezpieczenia serwera. Niniejsza polityka może zostać zaktualizowana po zmianie funkcji strony lub przepisów; jej najnowsza wersja jest zawsze publikowana na tej stronie.",
+  "ru": "Мы используем соединение HTTPS, ограниченный административный доступ и технические меры защиты сервера. Эта политика может быть обновлена при изменении функций сайта или законодательства; её актуальная версия всегда публикуется на этой странице."
+ },
+ "Naudojamos lauko sąlygoms bei pasirinktam klinkeriui tinkamos medžiagos ir technologija.": {
+  "pl": "Stosowane są materiały i technologia odpowiednie do warunków zewnętrznych i wybranego klinkieru.",
+  "ru": "Применяются материалы и технология, подходящие для наружных условий и выбранного клинкера."
+ },
+ "Nelygus pagrindas: Didelė plytelė nesilanksto – jei pagrindas turi 3 mm nuokrypį, kampai iškils.": {
+  "pl": "Nierówne podłoże: duża płytka się nie ugina – jeśli podłoże ma odchyłkę 3 mm, narożniki się uniosą.",
+  "ru": "Неровное основание: крупная плитка не гнётся — если у основания отклонение 3 мм, углы поднимутся."
+ },
+ "Nemokamai konsultuojame, atvykstame matavimams ir pateikiame tikslią darbų sąmatą. Skambinkite tel. <strong>+370 600 30288</strong>.": {
+  "pl": "Konsultujemy bezpłatnie, przyjeżdżamy na pomiary i przedstawiamy dokładną wycenę prac. Zadzwoń: <strong>+370 600 30288</strong>.",
+  "ru": "Консультируем бесплатно, приезжаем на замеры и предоставляем точную смету работ. Звоните: <strong>+370 600 30288</strong>."
+ },
+ "Nuo ko priklauso kaina?": {
+  "pl": "Od czego zależy cena?",
+  "ru": "От чего зависит цена?"
+ },
+ "Nuo ko priklauso plytelių klojimo kaina už m² Pabradėje, Švenčionyse ir Vilniuje? Sąmatos skaičiavimas, 45° pjovimas ir paruošimo darbai.": {
+  "pl": "Od czego zależy cena układania płytek za m² w Pabradė, Święcianach i Wilnie? Sposób liczenia wyceny, cięcie 45° i prace przygotowawcze.",
+  "ru": "От чего зависит цена укладки плитки за м² в Пабраде, Швенчёнисе и Вильнюсе? Расчёт сметы, рез 45° и подготовительные работы."
+ },
+ "Pabradėje ir Švenčionių rajone atvykstame matavimams nemokamai. Skambinkite tel. <strong>+370 600 30288</strong>.": {
+  "pl": "W Pabradė i rejonie święciańskim przyjeżdżamy na pomiary bezpłatnie. Zadzwoń: <strong>+370 600 30288</strong>.",
+  "ru": "В Пабраде и Швенчёнском районе выезд на замеры бесплатный. Звоните: <strong>+370 600 30288</strong>."
+ },
+ "Pabradėje, Švenčionyse ir Vilniuje skaičiuojame tikslias sąmatas be paslėptų mokesčių. Skambinkite tel. <strong>+370 600 30288</strong>.": {
+  "pl": "W Pabradė, Święcianach i Wilnie przygotowujemy dokładne wyceny bez ukrytych opłat. Zadzwoń: <strong>+370 600 30288</strong>.",
+  "ru": "В Пабраде, Швенчёнисе и Вильнюсе мы составляем точные сметы без скрытых доплат. Звоните: <strong>+370 600 30288</strong>."
+ },
+ "Padedame pasirinkti tinkamiausias plyteles bei tiksliai apskaičiuoti sąmatą. Skambinkite tiesiogiai meistrui telefonu <strong>+370 600 30288</strong>.": {
+  "pl": "Pomagamy dobrać najbardziej odpowiednie płytki i dokładnie policzyć wycenę. Zadzwoń bezpośrednio do fachowca: <strong>+370 600 30288</strong>.",
+  "ru": "Поможем подобрать наиболее подходящую плитку и точно рассчитать смету. Звоните напрямую мастеру: <strong>+370 600 30288</strong>."
+ },
+ "Pagrindas ir hidroizoliacija": {
+  "pl": "Podłoże i hydroizolacja",
+  "ru": "Основание и гидроизоляция"
+ },
+ "Pagrindinės vietovės – <a href=\"plyteliu-klojimas-pabrade.html\">Pabradė</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Švenčionys, Švenčionėliai ir Švenčionių rajonas</a>.": {
+  "pl": "Główne miejscowości to <a href=\"plyteliu-klojimas-pabrade.html\">Pabradė</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Święciany, Nowo-Święciany i rejon święciański</a>.",
+  "ru": "Основные населённые пункты — <a href=\"plyteliu-klojimas-pabrade.html\">Пабраде</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Швенчёнис, Швенчёнеляй и Швенчёнский район</a>."
+ },
+ "Pagrindo paruošimas": {
+  "pl": "Przygotowanie podłoża",
+  "ru": "Подготовка основания"
+ },
+ "Pagrindo paruošimas, hidroizoliacija, dušo nuolydžiai ir tikslus plytelių klijavimas.": {
+  "pl": "Przygotowanie podłoża, hydroizolacja, spadki w prysznicu i dokładne układanie płytek.",
+  "ru": "Подготовка основания, гидроизоляция, уклоны в душевой и точная укладка плитки."
+ },
+ "Pagrindo plokštuma": {
+  "pl": "Płaszczyzna podłoża",
+  "ru": "Плоскость основания"
+ },
+ "Pagrindo įvertinimas": {
+  "pl": "Ocena podłoża",
+  "ru": "Оценка основания"
+ },
+ "Paprastų klijų naudojimas: Didelėms plytelėms reikalingi tik itin elastingi C2TE/S1 klijai.": {
+  "pl": "Stosowanie zwykłego kleju: do dużych płytek potrzebne są wyłącznie wysoce elastyczne kleje C2TE/S1.",
+  "ru": "Использование обычного клея: для крупной плитки нужны только высокоэластичные клеи C2TE/S1."
+ },
+ "Parenkama estetiška pradžios vieta, suderinamas siūlių ritmas ir viršutinis apdailos aukštis.": {
+  "pl": "Dobierane jest estetyczne miejsce startu, uzgadniany rytm fug i górna wysokość wykończenia.",
+  "ru": "Подбирается эстетичная точка старта, согласуется ритм швов и верхняя высота отделки."
+ },
+ "Parenkama tinkama glaisto spalva, sandarinamos jungtys prie stalviršio ir kitų medžiagų.": {
+  "pl": "Dobierany jest odpowiedni kolor fugi, uszczelniane są połączenia z blatem i innymi materiałami.",
+  "ru": "Подбирается подходящий цвет затирки, герметизируются стыки со столешницей и другими материалами."
+ },
+ "Parenkamas kriauklės dydis, gylis, aukštis ir forma, suderinama su patalpos geometrija bei plytelių moduliu.": {
+  "pl": "Dobierane są wielkość, głębokość, wysokość i kształt umywalki, dopasowane do geometrii pomieszczenia i modułu płytek.",
+  "ru": "Подбираются размер, глубина, высота и форма раковины, согласованные с геометрией помещения и модулем плитки."
+ },
+ "Parenkamos formatui bei pagrindui tinkamos medžiagos, siekiama reikiamo klijų kontakto.": {
+  "pl": "Dobierane są materiały odpowiednie do formatu i podłoża, z dążeniem do wymaganego kontaktu kleju.",
+  "ru": "Подбираются материалы, подходящие для формата и основания, с обеспечением необходимого контакта клея."
+ },
+ "Paruošiamas pagrindas ir klijuojamos lengvai prižiūrimos keraminės arba akmens masės plytelės.": {
+  "pl": "Przygotowywane jest podłoże i klejone są łatwe w utrzymaniu płytki ceramiczne lub gres.",
+  "ru": "Подготавливается основание и укладывается неприхотливая в уходе керамическая плитка или керамогранит."
+ },
+ "Paskutinį kartą atnaujinta 2026 m. rugpjūčio 14 d.": {
+  "pl": "Ostatnia aktualizacja: 14 sierpnia 2026 r.",
+  "ru": "Последнее обновление: 14 августа 2026 г."
+ },
+ "Paslaugų vietovės": {
+  "pl": "Obsługiwane miejscowości",
+  "ru": "Населённые пункты обслуживания"
+ },
+ "Patikrinamas sienų ir grindų lygumas, paviršiai gruntuojami ir prireikus išlyginami.": {
+  "pl": "Sprawdzana jest równość ścian i podłóg, powierzchnie są gruntowane i w razie potrzeby wyrównywane.",
+  "ru": "Проверяется ровность стен и полов, поверхности грунтуются и при необходимости выравниваются."
+ },
+ "Patikrinamas tvirtumas, lygumas, drėgmė ir pasirinktos sistemos suderinamumas su pagrindu.": {
+  "pl": "Sprawdzana jest wytrzymałość, równość, wilgotność oraz zgodność wybranego systemu z podłożem.",
+  "ru": "Проверяются прочность, ровность, влажность и совместимость выбранной системы с основанием."
+ },
+ "Paviršiaus paruošimas: Sienų lyginimas, hidroizoliacijos teptinis įrengimas ir kampinių juostų klijavimas.": {
+  "pl": "Przygotowanie powierzchni: wyrównanie ścian, wykonanie hydroizolacji natryskowej i klejenie taśm narożnych.",
+  "ru": "Подготовка поверхности: выравнивание стен, устройство обмазочной гидроизоляции и наклейка угловых лент."
+ },
+ "Pilnas Vonios Kambario Plytelių Klojimo Vadovas": {
+  "pl": "Kompletny przewodnik po układaniu płytek w łazience",
+  "ru": "Полное руководство по укладке плитки в ванной"
+ },
+ "Pilnas Vonios Kambario Plytelių Klojimo Vadovas: Nuo Paviršiaus Paruošimo iki Epoksidinio Glaisto": {
+  "pl": "Kompletny przewodnik po układaniu płytek w łazience: od przygotowania powierzchni po fugę epoksydową",
+  "ru": "Полное руководство по укладке плитки в ванной: от подготовки поверхности до эпоксидной затирки"
+ },
+ "Pilnas vonios kambario plytelių klojimo vadovas": {
+  "pl": "Kompletny przewodnik po układaniu płytek w łazience",
+  "ru": "Полное руководство по укладке плитки в ванной комнате"
+ },
+ "Planuojant apdailos darbus vienas dažniausiai užduodamų klausimų – kiek kainuos plytelių klojimas m²? Tiksli kaina visada priklauso nuo kelių pagrindinių veiksnių:": {
+  "pl": "Planując prace wykończeniowe, jednym z najczęściej zadawanych pytań jest to, ile kosztuje układanie płytek za m². Dokładna cena zawsze zależy od kilku podstawowych czynników:",
+  "ru": "При планировании отделочных работ один из самых частых вопросов — сколько стоит укладка плитки за м². Точная цена всегда зависит от нескольких основных факторов:"
+ },
+ "Planuojant vonios kambario ar grindų apdailą Pabradėje, Švenčionyse ar Vilniuje, svarbu žinoti, kaip formuojama galutinė darbų sąmata. Skaidrus sąmatos skaičiavimas užkerta kelią paslėptoms išlaidoms.": {
+  "pl": "Planując wykończenie łazienki lub podłogi w Pabradė, Święcianach albo Wilnie, warto wiedzieć, jak powstaje końcowa wycena prac. Przejrzyste liczenie wyceny zapobiega ukrytym kosztom.",
+  "ru": "Планируя отделку ванной или пола в Пабраде, Швенчёнисе или Вильнюсе, важно знать, как формируется итоговая смета работ. Прозрачный расчёт сметы исключает скрытые расходы."
+ },
+ "Planuojate Cokolio ar Fasado Klinkerio Apdailą?": {
+  "pl": "Planujesz wykończenie cokołu lub elewacji klinkierem?",
+  "ru": "Планируете отделку цоколя или фасада клинкером?"
+ },
+ "Planuojate klinkerio fasadą ar cokolį?": {
+  "pl": "Planujesz elewację lub cokół z klinkieru?",
+  "ru": "Планируете клинкерный фасад или цоколь?"
+ },
+ "Planuojate virtuvės apdailą?": {
+  "pl": "Planujesz wykończenie kuchni?",
+  "ru": "Планируете отделку кухни?"
+ },
+ "Plotas, aukštis, pagrindo būklė, angos, kampai, raštas, siūlių tipas ir priėjimas prie objekto.": {
+  "pl": "Powierzchnia, wysokość, stan podłoża, otwory, narożniki, wzór, rodzaj fug i dojazd do obiektu.",
+  "ru": "Площадь, высота, состояние основания, проёмы, углы, рисунок, тип швов и подъезд к объекту."
+ },
+ "Plytelių Klojimo Kainos Pabradėje, Švenčionyse ir Vilniuje: Nuo Ko Priklauso Sąmata?": {
+  "pl": "Ceny układania płytek w Pabradė, Święcianach i Wilnie: od czego zależy wycena?",
+  "ru": "Цены на укладку плитки в Пабраде, Швенчёнисе и Вильнюсе: от чего зависит смета?"
+ },
+ "Plytelių apdaila Švenčionių rajone": {
+  "pl": "Wykończenie płytkami w rejonie święciańskim",
+  "ru": "Плиточная отделка в Швенчёнском районе"
+ },
+ "Plytelių darbų sąmatos sudarymas": {
+  "pl": "Sporządzanie wyceny prac glazurniczych",
+  "ru": "Составление сметы плиточных работ"
+ },
+ "Plytelių dydis: Standartinės plytelės (30x60, 60x60 cm) vs Didelio formato plytelės (60x120 cm) ar mozaika.": {
+  "pl": "Rozmiar płytek: płytki standardowe (30x60, 60x60 cm) a płytki wielkoformatowe (60x120 cm) lub mozaika.",
+  "ru": "Размер плитки: стандартная плитка (30x60, 60x60 см) против крупноформатной (60x120 см) или мозаики."
+ },
+ "Plytelių klijavimo kainos ir sąmatos skaičiavimas": {
+  "pl": "Ceny układania płytek i liczenie wyceny",
+  "ru": "Цены на укладку плитки и расчёт сметы"
+ },
+ "Plytelių klijavimo paslaugos Vilniuje": {
+  "pl": "Usługi glazurnicze w Wilnie",
+  "ru": "Услуги по укладке плитки в Вильнюсе"
+ },
+ "Plytelių klojimas ir klijavimas Vilniuje pagal grafiką: vonios kambariai, hidroizoliacija, virtuvės ir didelio formato grindys. Tel. +370 600 30288.": {
+  "pl": "Układanie i klejenie płytek w Wilnie według harmonogramu: łazienki, hydroizolacja, kuchnie i podłogi wielkoformatowe. Tel. +370 600 30288.",
+  "ru": "Укладка плитки в Вильнюсе по графику: ванные, гидроизоляция, кухни и крупноформатные полы. Тел. +370 600 30288."
+ },
+ "Plytelių klojimas ir klijavimas Švenčionyse, Švenčionėliuose bei rajone: vonios, grindys, terasos, klinkeris ir hidroizoliacija. Tel. +370 600 30288.": {
+  "pl": "Układanie i klejenie płytek w Święcianach, Nowo-Święcianach i rejonie: łazienki, podłogi, tarasy, klinkier i hydroizolacja. Tel. +370 600 30288.",
+  "ru": "Укладка плитки в Швенчёнисе, Швенчёнеляе и районе: ванные, полы, террасы, клинкер и гидроизоляция. Тел. +370 600 30288."
+ },
+ "Plytelių klojimo darbų galerija": {
+  "pl": "Galeria prac glazurniczych",
+  "ru": "Галерея работ по укладке плитки"
+ },
+ "Plytelių klojimo kaina ir veiksniai": {
+  "pl": "Cena układania płytek i czynniki",
+  "ru": "Цена укладки плитки и факторы"
+ },
+ "Plytelių klojimo kainos Pabradėje ir Švenčionyse": {
+  "pl": "Ceny układania płytek w Pabradė i Święcianach",
+  "ru": "Цены на укладку плитки в Пабраде и Швенчёнисе"
+ },
+ "Plytelių klojimo kainos ir sąmatos skaičiavimas Pabradėje": {
+  "pl": "Ceny układania płytek i liczenie wyceny w Pabradė",
+  "ru": "Цены на укладку плитки и расчёт сметы в Пабраде"
+ },
+ "Plytelių klojimo patarimai": {
+  "pl": "Porady dotyczące układania płytek",
+  "ru": "Советы по укладке плитки"
+ },
+ "Plytelių klojimo vadovai ir praktiniai patarimai": {
+  "pl": "Przewodniki i praktyczne porady o układaniu płytek",
+  "ru": "Руководства и практические советы по укладке плитки"
+ },
+ "Plytelių kriauklės vidaus nuolydžio ir linijinio vandens išleidimo detalė": {
+  "pl": "Detal wewnętrznego spadku umywalki z płytek i liniowego odpływu wody",
+  "ru": "Деталь внутреннего уклона раковины из плитки и линейного слива воды"
+ },
+ "Plytelių meistras Pabradėje": {
+  "pl": "Fachowiec od płytek w Pabradė",
+  "ru": "Мастер по плитке в Пабраде"
+ },
+ "Plytelių meistras Pabradėje: vonios, virtuvės, didelio formato grindys, terasos, klinkeris ir hidroizoliacija. Sąmata tel. +370 600 30288.": {
+  "pl": "Fachowiec od płytek w Pabradė: łazienki, kuchnie, podłogi wielkoformatowe, tarasy, klinkier i hydroizolacja. Wycena: tel. +370 600 30288.",
+  "ru": "Мастер по плитке в Пабраде: ванные, кухни, крупноформатные полы, террасы, клинкер и гидроизоляция. Смета: тел. +370 600 30288."
+ },
+ "Plytelių meistras Vilniuje": {
+  "pl": "Fachowiec od płytek w Wilnie",
+  "ru": "Мастер по плитке в Вильнюсе"
+ },
+ "Plytelių meistras Švenčionyse": {
+  "pl": "Fachowiec od płytek w Święcianach",
+  "ru": "Мастер по плитке в Швенчёнисе"
+ },
+ "Plytelėmis formuojama kriauklė gali vientisai pratęsti vonios apdailą. Suderiname konstrukciją, nuolydžius, hidroizoliaciją, vandens išleidimą ir preciziškas briaunas.": {
+  "pl": "Umywalka formowana z płytek może stanowić spójne przedłużenie wykończenia łazienki. Uzgadniamy konstrukcję, spadki, hydroizolację, odpływ wody i precyzyjne krawędzie.",
+  "ru": "Раковина, сформированная из плитки, может стать цельным продолжением отделки ванной. Согласуем конструкцию, уклоны, гидроизоляцию, слив воды и точные кромки."
+ },
+ "Plytelės pjaunamos pagal projektą, išorinės briaunos suleidžiamos 45° kampu ir kruopščiai užbaigiamos.": {
+  "pl": "Płytki są cięte zgodnie z projektem, krawędzie zewnętrzne łączone pod kątem 45° i starannie wykańczane.",
+  "ru": "Плитка режется по проекту, наружные кромки запиливаются под 45° и тщательно доводятся."
+ },
+ "Praktiniai patarimai, technologijų apžvalgos ir naudinga informacija apie plytelių klojimą bei būsto apdailą.": {
+  "pl": "Praktyczne porady, przeglądy technologii i przydatne informacje o układaniu płytek oraz wykończeniu mieszkania.",
+  "ru": "Практические советы, обзоры технологий и полезная информация об укладке плитки и отделке жилья."
+ },
+ "Prieš maišant klijus, atliekamas sausas matavimas. Svarbu išvengti siaurų plytelių juostelių (mažesnių nei pusė plytelės) patalpos kampuose.": {
+  "pl": "Przed wymieszaniem kleju wykonuje się układanie na sucho. Ważne jest, aby uniknąć wąskich pasków płytek (węższych niż pół płytki) w narożnikach pomieszczenia.",
+  "ru": "Перед замешиванием клея выполняется сухая раскладка. Важно избежать узких полос плитки (уже половины плитки) в углах помещения."
+ },
+ "Prieš pradedant klijavimą, sienos ir grindys tikrinamos lazeriniu nivelyru. Sienų vertikalumas ir kampų statumas (90° kampas) yra būtini, ypač tose vietose, kur stovės vonia, dušo kabina ar baldai.": {
+  "pl": "Przed rozpoczęciem klejenia ściany i podłogi sprawdzane są niwelatorem laserowym. Pion ścian i kąt prosty narożników (90°) są niezbędne, zwłaszcza tam, gdzie staną wanna, kabina prysznicowa lub meble.",
+  "ru": "Перед началом укладки стены и полы проверяются лазерным нивелиром. Вертикальность стен и прямой угол (90°) обязательны, особенно там, где встанут ванна, душевая кабина или мебель."
+ },
+ "Privatumo politika": {
+  "pl": "Polityka prywatności",
+  "ru": "Политика конфиденциальности"
+ },
+ "Projektavimas ir matavimai": {
+  "pl": "Projektowanie i pomiary",
+  "ru": "Проектирование и замеры"
+ },
+ "Rašto derinimas, rozečių pjūviai, sienelių ir akmens masės grindų apdaila.": {
+  "pl": "Dopasowanie wzoru, cięcia pod gniazdka, wykończenie ścian kuchennych i podłóg z gresu.",
+  "ru": "Подбор рисунка, резы под розетки, отделка кухонных стен и полов из керамогранита."
+ },
+ "Rašto planavimas": {
+  "pl": "Planowanie wzoru",
+  "ru": "Планирование рисунка"
+ },
+ "Reikia Kvalifikuoto Meistro Pabradėje, Švenčionyse ar Vilniuje?": {
+  "pl": "Potrzebujesz wykwalifikowanego fachowca w Pabradė, Święcianach lub Wilnie?",
+  "ru": "Нужен квалифицированный мастер в Пабраде, Швенчёнисе или Вильнюсе?"
+ },
+ "Reikia Meistro Konsultacijos Pabradėje ar Švenčionyse?": {
+  "pl": "Potrzebujesz konsultacji fachowca w Pabradė lub Święcianach?",
+  "ru": "Нужна консультация мастера в Пабраде или Швенчёнисе?"
+ },
+ "Reikia plytelių meistro voniai?": {
+  "pl": "Potrzebujesz fachowca od płytek do łazienki?",
+  "ru": "Нужен мастер по плитке для ванной?"
+ },
+ "Rinkitės temą: nuo plytelių pasirinkimo ir hidroizoliacijos iki darbų kainos bei fasado apdailos.": {
+  "pl": "Wybierz temat: od doboru płytek i hydroizolacji po ceny prac i wykończenie elewacji.",
+  "ru": "Выберите тему: от выбора плитки и гидроизоляции до цен на работы и отделки фасада."
+ },
+ "Rozečių ir vamzdžių pjūviai": {
+  "pl": "Cięcia pod gniazdka i rury",
+  "ru": "Резы под розетки и трубы"
+ },
+ "Sienose ir grindyse kaupiasi drėgmė, sukelianti klijų atšokimą.": {
+  "pl": "W ścianach i podłogach gromadzi się wilgoć, powodująca odspajanie kleju.",
+  "ru": "В стенах и полах накапливается влага, вызывающая отслоение клея."
+ },
+ "Siūlių užbaigimas": {
+  "pl": "Wykończenie fug",
+  "ru": "Оформление швов"
+ },
+ "Siūlės ir apsauga": {
+  "pl": "Fugi i ochrona",
+  "ru": "Швы и защита"
+ },
+ "Siūlės užpildomos bei formuojamos, prireikus parenkama papildoma paviršiaus apsauga.": {
+  "pl": "Fugi są wypełniane i profilowane, w razie potrzeby dobierana jest dodatkowa ochrona powierzchni.",
+  "ru": "Швы заполняются и формируются, при необходимости подбирается дополнительная защита поверхности."
+ },
+ "Smulki mozaika bei didelio formato (60x120 cm) plytelės reikalauja daugiau laiko ir specialios įrangos, todėl jų klijavimas kainuoja šiek tiek daugiau nei standartinių plytelių.": {
+  "pl": "Drobna mozaika oraz płytki wielkoformatowe (60x120 cm) wymagają więcej czasu i specjalistycznego sprzętu, dlatego ich układanie kosztuje nieco więcej niż płytek standardowych.",
+  "ru": "Мелкая мозаика и крупноформатная плитка (60x120 см) требуют больше времени и специального оборудования, поэтому их укладка стоит немного дороже стандартной."
+ },
+ "Suderinamos eilės, angokraščiai, kampai ir vertikalios siūlės, kad fasadas atrodytų vientisas.": {
+  "pl": "Uzgadniane są rzędy, ościeża, narożniki i pionowe fugi, aby elewacja wyglądała jednolicie.",
+  "ru": "Согласуются ряды, откосы, углы и вертикальные швы, чтобы фасад выглядел цельным."
+ },
+ "Suderinamos pagrindinės ašys, kraštinių pjūviai, rašto kryptis ir siūlių tęstinumas.": {
+  "pl": "Uzgadniane są główne osie, cięcia krawędziowe, kierunek wzoru i ciągłość fug.",
+  "ru": "Согласуются основные оси, краевые резы, направление рисунка и непрерывность швов."
+ },
+ "Suformuojama stabili konstrukcija, nuolydžiai ir su visa vonios sistema suderinta hidroizoliacija.": {
+  "pl": "Formowana jest stabilna konstrukcja, spadki oraz hydroizolacja uzgodniona z całym systemem łazienki.",
+  "ru": "Формируется устойчивая конструкция, уклоны и гидроизоляция, согласованная со всей системой ванной."
+ },
+ "Suplanuojamas išleidimas, prieiga prie sifono ir patikrinamas vandens nubėgimas prieš galutinį užbaigimą.": {
+  "pl": "Planowany jest odpływ, dostęp do syfonu i sprawdzany jest spływ wody przed ostatecznym wykończeniem.",
+  "ru": "Планируется слив, доступ к сифону и проверяется сток воды перед окончательной отделкой."
+ },
+ "Susiję sprendimai": {
+  "pl": "Powiązane rozwiązania",
+  "ru": "Связанные решения"
+ },
+ "Sužinokite, kokie veiksniai daro įtaką plytelių klojimo kainai m²: paviršiaus išlyginimas, 45° kampų pjovimas, epoksidinis glaistymas bei atstumas.": {
+  "pl": "Dowiedz się, jakie czynniki wpływają na cenę układania płytek za m²: wyrównanie powierzchni, cięcie narożników 45°, fugowanie epoksydowe oraz odległość.",
+  "ru": "Узнайте, какие факторы влияют на цену укладки плитки за м²: выравнивание поверхности, рез углов 45°, эпоксидная затирка и расстояние."
+ },
+ "Sužinokite, kokių matmenų plytelės geriausiai tinka mažoms ir didelėms vonios erdvėms, kuo skiriasi keraminės ir akmens masės plytelės bei kokį paviršių pasirinkti.": {
+  "pl": "Dowiedz się, jakie wymiary płytek najlepiej sprawdzają się w małych i dużych łazienkach, czym różnią się płytki ceramiczne od gresu i jaką powierzchnię wybrać.",
+  "ru": "Узнайте, какие размеры плитки лучше подходят для маленьких и больших ванных, чем отличается керамическая плитка от керамогранита и какую поверхность выбрать."
+ },
+ "Svetainėse, virtuvėse, holuose, vonios kambariuose ir tinkamai įrengtose lauko terasose. Žr. ir <a href=\"vonios-kambario-plyteliu-klijavimas.html\">vonios plytelių klijavimą</a>.": {
+  "pl": "W salonach, kuchniach, holach, łazienkach oraz prawidłowo wykonanych tarasach zewnętrznych. Zobacz też <a href=\"vonios-kambario-plyteliu-klijavimas.html\">układanie płytek w łazience</a>.",
+  "ru": "В гостиных, кухнях, холлах, ванных и правильно устроенных наружных террасах. См. также <a href=\"vonios-kambario-plyteliu-klijavimas.html\">укладку плитки в ванной</a>."
+ },
+ "TLS (Plytelių Lyginimo Sistemų) Svarba": {
+  "pl": "Znaczenie systemów poziomujących TLS",
+  "ru": "Важность систем выравнивания TLS"
+ },
+ "TLS Plytelių Lyginimo Sistemos": {
+  "pl": "Systemy poziomowania płytek TLS",
+  "ru": "Системы выравнивания плитки TLS"
+ },
+ "Taip, atliekamas pagrindo paruošimas ir virtuvės grindų plytelių klijavimas.": {
+  "pl": "Tak, wykonywane jest przygotowanie podłoża i układanie płytek podłogowych w kuchni.",
+  "ru": "Да, выполняется подготовка основания и укладка напольной плитки на кухне."
+ },
+ "Taip, kai plytelės ir visas montavimo mazgas pritaikyti šalčiui, drėgmei bei temperatūrų pokyčiams.": {
+  "pl": "Tak, gdy płytki i cały układ montażowy są przystosowane do mrozu, wilgoci i zmian temperatury.",
+  "ru": "Да, когда плитка и весь монтажный узел рассчитаны на мороз, влагу и перепады температур."
+ },
+ "Taip, tačiau maišytuvo tipą ir vietą reikia numatyti prieš formuojant konstrukciją, kad vandens įvadai, atstumai ir aptarnavimo galimybės būtų suderinti iš anksto.": {
+  "pl": "Tak, jednak typ i miejsce baterii trzeba przewidzieć przed formowaniem konstrukcji, aby doprowadzenia wody, odległości i możliwość serwisowania były uzgodnione z wyprzedzeniem.",
+  "ru": "Да, но тип и место смесителя нужно предусмотреть до формирования конструкции, чтобы подводка воды, расстояния и возможность обслуживания были согласованы заранее."
+ },
+ "Techniniam svetainės veikimui duomenis gali tvarkyti hostingo ir infrastruktūros tiekėjai, o sutikus su analitika – Google. Duomenų neparduodame ir nenaudojame nepageidaujamai reklamai.": {
+  "pl": "Na potrzeby technicznego działania strony dane mogą przetwarzać dostawcy hostingu i infrastruktury, a po wyrażeniu zgody na analitykę – Google. Danych nie sprzedajemy i nie wykorzystujemy do niechcianej reklamy.",
+  "ru": "Для технической работы сайта данные могут обрабатывать поставщики хостинга и инфраструктуры, а при согласии на аналитику — Google. Данные мы не продаём и не используем для нежелательной рекламы."
+ },
+ "Teisingas Hidroizoliacijos Procesas:": {
+  "pl": "Prawidłowy proces hydroizolacji:",
+  "ru": "Правильный процесс гидроизоляции:"
+ },
+ "Tikslūs pjūviai ir briaunos": {
+  "pl": "Dokładne cięcia i krawędzie",
+  "ru": "Точные резы и кромки"
+ },
+ "Tinkamai parinkus plyteles, siūlių medžiagas ir nuolydžius, priežiūra yra paprasta. Po darbų pateikiamos tinkamų valymo priemonių rekomendacijos.": {
+  "pl": "Przy właściwym doborze płytek, materiałów do fug i spadków pielęgnacja jest prosta. Po zakończeniu prac przekazujemy zalecenia dotyczące odpowiednich środków czyszczących.",
+  "ru": "При правильном подборе плитки, материалов для швов и уклонов уход прост. После работ предоставляются рекомендации по подходящим чистящим средствам."
+ },
+ "Trukmė priklauso nuo konstrukcijos paruošimo, plytelių formato, briaunų skaičiaus ir sprendinio sudėtingumo. Konkretus terminas suderinamas įvertinus vietą ir pasirinktą dizainą.": {
+  "pl": "Czas trwania zależy od przygotowania konstrukcji, formatu płytek, liczby krawędzi i złożoności rozwiązania. Konkretny termin ustalany jest po ocenie miejsca i wybranego projektu.",
+  "ru": "Срок зависит от подготовки конструкции, формата плитки, количества кромок и сложности решения. Конкретный срок согласуется после оценки места и выбранного дизайна."
+ },
+ "Trukmė priklauso nuo pagrindo, patalpos dydžio, formato ir pasirinktų mazgų. Terminas pateikiamas po apžiūros.": {
+  "pl": "Czas trwania zależy od podłoża, wielkości pomieszczenia, formatu i wybranych detali. Termin podawany jest po oględzinach.",
+  "ru": "Срок зависит от основания, размера помещения, формата и выбранных узлов. Срок сообщается после осмотра."
+ },
+ "Turite didelio formato plyteles?": {
+  "pl": "Masz płytki wielkoformatowe?",
+  "ru": "У вас крупноформатная плитка?"
+ },
+ "Užklausos saugomos tik tiek, kiek pagrįstai reikia susisiekti, suteikti paslaugą, išspręsti galimus klausimus ir įvykdyti teisines prievoles. Nebereikalingos užklausos ištrinamos.": {
+  "pl": "Zapytania przechowywane są tylko tak długo, jak jest to uzasadnione, aby się skontaktować, wykonać usługę, wyjaśnić ewentualne kwestie i spełnić obowiązki prawne. Zbędne zapytania są usuwane.",
+  "ru": "Запросы хранятся только столько, сколько разумно необходимо для связи, оказания услуги, решения возможных вопросов и выполнения правовых обязанностей. Ненужные запросы удаляются."
+ },
+ "Užsakykite Sertifikuotą Vonios Įrengimą": {
+  "pl": "Zamów certyfikowane wykończenie łazienki",
+  "ru": "Закажите сертифицированную отделку ванной"
+ },
+ "Užsakymai Vilniuje ir Vilniaus rajone priimami pagal darbų grafiką bei projekto apimtį.": {
+  "pl": "Zlecenia w Wilnie i rejonie wileńskim przyjmowane są zgodnie z harmonogramem prac i zakresem projektu.",
+  "ru": "Заказы в Вильнюсе и Вильнюсском районе принимаются по графику работ и объёму проекта."
+ },
+ "Vandens išleidimo mazgas": {
+  "pl": "Węzeł odprowadzenia wody",
+  "ru": "Узел слива воды"
+ },
+ "Veiksniai, Darantys Įtaką Klijavimo Kainai:": {
+  "pl": "Czynniki wpływające na cenę układania:",
+  "ru": "Факторы, влияющие на цену укладки:"
+ },
+ "Vieno sluoksnio klijų tepimas: Tepant klijus tik ant sienos, po plytele lieka oro tarpai, dėl kurių ji gali skilti.": {
+  "pl": "Jednostronne nakładanie kleju: przy nakładaniu kleju tylko na ścianę pod płytką pozostają pustki powietrzne, przez które może ona pęknąć.",
+  "ru": "Одностороннее нанесение клея: при нанесении клея только на стену под плиткой остаются воздушные пустоты, из-за которых она может треснуть."
+ },
+ "Vietos įvertinimas. Atliekami matavimai, aptariama forma, maišytuvas, išleidimas ir prieiga prie sifono.": {
+  "pl": "Ocena miejsca. Wykonywane są pomiary, omawiany jest kształt, bateria, odpływ i dostęp do syfonu.",
+  "ru": "Оценка места. Выполняются замеры, обсуждаются форма, смеситель, слив и доступ к сифону."
+ },
+ "Virtuvės grindys": {
+  "pl": "Podłoga w kuchni",
+  "ru": "Пол на кухне"
+ },
+ "Virtuvės ir grindų plytelių klijavimas": {
+  "pl": "Układanie płytek w kuchni i na podłodze",
+  "ru": "Укладка плитки на кухне и полу"
+ },
+ "Virtuvės plytelių klijavimas": {
+  "pl": "Układanie płytek w kuchni",
+  "ru": "Укладка плитки на кухне"
+ },
+ "Virtuvės plytelių klijavimas Pabradėje, Švenčionyse ir Vilniuje: virtuvės sienelė, prijuostė, grindys, tikslūs rozečių pjūviai ir rašto derinimas.": {
+  "pl": "Układanie płytek w kuchni w Pabradė, Święcianach i Wilnie: ściana kuchenna, fartuch, podłogi, dokładne cięcia pod gniazdka i dopasowanie wzoru.",
+  "ru": "Укладка плитки на кухне в Пабраде, Швенчёнисе и Вильнюсе: кухонная стена, фартук, полы, точные резы под розетки и подбор рисунка."
+ },
+ "Virtuvės plytelės klijuojamos <a href=\"plyteliu-klojimas-pabrade.html\">Pabradėje</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Švenčionių rajone</a> ir pagal susitarimą <a href=\"plyteliu-klojimas-vilnius.html\">Vilniuje</a>.": {
+  "pl": "Płytki kuchenne układamy w <a href=\"plyteliu-klojimas-pabrade.html\">Pabradė</a>, <a href=\"plyteliu-klojimas-svencionys.html\">rejonie święciańskim</a> oraz po uzgodnieniu w <a href=\"plyteliu-klojimas-vilnius.html\">Wilnie</a>.",
+  "ru": "Кухонную плитку укладываем в <a href=\"plyteliu-klojimas-pabrade.html\">Пабраде</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Швенчёнском районе</a> и по договорённости в <a href=\"plyteliu-klojimas-vilnius.html\">Вильнюсе</a>."
+ },
+ "Virtuvės sienelė": {
+  "pl": "Ściana kuchenna",
+  "ru": "Кухонный фартук"
+ },
+ "Virtuvės sienelė ir grindys": {
+  "pl": "Ściana kuchenna i podłoga",
+  "ru": "Кухонный фартук и пол"
+ },
+ "Virtuvės sienelė ir grindys su tiksliai suklijuotomis plytelėmis": {
+  "pl": "Ściana kuchenna i podłoga z dokładnie ułożonymi płytkami",
+  "ru": "Кухонный фартук и пол с точно уложенной плиткой"
+ },
+ "Visiems vidiniams kampams bei vamzdžių įvadams naudojamos specialios kaučiukinės sandarinimo juostos ir manžetai.": {
+  "pl": "Do wszystkich narożników wewnętrznych oraz przejść rur stosowane są specjalne kauczukowe taśmy uszczelniające i mankiety.",
+  "ru": "Для всех внутренних углов и вводов труб применяются специальные каучуковые уплотнительные ленты и манжеты."
+ },
+ "Vonios apdailos darbai": {
+  "pl": "Prace wykończeniowe łazienki",
+  "ru": "Отделочные работы в ванной"
+ },
+ "Vonios hidroizoliacija: kaip ją įrengti": {
+  "pl": "Hydroizolacja łazienki: jak ją wykonać",
+  "ru": "Гидроизоляция ванной: как её выполнить"
+ },
+ "Vonios interjerui taip pat įrengiamos <a href=\"kriaukles-is-plyteliu.html\">individualios kriauklės iš plytelių</a>. Naudingos rekomendacijos pateikiamos straipsnyje apie <a href=\"blogas/vonios-hidroizoliacija-kodel-butina.html\">vonios hidroizoliaciją</a>.": {
+  "pl": "We wnętrzu łazienki wykonujemy również <a href=\"kriaukles-is-plyteliu.html\">indywidualne umywalki z płytek</a>. Przydatne zalecenia znajdziesz w artykule o <a href=\"blogas/vonios-hidroizoliacija-kodel-butina.html\">hydroizolacji łazienki</a>.",
+  "ru": "Для интерьера ванной мы также изготавливаем <a href=\"kriaukles-is-plyteliu.html\">индивидуальные раковины из плитки</a>. Полезные рекомендации приведены в статье о <a href=\"blogas/vonios-hidroizoliacija-kodel-butina.html\">гидроизоляции ванной</a>."
+ },
+ "Vonios kambario apdaila plytelėmis yra vienas atsakingiausių statybos ir remonto etapų. Net mažiausia techninė klaida – negruntuotas paviršius, praleistas hidroizoliacijos kampas ar neteisingas klijų pasirinkimas – po kelerių metų gali sukelti plytelių atšokimą, pelėsio atsiradimą arba užpylimą.": {
+  "pl": "Wykończenie łazienki płytkami to jeden z najbardziej odpowiedzialnych etapów budowy i remontu. Nawet najmniejszy błąd techniczny – niezagruntowana powierzchnia, pominięty narożnik hydroizolacji lub niewłaściwy dobór kleju – po kilku latach może spowodować odpadanie płytek, pojawienie się pleśni albo zalanie.",
+  "ru": "Отделка ванной плиткой — один из самых ответственных этапов строительства и ремонта. Даже мельчайшая техническая ошибка — незагрунтованная поверхность, пропущенный угол гидроизоляции или неправильный выбор клея — через несколько лет может привести к отслоению плитки, появлению плесени или заливу."
+ },
+ "Vonios kambario atnaujinimas arba įrengimas nuo nulio reikalauja apgalvotų sprendimų. Viena svarbiausių užduočių – teisingas plytelių pasirinkimas. Plytelės privalo būti ne tik gražios, bet ir saugios, atsparios drėgmei, lengvai prižiūrimos bei ilgaamžės.": {
+  "pl": "Odnowienie łazienki lub urządzenie jej od zera wymaga przemyślanych decyzji. Jednym z najważniejszych zadań jest właściwy dobór płytek. Płytki muszą być nie tylko ładne, ale też bezpieczne, odporne na wilgoć, łatwe w pielęgnacji i trwałe.",
+  "ru": "Обновление ванной или её обустройство с нуля требует продуманных решений. Одна из важнейших задач — правильный выбор плитки. Плитка должна быть не только красивой, но и безопасной, влагостойкой, простой в уходе и долговечной."
+ },
+ "Vonios kambario plytelių klijavimas": {
+  "pl": "Układanie płytek w łazience",
+  "ru": "Укладка плитки в ванной"
+ },
+ "Vonios kambario plytelių klijavimas Pabradėje, Švenčionyse ir Vilniuje: pagrindo paruošimas, hidroizoliacija, dušo nuolydžiai ir 45° kampai.": {
+  "pl": "Układanie płytek w łazience w Pabradė, Święcianach i Wilnie: przygotowanie podłoża, hydroizolacja, spadki w prysznicu i narożniki 45°.",
+  "ru": "Укладка плитки в ванной в Пабраде, Швенчёнисе и Вильнюсе: подготовка основания, гидроизоляция, уклоны в душевой и углы 45°."
+ },
+ "Vonios kambario plytelių klojimas Pabradėje": {
+  "pl": "Układanie płytek w łazience w Pabradė",
+  "ru": "Укладка плитки в ванной в Пабраде"
+ },
+ "Vonios kambario plytelių klojimas Pabradėje - Meistras Vladislav": {
+  "pl": "Układanie płytek w łazience w Pabradė – fachowiec Vladislav",
+  "ru": "Укладка плитки в ванной в Пабраде — мастер Владислав"
+ },
+ "Vonios kambario plytelės": {
+  "pl": "Płytki łazienkowe",
+  "ru": "Плитка для ванной"
+ },
+ "Vonios kambario plytelės klijuojamos <a href=\"plyteliu-klojimas-pabrade.html\">Pabradėje</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Švenčionyse ir Švenčionėliuose</a>, o pagal grafiką – <a href=\"plyteliu-klojimas-vilnius.html\">Vilniuje</a>.": {
+  "pl": "Płytki łazienkowe układamy w <a href=\"plyteliu-klojimas-pabrade.html\">Pabradė</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Święcianach i Nowo-Święcianach</a>, a według harmonogramu – w <a href=\"plyteliu-klojimas-vilnius.html\">Wilnie</a>.",
+  "ru": "Плитку для ванной укладываем в <a href=\"plyteliu-klojimas-pabrade.html\">Пабраде</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Швенчёнисе и Швенчёнеляе</a>, а по графику — в <a href=\"plyteliu-klojimas-vilnius.html\">Вильнюсе</a>."
+ },
+ "Vonios plytelių klijavimas": {
+  "pl": "Układanie płytek w łazience",
+  "ru": "Облицовка ванной плиткой"
+ },
+ "Vonios plytelių klojimo eiga: paviršiaus paruošimas, hidroizoliacija, 45° kampų pjovimas, klijavimas ir epoksidinis glaistymas.": {
+  "pl": "Przebieg układania płytek w łazience: przygotowanie powierzchni, hydroizolacja, cięcie narożników 45°, klejenie i fugowanie epoksydowe.",
+  "ru": "Ход укладки плитки в ванной: подготовка поверхности, гидроизоляция, рез углов 45°, укладка и эпоксидная затирка."
+ },
+ "Vonios plytelių klojimo vadovas": {
+  "pl": "Przewodnik po układaniu płytek w łazience",
+  "ru": "Руководство по укладке плитки в ванной"
+ },
+ "Įrengiamas stabilus pagrindas, visa sistema hidroizoliuojama, sandarinami kampai ir atskirai suformuojamas patikimas vandens išleidimo mazgas.": {
+  "pl": "Wykonywane jest stabilne podłoże, cały system jest hydroizolowany, uszczelniane są narożniki i osobno formowany jest niezawodny węzeł odprowadzenia wody.",
+  "ru": "Устраивается устойчивое основание, вся система гидроизолируется, герметизируются углы и отдельно формируется надёжный узел слива воды."
+ },
+ "Šiuolaikiškas vonios kambarys su tiksliai suklijuotomis plytelėmis ir dušo zona": {
+  "pl": "Nowoczesna łazienka z dokładnie ułożonymi płytkami i strefą prysznica",
+  "ru": "Современная ванная комната с точно уложенной плиткой и душевой зоной"
+ },
+ "Aukščiausios kokybės plytelių klojimas, paviršių išlyginimas, hidroizoliacija bei klinkerio apdaila. Pagrindiniai veiklos rajonai: <strong>Pabradė, Švenčionys, Švenčionėliai</strong> ir pagal užimtumą <strong>Vilnius</strong>.": {
+  "pl": "Najwyższej jakości układanie płytek, wyrównywanie podłoża, hydroizolacja i wykończenie klinkierem. Główne obszary działania: <strong>Pabradė, Święciany, Nowo-Święciany</strong> oraz, zależnie od dostępności, <strong>Wilno</strong>.",
+  "ru": "Укладка плитки высочайшего качества, выравнивание поверхностей, гидроизоляция и отделка клинкером. Основные районы работы: <strong>Пабраде, Швенчёнис, Швенчёнеляй</strong> и, в зависимости от занятости, <strong>Вильнюс</strong>."
+ },
+ "10+": {
+  "pl": "10+",
+  "ru": "10+"
+ },
+ "100%": {
+  "pl": "100%",
+  "ru": "100%"
+ },
+ "300+": {
+  "pl": "300+",
+  "ru": "300+"
+ },
+ "Modernus plytelėmis įrengtas vonios kambarys su dušo zona": {
+  "pl": "Nowoczesna łazienka wykończona płytkami ze strefą prysznica",
+  "ru": "Современная ванная комната, отделанная плиткой, с душевой зоной"
+ },
+ "Tiksliai išklijuota šiuolaikinės virtuvės sienelė ir grindys": {
+  "pl": "Dokładnie ułożona ściana i podłoga nowoczesnej kuchni",
+  "ru": "Точно уложенные стена и пол современной кухни"
+ },
+ "Didelio formato plytelių grindys svetainėje ir lauko terasoje": {
+  "pl": "Podłoga z płytek wielkoformatowych w salonie i na tarasie",
+  "ru": "Полы из крупноформатной плитки в гостиной и на террасе"
+ },
+ "Tvarkingai klinkerio plytelėmis apdailintas gyvenamojo namo fasadas": {
+  "pl": "Elewacja domu jednorodzinnego starannie wykończona płytkami klinkierowymi",
+  "ru": "Фасад жилого дома, аккуратно отделанный клинкерной плиткой"
+ },
+ "Individuali kriauklė iš didelio formato šviesių plytelių": {
+  "pl": "Indywidualna umywalka z jasnych płytek wielkoformatowych",
+  "ru": "Индивидуальная раковина из светлой крупноформатной плитки"
+ },
+ "Kriauklės iš Plytelių": {
+  "pl": "Umywalki z płytek",
+  "ru": "Раковины из плитки"
+ },
+ "Individualios plytelėmis formuojamos kriauklės: stabili konstrukcija, hidroizoliacija, nuolydžiai, išleidimo mazgas ir tikslios 45° briaunos.": {
+  "pl": "Indywidualne umywalki formowane z płytek: stabilna konstrukcja, hydroizolacja, spadki, węzeł odpływu i dokładne krawędzie 45°.",
+  "ru": "Индивидуальные раковины, сформированные из плитки: устойчивая конструкция, гидроизоляция, уклоны, узел слива и точные кромки 45°."
+ },
+ "Kiekvienas būsto remontas ar naujos statybos įrengimas prasideda nuo tinkamo pasiruošimo. Dirbu <strong>Pabradėje, Švenčionyse, Švenčionėliuose ir Vilniuje</strong>. Kiekvienam objektui suteikiu nemokamą pirminę konsultaciją, padedu tiksliai apskaičiuoti reikiamą plytelių, klijų, hidroizoliacijos bei glaisto kiekį.": {
+  "pl": "Każdy remont mieszkania czy wykończenie nowego budynku zaczyna się od właściwego przygotowania. Pracuję w <strong>Pabradė, Święcianach, Nowo-Święcianach i Wilnie</strong>. Dla każdego obiektu zapewniam bezpłatną wstępną konsultację i pomagam dokładnie policzyć potrzebną ilość płytek, kleju, hydroizolacji oraz fugi.",
+  "ru": "Каждый ремонт жилья или отделка новостройки начинается с правильной подготовки. Работаю в <strong>Пабраде, Швенчёнисе, Швенчёнеляе и Вильнюсе</strong>. Для каждого объекта предоставляю бесплатную первичную консультацию и помогаю точно рассчитать необходимое количество плитки, клея, гидроизоляции и затирки."
+ },
+ "45° Kampų Suleidimas": {
+  "pl": "Narożniki 45°",
+  "ru": "Запил углов 45°"
+ },
+ "Sertifikuota Hidroizoliacija": {
+  "pl": "Certyfikowana hydroizolacja",
+  "ru": "Сертифицированная гидроизоляция"
+ },
+ "Epoksidinis ir Cementinis Glaistymas": {
+  "pl": "Fugowanie epoksydowe i cementowe",
+  "ru": "Эпоксидная и цементная затирка"
+ },
+ "Tvarka ir Švara": {
+  "pl": "Porządek i czystość",
+  "ru": "Порядок и чистота"
+ },
+ "Skaityti apie paslaugas Pabradėje": {
+  "pl": "Usługi w Pabradė",
+  "ru": "Услуги в Пабраде"
+ },
+ "Skaityti apie paslaugas Švenčionyse": {
+  "pl": "Usługi w Święcianach",
+  "ru": "Услуги в Швенчёнисе"
+ },
+ "Skaityti apie paslaugas Vilniuje": {
+  "pl": "Usługi w Wilnie",
+  "ru": "Услуги в Вильнюсе"
+ },
+ "Žiūrėti Visas 40+ Darbų Nuotraukas": {
+  "pl": "Zobacz wszystkie zdjęcia prac (ponad 40)",
+  "ru": "Смотреть все фото работ (более 40)"
+ },
+ "Vonios kambario plytelių klojimas ir dušo zonos hidroizoliacija": {
+  "pl": "Układanie płytek w łazience i hydroizolacja strefy prysznica",
+  "ru": "Укладка плитки в ванной и гидроизоляция душевой зоны"
+ },
+ "Vonios kambario sienų ir grindų apdaila su kampų suleidimu": {
+  "pl": "Wykończenie ścian i podłogi łazienki z narożnikami 45°",
+  "ru": "Отделка стен и пола ванной с запилом углов 45°"
+ },
+ "Virtuvės sienelės (prijuostės) plytelių klijavimas": {
+  "pl": "Układanie płytek na ścianie kuchennej (fartuchu)",
+  "ru": "Укладка плитки на кухонном фартуке"
+ },
+ "Didelio formato grindų plytelių klojimas svetainėje": {
+  "pl": "Układanie wielkoformatowych płytek podłogowych w salonie",
+  "ru": "Укладка крупноформатной напольной плитки в гостиной"
+ },
+ "Fasado ir cokolio apdaila klinkerio plytelėmis": {
+  "pl": "Wykończenie elewacji i cokołu płytkami klinkierowymi",
+  "ru": "Отделка фасада и цоколя клинкерной плиткой"
+ },
+ "Lauko terasos plytelių klojimas ant išlyginamojo sluoksnio": {
+  "pl": "Układanie płytek na tarasie na warstwie wyrównującej",
+  "ru": "Укладка плитки на террасе по выравнивающему слою"
+ },
+ "Meistro Žinios": {
+  "pl": "Wiedza fachowca",
+  "ru": "Знания мастера"
+ },
+ "Naudingi Patarimai ir Straipsniai (Blogas)": {
+  "pl": "Przydatne porady i artykuły (blog)",
+  "ru": "Полезные советы и статьи (блог)"
+ },
+ "Skaitykite meistro patarimus apie plytelių pasirinkimą, hidroizoliaciją, darbų eigos ypatumus bei apdailos kainas.": {
+  "pl": "Przeczytaj porady fachowca o doborze płytek, hydroizolacji, przebiegu prac oraz cenach wykończenia.",
+  "ru": "Читайте советы мастера о выборе плитки, гидроизоляции, особенностях хода работ и ценах на отделку."
+ },
+ "Visi Meistro Straipsniai ir Patarimai": {
+  "pl": "Wszystkie artykuły i porady fachowca",
+  "ru": "Все статьи и советы мастера"
+ },
+ "Patarimai": {
+  "pl": "Porady",
+  "ru": "Советы"
+ },
+ "Kaip Pasirinkti Plyteles Vonios Kambariui": {
+  "pl": "Jak wybrać płytki do łazienki",
+  "ru": "Как выбрать плитку для ванной комнаты"
+ },
+ "Dydžiai, tekstūra, akmens masė ir paviršiaus neslidumas.": {
+  "pl": "Rozmiary, tekstura, gres i antypoślizgowość powierzchni.",
+  "ru": "Размеры, текстура, керамогранит и противоскользящая поверхность."
+ },
+ "Technologija": {
+  "pl": "Technologia",
+  "ru": "Технология"
+ },
+ "Vonios Hidroizoliacija: Kodėl Ji Būtina?": {
+  "pl": "Hydroizolacja łazienki: dlaczego jest konieczna?",
+  "ru": "Гидроизоляция ванной: почему она необходима?"
+ },
+ "Mastikos, sandarinimo juostos ir apsauga nuo pelėsio.": {
+  "pl": "Masy uszczelniające, taśmy i ochrona przed pleśnią.",
+  "ru": "Мастики, уплотнительные ленты и защита от плесени."
+ },
+ "Apdaila": {
+  "pl": "Wykończenia",
+  "ru": "Отделка"
+ },
+ "Didelio Formato (60x120 cm) Plytelių Klojimas": {
+  "pl": "Układanie płytek wielkoformatowych (60x120 cm)",
+  "ru": "Укладка крупноформатной плитки (60x120 см)"
+ },
+ "TLS lyginimo sistemos ir šlapio pjovimo ypatumai.": {
+  "pl": "Systemy poziomujące TLS i specyfika cięcia na mokro.",
+  "ru": "Системы выравнивания TLS и особенности мокрой резки."
+ },
+ "Skaityti Pilną D.U.K. Puslapį": {
+  "pl": "Zobacz pełną stronę FAQ",
+  "ru": "Смотреть полную страницу вопросов"
+ },
+ "Plytelių klojimo kaina skaičiuojama už kvadratinį metrą (m²) arba už visą objektą. Kaina priklauso nuo plytelių formato (didelio formato plytelės reikalauja papildomų lyginimo sistemų), paviršiaus būklės (ar reikia lyginti sienas/grindis), 45° kampų pjovimo kiekio bei pasirinkto glaisto (cementinis ar epoksidinis). Tikslią sąmatą pateikiame po pirminio įvertinimo. Skambinkite tel. <strong>+370 600 30288</strong>.": {
+  "pl": "Cena układania płytek liczona jest za metr kwadratowy (m²) albo za cały obiekt. Zależy od formatu płytek (płytki wielkoformatowe wymagają dodatkowych systemów poziomujących), stanu powierzchni (czy trzeba wyrównywać ściany/podłogi), liczby cięć narożników 45° oraz wybranej fugi (cementowa czy epoksydowa). Dokładną wycenę przedstawiamy po wstępnej ocenie. Zadzwoń: <strong>+370 600 30288</strong>.",
+  "ru": "Цена укладки плитки считается за квадратный метр (м²) либо за весь объект. Она зависит от формата плитки (крупноформатная требует дополнительных систем выравнивания), состояния поверхности (нужно ли выравнивать стены/полы), количества запилов углов 45° и выбранной затирки (цементная или эпоксидная). Точную смету предоставляем после первичной оценки. Звоните: <strong>+370 600 30288</strong>."
+ },
+ "Pagrindinė meistro veiklos teritorija yra <strong>Pabradė, Švenčionys, Švenčionėliai ir visas Švenčionių rajonas</strong>. Taip pat pagal susitarimą ir laisvą grafiką atliekame darbus <strong>Vilniuje bei Vilniaus rajone</strong>.": {
+  "pl": "Główny obszar działania fachowca to <strong>Pabradė, Święciany, Nowo-Święciany i cały rejon święciański</strong>. Po uzgodnieniu i przy wolnym terminie wykonujemy również prace w <strong>Wilnie i rejonie wileńskim</strong>.",
+  "ru": "Основная территория работы мастера — <strong>Пабраде, Швенчёнис, Швенчёнеляй и весь Швенчёнский район</strong>. Также по договорённости и при свободном графике выполняем работы в <strong>Вильнюсе и Вильнюсском районе</strong>."
+ },
+ "Išorinius plytelių kampus pjauname ir šlifuojame 45 laipsnių kampu (angl. <em>miter cut</em>). Tai leidžia išvengti pigiai atrodančių plastikinių ar metalinių kampukų naudojimo – kampai atrodo estetiškai, lygiai ir moderniai.": {
+  "pl": "Zewnętrzne narożniki płytek docinamy i szlifujemy pod kątem 45 stopni (ang. <em>miter cut</em>). Pozwala to uniknąć tanio wyglądających plastikowych lub metalowych listw narożnych – narożniki wyglądają estetycznie, równo i nowocześnie.",
+  "ru": "Наружные углы плитки мы режем и шлифуем под 45 градусов (англ. <em>miter cut</em>). Это позволяет отказаться от дёшево выглядящих пластиковых или металлических уголков — углы смотрятся эстетично, ровно и современно."
+ },
+ "Ar įrengiate individualias kriaukles iš plytelių?": {
+  "pl": "Czy wykonujecie indywidualne umywalki z płytek?",
+  "ru": "Изготавливаете ли вы индивидуальные раковины из плитки?"
+ },
+ "Taip. Pagal vietą ir pasirinktą apdailą formuojame individualią plytelių kriauklę, iš anksto suderinę konstrukciją, hidroizoliaciją, nuolydžius, vandens išleidimą ir 45° briaunas. <a href=\"kriaukles-is-plyteliu.html\"><strong>Sužinokite daugiau apie šią paslaugą.</strong></a>": {
+  "pl": "Tak. W zależności od miejsca i wybranego wykończenia formujemy indywidualną umywalkę z płytek, uzgadniając wcześniej konstrukcję, hydroizolację, spadki, odprowadzenie wody i krawędzie 45°. <a href=\"kriaukles-is-plyteliu.html\"><strong>Dowiedz się więcej o tej usłudze.</strong></a>",
+  "ru": "Да. В зависимости от места и выбранной отделки формируем индивидуальную раковину из плитки, заранее согласовав конструкцию, гидроизоляцию, уклоны, слив воды и кромки 45°. <a href=\"kriaukles-is-plyteliu.html\"><strong>Узнайте больше об этой услуге.</strong></a>"
+ }
+}

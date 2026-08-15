@@ -1,1 +1,141 @@
-:root{--navy:#172238;--ink:#081429;--muted:#62718b;--teal:#0e9b8f;--light:#f5f8fb;--line:#dbe3ec}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font:18px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:white}.shell{width:min(1180px,calc(100% - 40px));margin:auto}.narrow{max-width:820px}.site-header{position:sticky;z-index:30;top:0;background:var(--navy);color:white;box-shadow:0 5px 20px #0610202c}.nav-shell{min-height:88px;display:flex;align-items:center;gap:34px}.brand{font-size:31px;font-weight:850;color:white;text-decoration:none;letter-spacing:-1.5px}.brand span{color:#19d0bc}.site-header nav{display:flex;gap:26px;margin-left:auto}.site-header nav a{color:#d7deeb;text-decoration:none;font-weight:650;font-size:16px}.nav-item{position:relative}.submenu{display:none;position:absolute;top:100%;left:0;padding:15px;background:var(--navy);min-width:200px}.nav-item:hover .submenu{display:grid}.phone,.button{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:14px;background:var(--teal);color:#fff!important;padding:12px 20px;font-weight:750;text-decoration:none;cursor:pointer}.block{padding:92px 0}.block h2{font-size:clamp(34px,4vw,56px);line-height:1.1;letter-spacing:-1.8px;margin:0 0 25px}.lead{font-size:21px;color:var(--muted);max-width:760px}.muted{background:var(--light)}.hero{color:white;background:linear-gradient(135deg,#111d35,#17284b);background-size:cover;background-position:center}.hero-inner{min-height:560px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.height-full .hero-inner{min-height:calc(100vh - 88px)}.height-compact .hero-inner{min-height:380px}.hero h1{font-size:clamp(46px,7vw,82px);line-height:1.02;letter-spacing:-3px;max-width:1050px;margin:20px 0}.hero p{max-width:820px;color:#d9e2f0;font-size:23px}.eyebrow{color:#28dfcb!important;text-transform:uppercase;letter-spacing:1.5px;font-size:14px!important;font-weight:800}.actions{display:flex;gap:14px;margin-top:20px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.two-col img,.gallery img{width:100%;height:auto;border-radius:24px}.image-left .two-col>div{order:2}.cards{display:grid;gap:24px;margin-top:40px}.cols-2{grid-template-columns:repeat(2,1fr)}.cols-3{grid-template-columns:repeat(3,1fr)}.cols-4{grid-template-columns:repeat(4,1fr)}.card{padding:32px;border:1px solid var(--line);border-radius:24px;background:white;box-shadow:0 12px 35px #13213b0b}.feature-icon{font-size:34px}.gallery{display:grid;gap:20px}.gallery img{aspect-ratio:4/3;object-fit:cover}.layout-carousel{display:flex;overflow:auto}.layout-carousel img{min-width:70%}.cta{text-align:center;background:var(--navy);color:white}.style-accent{background:linear-gradient(135deg,#087d74,#0caa9d)}details{background:white;border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin:12px 0}summary{font-weight:800;cursor:pointer}.quote blockquote{font-size:20px;margin:18px 0}.amount{font-size:38px;font-weight:900}.amount small{font-size:15px;color:var(--muted)}.highlighted{border:2px solid var(--teal);transform:translateY(-10px)}form{display:grid;gap:18px}label{display:grid;gap:7px;font-weight:700}input,textarea,select{font:inherit;border:1px solid #b8c4d4;border-radius:10px;padding:12px}.map{border:0;width:100%;height:450px;border-radius:22px}.spacer-small{height:32px}.spacer-medium{height:72px}.spacer-large{height:128px}.width-narrow .shell{max-width:760px}.width-medium .shell{max-width:960px}.align-center{text-align:center}.site-footer{background:#0d1729;color:#b8c4d8;padding:55px 0}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}.footer-grid>div{display:grid;align-content:start;gap:8px}.footer-grid a{color:#d7f6f1}@media(max-width:850px){.site-header nav{display:none}.phone{margin-left:auto;font-size:14px}.nav-shell{min-height:72px}.brand{font-size:26px}.block{padding:60px 0}.two-col,.cards,.footer-grid{grid-template-columns:1fr}.image-left .two-col>div{order:0}.hero-inner{min-height:500px}.hero h1{letter-spacing:-2px}.highlighted{transform:none}}
+@import 'tailwindcss';
+
+/*
+  Situacija.eu — dizaino sistema "Precizija".
+  Kryptis parinkta pagal veiklą (aukštos klasės plytelių klojimas ir apdaila):
+  gilus grafito/slate pagrindas = tvarkinga statybinė precizija,
+  teal akcentas = švara ir hidroizoliacija,
+  klinkerio molio (clay) antrinis akcentas = fasadų/klinkerio darbai.
+  Kontrastas: pagrindinis tekstinis akcentas --color-brand-700 (#0f766e, 5,47:1) pagal audito P1 #12.
+*/
+
+@theme {
+  /* Grafito pagrindas */
+  --color-ink-50: #f4f6fa;
+  --color-ink-100: #e6eaf2;
+  --color-ink-200: #c8d1e0;
+  --color-ink-300: #9aa8c0;
+  --color-ink-400: #6b7c99;
+  --color-ink-500: #4a5a76;
+  --color-ink-600: #35435c;
+  --color-ink-700: #253148;
+  --color-ink-800: #162032;
+  --color-ink-850: #111a2b;
+  --color-ink-900: #0b1220;
+  --color-ink-950: #060b14;
+
+  /* Teal — pagrindinis prekės ženklo akcentas */
+  --color-brand-50: #eefbf8;
+  --color-brand-100: #d3f5ee;
+  --color-brand-200: #a9ebe0;
+  --color-brand-300: #6fdacc;
+  --color-brand-400: #2dd4bf;
+  --color-brand-500: #14b8a6;
+  --color-brand-600: #0d9488;
+  --color-brand-700: #0f766e;
+  --color-brand-800: #115e56;
+  --color-brand-900: #134e48;
+
+  /* Klinkerio molis — antrinis akcentas fasadų temoms */
+  --color-clay-300: #e5b299;
+  --color-clay-400: #d08a63;
+  --color-clay-500: #b9663c;
+  --color-clay-600: #9a4f2c;
+  --color-clay-700: #7d3f24;
+
+  /* Cemento pilkos — paviršiai */
+  --color-sand-50: #faf9f7;
+  --color-sand-100: #f4f2ee;
+  --color-sand-200: #e7e3dc;
+
+  --font-sans:
+    var(--font-inter), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius-tile: 1.25rem;
+
+  --shadow-tile: 0 1px 2px rgb(6 11 20 / 0.04), 0 12px 32px -12px rgb(6 11 20 / 0.16);
+  --shadow-lift: 0 2px 4px rgb(6 11 20 / 0.05), 0 24px 48px -16px rgb(6 11 20 / 0.22);
+
+  --ease-out-tile: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Kompensuoja sticky header'į, kad #anchor sekcijos neliktų po juo */
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    @apply bg-white text-ink-900 antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-ink-950;
+  }
+}
+
+@layer utilities {
+  /* Plytelių tinklelio motyvas — naudojamas sekcijų fonuose */
+  .bg-tile-grid {
+    background-image:
+      linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .bg-tile-grid-dark {
+    background-image:
+      linear-gradient(to right, rgb(6 11 20 / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(6 11 20 / 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* 45° siūlė — meistro parašas, naudojamas kaip dekoratyvi juosta */
+  .bg-miter {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgb(15 118 110 / 0.08) 10px,
+      rgb(15 118 110 / 0.08) 11px
+    );
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Leaflet — bazinis stilius be išorinio CSS failo užklausos */
+.leaflet-container {
+  @apply font-sans;
+  background: #eef2f7;
+}
+
+.leaflet-container a {
+  @apply text-brand-700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

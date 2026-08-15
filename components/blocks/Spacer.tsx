@@ -1,1 +1,0 @@
-import type { CmsBlock } from '@/types/cms'; export function Spacer({ block }: { block: CmsBlock }) { return <div aria-hidden="true" className={`spacer spacer-${String(block.height || 'medium')}`} />; }

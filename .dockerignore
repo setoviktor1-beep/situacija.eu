@@ -1,0 +1,7 @@
+node_modules
+.next
+.git
+legacy-html
+scripts/extracted-content.json
+scripts/untranslated.json
+*.log

@@ -1,0 +1,2287 @@
+{
+  "vonios-kambario-plyteliu-klijavimas.html": {
+    "meta": {
+      "title": "Vonios plytelių klijavimas | Situacija.eu",
+      "description": "Vonios kambario plytelių klijavimas Pabradėje, Švenčionyse ir Vilniuje: pagrindo paruošimas, hidroizoliacija, dušo nuolydžiai ir 45° kampai.",
+      "canonical": "https://situacija.eu/vonios-kambario-plyteliu-klijavimas.html",
+      "ogType": ""
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Vonios kambario plytelių klijavimas ir hidroizoliacija",
+        "serviceType": "Vonios kambario įrengimas ir plytelių klijavimas",
+        "url": "https://situacija.eu/vonios-kambario-plyteliu-klijavimas.html",
+        "image": "https://situacija.eu/images/services/vonios-kambariai.webp",
+        "provider": {
+          "@id": "https://situacija.eu/#business"
+        },
+        "areaServed": [
+          "Pabradė",
+          "Švenčionys",
+          "Švenčionėliai",
+          "Vilnius"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ar prieš klijuojant plyteles vonioje būtina hidroizoliacija?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Taip, dušo ir kitose tiesiogiai drėgmės veikiamose zonose įrengiama vientisa hidroizoliacijos sistema su kampų juostomis ir sandarinimo elementais."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ar formuojate dušo grindų nuolydį?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Taip, nuolydis formuojamas link trapų arba linijinio latako ir patikrinamas prieš galutinį siūlių užbaigimą."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Nuo ko priklauso vonios plytelių klijavimo kaina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kainą lemia pagrindo būklė, plytelių formatas, pjūvių ir nišų kiekis, hidroizoliacija, kampų apdirbimas bei patalpos geometrija."
+            }
+          }
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Vonios kambario plytelių klijavimas",
+        "html": "Vonios kambario plytelių klijavimas"
+      },
+      {
+        "type": "p",
+        "text": "Atliekamas visas plytelių meistro darbas – nuo pagrindo patikros ir drėgnų zonų hidroizoliacijos iki tikslių pjūvių, dušo nuolydžių, siūlių ir 45° kampų.",
+        "html": "Atliekamas visas plytelių meistro darbas – nuo pagrindo patikros ir drėgnų zonų hidroizoliacijos iki tikslių pjūvių, dušo nuolydžių, siūlių ir 45° kampų."
+      },
+      {
+        "type": "img",
+        "src": "images/services/vonios-kambariai.webp",
+        "alt": "Šiuolaikiškas vonios kambarys su tiksliai suklijuotomis plytelėmis ir dušo zona",
+        "width": "960",
+        "height": "720"
+      },
+      {
+        "type": "h2",
+        "text": "Vonios apdailos darbai",
+        "html": "Vonios apdailos darbai"
+      },
+      {
+        "type": "h3",
+        "text": "Pagrindo paruošimas",
+        "html": "Pagrindo paruošimas"
+      },
+      {
+        "type": "p",
+        "text": "Patikrinamas sienų ir grindų lygumas, paviršiai gruntuojami ir prireikus išlyginami.",
+        "html": "Patikrinamas sienų ir grindų lygumas, paviršiai gruntuojami ir prireikus išlyginami."
+      },
+      {
+        "type": "h3",
+        "text": "Hidroizoliacija",
+        "html": "Hidroizoliacija"
+      },
+      {
+        "type": "p",
+        "text": "Drėgnose zonose įrengiami hidroizoliacijos sluoksniai, kampų juostos ir vamzdžių manžetės.",
+        "html": "Drėgnose zonose įrengiami hidroizoliacijos sluoksniai, kampų juostos ir vamzdžių manžetės."
+      },
+      {
+        "type": "h3",
+        "text": "Dušo zona",
+        "html": "Dušo zona"
+      },
+      {
+        "type": "p",
+        "text": "Formuojami nuolydžiai, derinamas trapas ar latakas, tiksliai suplanuojamas plytelių išdėstymas.",
+        "html": "Formuojami nuolydžiai, derinamas trapas ar latakas, tiksliai suplanuojamas plytelių išdėstymas."
+      },
+      {
+        "type": "h3",
+        "text": "Klijavimas ir siūlės",
+        "html": "Klijavimas ir siūlės"
+      },
+      {
+        "type": "p",
+        "text": "Klijuojamos sienų bei grindų plytelės, suleidžiami 45° kampai, glaistomos ir hermetizuojamos siūlės.",
+        "html": "Klijuojamos sienų bei grindų plytelės, suleidžiami 45° kampai, glaistomos ir hermetizuojamos siūlės."
+      },
+      {
+        "type": "h2",
+        "text": "Kur dirbama?",
+        "html": "Kur dirbama?"
+      },
+      {
+        "type": "p",
+        "text": "Vonios kambario plytelės klijuojamos Pabradėje, Švenčionyse ir Švenčionėliuose, o pagal grafiką – Vilniuje.",
+        "html": "Vonios kambario plytelės klijuojamos <a href=\"plyteliu-klojimas-pabrade.html\">Pabradėje</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Švenčionyse ir Švenčionėliuose</a>, o pagal grafiką – <a href=\"plyteliu-klojimas-vilnius.html\">Vilniuje</a>."
+      },
+      {
+        "type": "h2",
+        "text": "Susiję sprendimai",
+        "html": "Susiję sprendimai"
+      },
+      {
+        "type": "p",
+        "text": "Vonios interjerui taip pat įrengiamos individualios kriauklės iš plytelių. Naudingos rekomendacijos pateikiamos straipsnyje apie vonios hidroizoliaciją.",
+        "html": "Vonios interjerui taip pat įrengiamos <a href=\"kriaukles-is-plyteliu.html\">individualios kriauklės iš plytelių</a>. Naudingos rekomendacijos pateikiamos straipsnyje apie <a href=\"blogas/vonios-hidroizoliacija-kodel-butina.html\">vonios hidroizoliaciją</a>."
+      },
+      {
+        "type": "h2",
+        "text": "Dažniausi klausimai apie vonios plyteles",
+        "html": "Dažniausi klausimai apie vonios plyteles"
+      },
+      {
+        "type": "faq-q",
+        "text": "Ar būtina hidroizoliacija?+",
+        "html": "<div class=\"q-title\"><span>Ar būtina hidroizoliacija?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Dušo ir kitose šlapiose zonose ji būtina, kad vanduo nepatektų į konstrukcijas.",
+        "html": "Dušo ir kitose šlapiose zonose ji būtina, kad vanduo nepatektų į konstrukcijas."
+      },
+      {
+        "type": "faq-q",
+        "text": "Kiek trunka darbai?+",
+        "html": "<div class=\"q-title\"><span>Kiek trunka darbai?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Trukmė priklauso nuo pagrindo, patalpos dydžio, formato ir pasirinktų mazgų. Terminas pateikiamas po apžiūros.",
+        "html": "Trukmė priklauso nuo pagrindo, patalpos dydžio, formato ir pasirinktų mazgų. Terminas pateikiamas po apžiūros."
+      },
+      {
+        "type": "h2",
+        "text": "Reikia plytelių meistro voniai?",
+        "html": "Reikia plytelių meistro voniai?"
+      },
+      {
+        "type": "p",
+        "text": "Atsiųskite patalpos nuotraukas, matmenis ir plytelių formatą – parengsime pirminį įvertinimą.",
+        "html": "Atsiųskite patalpos nuotraukas, matmenis ir plytelių formatą – parengsime pirminį įvertinimą."
+      }
+    ]
+  },
+  "virtuves-plyteliu-klijavimas.html": {
+    "meta": {
+      "title": "Virtuvės plytelių klijavimas | Situacija.eu",
+      "description": "Virtuvės plytelių klijavimas Pabradėje, Švenčionyse ir Vilniuje: virtuvės sienelė, prijuostė, grindys, tikslūs rozečių pjūviai ir rašto derinimas.",
+      "canonical": "https://situacija.eu/virtuves-plyteliu-klijavimas.html",
+      "ogType": ""
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Virtuvės plytelių klijavimas",
+        "serviceType": "Virtuvės sienelės, prijuostės ir grindų plytelių klijavimas",
+        "url": "https://situacija.eu/virtuves-plyteliu-klijavimas.html",
+        "image": "https://situacija.eu/images/services/virtuves.webp",
+        "provider": {
+          "@id": "https://situacija.eu/#business"
+        },
+        "areaServed": [
+          "Pabradė",
+          "Švenčionys",
+          "Švenčionėliai",
+          "Vilnius"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kada klijuoti virtuvės sienelės plyteles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plytelių išdėstymą geriausia derinti turint virtuvės baldų projektą, stalviršio aukštį ir tikslias rozečių vietas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ar galima plyteles klijuoti ant senų plytelių?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kartais galima, tačiau pirmiausia įvertinamas seno paviršiaus sukibimas, lygumas ir tinkamumas naujai apdailai."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ar klijuojamos ir virtuvės grindų plytelės?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Taip, klijuojamos keraminės ir akmens masės grindų plytelės, suderinant siūles su baldų bei patalpos geometrija."
+            }
+          }
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Virtuvės plytelių klijavimas",
+        "html": "Virtuvės plytelių klijavimas"
+      },
+      {
+        "type": "p",
+        "text": "Klijuojamos virtuvės sienelės, prijuostės ir grindys. Plytelių išdėstymas derinamas su baldais, stalviršiu, rozetėmis ir matomomis briaunomis.",
+        "html": "Klijuojamos virtuvės sienelės, prijuostės ir grindys. Plytelių išdėstymas derinamas su baldais, stalviršiu, rozetėmis ir matomomis briaunomis."
+      },
+      {
+        "type": "img",
+        "src": "images/services/virtuves.webp",
+        "alt": "Virtuvės sienelė ir grindys su tiksliai suklijuotomis plytelėmis",
+        "width": "960",
+        "height": "720"
+      },
+      {
+        "type": "h2",
+        "text": "Kas atliekama virtuvėje?",
+        "html": "Kas atliekama virtuvėje?"
+      },
+      {
+        "type": "h3",
+        "text": "Virtuvės sienelė",
+        "html": "Virtuvės sienelė"
+      },
+      {
+        "type": "p",
+        "text": "Parenkama estetiška pradžios vieta, suderinamas siūlių ritmas ir viršutinis apdailos aukštis.",
+        "html": "Parenkama estetiška pradžios vieta, suderinamas siūlių ritmas ir viršutinis apdailos aukštis."
+      },
+      {
+        "type": "h3",
+        "text": "Rozečių ir vamzdžių pjūviai",
+        "html": "Rozečių ir vamzdžių pjūviai"
+      },
+      {
+        "type": "p",
+        "text": "Angos išpjaunamos tiksliai, kad mechanizmai bei apdailos rėmeliai tvarkingai priglustų.",
+        "html": "Angos išpjaunamos tiksliai, kad mechanizmai bei apdailos rėmeliai tvarkingai priglustų."
+      },
+      {
+        "type": "h3",
+        "text": "Virtuvės grindys",
+        "html": "Virtuvės grindys"
+      },
+      {
+        "type": "p",
+        "text": "Paruošiamas pagrindas ir klijuojamos lengvai prižiūrimos keraminės arba akmens masės plytelės.",
+        "html": "Paruošiamas pagrindas ir klijuojamos lengvai prižiūrimos keraminės arba akmens masės plytelės."
+      },
+      {
+        "type": "h3",
+        "text": "Siūlių užbaigimas",
+        "html": "Siūlių užbaigimas"
+      },
+      {
+        "type": "p",
+        "text": "Parenkama tinkama glaisto spalva, sandarinamos jungtys prie stalviršio ir kitų medžiagų.",
+        "html": "Parenkama tinkama glaisto spalva, sandarinamos jungtys prie stalviršio ir kitų medžiagų."
+      },
+      {
+        "type": "h2",
+        "text": "Paslaugų vietovės",
+        "html": "Paslaugų vietovės"
+      },
+      {
+        "type": "p",
+        "text": "Virtuvės plytelės klijuojamos Pabradėje, Švenčionių rajone ir pagal susitarimą Vilniuje.",
+        "html": "Virtuvės plytelės klijuojamos <a href=\"plyteliu-klojimas-pabrade.html\">Pabradėje</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Švenčionių rajone</a> ir pagal susitarimą <a href=\"plyteliu-klojimas-vilnius.html\">Vilniuje</a>."
+      },
+      {
+        "type": "h2",
+        "text": "Kada kreiptis?",
+        "html": "Kada kreiptis?"
+      },
+      {
+        "type": "p",
+        "text": "Geriausia turėti baldų projektą, stalviršio aukštį ir pasirinktų plytelių formatą. Tai leidžia iš anksto suplanuoti siūles bei pjūvius.",
+        "html": "Geriausia turėti baldų projektą, stalviršio aukštį ir pasirinktų plytelių formatą. Tai leidžia iš anksto suplanuoti siūles bei pjūvius."
+      },
+      {
+        "type": "h2",
+        "text": "Klausimai apie virtuvės plyteles",
+        "html": "Klausimai apie virtuvės plyteles"
+      },
+      {
+        "type": "faq-q",
+        "text": "Kada klijuoti sienelę?+",
+        "html": "<div class=\"q-title\"><span>Kada klijuoti sienelę?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Kai žinomi baldų ir stalviršio matmenys, plytelių ribas bei rozečių vietas galima suplanuoti tiksliausiai.",
+        "html": "Kai žinomi baldų ir stalviršio matmenys, plytelių ribas bei rozečių vietas galima suplanuoti tiksliausiai."
+      },
+      {
+        "type": "faq-q",
+        "text": "Ar klijuojate grindis?+",
+        "html": "<div class=\"q-title\"><span>Ar klijuojate grindis?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Taip, atliekamas pagrindo paruošimas ir virtuvės grindų plytelių klijavimas.",
+        "html": "Taip, atliekamas pagrindo paruošimas ir virtuvės grindų plytelių klijavimas."
+      },
+      {
+        "type": "h2",
+        "text": "Planuojate virtuvės apdailą?",
+        "html": "Planuojate virtuvės apdailą?"
+      },
+      {
+        "type": "p",
+        "text": "Atsiųskite sienelės matmenis, baldų projektą ir plytelių pavyzdį.",
+        "html": "Atsiųskite sienelės matmenis, baldų projektą ir plytelių pavyzdį."
+      }
+    ]
+  },
+  "didelio-formato-plyteliu-klojimas.html": {
+    "meta": {
+      "title": "Didelio formato plytelių klojimas | Situacija.eu",
+      "description": "Didelio formato akmens masės plytelių klojimas Pabradėje, Švenčionyse ir Vilniuje: 60x120, 80x80, 120x120 cm grindims, sienoms ir terasoms.",
+      "canonical": "https://situacija.eu/didelio-formato-plyteliu-klojimas.html",
+      "ogType": ""
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Didelio formato plytelių klojimas",
+        "serviceType": "Didelio formato akmens masės plytelių montavimas",
+        "url": "https://situacija.eu/didelio-formato-plyteliu-klojimas.html",
+        "image": "https://situacija.eu/images/services/grindys-ir-terasos.webp",
+        "provider": {
+          "@id": "https://situacija.eu/#business"
+        },
+        "areaServed": [
+          "Pabradė",
+          "Švenčionys",
+          "Švenčionėliai",
+          "Vilnius"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kokie plytelių formatai klojami?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Klojamos 60x120, 80x80, 120x120 cm ir kitų matmenų akmens masės plytelės, įvertinus jų storį, svorį ir pagrindą."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kodėl didelėms plytelėms svarbus lygus pagrindas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Didelis formatas mažiau prisitaiko prie nelygumų, todėl pagrindo plokštuma tikrinama ir paruošiama prieš klijavimą."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ar didelio formato plytelės tinka terasai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Taip, jei pasirinktos lauko sąlygoms tinkamos plytelės ir įrengtas stabilus pagrindas, nuolydžiai, deformacinės siūlės bei tinkamas klijavimo mazgas."
+            }
+          }
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Didelio formato plytelių klojimas",
+        "html": "Didelio formato plytelių klojimas"
+      },
+      {
+        "type": "p",
+        "text": "Klojamos didelio formato keraminės ir akmens masės plytelės ant grindų, sienų bei terasose. Darbai planuojami pagal plytelių geometriją, pagrindą ir patalpos ašis.",
+        "html": "Klojamos didelio formato keraminės ir akmens masės plytelės ant grindų, sienų bei terasose. Darbai planuojami pagal plytelių geometriją, pagrindą ir patalpos ašis."
+      },
+      {
+        "type": "img",
+        "src": "images/services/grindys-ir-terasos.webp",
+        "alt": "Didelio formato akmens masės plytelių grindys vidaus patalpoje ir terasoje",
+        "width": "960",
+        "height": "720"
+      },
+      {
+        "type": "h2",
+        "text": "Kas svarbu klojant dideles plyteles?",
+        "html": "Kas svarbu klojant dideles plyteles?"
+      },
+      {
+        "type": "h3",
+        "text": "Pagrindo plokštuma",
+        "html": "Pagrindo plokštuma"
+      },
+      {
+        "type": "p",
+        "text": "Lazeriu patikrinamas lygumas, įvertinami aukščiai, durų angos ir gretimų dangų sujungimai.",
+        "html": "Lazeriu patikrinamas lygumas, įvertinami aukščiai, durų angos ir gretimų dangų sujungimai."
+      },
+      {
+        "type": "h3",
+        "text": "Išdėstymo planas",
+        "html": "Išdėstymo planas"
+      },
+      {
+        "type": "p",
+        "text": "Suderinamos pagrindinės ašys, kraštinių pjūviai, rašto kryptis ir siūlių tęstinumas.",
+        "html": "Suderinamos pagrindinės ašys, kraštinių pjūviai, rašto kryptis ir siūlių tęstinumas."
+      },
+      {
+        "type": "h3",
+        "text": "Klijų padengimas",
+        "html": "Klijų padengimas"
+      },
+      {
+        "type": "p",
+        "text": "Parenkamos formatui bei pagrindui tinkamos medžiagos, siekiama reikiamo klijų kontakto.",
+        "html": "Parenkamos formatui bei pagrindui tinkamos medžiagos, siekiama reikiamo klijų kontakto."
+      },
+      {
+        "type": "h3",
+        "text": "Lyginimas ir siūlės",
+        "html": "Lyginimas ir siūlės"
+      },
+      {
+        "type": "p",
+        "text": "Naudojama plytelių lyginimo sistema, kontroliuojami aukščiai ir suplanuojamos deformacinės siūlės.",
+        "html": "Naudojama plytelių lyginimo sistema, kontroliuojami aukščiai ir suplanuojamos deformacinės siūlės."
+      },
+      {
+        "type": "h2",
+        "text": "Kur klojamos?",
+        "html": "Kur klojamos?"
+      },
+      {
+        "type": "p",
+        "text": "Svetainėse, virtuvėse, holuose, vonios kambariuose ir tinkamai įrengtose lauko terasose. Žr. ir vonios plytelių klijavimą.",
+        "html": "Svetainėse, virtuvėse, holuose, vonios kambariuose ir tinkamai įrengtose lauko terasose. Žr. ir <a href=\"vonios-kambario-plyteliu-klijavimas.html\">vonios plytelių klijavimą</a>."
+      },
+      {
+        "type": "h2",
+        "text": "Paslaugų vietovės",
+        "html": "Paslaugų vietovės"
+      },
+      {
+        "type": "p",
+        "text": "Darbai atliekami Pabradėje, Švenčionių rajone ir pagal grafiką Vilniuje.",
+        "html": "Darbai atliekami <a href=\"plyteliu-klojimas-pabrade.html\">Pabradėje</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Švenčionių rajone</a> ir pagal grafiką <a href=\"plyteliu-klojimas-vilnius.html\">Vilniuje</a>."
+      },
+      {
+        "type": "h2",
+        "text": "Klausimai apie didelio formato plyteles",
+        "html": "Klausimai apie didelio formato plyteles"
+      },
+      {
+        "type": "faq-q",
+        "text": "Kokie formatai klojami?+",
+        "html": "<div class=\"q-title\"><span>Kokie formatai klojami?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Dažniausi formatai – 60x120, 80x80 ir 120x120 cm, tačiau galimybės vertinamos pagal konkretų gaminį ir objektą.",
+        "html": "Dažniausi formatai – 60x120, 80x80 ir 120x120 cm, tačiau galimybės vertinamos pagal konkretų gaminį ir objektą."
+      },
+      {
+        "type": "faq-q",
+        "text": "Ar tinka terasai?+",
+        "html": "<div class=\"q-title\"><span>Ar tinka terasai?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Taip, kai plytelės ir visas montavimo mazgas pritaikyti šalčiui, drėgmei bei temperatūrų pokyčiams.",
+        "html": "Taip, kai plytelės ir visas montavimo mazgas pritaikyti šalčiui, drėgmei bei temperatūrų pokyčiams."
+      },
+      {
+        "type": "h2",
+        "text": "Turite didelio formato plyteles?",
+        "html": "Turite didelio formato plyteles?"
+      },
+      {
+        "type": "p",
+        "text": "Atsiųskite formatą, gaminio nuorodą, plotą ir pagrindo nuotraukas.",
+        "html": "Atsiųskite formatą, gaminio nuorodą, plotą ir pagrindo nuotraukas."
+      }
+    ]
+  },
+  "klinkerio-klijavimas-fasadai.html": {
+    "meta": {
+      "title": "Klinkerio klijavimas fasadams | Situacija.eu",
+      "description": "Klinkerio plytelių klijavimas Pabradėje ir Švenčionių rajone: fasadų, cokolio, tvorų bei židinių apdaila, siūlių rievėjimas ir impregnavimas.",
+      "canonical": "https://situacija.eu/klinkerio-klijavimas-fasadai.html",
+      "ogType": ""
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Klinkerio klijavimas ir fasadų apdaila",
+        "serviceType": "Klinkerio plytelių klijavimas fasadams, cokoliams ir tvoroms",
+        "url": "https://situacija.eu/klinkerio-klijavimas-fasadai.html",
+        "image": "https://situacija.eu/images/services/fasadu-apdaila-klinkeriu.webp",
+        "provider": {
+          "@id": "https://situacija.eu/#business"
+        },
+        "areaServed": [
+          "Pabradė",
+          "Švenčionys",
+          "Švenčionėliai",
+          "Švenčionių rajonas"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kur galima klijuoti klinkerio plyteles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Klinkerio plytelės naudojamos fasadams, cokoliams, tvoroms, kolonoms ir kai kuriems vidaus akcentams, jei pagrindas bei sistema tam tinkami."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ar reikia rievėti klinkerio siūles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Siūlių užbaigimo būdas derinamas su pasirinkta sistema ir plytelėmis; lauko apdailoje taisyklingas siūlių užpildymas yra svarbi apsaugos nuo drėgmės dalis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Nuo ko priklauso klinkerio klijavimo kaina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kainą lemia pagrindo paruošimas, aukštis, angų bei kampų kiekis, plytelių formatas, raštas, siūlių tipas ir priėjimas prie objekto."
+            }
+          }
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Klinkerio plytelių klijavimas",
+        "html": "Klinkerio plytelių klijavimas"
+      },
+      {
+        "type": "p",
+        "text": "Atliekama fasadų, cokolio, tvorų ir židinių apdaila klinkerio plytelėmis. Įvertinamas pagrindas, suplanuojamas raštas, kampai ir drėgmei atsparios siūlės.",
+        "html": "Atliekama fasadų, cokolio, tvorų ir židinių apdaila klinkerio plytelėmis. Įvertinamas pagrindas, suplanuojamas raštas, kampai ir drėgmei atsparios siūlės."
+      },
+      {
+        "type": "img",
+        "src": "images/services/fasadu-apdaila-klinkeriu.webp",
+        "alt": "Gyvenamojo namo fasadas tvarkingai apklijuotas klinkerio plytelėmis",
+        "width": "960",
+        "height": "720"
+      },
+      {
+        "type": "h2",
+        "text": "Klinkerio apdailos darbai",
+        "html": "Klinkerio apdailos darbai"
+      },
+      {
+        "type": "h3",
+        "text": "Pagrindo įvertinimas",
+        "html": "Pagrindo įvertinimas"
+      },
+      {
+        "type": "p",
+        "text": "Patikrinamas tvirtumas, lygumas, drėgmė ir pasirinktos sistemos suderinamumas su pagrindu.",
+        "html": "Patikrinamas tvirtumas, lygumas, drėgmė ir pasirinktos sistemos suderinamumas su pagrindu."
+      },
+      {
+        "type": "h3",
+        "text": "Rašto planavimas",
+        "html": "Rašto planavimas"
+      },
+      {
+        "type": "p",
+        "text": "Suderinamos eilės, angokraščiai, kampai ir vertikalios siūlės, kad fasadas atrodytų vientisas.",
+        "html": "Suderinamos eilės, angokraščiai, kampai ir vertikalios siūlės, kad fasadas atrodytų vientisas."
+      },
+      {
+        "type": "h3",
+        "text": "Klinkerio klijavimas",
+        "html": "Klinkerio klijavimas"
+      },
+      {
+        "type": "p",
+        "text": "Naudojamos lauko sąlygoms bei pasirinktam klinkeriui tinkamos medžiagos ir technologija.",
+        "html": "Naudojamos lauko sąlygoms bei pasirinktam klinkeriui tinkamos medžiagos ir technologija."
+      },
+      {
+        "type": "h3",
+        "text": "Siūlės ir apsauga",
+        "html": "Siūlės ir apsauga"
+      },
+      {
+        "type": "p",
+        "text": "Siūlės užpildomos bei formuojamos, prireikus parenkama papildoma paviršiaus apsauga.",
+        "html": "Siūlės užpildomos bei formuojamos, prireikus parenkama papildoma paviršiaus apsauga."
+      },
+      {
+        "type": "h2",
+        "text": "Kur atliekami darbai?",
+        "html": "Kur atliekami darbai?"
+      },
+      {
+        "type": "p",
+        "text": "Pagrindinės vietovės – Pabradė, Švenčionys, Švenčionėliai ir Švenčionių rajonas.",
+        "html": "Pagrindinės vietovės – <a href=\"plyteliu-klojimas-pabrade.html\">Pabradė</a>, <a href=\"plyteliu-klojimas-svencionys.html\">Švenčionys, Švenčionėliai ir Švenčionių rajonas</a>."
+      },
+      {
+        "type": "h2",
+        "text": "Apie technologiją",
+        "html": "Apie technologiją"
+      },
+      {
+        "type": "p",
+        "text": "Išsamiau apie pagrindo paruošimą, siūles ir dažnas klaidas skaitykite straipsnyje „Klinkerio fasado ir cokolio apdaila“.",
+        "html": "Išsamiau apie pagrindo paruošimą, siūles ir dažnas klaidas skaitykite straipsnyje <a href=\"blogas/klinkerio-fasado-ir-cokolio-apdaila.html\">„Klinkerio fasado ir cokolio apdaila“</a>."
+      },
+      {
+        "type": "h2",
+        "text": "Klausimai apie klinkerio klijavimą",
+        "html": "Klausimai apie klinkerio klijavimą"
+      },
+      {
+        "type": "faq-q",
+        "text": "Kur tinka klinkerio plytelės?+",
+        "html": "<div class=\"q-title\"><span>Kur tinka klinkerio plytelės?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Fasadams, cokoliams, tvoroms, kolonoms ir daliai interjero akcentų, kai parinktas tinkamas pagrindas.",
+        "html": "Fasadams, cokoliams, tvoroms, kolonoms ir daliai interjero akcentų, kai parinktas tinkamas pagrindas."
+      },
+      {
+        "type": "faq-q",
+        "text": "Kas lemia kainą?+",
+        "html": "<div class=\"q-title\"><span>Kas lemia kainą?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Plotas, aukštis, pagrindo būklė, angos, kampai, raštas, siūlių tipas ir priėjimas prie objekto.",
+        "html": "Plotas, aukštis, pagrindo būklė, angos, kampai, raštas, siūlių tipas ir priėjimas prie objekto."
+      },
+      {
+        "type": "h2",
+        "text": "Planuojate klinkerio fasadą ar cokolį?",
+        "html": "Planuojate klinkerio fasadą ar cokolį?"
+      },
+      {
+        "type": "p",
+        "text": "Atsiųskite objekto nuotraukas, plotą ir pasirinkto klinkerio nuorodą.",
+        "html": "Atsiųskite objekto nuotraukas, plotą ir pasirinkto klinkerio nuorodą."
+      }
+    ]
+  },
+  "kriaukles-is-plyteliu.html": {
+    "meta": {
+      "title": "Kriauklės iš plytelių | Situacija.eu",
+      "description": "Individualių kriauklių iš plytelių įrengimas Pabradėje, Švenčionyse ir Vilniuje: konstrukcija, hidroizoliacija, nuolydžiai, išleidimas ir 45° briaunos.",
+      "canonical": "https://situacija.eu/kriaukles-is-plyteliu.html",
+      "ogType": ""
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Kriauklės iš plytelių pagal individualų projektą",
+        "serviceType": "Kriauklių iš plytelių įrengimas",
+        "description": "Individualios plytelėmis formuojamos kriauklės su suderinta konstrukcija, hidroizoliacija, nuolydžiais, vandens išleidimu ir 45 laipsnių briaunomis.",
+        "url": "https://situacija.eu/kriaukles-is-plyteliu.html",
+        "image": [
+          "https://situacija.eu/images/kriaukles-is-plyteliu/kriaukle-is-plyteliu.webp",
+          "https://situacija.eu/images/kriaukles-is-plyteliu/plyteliu-kriaukles-nuolydis.webp"
+        ],
+        "provider": {
+          "@id": "https://situacija.eu/#business"
+        },
+        "areaServed": [
+          "Pabradė",
+          "Švenčionys",
+          "Švenčionėliai",
+          "Vilnius"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ar galima kriauklę pagaminti iš tokių pačių plytelių kaip vonios sienos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dažniausiai taip. Plytelės vertinamos pagal vandens įgeriamumą, formatą, storį ir galimybę tiksliai suformuoti pjūvius bei briaunas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kaip užtikrinamas plytelių kriauklės sandarumas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Įrengiamas stabilus pagrindas, visa sistema hidroizoliuojama, sandarinami kampai ir atskirai suformuojamas patikimas vandens išleidimo mazgas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kiek trunka kriauklės iš plytelių įrengimas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trukmė priklauso nuo konstrukcijos paruošimo, plytelių formato ir sprendinio sudėtingumo. Terminas nustatomas įvertinus projektą ir montavimo vietą."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Nuo ko priklauso kriauklės iš plytelių kaina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kainą lemia dydis, forma, pagrindo paruošimas, plytelių formatas, pjūvių ir 45 laipsnių briaunų kiekis, hidroizoliacija bei išleidimo tipas."
+            }
+          }
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Kriauklės iš plytelių pagal individualų projektą",
+        "html": "Kriauklės iš plytelių pagal individualų projektą"
+      },
+      {
+        "type": "p",
+        "text": "Plytelėmis formuojama kriauklė gali vientisai pratęsti vonios apdailą. Suderiname konstrukciją, nuolydžius, hidroizoliaciją, vandens išleidimą ir preciziškas briaunas.",
+        "html": "Plytelėmis formuojama kriauklė gali vientisai pratęsti vonios apdailą. Suderiname konstrukciją, nuolydžius, hidroizoliaciją, vandens išleidimą ir preciziškas briaunas."
+      },
+      {
+        "type": "img",
+        "src": "images/kriaukles-is-plyteliu/kriaukle-is-plyteliu.webp",
+        "alt": "Individuali kriauklė iš didelio formato šviesių plytelių moderniame vonios kambaryje",
+        "width": "1536",
+        "height": "1024"
+      },
+      {
+        "type": "h2",
+        "text": "Kas įeina į paslaugą?",
+        "html": "Kas įeina į paslaugą?"
+      },
+      {
+        "type": "h3",
+        "text": "Projektavimas ir matavimai",
+        "html": "Projektavimas ir matavimai"
+      },
+      {
+        "type": "p",
+        "text": "Parenkamas kriauklės dydis, gylis, aukštis ir forma, suderinama su patalpos geometrija bei plytelių moduliu.",
+        "html": "Parenkamas kriauklės dydis, gylis, aukštis ir forma, suderinama su patalpos geometrija bei plytelių moduliu."
+      },
+      {
+        "type": "h3",
+        "text": "Pagrindas ir hidroizoliacija",
+        "html": "Pagrindas ir hidroizoliacija"
+      },
+      {
+        "type": "p",
+        "text": "Suformuojama stabili konstrukcija, nuolydžiai ir su visa vonios sistema suderinta hidroizoliacija.",
+        "html": "Suformuojama stabili konstrukcija, nuolydžiai ir su visa vonios sistema suderinta hidroizoliacija."
+      },
+      {
+        "type": "h3",
+        "text": "Tikslūs pjūviai ir briaunos",
+        "html": "Tikslūs pjūviai ir briaunos"
+      },
+      {
+        "type": "p",
+        "text": "Plytelės pjaunamos pagal projektą, išorinės briaunos suleidžiamos 45° kampu ir kruopščiai užbaigiamos.",
+        "html": "Plytelės pjaunamos pagal projektą, išorinės briaunos suleidžiamos 45° kampu ir kruopščiai užbaigiamos."
+      },
+      {
+        "type": "h3",
+        "text": "Vandens išleidimo mazgas",
+        "html": "Vandens išleidimo mazgas"
+      },
+      {
+        "type": "p",
+        "text": "Suplanuojamas išleidimas, prieiga prie sifono ir patikrinamas vandens nubėgimas prieš galutinį užbaigimą.",
+        "html": "Suplanuojamas išleidimas, prieiga prie sifono ir patikrinamas vandens nubėgimas prieš galutinį užbaigimą."
+      },
+      {
+        "type": "h2",
+        "text": "Kaip įrengiama kriauklė iš plytelių?",
+        "html": "Kaip įrengiama kriauklė iš plytelių?"
+      },
+      {
+        "type": "li",
+        "text": "Vietos įvertinimas. Atliekami matavimai, aptariama forma, maišytuvas, išleidimas ir prieiga prie sifono.",
+        "html": "<strong>Vietos įvertinimas.</strong> Atliekami matavimai, aptariama forma, maišytuvas, išleidimas ir prieiga prie sifono."
+      },
+      {
+        "type": "li",
+        "text": "Medžiagų ir mazgų suderinimas. Patikrinamas plytelių formatas, suplanuojami pjūviai, briaunos ir nuolydžiai.",
+        "html": "<strong>Medžiagų ir mazgų suderinimas.</strong> Patikrinamas plytelių formatas, suplanuojami pjūviai, briaunos ir nuolydžiai."
+      },
+      {
+        "type": "li",
+        "text": "Konstrukcija bei hidroizoliacija. Paruošiamas stabilus pagrindas ir įrengiama vientisa sandarinimo sistema.",
+        "html": "<strong>Konstrukcija bei hidroizoliacija.</strong> Paruošiamas stabilus pagrindas ir įrengiama vientisa sandarinimo sistema."
+      },
+      {
+        "type": "li",
+        "text": "Klijavimas ir patikra. Plytelės tiksliai suklijuojamos, užbaigiamos siūlės ir patikrinamas vandens nubėgimas.",
+        "html": "<strong>Klijavimas ir patikra.</strong> Plytelės tiksliai suklijuojamos, užbaigiamos siūlės ir patikrinamas vandens nubėgimas."
+      },
+      {
+        "type": "img",
+        "src": "images/kriaukles-is-plyteliu/plyteliu-kriaukles-nuolydis.webp",
+        "alt": "Plytelių kriauklės vidaus nuolydžio ir linijinio vandens išleidimo detalė",
+        "width": "1536",
+        "height": "1024"
+      },
+      {
+        "type": "h2",
+        "text": "Kiek trunka darbai?",
+        "html": "Kiek trunka darbai?"
+      },
+      {
+        "type": "p",
+        "text": "Trukmė priklauso nuo konstrukcijos paruošimo, plytelių formato, briaunų skaičiaus ir sprendinio sudėtingumo. Konkretus terminas suderinamas įvertinus vietą ir pasirinktą dizainą.",
+        "html": "Trukmė priklauso nuo konstrukcijos paruošimo, plytelių formato, briaunų skaičiaus ir sprendinio sudėtingumo. Konkretus terminas suderinamas įvertinus vietą ir pasirinktą dizainą."
+      },
+      {
+        "type": "h2",
+        "text": "Nuo ko priklauso kaina?",
+        "html": "Nuo ko priklauso kaina?"
+      },
+      {
+        "type": "p",
+        "text": "Kainą lemia kriauklės dydis bei forma, pagrindo būklė, plytelių formatas, pjūvių ir 45° briaunų kiekis, hidroizoliacija, išleidimo tipas ir montavimo vietos sudėtingumas.",
+        "html": "Kainą lemia kriauklės dydis bei forma, pagrindo būklė, plytelių formatas, pjūvių ir 45° briaunų kiekis, hidroizoliacija, išleidimo tipas ir montavimo vietos sudėtingumas."
+      },
+      {
+        "type": "h2",
+        "text": "Klausimai apie kriaukles iš plytelių",
+        "html": "Klausimai apie kriaukles iš plytelių"
+      },
+      {
+        "type": "faq-q",
+        "text": "1Ar galima naudoti tokias pačias plyteles kaip vonios sienoms?+",
+        "html": "<div class=\"q-title\"><span class=\"q-badge\">1</span><span>Ar galima naudoti tokias pačias plyteles kaip vonios sienoms?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Dažniausiai taip. Plytelės vertinamos pagal vandens įgeriamumą, formatą, storį ir galimybę tiksliai suformuoti pjūvius bei briaunas.",
+        "html": "Dažniausiai taip. Plytelės vertinamos pagal vandens įgeriamumą, formatą, storį ir galimybę tiksliai suformuoti pjūvius bei briaunas."
+      },
+      {
+        "type": "faq-q",
+        "text": "2Kaip užtikrinamas kriauklės sandarumas?+",
+        "html": "<div class=\"q-title\"><span class=\"q-badge\">2</span><span>Kaip užtikrinamas kriauklės sandarumas?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Įrengiamas stabilus pagrindas, visa sistema hidroizoliuojama, sandarinami kampai ir atskirai suformuojamas patikimas vandens išleidimo mazgas.",
+        "html": "Įrengiamas stabilus pagrindas, visa sistema hidroizoliuojama, sandarinami kampai ir atskirai suformuojamas patikimas vandens išleidimo mazgas."
+      },
+      {
+        "type": "faq-q",
+        "text": "3Ar galima įrengti potinkinį maišytuvą?+",
+        "html": "<div class=\"q-title\"><span class=\"q-badge\">3</span><span>Ar galima įrengti potinkinį maišytuvą?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Taip, tačiau maišytuvo tipą ir vietą reikia numatyti prieš formuojant konstrukciją, kad vandens įvadai, atstumai ir aptarnavimo galimybės būtų suderinti iš anksto.",
+        "html": "Taip, tačiau maišytuvo tipą ir vietą reikia numatyti prieš formuojant konstrukciją, kad vandens įvadai, atstumai ir aptarnavimo galimybės būtų suderinti iš anksto."
+      },
+      {
+        "type": "faq-q",
+        "text": "4Ar tokia kriauklė lengvai prižiūrima?+",
+        "html": "<div class=\"q-title\"><span class=\"q-badge\">4</span><span>Ar tokia kriauklė lengvai prižiūrima?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Tinkamai parinkus plyteles, siūlių medžiagas ir nuolydžius, priežiūra yra paprasta. Po darbų pateikiamos tinkamų valymo priemonių rekomendacijos.",
+        "html": "Tinkamai parinkus plyteles, siūlių medžiagas ir nuolydžius, priežiūra yra paprasta. Po darbų pateikiamos tinkamų valymo priemonių rekomendacijos."
+      },
+      {
+        "type": "h2",
+        "text": "Aptarkime jūsų kriauklės projektą",
+        "html": "Aptarkime jūsų kriauklės projektą"
+      },
+      {
+        "type": "p",
+        "text": "Atsiųskite vietos nuotraukas, matmenis ir pasirinktų plytelių pavyzdį — tai padės greičiau įvertinti sprendimą.",
+        "html": "Atsiųskite vietos nuotraukas, matmenis ir pasirinktų plytelių pavyzdį — tai padės greičiau įvertinti sprendimą."
+      }
+    ]
+  },
+  "plyteliu-klojimas-pabrade.html": {
+    "meta": {
+      "title": "Plytelių meistras Pabradėje | Situacija.eu",
+      "description": "Plytelių meistras Pabradėje: vonios, virtuvės, didelio formato grindys, terasos, klinkeris ir hidroizoliacija. Sąmata tel. +370 600 30288.",
+      "canonical": "https://situacija.eu/plyteliu-klojimas-pabrade.html",
+      "ogType": ""
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Plytelių Klojimas Pabradėje - Situacija.eu",
+        "image": "https://situacija.eu/images/img1.jpg",
+        "url": "https://situacija.eu/plyteliu-klojimas-pabrade.html",
+        "telephone": "+37060030288",
+        "email": "v.finazonok@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pabradė",
+          "addressRegion": "Švenčionių r.",
+          "addressCountry": "LT"
+        },
+        "areaServed": "Pabradė"
+      }
+    ],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Plytelių Klojimas Pabradėje",
+        "html": "Plytelių Klojimas Pabradėje"
+      },
+      {
+        "type": "p",
+        "text": "Kokybiškos ir patikimos plytelių klijavimo paslaugos Pabradės mieste ir apylinkėse. Meistras Vladislav Finažonok.",
+        "html": "Kokybiškos ir patikimos plytelių klijavimo paslaugos Pabradės mieste ir apylinkėse. Meistras Vladislav Finažonok."
+      },
+      {
+        "type": "h2",
+        "text": "Paslaugos Pabradėje",
+        "html": "Paslaugos Pabradėje"
+      },
+      {
+        "type": "h3",
+        "text": "Vonios Kambariai Pabradėje",
+        "html": "Vonios Kambariai Pabradėje"
+      },
+      {
+        "type": "p",
+        "text": "Pilna vonios kambario apdaila, plytelių klijavimas, kampų pjovimas 45° kampu, hidroizoliacija.",
+        "html": "Pilna vonios kambario apdaila, plytelių klijavimas, kampų pjovimas 45° kampu, hidroizoliacija."
+      },
+      {
+        "type": "h3",
+        "text": "Virtuvės Sienelės ir Grindys",
+        "html": "Virtuvės Sienelės ir Grindys"
+      },
+      {
+        "type": "p",
+        "text": "Virtuvės prijuosčių klijavimas, raštų derinimas ir pedantiškas siūlių glaistymas.",
+        "html": "Virtuvės prijuosčių klijavimas, raštų derinimas ir pedantiškas siūlių glaistymas."
+      },
+      {
+        "type": "h3",
+        "text": "Didelio Formato Plytelės",
+        "html": "Didelio Formato Plytelės"
+      },
+      {
+        "type": "p",
+        "text": "Akmens masės didelių matmenų plytelių klojimas svetainėse, holuose ir terasose.",
+        "html": "Akmens masės didelių matmenų plytelių klojimas svetainėse, holuose ir terasose."
+      }
+    ]
+  },
+  "plyteliu-klojimas-svencionys.html": {
+    "meta": {
+      "title": "Plytelių meistras Švenčionyse | Situacija.eu",
+      "description": "Plytelių klojimas ir klijavimas Švenčionyse, Švenčionėliuose bei rajone: vonios, grindys, terasos, klinkeris ir hidroizoliacija. Tel. +370 600 30288.",
+      "canonical": "https://situacija.eu/plyteliu-klojimas-svencionys.html",
+      "ogType": ""
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Plytelių Klojimas Švenčionyse - Situacija.eu",
+        "image": "https://situacija.eu/images/img1.jpg",
+        "url": "https://situacija.eu/plyteliu-klojimas-svencionys.html",
+        "telephone": "+37060030288",
+        "email": "v.finazonok@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Švenčionys",
+          "addressRegion": "Švenčionių r.",
+          "addressCountry": "LT"
+        },
+        "areaServed": [
+          "Švenčionys",
+          "Švenčionėliai",
+          "Švenčionių rajonas"
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Plytelių Klojimas Švenčionyse ir Rajone",
+        "html": "Plytelių Klojimas Švenčionyse ir Rajone"
+      },
+      {
+        "type": "p",
+        "text": "Profesionalūs apdailos darbai Švenčionyse, Švenčionėliuose ir aplinkiniuose kaimuose.",
+        "html": "Profesionalūs apdailos darbai Švenčionyse, Švenčionėliuose ir aplinkiniuose kaimuose."
+      },
+      {
+        "type": "h2",
+        "text": "Apdailos Paslaugos Švenčionių Rajone",
+        "html": "Apdailos Paslaugos Švenčionių Rajone"
+      },
+      {
+        "type": "h3",
+        "text": "Vonios ir Dušo Zonos",
+        "html": "Vonios ir Dušo Zonos"
+      },
+      {
+        "type": "p",
+        "text": "Vidinių paviršių hidroizoliacija, nuolydžių formavimas ir plytelių suleidimas 45 laipsnių kampu.",
+        "html": "Vidinių paviršių hidroizoliacija, nuolydžių formavimas ir plytelių suleidimas 45 laipsnių kampu."
+      },
+      {
+        "type": "h3",
+        "text": "Fasadai ir Klinkeris",
+        "html": "Fasadai ir Klinkeris"
+      },
+      {
+        "type": "p",
+        "text": "Cokolio, tvorų bei fasadų klijavimas klinkerio plytelėmis.",
+        "html": "Cokolio, tvorų bei fasadų klijavimas klinkerio plytelėmis."
+      },
+      {
+        "type": "h3",
+        "text": "Grindų Plytelių Klojimas",
+        "html": "Grindų Plytelių Klojimas"
+      },
+      {
+        "type": "p",
+        "text": "Skirtingų gabaritų akmens masės ir keraminių plytelių klojimas.",
+        "html": "Skirtingų gabaritų akmens masės ir keraminių plytelių klojimas."
+      }
+    ]
+  },
+  "plyteliu-klojimas-vilnius.html": {
+    "meta": {
+      "title": "Plytelių meistras Vilniuje | Situacija.eu",
+      "description": "Plytelių klojimas ir klijavimas Vilniuje pagal grafiką: vonios kambariai, hidroizoliacija, virtuvės ir didelio formato grindys. Tel. +370 600 30288.",
+      "canonical": "https://situacija.eu/plyteliu-klojimas-vilnius.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Plytelių Klojimas Vilniuje ir Rajone",
+        "html": "Plytelių Klojimas Vilniuje ir Rajone"
+      },
+      {
+        "type": "p",
+        "text": "Pagal galimybes ir grafiką priimame užsakymus Vilniuje ir Vilniaus rajone.",
+        "html": "Pagal galimybes ir grafiką priimame užsakymus Vilniuje ir Vilniaus rajone."
+      },
+      {
+        "type": "h2",
+        "text": "Plytelių klijavimo paslaugos Vilniuje",
+        "html": "Plytelių klijavimo paslaugos Vilniuje"
+      },
+      {
+        "type": "p",
+        "text": "Užsakymai Vilniuje ir Vilniaus rajone priimami pagal darbų grafiką bei projekto apimtį.",
+        "html": "Užsakymai Vilniuje ir Vilniaus rajone priimami pagal darbų grafiką bei projekto apimtį."
+      },
+      {
+        "type": "h3",
+        "text": "Vonios kambario plytelės",
+        "html": "Vonios kambario plytelės"
+      },
+      {
+        "type": "p",
+        "text": "Pagrindo paruošimas, hidroizoliacija, dušo nuolydžiai ir tikslus plytelių klijavimas.",
+        "html": "Pagrindo paruošimas, hidroizoliacija, dušo nuolydžiai ir tikslus plytelių klijavimas."
+      },
+      {
+        "type": "h3",
+        "text": "Virtuvės sienelė ir grindys",
+        "html": "Virtuvės sienelė ir grindys"
+      },
+      {
+        "type": "p",
+        "text": "Rašto derinimas, rozečių pjūviai, sienelių ir akmens masės grindų apdaila.",
+        "html": "Rašto derinimas, rozečių pjūviai, sienelių ir akmens masės grindų apdaila."
+      },
+      {
+        "type": "h3",
+        "text": "Didelio formato plytelės",
+        "html": "Didelio formato plytelės"
+      },
+      {
+        "type": "p",
+        "text": "60x120, 80x80, 120x120 cm bei kitų matmenų plytelių klojimas.",
+        "html": "60x120, 80x80, 120x120 cm bei kitų matmenų plytelių klojimas."
+      }
+    ]
+  },
+  "gallery.html": {
+    "meta": {
+      "title": "Plytelių klojimo darbų galerija | Situacija.eu",
+      "description": "Meistro Vladislav atlikti plytelių klojimo, vonios apdailos, hidroizoliacijos ir klinkerio darbai Pabradėje, Švenčionyse ir Vilniuje.",
+      "canonical": "https://situacija.eu/gallery.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Atlikti plytelių klojimo darbai",
+        "html": "Atlikti plytelių klojimo darbai"
+      },
+      {
+        "type": "p",
+        "text": "Vonios, virtuvės, grindų ir klinkerio apdailos darbų pavyzdžiai.",
+        "html": "Vonios, virtuvės, grindų ir klinkerio apdailos darbų pavyzdžiai."
+      },
+      {
+        "type": "img",
+        "src": "images/img1.jpg",
+        "alt": "Vonios kambario plytelių klojimas Pabradėje",
+        "width": "1536",
+        "height": "2048"
+      },
+      {
+        "type": "img",
+        "src": "images/img2.jpg",
+        "alt": "Dušo zonos hidroizoliacija ir plytelių apdaila",
+        "width": "1536",
+        "height": "2048"
+      },
+      {
+        "type": "img",
+        "src": "images/img3.jpg",
+        "alt": "Didelio formato plytelių klojimo darbai",
+        "width": "1536",
+        "height": "2048"
+      },
+      {
+        "type": "img",
+        "src": "images/img4.jpg",
+        "alt": "Virtuvės ir grindų plytelių klijavimas",
+        "width": "1536",
+        "height": "2048"
+      },
+      {
+        "type": "img",
+        "src": "images/img5.jpg",
+        "alt": "Plytelių apdaila Švenčionių rajone",
+        "width": "1536",
+        "height": "2048"
+      },
+      {
+        "type": "img",
+        "src": "images/img6.jpg",
+        "alt": "Klinkerio ir plytelių apdailos darbai",
+        "width": "1536",
+        "height": "2048"
+      }
+    ]
+  },
+  "duk.html": {
+    "meta": {
+      "title": "D.U.K. apie plytelių klojimą | Situacija.eu",
+      "description": "Atsakymai apie plytelių klojimo kainas, hidroizoliaciją, terminus ir individualias kriaukles iš plytelių Pabradėje, Švenčionyse bei Vilniuje.",
+      "canonical": "https://situacija.eu/duk.html",
+      "ogType": ""
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kiek kainuoja plytelių klojimas Pabradėje, Švenčionyse ar Vilniuje?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plytelių klojimo kaina priklauso nuo plytelių formato, paviršiaus būklės (ar reikia lyginimo, hidroizoliacijos) bei pjovimo sudėtingumo (pvz. 45 laipsnių kampų suleidimas). Tiksli sąmata pateikiama apskaičiavus darbų apimtį. Skambinkite tel. +370 600 30288 nemokamai konsultacijai."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kuriuose miestuose ir rajonuose teikiate paslaugas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pagrindinė veiklos sritis – Pabradė, Švenčionys, Švenčionėliai ir visas Švenčionių rajonas. Pagal galimybes ir užimtumą atliekame darbus ir Vilniuje bei Vilniaus rajone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ar atliekate hidroizoliacijos ir paviršių paruošimo darbus?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Taip, atliekame pilną vonios kambario ir drėgnų zonų paruošimą: grindų išlyginimą, nuolydžio duše formavimą, teptinės hidroizoliacijos ir kampinių juostų įrengimą pagal visus technologinius reikalavimus."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ar klojate didelio formato plyteles (60x120 cm, 80x80 cm ir didesnes)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Taip, specializuojamės visų matmenų plytelių klojime – nuo smulkių mozaikų iki didelio formato akmens masės plytelių (60x120 cm, 80x80 cm, 120x120 cm). Naudojame specialias vakuumines pritraukimo rankenas, šlapio pjovimo stakles bei TLS plytelių lyginimo sistemas, užtikrinančias nepriekaištingą paviršių."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ar įrengiate individualias kriaukles iš plytelių?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Taip. Pagal vietą ir pasirinktą apdailą formuojama individuali plytelių kriauklė, suderinant konstrukciją, hidroizoliaciją, nuolydžius, išleidimą ir briaunas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kokios plytelės tinka kriauklei gaminti?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dažniausiai pasirenkamos mažai vandens įgeriančios ir tinkamų techninių savybių akmens masės plytelės. Pasirinkimas vertinamas kartu su konstrukcija, pjūviais ir briaunomis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kaip užtikrinamas plytelių kriauklės sandarumas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Įrengiamas stabilus pagrindas, sandarinami kampai, naudojama suderinta hidroizoliacijos sistema ir atskirai įvertinamas vandens išleidimo mazgas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Nuo ko priklauso kriauklės iš plytelių kaina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kainą lemia kriauklės dydis ir forma, pagrindo paruošimas, plytelių formatas, pjūvių bei briaunų kiekis, hidroizoliacija ir išleidimo tipas."
+            }
+          }
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Dažniausiai Užduodami Klausimai (D.U.K.)",
+        "html": "Dažniausiai Užduodami Klausimai (D.U.K.)"
+      },
+      {
+        "type": "p",
+        "text": "Viskas, ką reikia žinoti apie plytelių klojimo paslaugas, kainodarą, terminus bei technologijas Pabradėje, Švenčionyse ir Vilniuje.",
+        "html": "Viskas, ką reikia žinoti apie plytelių klojimo paslaugas, kainodarą, terminus bei technologijas Pabradėje, Švenčionyse ir Vilniuje."
+      },
+      {
+        "type": "faq-q",
+        "text": "1 Kiek kainuoja plytelių klojimas Pabradėje, Švenčionyse ar Vilniuje? +",
+        "html": "<div class=\"q-title\">\n                            <span class=\"q-badge\">1</span>\n                            <span>Kiek kainuoja plytelių klojimas Pabradėje, Švenčionyse ar Vilniuje?</span>\n                        </div>\n                        <div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Plytelių klojimo kaina skaičiuojama už kvadratinį metrą (m²) arba už visą objektą. Kaina priklauso nuo plytelių formato (didelio formato plytelės reikalauja papildomų lyginimo sistemų), paviršiaus būklės (ar reikia lyginti sienas/grindis), 45° kampų pjovimo kiekio bei pasirinkto glaisto (cementinis ar epoksidinis). Tikslią sąmatą pateikiame po pirminio įvertinimo. Skambinkite tel. +370 600 30288.",
+        "html": "Plytelių klojimo kaina skaičiuojama už kvadratinį metrą (m²) arba už visą objektą. Kaina priklauso nuo plytelių formato (didelio formato plytelės reikalauja papildomų lyginimo sistemų), paviršiaus būklės (ar reikia lyginti sienas/grindis), 45° kampų pjovimo kiekio bei pasirinkto glaisto (cementinis ar epoksidinis). Tikslią sąmatą pateikiame po pirminio įvertinimo. Skambinkite tel. <strong>+370 600 30288</strong>."
+      },
+      {
+        "type": "faq-q",
+        "text": "2 Kokiose vietovėse ir rajonuose teikiate paslaugas? +",
+        "html": "<div class=\"q-title\">\n                            <span class=\"q-badge\">2</span>\n                            <span>Kokiose vietovėse ir rajonuose teikiate paslaugas?</span>\n                        </div>\n                        <div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Pagrindinė meistro veiklos teritorija yra Pabradė, Švenčionys, Švenčionėliai ir visas Švenčionių rajonas. Taip pat pagal susitarimą ir laisvą grafiką atliekame darbus Vilniuje bei Vilniaus rajone.",
+        "html": "Pagrindinė meistro veiklos teritorija yra <strong>Pabradė, Švenčionys, Švenčionėliai ir visas Švenčionių rajonas</strong>. Taip pat pagal susitarimą ir laisvą grafiką atliekame darbus <strong>Vilniuje bei Vilniaus rajone</strong>."
+      },
+      {
+        "type": "faq-q",
+        "text": "3 Ar atliekate vonios kambario hidroizoliacijos darbus? +",
+        "html": "<div class=\"q-title\">\n                            <span class=\"q-badge\">3</span>\n                            <span>Ar atliekate vonios kambario hidroizoliacijos darbus?</span>\n                        </div>\n                        <div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Taip, hidroizoliacija yra būtina kiekvienam vonios kambariui ar dušo zonai. Naudojame sertifikuotas teptines hidroizoliacijos mastikas bei elastingas sandarinimo juostas kampams ir vamzdžių įvadams, kas užkerta kelią bet kokiam drėgmės pratekėjimui.",
+        "html": "Taip, hidroizoliacija yra būtina kiekvienam vonios kambariui ar dušo zonai. Naudojame sertifikuotas teptines hidroizoliacijos mastikas bei elastingas sandarinimo juostas kampams ir vamzdžių įvadams, kas užkerta kelią bet kokiam drėgmės pratekėjimui."
+      },
+      {
+        "type": "faq-q",
+        "text": "4 Kaip formuojami išoriniai plytelių kampai? +",
+        "html": "<div class=\"q-title\">\n                            <span class=\"q-badge\">4</span>\n                            <span>Kaip formuojami išoriniai plytelių kampai?</span>\n                        </div>\n                        <div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Išorinius plytelių kampus pjauname ir šlifuojame 45 laipsnių kampu (angl. miter cut). Tai leidžia išvengti pigiai atrodančių plastikinių ar metalinių kampukų naudojimo – kampai atrodo estetiškai, lygiai ir moderniai.",
+        "html": "Išorinius plytelių kampus pjauname ir šlifuojame 45 laipsnių kampu (angl. <em>miter cut</em>). Tai leidžia išvengti pigiai atrodančių plastikinių ar metalinių kampukų naudojimo – kampai atrodo estetiškai, lygiai ir moderniai."
+      },
+      {
+        "type": "faq-q",
+        "text": "5 Ar klojate didelio formato plyteles (60x120 cm, 80x80 cm ir didesnes)? +",
+        "html": "<div class=\"q-title\">\n                            <span class=\"q-badge\">5</span>\n                            <span>Ar klojate didelio formato plyteles (60x120 cm, 80x80 cm ir didesnes)?</span>\n                        </div>\n                        <div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Taip, specializuojamės visų matmenų plytelių klojime – nuo smulkių mozaikų iki didelio formato akmens masės plytelių (60x120 cm, 80x80 cm, 120x120 cm). Naudojame specialias vakuumines pritraukimo rankenas, šlapio pjovimo stakles bei TLS plytelių lyginimo sistemas, užtikrinančias nepriekaištingą paviršių.",
+        "html": "Taip, specializuojamės visų matmenų plytelių klojime – nuo smulkių mozaikų iki didelio formato akmens masės plytelių (60x120 cm, 80x80 cm, 120x120 cm). Naudojame specialias vakuumines pritraukimo rankenas, šlapio pjovimo stakles bei TLS plytelių lyginimo sistemas, užtikrinančias nepriekaištingą paviršių."
+      },
+      {
+        "type": "faq-q",
+        "text": "6 Koks skirtumas tarp cementinio ir epoksidinio glaisto? +",
+        "html": "<div class=\"q-title\">\n                            <span class=\"q-badge\">6</span>\n                            <span>Koks skirtumas tarp cementinio ir epoksidinio glaisto?</span>\n                        </div>\n                        <div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Cementinis glaistymas yra standartinis sprendimas, o epoksidinis glaistas yra 100% neįgeriantis vandens, purvo bei riebalų. Epoksidinis glaistas rekomenduojamas dušo zonoms ir virtuvės grindims, nes laikui bėgant nekinta jo spalva ir nesiveisia pelėsis.",
+        "html": "Cementinis glaistymas yra standartinis sprendimas, o epoksidinis glaistas yra 100% neįgeriantis vandens, purvo bei riebalų. Epoksidinis glaistas rekomenduojamas dušo zonoms ir virtuvės grindims, nes laikui bėgant nekinta jo spalva ir nesiveisia pelėsis."
+      },
+      {
+        "type": "faq-q",
+        "text": "7 Kiek laiko trunka vonios kambario plytelių klojimas? +",
+        "html": "<div class=\"q-title\">\n                            <span class=\"q-badge\">7</span>\n                            <span>Kiek laiko trunka vonios kambario plytelių klojimas?</span>\n                        </div>\n                        <div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Vidutinio dydžio vonios kambario (5–8 m²) pilna apdaila su paruošimu, hidroizoliacija, klijavimu ir glaistymu paprastai trunka nuo 5 iki 9 darbo dienų.",
+        "html": "Vidutinio dydžio vonios kambario (5–8 m²) pilna apdaila su paruošimu, hidroizoliacija, klijavimu ir glaistymu paprastai trunka nuo 5 iki 9 darbo dienų."
+      },
+      {
+        "type": "faq-q",
+        "text": "8 Ar padedate išsirinkti ir pristatyti statybines medžiagas? +",
+        "html": "<div class=\"q-title\">\n                            <span class=\"q-badge\">8</span>\n                            <span>Ar padedate išsirinkti ir pristatyti statybines medžiagas?</span>\n                        </div>\n                        <div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Taip, padedame tiksliai apskaičiuoti reikalingų klijų, hidroizoliacijos, grunto bei glaisto kiekius. Esant poreikiui, rekomenduojame patikrintų gamintojų medžiagas (Mapei, Ceresit, Knauf) ir padedame organizuoti atvežimą.",
+        "html": "Taip, padedame tiksliai apskaičiuoti reikalingų klijų, hidroizoliacijos, grunto bei glaisto kiekius. Esant poreikiui, rekomenduojame patikrintų gamintojų medžiagas (Mapei, Ceresit, Knauf) ir padedame organizuoti atvežimą."
+      },
+      {
+        "type": "faq-q",
+        "text": "9Ar įrengiate individualias kriaukles iš plytelių?+",
+        "html": "<div class=\"q-title\"><span class=\"q-badge\">9</span><span>Ar įrengiate individualias kriaukles iš plytelių?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Taip. Pagal vietą ir pasirinktą apdailą formuojama individuali plytelių kriauklė, suderinant konstrukciją, hidroizoliaciją, nuolydžius, išleidimą ir 45° briaunas. Plačiau apie paslaugą.",
+        "html": "Taip. Pagal vietą ir pasirinktą apdailą formuojama individuali plytelių kriauklė, suderinant konstrukciją, hidroizoliaciją, nuolydžius, išleidimą ir 45° briaunas. <a href=\"kriaukles-is-plyteliu.html\"><strong>Plačiau apie paslaugą.</strong></a>"
+      },
+      {
+        "type": "faq-q",
+        "text": "10Kokios plytelės tinka kriauklei gaminti?+",
+        "html": "<div class=\"q-title\"><span class=\"q-badge\">10</span><span>Kokios plytelės tinka kriauklei gaminti?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Dažniausiai pasirenkamos mažai vandens įgeriančios ir tinkamų techninių savybių akmens masės plytelės. Galutinis pasirinkimas vertinamas kartu su konstrukcija, pjūviais ir briaunomis.",
+        "html": "Dažniausiai pasirenkamos mažai vandens įgeriančios ir tinkamų techninių savybių akmens masės plytelės. Galutinis pasirinkimas vertinamas kartu su konstrukcija, pjūviais ir briaunomis."
+      },
+      {
+        "type": "faq-q",
+        "text": "11Kaip užtikrinamas plytelių kriauklės sandarumas?+",
+        "html": "<div class=\"q-title\"><span class=\"q-badge\">11</span><span>Kaip užtikrinamas plytelių kriauklės sandarumas?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Įrengiamas stabilus pagrindas, sandarinami kampai, naudojama su klijais ir siūlių medžiagomis suderinta hidroizoliacijos sistema. Atskirai įvertinamas vandens išleidimo mazgas bei prieiga prie sifono.",
+        "html": "Įrengiamas stabilus pagrindas, sandarinami kampai, naudojama su klijais ir siūlių medžiagomis suderinta hidroizoliacijos sistema. Atskirai įvertinamas vandens išleidimo mazgas bei prieiga prie sifono."
+      },
+      {
+        "type": "faq-q",
+        "text": "12Nuo ko priklauso kriauklės iš plytelių kaina?+",
+        "html": "<div class=\"q-title\"><span class=\"q-badge\">12</span><span>Nuo ko priklauso kriauklės iš plytelių kaina?</span></div><div class=\"q-icon\">+</div>"
+      },
+      {
+        "type": "faq-a",
+        "text": "Kainą lemia kriauklės dydis ir forma, pagrindo paruošimas, plytelių formatas, pjūvių bei 45° briaunų kiekis, hidroizoliacija, išleidimo tipas ir montavimo vietos sudėtingumas.",
+        "html": "Kainą lemia kriauklės dydis ir forma, pagrindo paruošimas, plytelių formatas, pjūvių bei 45° briaunų kiekis, hidroizoliacija, išleidimo tipas ir montavimo vietos sudėtingumas."
+      }
+    ]
+  },
+  "blogas.html": {
+    "meta": {
+      "title": "Plytelių klojimo patarimai | Situacija.eu",
+      "description": "Meistro patarimai apie plytelių klojimą, vonios hidroizoliaciją, didelio formato plyteles ir apdailos kainas Pabradėje bei Švenčionyse.",
+      "canonical": "https://situacija.eu/blogas.html",
+      "ogType": ""
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Situacija.eu Meistro Blogas ir Patarimai",
+        "description": "Profesionalūs meistro patarimai apie plytelių klojimą ir apdailą.",
+        "url": "https://situacija.eu/blogas.html"
+      }
+    ],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Meistro Patarimai ir Apdailos Blogas",
+        "html": "Meistro Patarimai ir Apdailos Blogas"
+      },
+      {
+        "type": "p",
+        "text": "Praktiniai patarimai, technologijų apžvalgos ir naudinga informacija apie plytelių klojimą bei būsto apdailą.",
+        "html": "Praktiniai patarimai, technologijų apžvalgos ir naudinga informacija apie plytelių klojimą bei būsto apdailą."
+      },
+      {
+        "type": "h2",
+        "text": "Plytelių klojimo vadovai ir praktiniai patarimai",
+        "html": "Plytelių klojimo vadovai ir praktiniai patarimai"
+      },
+      {
+        "type": "p",
+        "text": "Rinkitės temą: nuo plytelių pasirinkimo ir hidroizoliacijos iki darbų kainos bei fasado apdailos.",
+        "html": "Rinkitės temą: nuo plytelių pasirinkimo ir hidroizoliacijos iki darbų kainos bei fasado apdailos."
+      },
+      {
+        "type": "img",
+        "src": "images/img1.jpg",
+        "alt": "Kaip pasirinkti plyteles vonios kambariui",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "h3",
+        "text": "Kaip Pasirinkti Plyteles Vonios Kambariui: Dydžiai, Tekstūra ir Akmens Masė",
+        "html": "Kaip Pasirinkti Plyteles Vonios Kambariui: Dydžiai, Tekstūra ir Akmens Masė"
+      },
+      {
+        "type": "p",
+        "text": "Sužinokite, kokių matmenų plytelės geriausiai tinka mažoms ir didelėms vonios erdvėms, kuo skiriasi keraminės ir akmens masės plytelės bei kokį paviršių pasirinkti.",
+        "html": "Sužinokite, kokių matmenų plytelės geriausiai tinka mažoms ir didelėms vonios erdvėms, kuo skiriasi keraminės ir akmens masės plytelės bei kokį paviršių pasirinkti."
+      },
+      {
+        "type": "img",
+        "src": "images/img3.jpg",
+        "alt": "Kodėl vonios hidroizoliacija yra būtina",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "h3",
+        "text": "Kodėl Vonios Kambario Hidroizoliacija Yra Būtina ir Kaip Ji Įrengiama?",
+        "html": "Kodėl Vonios Kambario Hidroizoliacija Yra Būtina ir Kaip Ji Įrengiama?"
+      },
+      {
+        "type": "p",
+        "text": "Išsamus gidas apie teptinės hidroizoliacijos svarbą, kampinių sandarinimo juostų klijavimą bei apsaugą nuo pelėsio ir kaimynų užpylimo.",
+        "html": "Išsamus gidas apie teptinės hidroizoliacijos svarbą, kampinių sandarinimo juostų klijavimą bei apsaugą nuo pelėsio ir kaimynų užpylimo."
+      },
+      {
+        "type": "img",
+        "src": "images/img2.jpg",
+        "alt": "Didelio formato plytelių klojimas",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "h3",
+        "text": "Didelio Formato (60x120 cm) Plytelių Klojimo Ypatumai ir TLS Sistemos",
+        "html": "Didelio Formato (60x120 cm) Plytelių Klojimo Ypatumai ir TLS Sistemos"
+      },
+      {
+        "type": "p",
+        "text": "Didelio formato plytelės sukuria prabangų vientisumo pojūtį. Apžvelgiame jų pjovimo, transportavimo ir lyginimo technologijas.",
+        "html": "Didelio formato plytelės sukuria prabangų vientisumo pojūtį. Apžvelgiame jų pjovimo, transportavimo ir lyginimo technologijas."
+      },
+      {
+        "type": "img",
+        "src": "images/img4.jpg",
+        "alt": "Plytelių klojimo kainos Pabradėje ir Švenčionyse",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "h3",
+        "text": "Plytelių Klojimo Kainos Pabradėje, Švenčionyse ir Vilniuje: Nuo Ko Priklauso Sąmata?",
+        "html": "Plytelių Klojimo Kainos Pabradėje, Švenčionyse ir Vilniuje: Nuo Ko Priklauso Sąmata?"
+      },
+      {
+        "type": "p",
+        "text": "Sužinokite, kokie veiksniai daro įtaką plytelių klojimo kainai m²: paviršiaus išlyginimas, 45° kampų pjovimas, epoksidinis glaistymas bei atstumas.",
+        "html": "Sužinokite, kokie veiksniai daro įtaką plytelių klojimo kainai m²: paviršiaus išlyginimas, 45° kampų pjovimas, epoksidinis glaistymas bei atstumas."
+      },
+      {
+        "type": "img",
+        "src": "images/img1.jpg",
+        "alt": "Pilnas vonios kambario plytelių klojimo vadovas",
+        "width": "1536",
+        "height": "2048"
+      },
+      {
+        "type": "h3",
+        "text": "Pilnas Vonios Kambario Plytelių Klojimo Vadovas",
+        "html": "Pilnas Vonios Kambario Plytelių Klojimo Vadovas"
+      },
+      {
+        "type": "p",
+        "text": "Darbų eiga nuo pagrindo patikros ir hidroizoliacijos iki 45° kampų, klijavimo ir glaistymo.",
+        "html": "Darbų eiga nuo pagrindo patikros ir hidroizoliacijos iki 45° kampų, klijavimo ir glaistymo."
+      },
+      {
+        "type": "img",
+        "src": "images/img2.jpg",
+        "alt": "Didelio formato plytelių montavimo klaidos",
+        "width": "1536",
+        "height": "2048"
+      },
+      {
+        "type": "h3",
+        "text": "Didelio Formato Plytelių Montavimas: Dažniausios Klaidos",
+        "html": "Didelio Formato Plytelių Montavimas: Dažniausios Klaidos"
+      },
+      {
+        "type": "p",
+        "text": "Kodėl svarbus lygus pagrindas, dvigubas klijų tepimas, tinkami klijai ir TLS sistema.",
+        "html": "Kodėl svarbus lygus pagrindas, dvigubas klijų tepimas, tinkami klijai ir TLS sistema."
+      },
+      {
+        "type": "img",
+        "src": "images/img5.jpg",
+        "alt": "Klinkerio fasado ir cokolio apdaila",
+        "width": "1536",
+        "height": "2048"
+      },
+      {
+        "type": "h3",
+        "text": "Fasado ir Cokolio Apdaila Klinkerio Plytelėmis",
+        "html": "Fasado ir Cokolio Apdaila Klinkerio Plytelėmis"
+      },
+      {
+        "type": "p",
+        "text": "Klinkerio klijai, siūlės, impregnavimas ir svarbiausi ilgaamžės lauko apdailos reikalavimai.",
+        "html": "Klinkerio klijai, siūlės, impregnavimas ir svarbiausi ilgaamžės lauko apdailos reikalavimai."
+      },
+      {
+        "type": "img",
+        "src": "images/img4.jpg",
+        "alt": "Plytelių darbų sąmatos sudarymas",
+        "width": "1536",
+        "height": "2048"
+      },
+      {
+        "type": "h3",
+        "text": "Kaip Paruošiama Tiksli Plytelių Darbų Sąmata?",
+        "html": "Kaip Paruošiama Tiksli Plytelių Darbų Sąmata?"
+      },
+      {
+        "type": "p",
+        "text": "Kokie matavimai ir papildomi darbai įtraukiami, kad galutinė kaina nebūtų netikėta.",
+        "html": "Kokie matavimai ir papildomi darbai įtraukiami, kad galutinė kaina nebūtų netikėta."
+      }
+    ]
+  },
+  "privatumo-politika.html": {
+    "meta": {
+      "title": "Privatumo politika | Situacija.eu",
+      "description": "Informacija apie Situacija.eu kontaktų formoje pateikiamų duomenų, slapukų ir Google Analytics naudojimą bei jūsų teises.",
+      "canonical": "https://situacija.eu/privatumo-politika.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "p",
+        "text": "Duomenų apsauga",
+        "html": "Duomenų apsauga"
+      },
+      {
+        "type": "h1",
+        "text": "Privatumo politika",
+        "html": "Privatumo politika"
+      },
+      {
+        "type": "p",
+        "text": "Paskutinį kartą atnaujinta 2026 m. rugpjūčio 14 d.",
+        "html": "Paskutinį kartą atnaujinta 2026 m. rugpjūčio 14 d."
+      },
+      {
+        "type": "h2",
+        "text": "1. Kas tvarko jūsų duomenis",
+        "html": "1. Kas tvarko jūsų duomenis"
+      },
+      {
+        "type": "p",
+        "text": "Duomenų, kuriuos pateikiate per Situacija.eu svetainę, valdytojas yra apdailos meistras Vladislav Finažonok. Susisiekti galima el. paštu v.finazonok@gmail.com arba telefonu +370 600 30288.",
+        "html": "Duomenų, kuriuos pateikiate per Situacija.eu svetainę, valdytojas yra apdailos meistras Vladislav Finažonok. Susisiekti galima el. paštu <a href=\"mailto:v.finazonok@gmail.com\">v.finazonok@gmail.com</a> arba telefonu <a href=\"tel:+37060030288\">+370 600 30288</a>."
+      },
+      {
+        "type": "h2",
+        "text": "2. Kokius duomenis renkame",
+        "html": "2. Kokius duomenis renkame"
+      },
+      {
+        "type": "p",
+        "text": "Kontaktinėje formoje gali būti renkami jūsų vardas, telefono numeris, miestas ir laisva forma pateiktas planuojamų darbų aprašymas. Duomenis pateikiate savanoriškai, tačiau be vardo ir telefono numerio negalėsime atsakyti į užklausą.",
+        "html": "Kontaktinėje formoje gali būti renkami jūsų vardas, telefono numeris, miestas ir laisva forma pateiktas planuojamų darbų aprašymas. Duomenis pateikiate savanoriškai, tačiau be vardo ir telefono numerio negalėsime atsakyti į užklausą."
+      },
+      {
+        "type": "h2",
+        "text": "3. Kodėl ir kokiu pagrindu duomenys naudojami",
+        "html": "3. Kodėl ir kokiu pagrindu duomenys naudojami"
+      },
+      {
+        "type": "p",
+        "text": "Duomenis naudojame tik tam, kad atsakytume į jūsų užklausą, parengtume preliminarią sąmatą, susitartume dėl objekto apžiūros arba paslaugų atlikimo. Teisinis pagrindas – veiksmai, atliekami jūsų prašymu prieš sudarant sutartį, ir teisėtas interesas tinkamai administruoti klientų užklausas.",
+        "html": "Duomenis naudojame tik tam, kad atsakytume į jūsų užklausą, parengtume preliminarią sąmatą, susitartume dėl objekto apžiūros arba paslaugų atlikimo. Teisinis pagrindas – veiksmai, atliekami jūsų prašymu prieš sudarant sutartį, ir teisėtas interesas tinkamai administruoti klientų užklausas."
+      },
+      {
+        "type": "h2",
+        "text": "4. Kiek laiko duomenys saugomi",
+        "html": "4. Kiek laiko duomenys saugomi"
+      },
+      {
+        "type": "p",
+        "text": "Užklausos saugomos tik tiek, kiek pagrįstai reikia susisiekti, suteikti paslaugą, išspręsti galimus klausimus ir įvykdyti teisines prievoles. Nebereikalingos užklausos ištrinamos.",
+        "html": "Užklausos saugomos tik tiek, kiek pagrįstai reikia susisiekti, suteikti paslaugą, išspręsti galimus klausimus ir įvykdyti teisines prievoles. Nebereikalingos užklausos ištrinamos."
+      },
+      {
+        "type": "h2",
+        "text": "5. Google Analytics ir slapukai",
+        "html": "5. Google Analytics ir slapukai"
+      },
+      {
+        "type": "p",
+        "text": "Google Analytics įjungiamas tik tada, kai slapukų juostoje pasirenkate „Leisti analitiką“. Analitika padeda suprasti bendrus lankytojų srautus ir svetainės naudojimą. Galite pasirinkti „Atmesti“ – svetainė ir kontaktų forma veiks toliau. Sutikimą galite pakeisti pašalinę Situacija.eu svetainės duomenis arba slapukus savo naršyklės nustatymuose.",
+        "html": "Google Analytics įjungiamas tik tada, kai slapukų juostoje pasirenkate „Leisti analitiką“. Analitika padeda suprasti bendrus lankytojų srautus ir svetainės naudojimą. Galite pasirinkti „Atmesti“ – svetainė ir kontaktų forma veiks toliau. Sutikimą galite pakeisti pašalinę Situacija.eu svetainės duomenis arba slapukus savo naršyklės nustatymuose."
+      },
+      {
+        "type": "h2",
+        "text": "6. Kam duomenys gali būti perduodami",
+        "html": "6. Kam duomenys gali būti perduodami"
+      },
+      {
+        "type": "p",
+        "text": "Techniniam svetainės veikimui duomenis gali tvarkyti hostingo ir infrastruktūros tiekėjai, o sutikus su analitika – Google. Duomenų neparduodame ir nenaudojame nepageidaujamai reklamai.",
+        "html": "Techniniam svetainės veikimui duomenis gali tvarkyti hostingo ir infrastruktūros tiekėjai, o sutikus su analitika – Google. Duomenų neparduodame ir nenaudojame nepageidaujamai reklamai."
+      },
+      {
+        "type": "h2",
+        "text": "7. Jūsų teisės",
+        "html": "7. Jūsų teisės"
+      },
+      {
+        "type": "p",
+        "text": "Galite paprašyti susipažinti su savo duomenimis, juos ištaisyti, ištrinti, apriboti jų tvarkymą arba nesutikti su tvarkymu. Prašymą atsiųskite nurodytu el. paštu. Taip pat turite teisę pateikti skundą Valstybinei duomenų apsaugos inspekcijai.",
+        "html": "Galite paprašyti susipažinti su savo duomenimis, juos ištaisyti, ištrinti, apriboti jų tvarkymą arba nesutikti su tvarkymu. Prašymą atsiųskite nurodytu el. paštu. Taip pat turite teisę pateikti skundą Valstybinei duomenų apsaugos inspekcijai."
+      },
+      {
+        "type": "h2",
+        "text": "8. Duomenų saugumas ir politikos pakeitimai",
+        "html": "8. Duomenų saugumas ir politikos pakeitimai"
+      },
+      {
+        "type": "p",
+        "text": "Naudojame HTTPS ryšį, ribojamą administravimo prieigą ir technines serverio apsaugos priemones. Ši politika gali būti atnaujinta pasikeitus svetainės funkcijoms arba teisės aktams; naujausia jos versija visada skelbiama šiame puslapyje.",
+        "html": "Naudojame HTTPS ryšį, ribojamą administravimo prieigą ir technines serverio apsaugos priemones. Ši politika gali būti atnaujinta pasikeitus svetainės funkcijoms arba teisės aktams; naujausia jos versija visada skelbiama šiame puslapyje."
+      }
+    ]
+  },
+  "blogas/didelio-formato-plyteliu-klojimo-ypatumai.html": {
+    "meta": {
+      "title": "Didelio formato plytelių klojimo ypatumai | Situacija.eu",
+      "description": "Didelio formato akmens masės plytelių klijavimas Pabradėje, Švenčionyse ir Vilniuje. TLS lyginimo sistemos ir šlapio pjovimo staklės.",
+      "canonical": "https://situacija.eu/blogas/didelio-formato-plyteliu-klojimo-ypatumai.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Didelio Formato (60x120 cm) Plytelių Klojimo Ypatumai ir TLS Sistemos",
+        "html": "Didelio Formato (60x120 cm) Plytelių Klojimo Ypatumai ir TLS Sistemos"
+      },
+      {
+        "type": "p",
+        "text": "Autorius: Vladislav Finažonok (Meistras) | Data: 2026-07-26 | Veiklos zona: Pabradė, Švenčionys, Vilnius",
+        "html": "Autorius: <strong>Vladislav Finažonok (Meistras)</strong> | Data: 2026-07-26 | Veiklos zona: Pabradė, Švenčionys, Vilnius"
+      },
+      {
+        "type": "img",
+        "src": "../images/img2.jpg",
+        "alt": "Didelio formato plytelių klojimas Švenčionyse",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "p",
+        "text": "Didelio formato akmens masės plytelės (60x120 cm, 80x80 cm, 120x120 cm) šiuo metu yra populiariausias pasirinkimas ieškantiems prabangos ir vientisumo. Tačiau jų klojimas reikalauja ypatingo meistriškumo ir profesionalios įrangos.",
+        "html": "Didelio formato akmens masės plytelės (60x120 cm, 80x80 cm, 120x120 cm) šiuo metu yra populiariausias pasirinkimas ieškantiems prabangos ir vientisumo. Tačiau jų klojimas reikalauja ypatingo meistriškumo ir profesionalios įrangos."
+      },
+      {
+        "type": "h2",
+        "text": "Griežtas Paviršiaus Lygumas",
+        "html": "Griežtas Paviršiaus Lygumas"
+      },
+      {
+        "type": "p",
+        "text": "Didelė plytelė neatleidžia jokių sienos ar grindų nelygumų. Prieš klojant būtina idealiai išlyginti pagrindą mišiniais arba gipso kartonu.",
+        "html": "Didelė plytelė neatleidžia jokių sienos ar grindų nelygumų. Prieš klojant būtina idealiai išlyginti pagrindą mišiniais arba gipso kartonu."
+      },
+      {
+        "type": "h2",
+        "text": "TLS Plytelių Lyginimo Sistemos",
+        "html": "TLS Plytelių Lyginimo Sistemos"
+      },
+      {
+        "type": "p",
+        "text": "Klojant didelio formato plyteles naudojamos specialios klinčių ir gnybtų sistemos (TLS), kurios neleidžia plytelėms nusėsti klijams džiūstant ir užtikrina vientisą lygumą.",
+        "html": "Klojant didelio formato plyteles naudojamos specialios klinčių ir gnybtų sistemos (TLS), kurios neleidžia plytelėms nusėsti klijams džiūstant ir užtikrina vientisą lygumą."
+      }
+    ]
+  },
+  "blogas/didelio-formato-plyteliu-montavimas-ir-klaidos.html": {
+    "meta": {
+      "title": "Didelių plytelių montavimo klaidos | Situacija.eu",
+      "description": "Eksperto gidas apie didelio formato akmens masės plytelių montavimą: vakuuminiai pritraukėjai, TLS sistemos, dvigubas klijų tepimas ir dažniausios klaidos.",
+      "canonical": "https://situacija.eu/blogas/didelio-formato-plyteliu-montavimas-ir-klaidos.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Didelio Formato (60x120 cm) Plytelių Montavimas: Dažniausios Klaidos ir TLS Sistemų Naudojimas",
+        "html": "Didelio Formato (60x120 cm) Plytelių Montavimas: Dažniausios Klaidos ir TLS Sistemų Naudojimas"
+      },
+      {
+        "type": "p",
+        "text": "Autorius: Vladislav Finažonok (Plytelių Meistras) | Skaitoma: ~6 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius",
+        "html": "Autorius: <strong>Vladislav Finažonok (Plytelių Meistras)</strong> | Skaitoma: ~6 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius"
+      },
+      {
+        "type": "img",
+        "src": "../images/img2.jpg",
+        "alt": "Didelio formato plytelių klojimas su TLS sistema Švenčionyse",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "p",
+        "text": "Didelio formato akmens masės plytelės (60x120 cm, 80x80 cm, 120x120 cm) sukuria vientisą, prabangų vaizdą su minimaliu siūlių skaičiumi. Tačiau jų montavimas reikalauja specifinės patirties ir specialios įrangos.",
+        "html": "Didelio formato akmens masės plytelės (60x120 cm, 80x80 cm, 120x120 cm) sukuria vientisą, prabangų vaizdą su minimaliu siūlių skaičiumi. Tačiau jų montavimas reikalauja specifinės patirties ir specialios įrangos."
+      },
+      {
+        "type": "h2",
+        "text": "Dažniausios Didelio Formato Plytelių Klojimo Klaidos",
+        "html": "Dažniausios Didelio Formato Plytelių Klojimo Klaidos"
+      },
+      {
+        "type": "li",
+        "text": "Nelygus pagrindas: Didelė plytelė nesilanksto – jei pagrindas turi 3 mm nuokrypį, kampai iškils.",
+        "html": "<strong>Nelygus pagrindas:</strong> Didelė plytelė nesilanksto – jei pagrindas turi 3 mm nuokrypį, kampai iškils."
+      },
+      {
+        "type": "li",
+        "text": "Vieno sluoksnio klijų tepimas: Tepant klijus tik ant sienos, po plytele lieka oro tarpai, dėl kurių ji gali skilti.",
+        "html": "<strong>Vieno sluoksnio klijų tepimas:</strong> Tepant klijus tik ant sienos, po plytele lieka oro tarpai, dėl kurių ji gali skilti."
+      },
+      {
+        "type": "li",
+        "text": "Paprastų klijų naudojimas: Didelėms plytelėms reikalingi tik itin elastingi C2TE/S1 klijai.",
+        "html": "<strong>Paprastų klijų naudojimas:</strong> Didelėms plytelėms reikalingi tik itin elastingi C2TE/S1 klijai."
+      },
+      {
+        "type": "h2",
+        "text": "TLS (Plytelių Lyginimo Sistemų) Svarba",
+        "html": "TLS (Plytelių Lyginimo Sistemų) Svarba"
+      },
+      {
+        "type": "p",
+        "text": "Kad tarp plytelių nebūtų jokio „dantuko“ (aukščių skirtumo), naudojama TLS sistema – plastikinės klinčios ir gnybtai, kurie užfiksuoja gretimas plyteles viename lygyje iki visiško klijų išdžiūvimo.",
+        "html": "Kad tarp plytelių nebūtų jokio „dantuko“ (aukščių skirtumo), naudojama TLS sistema – plastikinės klinčios ir gnybtai, kurie užfiksuoja gretimas plyteles viename lygyje iki visiško klijų išdžiūvimo."
+      },
+      {
+        "type": "h4",
+        "text": "Ieškote Didelio Formato Plytelių Meistro?",
+        "html": "Ieškote Didelio Formato Plytelių Meistro?"
+      },
+      {
+        "type": "p",
+        "text": "Dirbame Pabradėje, Švenčionyse ir Vilniuje. Turime visą reikiamą įrangą didelio formato plytelių klojimui. Skambinkite tel. +370 600 30288.",
+        "html": "Dirbame Pabradėje, Švenčionyse ir Vilniuje. Turime visą reikiamą įrangą didelio formato plytelių klojimui. Skambinkite tel. <strong>+370 600 30288</strong>."
+      }
+    ]
+  },
+  "blogas/kaip-pasirinkti-plyteles-voniai.html": {
+    "meta": {
+      "title": "Kaip pasirinkti plyteles voniai | Situacija.eu",
+      "description": "Kaip pasirinkti vonios plyteles: akmens masė, keramika, tinkamas formatas ir saugus, neslidus paviršius. Praktiniai meistro patarimai.",
+      "canonical": "https://situacija.eu/blogas/kaip-pasirinkti-plyteles-voniai.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Kaip Pasirinkti Plyteles Vonios Kambariui: Dydžiai, Tekstūra ir Akmens Masė",
+        "html": "Kaip Pasirinkti Plyteles Vonios Kambariui: Dydžiai, Tekstūra ir Akmens Masė"
+      },
+      {
+        "type": "p",
+        "text": "Autorius: Vladislav Finažonok (Meistras) | Data: 2026-07-26 | Veiklos zona: Pabradė, Švenčionys, Vilnius",
+        "html": "Autorius: <strong>Vladislav Finažonok (Meistras)</strong> | Data: 2026-07-26 | Veiklos zona: Pabradė, Švenčionys, Vilnius"
+      },
+      {
+        "type": "img",
+        "src": "../images/img1.jpg",
+        "alt": "Akmens masės plytelių klijavimas vonioje Pabradėje",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "p",
+        "text": "Vonios kambario atnaujinimas arba įrengimas nuo nulio reikalauja apgalvotų sprendimų. Viena svarbiausių užduočių – teisingas plytelių pasirinkimas. Plytelės privalo būti ne tik gražios, bet ir saugios, atsparios drėgmei, lengvai prižiūrimos bei ilgaamžės.",
+        "html": "Vonios kambario atnaujinimas arba įrengimas nuo nulio reikalauja apgalvotų sprendimų. Viena svarbiausių užduočių – teisingas plytelių pasirinkimas. Plytelės privalo būti ne tik gražios, bet ir saugios, atsparios drėgmei, lengvai prižiūrimos bei ilgaamžės."
+      },
+      {
+        "type": "h2",
+        "text": "1. Keraminės ar Akmens Masės Plytelės?",
+        "html": "1. Keraminės ar Akmens Masės Plytelės?"
+      },
+      {
+        "type": "p",
+        "text": "Keraminės plytelės: Puikiai tinka sienų apdailai. Jos yra lengvesnės, minkštesnės, lengviau pjaustomos ir gręžiamos. Tačiau grindims keraminės plytelės nėra pats geriausias pasirinkimas dėl mažesnio atsparumo smūgiams.",
+        "html": "<strong>Keraminės plytelės:</strong> Puikiai tinka sienų apdailai. Jos yra lengvesnės, minkštesnės, lengviau pjaustomos ir gręžiamos. Tačiau grindims keraminės plytelės nėra pats geriausias pasirinkimas dėl mažesnio atsparumo smūgiams."
+      },
+      {
+        "type": "p",
+        "text": "Akmens masės plytelės: Universaliausias ir tvirčiausias pasirinkimas tiek sienoms, tiek grindims. Jos pasižymi itin mažu vandens įgeriamumu (mažiau nei 0.5%), yra labai atsparios dilimui, įbrėžimams ir svoriui.",
+        "html": "<strong>Akmens masės plytelės:</strong> Universaliausias ir tvirčiausias pasirinkimas tiek sienoms, tiek grindims. Jos pasižymi itin mažu vandens įgeriamumu (mažiau nei 0.5%), yra labai atsparios dilimui, įbrėžimams ir svoriui."
+      },
+      {
+        "type": "h2",
+        "text": "2. Plytelių Dydis ir Formatas",
+        "html": "2. Plytelių Dydis ir Formatas"
+      },
+      {
+        "type": "p",
+        "text": "Mažoms vonioms neretai klystama renkantis tik smulkias plyteles. Šiuolaikinės tendencijos rodo, kad didelio formato plytelės (60x60, 60x120 cm) mažame vonios kambaryje sukuria erdvumo pojūtį, nes yra mažiau siūlių linijų.",
+        "html": "Mažoms vonioms neretai klystama renkantis tik smulkias plyteles. Šiuolaikinės tendencijos rodo, kad didelio formato plytelės (60x60, 60x120 cm) mažame vonios kambaryje sukuria erdvumo pojūtį, nes yra mažiau siūlių linijų."
+      },
+      {
+        "type": "h2",
+        "text": "3. Grindų Saugumas (Neslidumas)",
+        "html": "3. Grindų Saugumas (Neslidumas)"
+      },
+      {
+        "type": "p",
+        "text": "Grindims visada rekomenduojama rinktis matines arba tekstūruotas plyteles su atitinkama neslidumo klase (R10 arba R11). Blizgios plytelės ant grindų gavusios drėgmės tampa labai slidžios.",
+        "html": "Grindims visada rekomenduojama rinktis matines arba tekstūruotas plyteles su atitinkama neslidumo klase (R10 arba R11). Blizgios plytelės ant grindų gavusios drėgmės tampa labai slidžios."
+      },
+      {
+        "type": "h4",
+        "text": "Reikia Meistro Konsultacijos Pabradėje ar Švenčionyse?",
+        "html": "Reikia Meistro Konsultacijos Pabradėje ar Švenčionyse?"
+      },
+      {
+        "type": "p",
+        "text": "Padedame pasirinkti tinkamiausias plyteles bei tiksliai apskaičiuoti sąmatą. Skambinkite tiesiogiai meistrui telefonu +370 600 30288.",
+        "html": "Padedame pasirinkti tinkamiausias plyteles bei tiksliai apskaičiuoti sąmatą. Skambinkite tiesiogiai meistrui telefonu <strong>+370 600 30288</strong>."
+      }
+    ]
+  },
+  "blogas/klinkerio-fasado-ir-cokolio-apdaila.html": {
+    "meta": {
+      "title": "Fasado ir cokolio apdaila klinkeriu | Situacija.eu",
+      "description": "Klinkerio plytelių klijavimas ant fasadų, cokolio ir tvorų Pabradėje, Švenčionyse ir Vilniuje. Ilgaamžė apdaila, rievėjimas ir impregnavimas.",
+      "canonical": "https://situacija.eu/blogas/klinkerio-fasado-ir-cokolio-apdaila.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Fasadų ir Cokolio Apdaila Klinkerio Plytelėmis: Ilgaamžiškumas ir Technologija",
+        "html": "Fasadų ir Cokolio Apdaila Klinkerio Plytelėmis: Ilgaamžiškumas ir Technologija"
+      },
+      {
+        "type": "p",
+        "text": "Autorius: Vladislav Finažonok (Plytelių Meistras) | Skaitoma: ~5 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius",
+        "html": "Autorius: <strong>Vladislav Finažonok (Plytelių Meistras)</strong> | Skaitoma: ~5 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius"
+      },
+      {
+        "type": "img",
+        "src": "../images/img5.jpg",
+        "alt": "Fasado ir cokolio klijavimas klinkeriu Švenčionių rajone",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "p",
+        "text": "Klinkerio plytelės – tai vienas patvariausių ir estetiškiausių sprendimų namo cokolio, fasado, židinio ar tvoros stulpų apdailai. Klinkeris yra itin atsparus drėgmei, atšalimui bei UV spinduliams.",
+        "html": "Klinkerio plytelės – tai vienas patvariausių ir estetiškiausių sprendimų namo cokolio, fasado, židinio ar tvoros stulpų apdailai. Klinkeris yra itin atsparus drėgmei, atšalimui bei UV spinduliams."
+      },
+      {
+        "type": "h2",
+        "text": "Klinkerio Klijavimo Ypatumai Lauke",
+        "html": "Klinkerio Klijavimo Ypatumai Lauke"
+      },
+      {
+        "type": "p",
+        "text": "Lauko sąlygomis privalu naudoti šalčiui ir drėgmei atsparius elastingus C2TE/S1 klijus bei atitinkamus klinkerio rievėjimo glaistus. Po klijavimo paviršius impregnuojamas apsaugine priemone nuo druskų išsikristalizavimo.",
+        "html": "Lauko sąlygomis privalu naudoti šalčiui ir drėgmei atsparius elastingus C2TE/S1 klijus bei atitinkamus klinkerio rievėjimo glaistus. Po klijavimo paviršius impregnuojamas apsaugine priemone nuo druskų išsikristalizavimo."
+      },
+      {
+        "type": "h4",
+        "text": "Planuojate Cokolio ar Fasado Klinkerio Apdailą?",
+        "html": "Planuojate Cokolio ar Fasado Klinkerio Apdailą?"
+      },
+      {
+        "type": "p",
+        "text": "Dirbame Pabradėje, Švenčionyse ir Vilniuje. Skambinkite tel. +370 600 30288.",
+        "html": "Dirbame Pabradėje, Švenčionyse ir Vilniuje. Skambinkite tel. <strong>+370 600 30288</strong>."
+      }
+    ]
+  },
+  "blogas/plyteliu-klijavimo-kainos-samata-pabrade-svencionys.html": {
+    "meta": {
+      "title": "Kaip Paruošiama Tiksli Plytelių Darbų Sąmata? | Situacija.eu",
+      "description": "Kaip sudaroma plytelių darbų sąmata: objekto matavimai, pagrindo paruošimas, hidroizoliacija, pjovimas, glaistymas ir papildomi darbai.",
+      "canonical": "https://situacija.eu/blogas/plyteliu-klijavimo-kainos-samata-pabrade-svencionys.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Kaip Paruošiama Tiksli Plytelių Darbų Sąmata?",
+        "html": "Kaip Paruošiama Tiksli Plytelių Darbų Sąmata?"
+      },
+      {
+        "type": "p",
+        "text": "Autorius: Vladislav Finažonok (Plytelių Meistras) | Skaitoma: ~5 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius",
+        "html": "Autorius: <strong>Vladislav Finažonok (Plytelių Meistras)</strong> | Skaitoma: ~5 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius"
+      },
+      {
+        "type": "img",
+        "src": "../images/img4.jpg",
+        "alt": "Plytelių klojimo kainos ir sąmatos skaičiavimas Pabradėje",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "p",
+        "text": "Planuojant vonios kambario ar grindų apdailą Pabradėje, Švenčionyse ar Vilniuje, svarbu žinoti, kaip formuojama galutinė darbų sąmata. Skaidrus sąmatos skaičiavimas užkerta kelią paslėptoms išlaidoms.",
+        "html": "Planuojant vonios kambario ar grindų apdailą Pabradėje, Švenčionyse ar Vilniuje, svarbu žinoti, kaip formuojama galutinė darbų sąmata. Skaidrus sąmatos skaičiavimas užkerta kelią paslėptoms išlaidoms."
+      },
+      {
+        "type": "h2",
+        "text": "Veiksniai, Darantys Įtaką Klijavimo Kainai:",
+        "html": "Veiksniai, Darantys Įtaką Klijavimo Kainai:"
+      },
+      {
+        "type": "li",
+        "text": "Plytelių dydis: Standartinės plytelės (30x60, 60x60 cm) vs Didelio formato plytelės (60x120 cm) ar mozaika.",
+        "html": "<strong>Plytelių dydis:</strong> Standartinės plytelės (30x60, 60x60 cm) vs Didelio formato plytelės (60x120 cm) ar mozaika."
+      },
+      {
+        "type": "li",
+        "text": "Paviršiaus paruošimas: Sienų lyginimas, hidroizoliacijos teptinis įrengimas ir kampinių juostų klijavimas.",
+        "html": "<strong>Paviršiaus paruošimas:</strong> Sienų lyginimas, hidroizoliacijos teptinis įrengimas ir kampinių juostų klijavimas."
+      },
+      {
+        "type": "li",
+        "text": "45° Kampų Miter Pjovimas: Skaičiuojama bėginiais metrais (m).",
+        "html": "<strong>45° Kampų Miter Pjovimas:</strong> Skaičiuojama bėginiais metrais (m)."
+      },
+      {
+        "type": "li",
+        "text": "Glaisto tipas: Cementinis glaistymas vs Epoksidinis 2-komponentis glaistas.",
+        "html": "<strong>Glaisto tipas:</strong> Cementinis glaistymas vs Epoksidinis 2-komponentis glaistas."
+      },
+      {
+        "type": "h4",
+        "text": "Gaukite Nemokamą Sąmatą Jūsų Objektui",
+        "html": "Gaukite Nemokamą Sąmatą Jūsų Objektui"
+      },
+      {
+        "type": "p",
+        "text": "Pabradėje ir Švenčionių rajone atvykstame matavimams nemokamai. Skambinkite tel. +370 600 30288.",
+        "html": "Pabradėje ir Švenčionių rajone atvykstame matavimams nemokamai. Skambinkite tel. <strong>+370 600 30288</strong>."
+      }
+    ]
+  },
+  "blogas/plyteliu-klojimo-kaina-pabrade-svencionys-vilnius.html": {
+    "meta": {
+      "title": "Plytelių klojimo kaina ir veiksniai | Situacija.eu",
+      "description": "Nuo ko priklauso plytelių klojimo kaina už m² Pabradėje, Švenčionyse ir Vilniuje? Sąmatos skaičiavimas, 45° pjovimas ir paruošimo darbai.",
+      "canonical": "https://situacija.eu/blogas/plyteliu-klojimo-kaina-pabrade-svencionys-vilnius.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Plytelių Klojimo Kainos Pabradėje, Švenčionyse ir Vilniuje: Nuo Ko Priklauso Sąmata?",
+        "html": "Plytelių Klojimo Kainos Pabradėje, Švenčionyse ir Vilniuje: Nuo Ko Priklauso Sąmata?"
+      },
+      {
+        "type": "p",
+        "text": "Autorius: Vladislav Finažonok (Meistras) | Data: 2026-07-26 | Veiklos zona: Pabradė, Švenčionys, Vilnius",
+        "html": "Autorius: <strong>Vladislav Finažonok (Meistras)</strong> | Data: 2026-07-26 | Veiklos zona: Pabradė, Švenčionys, Vilnius"
+      },
+      {
+        "type": "img",
+        "src": "../images/img4.jpg",
+        "alt": "Plytelių klijavimo kainos ir sąmatos skaičiavimas",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "p",
+        "text": "Planuojant apdailos darbus vienas dažniausiai užduodamų klausimų – kiek kainuos plytelių klojimas m²? Tiksli kaina visada priklauso nuo kelių pagrindinių veiksnių:",
+        "html": "Planuojant apdailos darbus vienas dažniausiai užduodamų klausimų – kiek kainuos plytelių klojimas m²? Tiksli kaina visada priklauso nuo kelių pagrindinių veiksnių:"
+      },
+      {
+        "type": "h2",
+        "text": "1. Plytelių Dydis ir Sudėtingumas",
+        "html": "1. Plytelių Dydis ir Sudėtingumas"
+      },
+      {
+        "type": "p",
+        "text": "Smulki mozaika bei didelio formato (60x120 cm) plytelės reikalauja daugiau laiko ir specialios įrangos, todėl jų klijavimas kainuoja šiek tiek daugiau nei standartinių plytelių.",
+        "html": "Smulki mozaika bei didelio formato (60x120 cm) plytelės reikalauja daugiau laiko ir specialios įrangos, todėl jų klijavimas kainuoja šiek tiek daugiau nei standartinių plytelių."
+      },
+      {
+        "type": "h2",
+        "text": "2. Kampų Pjovimas 45° Kampu",
+        "html": "2. Kampų Pjovimas 45° Kampu"
+      },
+      {
+        "type": "p",
+        "text": "Jeigu vonios kambaryje nenaudojami plastikiniai kampukai, išoriniai kampai šlifuojami 45 laipsnių kampu. Tai skaičiuojama bėginiais metrais (m).",
+        "html": "Jeigu vonios kambaryje nenaudojami plastikiniai kampukai, išoriniai kampai šlifuojami 45 laipsnių kampu. Tai skaičiuojama bėginiais metrais (m)."
+      },
+      {
+        "type": "h4",
+        "text": "Gaukite Nemokamą Sąmatą Jūsų Objektui",
+        "html": "Gaukite Nemokamą Sąmatą Jūsų Objektui"
+      },
+      {
+        "type": "p",
+        "text": "Pabradėje, Švenčionyse ir Vilniuje skaičiuojame tikslias sąmatas be paslėptų mokesčių. Skambinkite tel. +370 600 30288.",
+        "html": "Pabradėje, Švenčionyse ir Vilniuje skaičiuojame tikslias sąmatas be paslėptų mokesčių. Skambinkite tel. <strong>+370 600 30288</strong>."
+      }
+    ]
+  },
+  "blogas/vonios-hidroizoliacija-kodel-butina.html": {
+    "meta": {
+      "title": "Vonios hidroizoliacija: kaip ją įrengti | Situacija.eu",
+      "description": "Išsamus gidas apie vonios kambario hidroizoliaciją Pabradėje, Švenčionyse ir Vilniuje: mastikos, sandarinimo juostos ir apsauga nuo drėgmės.",
+      "canonical": "https://situacija.eu/blogas/vonios-hidroizoliacija-kodel-butina.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Kodėl Vonios Kambario Hidroizoliacija Yra Būtina ir Kaip Ji Įrengiama?",
+        "html": "Kodėl Vonios Kambario Hidroizoliacija Yra Būtina ir Kaip Ji Įrengiama?"
+      },
+      {
+        "type": "p",
+        "text": "Autorius: Vladislav Finažonok (Meistras) | Data: 2026-07-26 | Veiklos zona: Pabradė, Švenčionys, Vilnius",
+        "html": "Autorius: <strong>Vladislav Finažonok (Meistras)</strong> | Data: 2026-07-26 | Veiklos zona: Pabradė, Švenčionys, Vilnius"
+      },
+      {
+        "type": "img",
+        "src": "../images/img3.jpg",
+        "alt": "Dušo zonos hidroizoliacija ir plytelių klijavimas",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "p",
+        "text": "Daugeliui žmonių atrodo, kad plytelės ir siūlių glaistas yra visiškai nepralaidūs vandeniui. Tai – pavojingas mitas. Cementinis glaistas ir mikroskopiniai plytelių įtrūkimai laikui bėgant praleidžia drėgmę į sienas ir grindis.",
+        "html": "Daugeliui žmonių atrodo, kad plytelės ir siūlių glaistas yra visiškai nepralaidūs vandeniui. Tai – pavojingas mitas. Cementinis glaistas ir mikroskopiniai plytelių įtrūkimai laikui bėgant praleidžia drėgmę į sienas ir grindis."
+      },
+      {
+        "type": "h2",
+        "text": "Kas Nutinka Be Hidroizoliacijos?",
+        "html": "Kas Nutinka Be Hidroizoliacijos?"
+      },
+      {
+        "type": "li",
+        "text": "Atsiranda pelėsis ir juodos dėmės siūlėse.",
+        "html": "Atsiranda pelėsis ir juodos dėmės siūlėse."
+      },
+      {
+        "type": "li",
+        "text": "Sienose ir grindyse kaupiasi drėgmė, sukelianti klijų atšokimą.",
+        "html": "Sienose ir grindyse kaupiasi drėgmė, sukelianti klijų atšokimą."
+      },
+      {
+        "type": "li",
+        "text": "Kyla rizika užpilti kaimynus gyvenamuosiuose namuose.",
+        "html": "Kyla rizika užpilti kaimynus gyvenamuosiuose namuose."
+      },
+      {
+        "type": "h2",
+        "text": "Teisingas Hidroizoliacijos Procesas:",
+        "html": "Teisingas Hidroizoliacijos Procesas:"
+      },
+      {
+        "type": "p",
+        "text": "1. Gruntavimas: Paviršius nuvalomas ir padengiamas gilaus skverbimosi gruntu. 2. Sandarinimo juostos: Visi vidiniai sienų-grindų ir sienų-sienų kampai užklijuojami elastinga hidroizoliacine juosta. 3. 2 Sluoksnių Mastika: Teptinė hidroizoliacija tepama mažiausiai dviem sluoksniais sukryžiuojant potėpius.",
+        "html": "1. <strong>Gruntavimas:</strong> Paviršius nuvalomas ir padengiamas gilaus skverbimosi gruntu.<br>\n                    2. <strong>Sandarinimo juostos:</strong> Visi vidiniai sienų-grindų ir sienų-sienų kampai užklijuojami elastinga hidroizoliacine juosta.<br>\n                    3. <strong>2 Sluoksnių Mastika:</strong> Teptinė hidroizoliacija tepama mažiausiai dviem sluoksniais sukryžiuojant potėpius."
+      },
+      {
+        "type": "h4",
+        "text": "Užsakykite Sertifikuotą Vonios Įrengimą",
+        "html": "Užsakykite Sertifikuotą Vonios Įrengimą"
+      },
+      {
+        "type": "p",
+        "text": "Dirbame Pabradėje, Švenčionyse ir Vilniuje. Skambinkite tel. +370 600 30288.",
+        "html": "Dirbame Pabradėje, Švenčionyse ir Vilniuje. Skambinkite tel. <strong>+370 600 30288</strong>."
+      }
+    ]
+  },
+  "blogas/vonios-kambario-plyteliu-klojimas-vadovas.html": {
+    "meta": {
+      "title": "Vonios plytelių klojimo vadovas | Situacija.eu",
+      "description": "Vonios plytelių klojimo eiga: paviršiaus paruošimas, hidroizoliacija, 45° kampų pjovimas, klijavimas ir epoksidinis glaistymas.",
+      "canonical": "https://situacija.eu/blogas/vonios-kambario-plyteliu-klojimas-vadovas.html",
+      "ogType": ""
+    },
+    "jsonLd": [],
+    "nodes": [
+      {
+        "type": "h1",
+        "text": "Pilnas Vonios Kambario Plytelių Klojimo Vadovas: Nuo Paviršiaus Paruošimo iki Epoksidinio Glaisto",
+        "html": "Pilnas Vonios Kambario Plytelių Klojimo Vadovas: Nuo Paviršiaus Paruošimo iki Epoksidinio Glaisto"
+      },
+      {
+        "type": "p",
+        "text": "Autorius: Vladislav Finažonok (Plytelių Meistras) | Skaitoma: ~8 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius",
+        "html": "Autorius: <strong>Vladislav Finažonok (Plytelių Meistras)</strong> | Skaitoma: ~8 min. | Veiklos sritis: Pabradė, Švenčionys, Vilnius"
+      },
+      {
+        "type": "img",
+        "src": "../images/img1.jpg",
+        "alt": "Vonios kambario plytelių klojimas Pabradėje - Meistras Vladislav",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "p",
+        "text": "Vonios kambario apdaila plytelėmis yra vienas atsakingiausių statybos ir remonto etapų. Net mažiausia techninė klaida – negruntuotas paviršius, praleistas hidroizoliacijos kampas ar neteisingas klijų pasirinkimas – po kelerių metų gali sukelti plytelių atšokimą, pelėsio atsiradimą arba užpylimą.",
+        "html": "Vonios kambario apdaila plytelėmis yra vienas atsakingiausių statybos ir remonto etapų. Net mažiausia techninė klaida – negruntuotas paviršius, praleistas hidroizoliacijos kampas ar neteisingas klijų pasirinkimas – po kelerių metų gali sukelti plytelių atšokimą, pelėsio atsiradimą arba užpylimą."
+      },
+      {
+        "type": "h2",
+        "text": "1. Paviršių Tikrinimas ir Išlyginimas",
+        "html": "1. Paviršių Tikrinimas ir Išlyginimas"
+      },
+      {
+        "type": "p",
+        "text": "Prieš pradedant klijavimą, sienos ir grindys tikrinamos lazeriniu nivelyru. Sienų vertikalumas ir kampų statumas (90° kampas) yra būtini, ypač tose vietose, kur stovės vonia, dušo kabina ar baldai.",
+        "html": "Prieš pradedant klijavimą, sienos ir grindys tikrinamos lazeriniu nivelyru. Sienų vertikalumas ir kampų statumas (90° kampas) yra būtini, ypač tose vietose, kur stovės vonia, dušo kabina ar baldai."
+      },
+      {
+        "type": "li",
+        "text": "Grindų nuolydis duše: Formuojamas 1.5–2% nuolydis trapo link.",
+        "html": "<strong>Grindų nuolydis duše:</strong> Formuojamas 1.5–2% nuolydis trapo link."
+      },
+      {
+        "type": "li",
+        "text": "Gruntavimas: Paviršius dengiamas gilaus skverbimosi gruntu, kad sumažėtų įgeriamumas ir pagerėtų klijų sukibimas.",
+        "html": "<strong>Gruntavimas:</strong> Paviršius dengiamas gilaus skverbimosi gruntu, kad sumažėtų įgeriamumas ir pagerėtų klijų sukibimas."
+      },
+      {
+        "type": "h2",
+        "text": "2. Teptinė Hidroizoliacija su Sandarinimo Juostomis",
+        "html": "2. Teptinė Hidroizoliacija su Sandarinimo Juostomis"
+      },
+      {
+        "type": "p",
+        "text": "Drėgnose zonose (dušo kabinoje, aplink vonią ir praustuvą) hidroizoliacija yra privaloma. Naudojama elastinga teptinė mastika (pvz., Knauf Flachendicht arba Mapei Mapelastic), tepama dvielemis statmenomis kryptimis.",
+        "html": "Drėgnose zonose (dušo kabinoje, aplink vonią ir praustuvą) hidroizoliacija yra privaloma. Naudojama elastinga teptinė mastika (pvz., Knauf Flachendicht arba Mapei Mapelastic), tepama dvielemis statmenomis kryptimis."
+      },
+      {
+        "type": "p",
+        "text": "Visiems vidiniams kampams bei vamzdžių įvadams naudojamos specialios kaučiukinės sandarinimo juostos ir manžetai.",
+        "html": "Visiems vidiniams kampams bei vamzdžių įvadams naudojamos specialios kaučiukinės sandarinimo juostos ir manžetai."
+      },
+      {
+        "type": "h2",
+        "text": "3. Plytelių Išdėstymo Planavimas ir Pjovimas",
+        "html": "3. Plytelių Išdėstymo Planavimas ir Pjovimas"
+      },
+      {
+        "type": "p",
+        "text": "Prieš maišant klijus, atliekamas sausas matavimas. Svarbu išvengti siaurų plytelių juostelių (mažesnių nei pusė plytelės) patalpos kampuose.",
+        "html": "Prieš maišant klijus, atliekamas sausas matavimas. Svarbu išvengti siaurų plytelių juostelių (mažesnių nei pusė plytelės) patalpos kampuose."
+      },
+      {
+        "type": "p",
+        "text": "45° Kampų Pjovimas (Miter Cut): Išoriniai plytelių kampai pjaunami ir šlifuojami 45 laipsnių kampu naudojant šlapio pjovimo stakles su deimantiniu disku. Tai suteikia vientisą, prabangų vaizdą nenaudojant pigiai atrodančių plastikinių kampukų.",
+        "html": "<strong>45° Kampų Pjovimas (Miter Cut):</strong> Išoriniai plytelių kampai pjaunami ir šlifuojami 45 laipsnių kampu naudojant šlapio pjovimo stakles su deimantiniu disku. Tai suteikia vientisą, prabangų vaizdą nenaudojant pigiai atrodančių plastikinių kampukų."
+      },
+      {
+        "type": "h2",
+        "text": "4. Klijų Tepimas ir Klijavimas su TLS Systemomis",
+        "html": "4. Klijų Tepimas ir Klijavimas su TLS Systemomis"
+      },
+      {
+        "type": "p",
+        "text": "Didelio formato akmens masės plytelėms naudojami elastiniai C2TE/S1 klasės klijai. Taikomas double-buttering metodas – klijai dantytąja mentele tepami ir ant sienos, ir ant pačios plytelės nugarėlės.",
+        "html": "Didelio formato akmens masės plytelėms naudojami elastiniai C2TE/S1 klasės klijai. Taikomas <em>double-buttering</em> metodas – klijai dantytąja mentele tepami ir ant sienos, ir ant pačios plytelės nugarėlės."
+      },
+      {
+        "type": "h2",
+        "text": "5. Glaistymas: Cementinis vs Epoksidinis",
+        "html": "5. Glaistymas: Cementinis vs Epoksidinis"
+      },
+      {
+        "type": "p",
+        "text": "Džiūvus klijams (po 24-48 val.), siūlės išvalomos. Dušo zonoje rekomenduojama naudoti epoksidinį glaistą, kuris visiškai neįgeria vandens, riebalų ir nesudaro sąlygų pelėsiui atsirasti.",
+        "html": "Džiūvus klijams (po 24-48 val.), siūlės išvalomos. Dušo zonoje rekomenduojama naudoti <strong>epoksidinį glaistą</strong>, kuris visiškai neįgeria vandens, riebalų ir nesudaro sąlygų pelėsiui atsirasti."
+      },
+      {
+        "type": "h4",
+        "text": "Reikia Kvalifikuoto Meistro Pabradėje, Švenčionyse ar Vilniuje?",
+        "html": "Reikia Kvalifikuoto Meistro Pabradėje, Švenčionyse ar Vilniuje?"
+      },
+      {
+        "type": "p",
+        "text": "Nemokamai konsultuojame, atvykstame matavimams ir pateikiame tikslią darbų sąmatą. Skambinkite tel. +370 600 30288.",
+        "html": "Nemokamai konsultuojame, atvykstame matavimams ir pateikiame tikslią darbų sąmatą. Skambinkite tel. <strong>+370 600 30288</strong>."
+      }
+    ]
+  }
+}

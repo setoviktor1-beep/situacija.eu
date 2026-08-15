@@ -1,2 +1,0 @@
-import type { CmsBlock } from '@/types/cms';
-export function Faq({ block }: { block: CmsBlock }) { const items = Array.isArray(block.items) ? block.items : []; return <section className="block muted"><div className="shell narrow"><h2>{String(block.headline || '')}</h2>{items.map((item: any, index) => <details key={item.id || index}><summary>{String(item.question || '')}</summary><div dangerouslySetInnerHTML={{ __html: String(item.answer || '') }} /></details>)}</div></section>; }

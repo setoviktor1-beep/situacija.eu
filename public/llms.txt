@@ -11,23 +11,44 @@ Pagrindinės paslaugos:
 - Individualios kriauklės iš plytelių: konstrukcija, hidroizoliacija, nuolydžiai, išleidimo mazgas ir 45° briaunos
 - Fasadų, cokolio, tvorų ir židinių apdaila klinkerio plytelėmis
 
+Veiklos teritorija: Pabradė (pagrindinė lokacija), Švenčionys, Švenčionėliai, visas Švenčionių rajonas; Vilnius ir Vilniaus rajonas pagal išankstinį susitarimą.
+
 Kontaktai: tel. +370 600 30288, el. paštas v.finazonok@gmail.com
 
-## Puslapiai
+Svetainė veikia trimis kalbomis: lietuvių (/), lenkų (/pl) ir rusų (/ru).
 
-- [Pagrindinis puslapis](https://situacija.eu/): paslaugų apžvalga, patirtis, darbų eiga, geografija
-- [D.U.K.](https://situacija.eu/duk.html): dažniausiai užduodami klausimai apie kainas, terminus, technologijas
-- [Kriauklės iš plytelių](https://situacija.eu/kriaukles-is-plyteliu.html): individualaus projekto eiga, medžiagos, hidroizoliacija, kaina ir D.U.K.
-- [Vonios kambario plytelių klijavimas](https://situacija.eu/vonios-kambario-plyteliu-klijavimas.html): hidroizoliacija, dušo nuolydžiai, 45° kampai ir darbų eiga
-- [Virtuvės plytelių klijavimas](https://situacija.eu/virtuves-plyteliu-klijavimas.html): virtuvės sienelės, prijuostės, grindys ir rozečių pjūviai
-- [Didelio formato plytelių klojimas](https://situacija.eu/didelio-formato-plyteliu-klojimas.html): akmens masės plytelės grindims, sienoms ir terasoms
-- [Klinkerio klijavimas](https://situacija.eu/klinkerio-klijavimas-fasadai.html): fasadų, cokolio ir tvorų apdaila klinkerio plytelėmis
-- [Darbų galerija](https://situacija.eu/gallery.html): 40+ atliktų darbų nuotraukų
-- [Blogas](https://situacija.eu/blogas.html): straipsniai apie plytelių pasirinkimą, hidroizoliaciją, apdailos technologijas ir kainas
-- [Plytelių klojimas Pabradėje](https://situacija.eu/plyteliu-klojimas-pabrade.html)
-- [Plytelių klojimas Švenčionyse](https://situacija.eu/plyteliu-klojimas-svencionys.html)
-- [Plytelių klojimas Vilniuje](https://situacija.eu/plyteliu-klojimas-vilnius.html)
+## Pagrindinis puslapis
 
-## Optional
+- [Pagrindinis puslapis](https://situacija.eu/): paslaugų apžvalga, patirtis, darbų eiga, veiklos geografija su žemėlapiu, galerija, D.U.K. ir kontaktai
 
-- [llms-full.txt](https://situacija.eu/llms-full.txt): pilnas, detalus svetainės turinio aprašymas
+## Paslaugos
+
+- [Vonios kambario plytelių klijavimas](https://situacija.eu/vonios-kambario-plyteliu-klijavimas.html): Vonios kambario plytelių klijavimas Pabradėje, Švenčionyse ir Vilniuje: pagrindo paruošimas, hidroizoliacija, dušo nuolydžiai ir 45° kampai.
+- [Virtuvės plytelių klijavimas](https://situacija.eu/virtuves-plyteliu-klijavimas.html): Virtuvės plytelių klijavimas Pabradėje, Švenčionyse ir Vilniuje: virtuvės sienelė, prijuostė, grindys, tikslūs rozečių pjūviai ir rašto derinimas.
+- [Didelio formato plytelių klojimas](https://situacija.eu/didelio-formato-plyteliu-klojimas.html): Didelio formato akmens masės plytelių klojimas Pabradėje, Švenčionyse ir Vilniuje: 60x120, 80x80, 120x120 cm grindims, sienoms ir terasoms.
+- [Klinkerio plytelių klijavimas](https://situacija.eu/klinkerio-klijavimas-fasadai.html): Klinkerio plytelių klijavimas Pabradėje ir Švenčionių rajone: fasadų, cokolio, tvorų bei židinių apdaila, siūlių rievėjimas ir impregnavimas.
+- [Kriauklės iš plytelių pagal individualų projektą](https://situacija.eu/kriaukles-is-plyteliu.html): Individualių kriauklių iš plytelių įrengimas Pabradėje, Švenčionyse ir Vilniuje: konstrukcija, hidroizoliacija, nuolydžiai, išleidimas ir 45° briaunos.
+
+## Veiklos regionai
+
+- [Plytelių Klojimas Pabradėje](https://situacija.eu/plyteliu-klojimas-pabrade.html): Plytelių meistras Pabradėje: vonios, virtuvės, didelio formato grindys, terasos, klinkeris ir hidroizoliacija. Sąmata tel. +370 600 30288.
+- [Plytelių Klojimas Švenčionyse ir Rajone](https://situacija.eu/plyteliu-klojimas-svencionys.html): Plytelių klojimas ir klijavimas Švenčionyse, Švenčionėliuose bei rajone: vonios, grindys, terasos, klinkeris ir hidroizoliacija. Tel. +370 600 30288.
+- [Plytelių Klojimas Vilniuje ir Rajone](https://situacija.eu/plyteliu-klojimas-vilnius.html): Plytelių klojimas ir klijavimas Vilniuje pagal grafiką: vonios kambariai, hidroizoliacija, virtuvės ir didelio formato grindys. Tel. +370 600 30288.
+
+## Kita
+
+- [Atlikti plytelių klojimo darbai](https://situacija.eu/gallery.html): Meistro Vladislav atlikti plytelių klojimo, vonios apdailos, hidroizoliacijos ir klinkerio darbai Pabradėje, Švenčionyse ir Vilniuje.
+- [Dažniausiai Užduodami Klausimai (D.U.K.)](https://situacija.eu/duk.html): Atsakymai apie plytelių klojimo kainas, hidroizoliaciją, terminus ir individualias kriaukles iš plytelių Pabradėje, Švenčionyse bei Vilniuje.
+- [Meistro Patarimai ir Apdailos Blogas](https://situacija.eu/blogas.html): Meistro patarimai apie plytelių klojimą, vonios hidroizoliaciją, didelio formato plyteles ir apdailos kainas Pabradėje bei Švenčionyse.
+- [Privatumo politika](https://situacija.eu/privatumo-politika.html): Informacija apie Situacija.eu kontaktų formoje pateikiamų duomenų, slapukų ir Google Analytics naudojimą bei jūsų teises.
+
+## Straipsniai
+
+- [Didelio Formato (60x120 cm) Plytelių Klojimo Ypatumai ir TLS Sistemos](https://situacija.eu/blogas/didelio-formato-plyteliu-klojimo-ypatumai.html): Didelio formato akmens masės plytelių klijavimas Pabradėje, Švenčionyse ir Vilniuje. TLS lyginimo sistemos ir šlapio pjovimo staklės.
+- [Didelio Formato (60x120 cm) Plytelių Montavimas: Dažniausios Klaidos ir TLS Sistemų Naudojimas](https://situacija.eu/blogas/didelio-formato-plyteliu-montavimas-ir-klaidos.html): Eksperto gidas apie didelio formato akmens masės plytelių montavimą: vakuuminiai pritraukėjai, TLS sistemos, dvigubas klijų tepimas ir dažniausios klaidos.
+- [Kaip Pasirinkti Plyteles Vonios Kambariui: Dydžiai, Tekstūra ir Akmens Masė](https://situacija.eu/blogas/kaip-pasirinkti-plyteles-voniai.html): Kaip pasirinkti vonios plyteles: akmens masė, keramika, tinkamas formatas ir saugus, neslidus paviršius. Praktiniai meistro patarimai.
+- [Fasadų ir Cokolio Apdaila Klinkerio Plytelėmis: Ilgaamžiškumas ir Technologija](https://situacija.eu/blogas/klinkerio-fasado-ir-cokolio-apdaila.html): Klinkerio plytelių klijavimas ant fasadų, cokolio ir tvorų Pabradėje, Švenčionyse ir Vilniuje. Ilgaamžė apdaila, rievėjimas ir impregnavimas.
+- [Kaip Paruošiama Tiksli Plytelių Darbų Sąmata?](https://situacija.eu/blogas/plyteliu-klijavimo-kainos-samata-pabrade-svencionys.html): Kaip sudaroma plytelių darbų sąmata: objekto matavimai, pagrindo paruošimas, hidroizoliacija, pjovimas, glaistymas ir papildomi darbai.
+- [Plytelių Klojimo Kainos Pabradėje, Švenčionyse ir Vilniuje: Nuo Ko Priklauso Sąmata?](https://situacija.eu/blogas/plyteliu-klojimo-kaina-pabrade-svencionys-vilnius.html): Nuo ko priklauso plytelių klojimo kaina už m² Pabradėje, Švenčionyse ir Vilniuje? Sąmatos skaičiavimas, 45° pjovimas ir paruošimo darbai.
+- [Kodėl Vonios Kambario Hidroizoliacija Yra Būtina ir Kaip Ji Įrengiama?](https://situacija.eu/blogas/vonios-hidroizoliacija-kodel-butina.html): Išsamus gidas apie vonios kambario hidroizoliaciją Pabradėje, Švenčionyse ir Vilniuje: mastikos, sandarinimo juostos ir apsauga nuo drėgmės.
+- [Pilnas Vonios Kambario Plytelių Klojimo Vadovas: Nuo Paviršiaus Paruošimo iki Epoksidinio Glaisto](https://situacija.eu/blogas/vonios-kambario-plyteliu-klojimas-vadovas.html): Vonios plytelių klojimo eiga: paviršiaus paruošimas, hidroizoliacija, 45° kampų pjovimas, klijavimas ir epoksidinis glaistymas.
