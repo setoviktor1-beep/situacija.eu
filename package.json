@@ -4,12 +4,36 @@
   "description": "CRM and Gallery website for situacija.eu",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "schema:apply": "tsx directus/scripts/setup-schema.ts && tsx directus/scripts/setup-roles.ts && tsx directus/scripts/setup-flow.ts",
+    "flow:apply": "tsx directus/scripts/setup-flow.ts",
+    "roles:apply": "tsx directus/scripts/setup-roles.ts",
+    "schema:verify": "tsx directus/scripts/verify-setup.ts",
+    "schema:diff": "tsx directus/scripts/schema-diff.ts",
+    "schema:snapshot": "tsx directus/scripts/schema-snapshot.ts",
+    "seed": "tsx directus/scripts/seed.ts",
+    "gen:types": "tsx directus/scripts/generate-types.ts"
   },
   "dependencies": {
+    "@directus/sdk": "^24.0.0",
+    "@next/third-parties": "^16.3.1",
     "cheerio": "^1.1.2",
     "compression": "^1.8.1",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "next": "^16.3.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2",
+    "yaml": "^2.9.0"
   }
 }

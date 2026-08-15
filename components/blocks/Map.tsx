@@ -1,0 +1,2 @@
+import type { CmsBlock } from '@/types/cms';
+export function MapBlock({ block }: { block: CmsBlock }) { const lat = Number(block.lat); const lng = Number(block.lng); const src = Number.isFinite(lat) && Number.isFinite(lng) ? `https://www.openstreetmap.org/export/embed.html?bbox=${lng - .03}%2C${lat - .02}%2C${lng + .03}%2C${lat + .02}&layer=mapnik&marker=${lat}%2C${lng}` : null; return <section className="block"><div className="shell"><h2>{String(block.address || '')}</h2>{src && <iframe className="map" title="Vieta žemėlapyje" src={src} loading="lazy" />}</div></section>; }

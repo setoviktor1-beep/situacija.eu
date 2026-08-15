@@ -1,0 +1,2 @@
+import { revalidatePath, revalidateTag } from 'next/cache';
+export async function POST(request: Request) { if (!process.env.REVALIDATE_SECRET || request.headers.get('x-revalidate-secret') !== process.env.REVALIDATE_SECRET) return Response.json({ ok: false }, { status: 401 }); revalidateTag('directus-content', 'max'); revalidatePath('/', 'layout'); return Response.json({ ok: true, revalidatedAt: new Date().toISOString() }); }

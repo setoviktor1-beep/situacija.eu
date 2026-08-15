@@ -1,0 +1,2 @@
+import type { CmsBlock } from '@/types/cms'; import { CtaLink } from './shared';
+export function CallToAction({ block }: { block: CmsBlock }) { return <section className={`block cta style-${String(block.background_style || 'accent')}`}><div className="shell"><h2>{String(block.headline || '')}</h2><p>{String(block.text || '')}</p><CtaLink label={block.button_label} url={block.button_url} /></div></section>; }

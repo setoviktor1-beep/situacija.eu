@@ -1,0 +1,3 @@
+import type { CmsBlock, FileRef } from '@/types/cms';
+import { CmsImage } from './shared';
+export function Gallery({ block }: { block: CmsBlock }) { const images = Array.isArray(block.images) ? block.images : []; return <section className="block"><div className="shell"><h2>{String(block.headline || '')}</h2><div className={`gallery layout-${String(block.layout || 'grid')} cols-${Number(block.columns || 3)}`}>{images.map((row: any, index) => { const file = (row?.directus_files_id || row) as FileRef; return <CmsImage key={index} file={file} alt={`${String(block.headline || 'Galerija')} ${index + 1}`} />; })}</div></div></section>; }
