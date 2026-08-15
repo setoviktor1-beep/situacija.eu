@@ -1,4 +1,4 @@
-import { readCollections, readField, readPermissions, readPolicies, readRoles } from '@directus/sdk';
+import { readCollections, readField, readFlows, readPermissions, readPolicies, readRoles } from '@directus/sdk';
 import { createAdminClient } from './client.js';
 
 const blockCollections = [
@@ -13,11 +13,12 @@ function invariant(value: unknown, message: string): asserts value {
 
 async function main() {
   const client = await createAdminClient();
-  const [collections, roles, policies, permissions] = await Promise.all([
+  const [collections, roles, policies, permissions, flows] = await Promise.all([
     client.request(readCollections()),
     client.request(readRoles()),
     client.request(readPolicies()),
     client.request(readPermissions()),
+    client.request(readFlows({ filter: { name: { _eq: 'Atnaujinti svetainę pakeitus turinį' } }, fields: ['id', 'status', 'trigger', 'operation'], limit: 1 } as any)),
   ]);
 
   const byCollection = new Map(collections.map((item) => [String(item.collection), item as any]));
@@ -51,10 +52,16 @@ async function main() {
   invariant(!restricted.some((permission) => permission.collection === 'directus_roles'), 'ribotai rolei matomos rolės');
   invariant(!restricted.some((permission) => permission.collection === 'directus_flows'), 'ribotai rolei matomi procesai');
   invariant(!permissions.some((permission) => String(permission.policy) === String(redaktoriusPolicy.id) && ['globals', 'navigation', 'navigation_items'].includes(String(permission.collection))), 'Redaktorius gavo prieigą prie bendrų nustatymų');
+  invariant(flows[0]?.status === 'active' && flows[0]?.trigger === 'event' && flows[0]?.operation, 'automatinio atnaujinimo Flow neaktyvus');
 
   const pageItems = await client.request((() => ({
     path: '/items/pages', method: 'GET', params: { fields: ['id', 'title', 'slug', 'status'], limit: -1 },
   })) as any) as Array<Record<string, unknown>>;
+  const demoPages = await client.request((() => ({
+    path: '/items/pages', method: 'GET', params: { fields: ['id', 'slug', 'status', 'sections.id'], filter: { slug: { _eq: 'site-builder-demo' } }, limit: 1 },
+  })) as any) as Array<{ id: number; slug: string; status: string; sections?: unknown[] }>;
+  invariant(demoPages[0]?.status === 'draft', 'demo puslapis turi likti juodraštis');
+  invariant(demoPages[0]?.sections?.length === 12, 'demo puslapyje nėra visų 12 blokų');
 
   console.log(JSON.stringify({
     status: 'VERIFY_OK',
@@ -63,6 +70,8 @@ async function main() {
     roles: [klientasRole.name, redaktoriusRole.name],
     restrictedPermissions: restricted.length,
     deletePermissions: 0,
+    flowActive: true,
+    demoSections: demoPages[0].sections?.length,
     existingPages: pageItems,
   }, null, 2));
 }
