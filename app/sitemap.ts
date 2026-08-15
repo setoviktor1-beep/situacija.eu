@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return allRoutes().map(({ path, match }) => {
     const languages: Record<string, string> = {};
     for (const code of LOCALES) languages[code] = abs(match.alternates[code]);
+    // Lietuvių versija — numatytoji nenurodytos kalbos lankytojams
+    languages['x-default'] = abs(match.alternates.lt);
 
     const isHome = match.kind === 'home';
     const isPost = match.kind === 'post';
