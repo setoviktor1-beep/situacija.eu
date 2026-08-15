@@ -16,7 +16,8 @@
     "schema:snapshot": "tsx directus/scripts/schema-snapshot.ts",
     "seed": "tsx directus/scripts/seed.ts",
     "gen:types": "tsx directus/scripts/generate-types.ts",
-    "content:build": "node scripts/extract-content.mjs && node scripts/generate-content.mjs && node scripts/extract-home.mjs && node scripts/generate-llms.mjs"
+    "content:build": "node scripts/extract-content.mjs && node scripts/generate-content.mjs && node scripts/extract-home.mjs && node scripts/generate-llms.mjs",
+    "indexnow": "tsx scripts/indexnow.mts"
   },
   "dependencies": {
     "@directus/sdk": "^24.0.0",
