@@ -3,7 +3,16 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 import { getGlobals } from '@/lib/directus';
 
-export const metadata: Metadata = { metadataBase: new URL('https://situacija.eu'), title: { default: 'Situacija.eu', template: '%s | Situacija.eu' } };
+export const metadata: Metadata = {
+  metadataBase: new URL('https://situacija.eu'),
+  title: { default: 'Situacija.eu', template: '%s | Situacija.eu' },
+  icons: {
+    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
+    shortcut: '/icon.svg',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
+};
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const globals = await getGlobals();
