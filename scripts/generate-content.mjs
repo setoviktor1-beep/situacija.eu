@@ -5,6 +5,7 @@
 // PL/RU verčiamas tuo pačiu frazių žodynu, kurį naudojo senoji svetainė,
 // todėl vertimų turinys sutampa su tuo, kas jau buvo publikuota.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { applyLastmod, loadLastmod, saveLastmod } from './lastmod.mjs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
@@ -328,5 +329,14 @@ writeFileSync(
   'utf8',
 );
 
+// <lastmod> datos — keičiamos tik realiai pasikeitus puslapio turiniui
+const store = loadLastmod(ROOT);
+const { changed } = applyLastmod(
+  store,
+  Object.fromEntries(Object.entries(pages).map(([key, page]) => [key, [page.meta, page.blocks]])),
+);
+saveLastmod(ROOT, store);
+
 console.log(`Sugeneruota puslapių: ${Object.keys(pages).length}`);
 console.log(`Blokų be vertimo: PL ${untranslated.pl}/${untranslated.total / 2}, RU ${untranslated.ru}/${untranslated.total / 2}`);
+console.log(`Pasikeitė turinys (lastmod atnaujintas): ${changed.length}`);

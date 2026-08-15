@@ -2,6 +2,7 @@
 // (korteles, statistiką, darbų eigą, D.U.K.) ir išverčia PL/RU esamu žodynu.
 // Pagrindinio puslapio frazės žodyne padengtos pilnai — jos ir buvo verčiamos senojoje svetainėje.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { applyLastmod, loadLastmod, saveLastmod } from './lastmod.mjs';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 
@@ -250,6 +251,12 @@ export const HOME = ${JSON.stringify(data, null, 2)} as const satisfies HomeCont
 `,
   'utf8',
 );
+
+// <lastmod> pagrindiniam puslapiui — keičiasi tik pasikeitus jo turiniui
+const lastmodStore = loadLastmod(ROOT);
+const { changed: homeChanged } = applyLastmod(lastmodStore, { home: data });
+saveLastmod(ROOT, lastmodStore);
+if (homeChanged.length) console.log('Pagrindinio puslapio lastmod atnaujintas');
 
 console.log(`Hero statistikų: ${hero.stats.length}`);
 console.log(`Paslaugų: ${services.items.length}, regionų: ${regions.items.length}`);
