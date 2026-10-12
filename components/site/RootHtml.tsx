@@ -5,6 +5,7 @@ import type { ReactNode } from 'react';
 import { LOCALE_META } from '@/content/site';
 import type { Locale } from '@/content/types';
 import { CookieConsent } from './CookieConsent';
+import { ConversionEventTracker } from './ConversionEventTracker';
 import '@/app/globals.css';
 
 // Šriftas talpinamas savame domene — nereikia preconnect į Google Fonts
@@ -29,6 +30,7 @@ try{if(localStorage.getItem('situacija-consent')==='granted'){gtag('consent','up
         </Script>
 
         {children}
+        <ConversionEventTracker />
         <CookieConsent locale={locale} />
         {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
       </body>

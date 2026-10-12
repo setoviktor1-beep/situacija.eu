@@ -12,11 +12,13 @@ export function PageHero({
   title,
   lead,
   badge,
+  showConversionCta = false,
 }: {
   locale: Locale;
   title: string;
   lead?: string;
   badge?: string;
+  showConversionCta?: boolean;
 }) {
   const ui = getUi(locale);
 
@@ -48,6 +50,22 @@ export function PageHero({
           </h1>
           {lead ? (
             <p className="mt-6 text-pretty text-lg leading-relaxed text-ink-300">{lead}</p>
+          ) : null}
+          {showConversionCta ? (
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Button href={`tel:${BUSINESS.phone}`} className="w-full sm:w-auto">
+                {ui.cta.call}
+              </Button>
+              <Button
+                href={`${routeFor('home', locale)}#contact`}
+                variant="onDark"
+                className="group w-full bg-white/10 text-white ring-1 ring-white/25 hover:bg-white/20 sm:w-auto"
+                data-conversion-event="quote_click"
+              >
+                {ui.cta.preliminaryQuote}
+                <ArrowRight />
+              </Button>
+            </div>
           ) : null}
         </div>
       </Container>
@@ -213,6 +231,7 @@ export function PageCta({ locale }: { locale: Locale }) {
               href={`${routeFor('home', locale)}#contact`}
               variant="onDark"
               className="group bg-white/10 text-white ring-1 ring-white/25 hover:bg-white/20"
+              data-conversion-event="quote_click"
             >
               {ui.cta.freeQuote}
               <ArrowRight />

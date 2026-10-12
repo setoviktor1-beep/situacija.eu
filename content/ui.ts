@@ -22,6 +22,7 @@ export interface UiStrings {
     call: string;
     viewGallery: string;
     freeQuote: string;
+    preliminaryQuote: string;
     readMoreService: string;
     fullFaq: string;
     allArticles: string;
@@ -106,6 +107,7 @@ export const UI: Record<Locale, UiStrings> = {
       call: 'Skambinti',
       viewGallery: 'Žiūrėti Darbų Galeriją',
       freeQuote: 'Gauti Nemokamą Sąmatą',
+      preliminaryQuote: 'Gauti preliminarią sąmatą',
       readMoreService: 'Plačiau apie paslaugą',
       fullFaq: 'Skaityti Pilną D.U.K. Puslapį',
       allArticles: 'Visi Meistro Straipsniai ir Patarimai',
@@ -185,6 +187,7 @@ export const UI: Record<Locale, UiStrings> = {
       call: 'Zadzwoń',
       viewGallery: 'Zobacz galerię prac',
       freeQuote: 'Otrzymaj bezpłatną wycenę',
+      preliminaryQuote: 'Uzyskaj wstępną wycenę',
       readMoreService: 'Więcej o usłudze',
       fullFaq: 'Zobacz wszystkie pytania',
       allArticles: 'Wszystkie porady fachowca',
@@ -263,6 +266,7 @@ export const UI: Record<Locale, UiStrings> = {
       call: 'Позвонить',
       viewGallery: 'Смотреть галерею работ',
       freeQuote: 'Получить бесплатную смету',
+      preliminaryQuote: 'Получить предварительную смету',
       readMoreService: 'Подробнее об услуге',
       fullFaq: 'Смотреть все вопросы',
       allArticles: 'Все советы мастера',

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { GENERATED_PAGES } from '@/content/generated/pages';
 import { HOME } from '@/content/generated/home';
-import { POST_SLUGS, ROUTES, localizeHref, postRoute, routeFor } from '@/content/routes';
+import { POST_SLUGS, REGION_KEYS, ROUTES, localizeHref, postRoute, routeFor } from '@/content/routes';
 import type { ContentBlock, Locale } from '@/content/types';
 import { getUi } from '@/content/ui';
 import { getGalleryItems } from '@/lib/gallery';
@@ -205,7 +205,12 @@ async function renderBody(match: RouteMatch) {
   return (
     <>
       <JsonLd schema={schemas} />
-      <PageHero locale={locale} title={title} lead={lead} />
+      <PageHero
+        locale={locale}
+        title={title}
+        lead={lead}
+        showConversionCta={match.kind === 'page' && REGION_KEYS.includes(match.pageKey as (typeof REGION_KEYS)[number])}
+      />
 
       <Section tone="light">
         <Container className="max-w-3xl">

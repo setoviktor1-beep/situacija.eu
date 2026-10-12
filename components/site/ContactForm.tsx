@@ -1,16 +1,24 @@
 'use client';
 
 import Link from 'next/link';
-import { useId, useState } from 'react';
+import { useId, useRef, useState } from 'react';
 import { routeFor } from '@/content/routes';
 import type { Locale } from '@/content/types';
 import { getUi } from '@/content/ui';
 import { ButtonElement } from './ui';
+import { trackConversionEvent } from '@/lib/analytics';
 
 export function ContactForm({ locale }: { locale: Locale }) {
   const ui = getUi(locale);
   const ids = useId();
+  const formStarted = useRef(false);
   const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+
+  function onFormFocus() {
+    if (formStarted.current) return;
+    formStarted.current = true;
+    trackConversionEvent('form_start');
+  }
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -29,6 +37,7 @@ export function ContactForm({ locale }: { locale: Locale }) {
       });
       if (!response.ok) throw new Error('request failed');
       setState('sent');
+      trackConversionEvent('form_submit');
       form.reset();
     } catch {
       setState('error');
@@ -40,7 +49,7 @@ export function ContactForm({ locale }: { locale: Locale }) {
   const label = 'block text-sm font-bold text-ink-800';
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5" noValidate={false}>
+    <form onSubmit={onSubmit} onFocusCapture={onFormFocus} className="space-y-5" noValidate={false}>
       <h3 className="text-xl font-extrabold text-ink-950">{ui.form.title}</h3>
 
       <div>
