@@ -4,7 +4,7 @@ import { ROUTES, SERVICE_KEYS } from '@/content/routes';
 import { GENERATED_PAGES } from '@/content/generated/pages';
 import { LOCALES, type Locale, type Localized } from '@/content/types';
 
-const abs = (path: string) => new URL(path, SITE_URL).toString();
+const abs = (path: string) => (path === '/' ? SITE_URL : new URL(path, SITE_URL).toString());
 
 /** Meta antraštės ilgio riba, kurią nurodė auditas (SERP kerpa ties ~60). */
 const TITLE_MAX = 60;

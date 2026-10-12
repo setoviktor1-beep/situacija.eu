@@ -4,7 +4,7 @@ import { SITE_URL } from '@/content/site';
 import { LOCALES } from '@/content/types';
 import { allRoutes } from '@/lib/site-routing';
 
-const abs = (path: string) => new URL(path, SITE_URL).toString();
+const abs = (path: string) => (path === '/' ? SITE_URL : new URL(path, SITE_URL).toString());
 
 const LASTMOD = lastmod as Record<string, { hash: string; date: string }>;
 

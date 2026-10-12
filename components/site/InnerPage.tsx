@@ -193,7 +193,7 @@ export function ContentBlocks({
 }
 
 /** Perrašo href reikšmes paveldėtame HTML į aktyvios kalbos maršrutus. */
-function localizeHtmlLinks(html: string, locale: Locale): string {
+export function localizeHtmlLinks(html: string, locale: Locale): string {
   return html.replace(/href="([^"]+)"/g, (match, href: string) => {
     const localized = localizeHref(href, locale);
     return localized === href ? match : `href="${localized}"`;

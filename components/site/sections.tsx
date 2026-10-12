@@ -7,6 +7,7 @@ import type { Locale } from '@/content/types';
 import { getUi } from '@/content/ui';
 import { ContactForm } from './ContactForm';
 import { HeroCanvas } from './HeroCanvas';
+import { localizeHtmlLinks } from './InnerPage';
 import { ServiceAreaMap } from './ServiceAreaMap';
 import { ArrowRight, Badge, Button, Card, Container, RichText, Section, SectionHeading } from './ui';
 
@@ -426,7 +427,10 @@ export function FaqSection({ locale }: { locale: Locale }) {
                   </svg>
                 </span>
               </summary>
-              <RichText html={item.answerHtml[locale]} className="px-6 pb-6 text-ink-600" />
+              <RichText
+                html={localizeHtmlLinks(item.answerHtml[locale], locale)}
+                className="px-6 pb-6 text-ink-600"
+              />
             </details>
           ))}
         </div>
